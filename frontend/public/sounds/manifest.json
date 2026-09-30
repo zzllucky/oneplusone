@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generated_at": "2026-09-30T11:52:26+08:00",
-  "voice": "en-US-GuyNeural",
-  "rate": "+15%",
-  "pitch": "+8Hz",
+  "generated_at": "2026-09-30T16:39:58+08:00",
+  "voice": "custom（自备音源）",
+  "rate": "custom",
+  "pitch": "custom",
   "thresholds": {
-    "max_duration_ms": 2000,
+    "max_duration_ms": 2500,
     "max_bytes": 30720
   },
   "entries": [
@@ -13,127 +13,127 @@
       "event": "page.home",
       "file": "page_home.mp3",
       "text": "Stick together, team.",
-      "duration_ms": 1032,
-      "bytes": 12384
+      "duration_ms": 2324,
+      "bytes": 27899
     },
     {
       "event": "page.study",
       "file": "page_study.mp3",
       "text": "OK, let's go!",
-      "duration_ms": 996,
-      "bytes": 11952
+      "duration_ms": 1332,
+      "bytes": 15987
     },
     {
       "event": "page.quiz",
       "file": "page_quiz.mp3",
       "text": "Fire in the hole!",
-      "duration_ms": 912,
-      "bytes": 10944
+      "duration_ms": 1671,
+      "bytes": 20062
     },
     {
       "event": "page.wrong",
       "file": "page_wrong.mp3",
       "text": "Bombs on the ground here.",
-      "duration_ms": 1056,
-      "bytes": 12672
+      "duration_ms": 1671,
+      "bytes": 20062
     },
     {
       "event": "page.summary",
       "file": "page_summary.mp3",
       "text": "Keep going and stay strong, team.",
-      "duration_ms": 1296,
-      "bytes": 15552
+      "duration_ms": 1880,
+      "bytes": 22570
     },
     {
       "event": "quiz.start",
       "file": "quiz_start.mp3",
       "text": "Come get some!",
-      "duration_ms": 828,
-      "bytes": 9936
+      "duration_ms": 2324,
+      "bytes": 27899
     },
     {
       "event": "streak.1",
       "file": "streak_1.mp3",
       "text": "First blood",
-      "duration_ms": 852,
-      "bytes": 10224
+      "duration_ms": 783,
+      "bytes": 9404
     },
     {
       "event": "streak.2",
       "file": "streak_2.mp3",
       "text": "Double kill",
-      "duration_ms": 828,
-      "bytes": 9936
+      "duration_ms": 1515,
+      "bytes": 18181
     },
     {
       "event": "streak.3",
       "file": "streak_3.mp3",
       "text": "Triple kill",
-      "duration_ms": 852,
-      "bytes": 10224
+      "duration_ms": 1828,
+      "bytes": 21943
     },
     {
       "event": "streak.4",
       "file": "streak_4.mp3",
       "text": "Quadra kill",
-      "duration_ms": 876,
-      "bytes": 10512
+      "duration_ms": 1515,
+      "bytes": 18181
     },
     {
       "event": "streak.5",
       "file": "streak_5.mp3",
       "text": "Penta kill",
-      "duration_ms": 816,
-      "bytes": 9792
+      "duration_ms": 1854,
+      "bytes": 22256
     },
     {
       "event": "streak.6",
       "file": "streak_6.mp3",
       "text": "Hexa kill",
-      "duration_ms": 840,
-      "bytes": 10080
+      "duration_ms": 1985,
+      "bytes": 23824
     },
     {
       "event": "streak.7",
       "file": "streak_7.mp3",
       "text": "Hepta kill",
-      "duration_ms": 828,
-      "bytes": 9936
+      "duration_ms": 1515,
+      "bytes": 18181
     },
     {
       "event": "streak.8",
       "file": "streak_8.mp3",
       "text": "Octa kill",
-      "duration_ms": 840,
-      "bytes": 10080
+      "duration_ms": 2115,
+      "bytes": 25391
     },
     {
       "event": "streak.9",
       "file": "streak_9.mp3",
       "text": "Nona kill",
-      "duration_ms": 828,
-      "bytes": 9936
+      "duration_ms": 1959,
+      "bytes": 23510
     },
     {
       "event": "streak.10",
       "file": "streak_10.mp3",
       "text": "Deca kill",
-      "duration_ms": 828,
-      "bytes": 9936
+      "duration_ms": 1541,
+      "bytes": 18495
     },
     {
       "event": "streak.extend",
       "file": "streak_extend.mp3",
       "text": "Good job",
-      "duration_ms": 756,
-      "bytes": 9072
+      "duration_ms": 1541,
+      "bytes": 18495
     },
     {
       "event": "answer.wrong",
       "file": "answer_wrong.mp3",
       "text": "Storm the front.",
-      "duration_ms": 888,
-      "bytes": 10656
+      "duration_ms": 1671,
+      "bytes": 20062
     }
   ]
 }
