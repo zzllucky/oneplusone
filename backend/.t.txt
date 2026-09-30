@@ -1,0 +1,38 @@
+﻿FF                                                                       [100%]
+================================== FAILURES ===================================
+________________ test_review_answer_removes_only_when_correct _________________
+tests\contract\test_review_contract.py:76: in test_review_answer_removes_only_when_correct
+    assert set(body) == {
+E   AssertionError: assert {'added_back_..._wrong_words'} == {'correct_ind..._wrong_words'}
+E     
+E     Extra items in the left set:
+E     'added_back_to_wrong_words'
+E     Use -v to get more diff
+---------------------------- Captured stdout setup ----------------------------
+[seed] ���� words.txt����Ч 541 �������� 0 ��
+[002] �ʱ������ɣ����� 541 �������� 0 ��
+---------------------------- Captured stderr setup ----------------------------
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 001, 001 ��ʼ����
+INFO  [alembic.runtime.migration] Running upgrade 001 -> 002, 002 �������ôʱ�����
+_________________ test_wrong_answer_keeps_record_and_added_at _________________
+tests\integration\test_review_flow.py:105: in test_wrong_answer_keeps_record_and_added_at
+    assert after_item["added_at"] == before_item["added_at"]
+E   AssertionError: assert '2026-09-28T06:21:47.032747' == '2026-09-28T06:21:46.781891'
+E     
+E     - 2026-09-28T06:21:46.781891
+E     ?                   ^  ^^^^^
+E     + 2026-09-28T06:21:47.032747
+E     ?                   ^ +++ ^^
+---------------------------- Captured stdout setup ----------------------------
+[seed] ���� words.txt����Ч 541 �������� 0 ��
+[002] �ʱ������ɣ����� 541 �������� 0 ��
+---------------------------- Captured stderr setup ----------------------------
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 001, 001 ��ʼ����
+INFO  [alembic.runtime.migration] Running upgrade 001 -> 002, 002 �������ôʱ�����
+=========================== short test summary info ===========================
+FAILED tests/contract/test_review_contract.py::test_review_answer_removes_only_when_correct
+FAILED tests/integration/test_review_flow.py::test_wrong_answer_keeps_record_and_added_at

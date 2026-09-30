@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+    image: word-study-quiz:0.2.0
+    container_name: word-study-quiz
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      JWT_SECRET: ${JWT_SECRET:-please-change-me-to-a-long-random-string}
+      DB_PATH: /app/data/app.db
+      PRONOUNCE_CACHE_DIR: /app/data/cache/pronounce
+      STATIC_DIR: /app/frontend/dist
+      TIMEZONE: Asia/Shanghai
+    volumes:
+      # SQLite 数据文件与发音缓存持久化
+      - ./data:/app/data

@@ -1,0 +1,221 @@
+====================================================================
+  spec-kit 使用手册（Specify CLI 1.0.7）
+  整理时间：2026-09-23
+====================================================================
+
+【目录】
+  一、spec-kit 是什么
+  二、当前安装状态
+  三、快速开始（三步上手）
+  四、流程一：规范驱动开发 SDD（构建功能/应用）
+  五、流程二：缺陷修复
+  六、流程三：想法评估
+  七、CLI 命令速查
+  八、工作机制与定制
+  九、使用要点提醒
+
+
+====================================================================
+一、spec-kit 是什么
+====================================================================
+Spec Kit 是 GitHub 开源的工具套件，为 AI 编码助手提供结构化开发流程：
+把"要做什么、为什么"（规范）与"怎么做"（技术方案、任务）分开，
+让 AI 助手按规范驱动开发（SDD）、修复缺陷或评估想法，产物有据可查。
+
+它由两部分组成：
+  1. specify-cli：命令行工具（已安装），负责初始化项目、安装扩展/预设/工作流；
+  2. /speckit-* 技能：安装到你的 AI 编码助手里，在助手的聊天界面逐个调用。
+
+三种流程互相独立，不是必须依次完成：
+  - 构建功能/应用 → 规范驱动开发（SDD），内置流程
+  - 排查修复异常 → 缺陷修复，需安装 bug 扩展
+  - 判断想法是否值得投入 → 想法评估，需安装 assess 扩展
+
+
+====================================================================
+二、当前安装状态
+====================================================================
+  - 版本：specify-cli 1.0.7（对应 spec-kit-1.0.7 本地源码包）
+  - 安装方式：python -m pip install "C:\Users\zzl_l\Desktop\spec-kit-1.0.7\spec-kit-1.0.7"
+  - Python 环境：Python 3.14.7（>=3.11 满足要求）
+  - 命令位置：C:\Users\zzl_l\AppData\Local\Doubao\User Data\sandbox_runtime\bases\
+              c98c5042338ed152c6f10ecd8591889f\python\Scripts\specify.exe
+    （该 Scripts 目录已在 PATH 中，打开新终端即可直接使用 specify）
+  - 验证：specify --version  →  specify 1.0.7
+  - 已装依赖：typer、rich、click、pyyaml、json5、packaging、pathspec、
+    platformdirs、readchar 等 17 个包
+
+注意：由于系统没有独立的 Python 安装，工具装在了豆包运行时的 Python 里。
+如果豆包客户端升级/清理可能影响该环境，届时用上面 pip 命令重装一次即可。
+
+
+====================================================================
+三、快速开始（三步上手）
+====================================================================
+第 1 步（终端，只需一次）：初始化项目
+    specify init <项目名> --integration <AI助手标识>
+
+    - <AI助手标识> 支持 40+ 种集成，常见的有：
+        copilot（GitHub Copilot，默认技能模式）
+        claude（Claude Code）      cursor-agent（Cursor）
+        codex（Codex CLI）         trae（Trae）
+        gemini（Gemini CLI）       qwen（Qwen Code）
+        lingma（通义灵码）         kimi（Kimi Code）
+        agy（Antigravity）         goose（Goose）
+     不在列表的助手用：--integration generic
+     查看全部：specify integration list
+     无人值守/CI 环境加 --non-interactive 避免交互卡住
+
+    - init 时会询问脚本变体：bash(.sh) / powershell(.ps1) / python(.py)，
+      Windows 建议选 ps 或 py；也可用 --script sh|ps|py 显式指定。
+
+第 2 步：在项目目录中启动你的 AI 编码助手
+
+第 3 步：在助手聊天界面里，按所选流程逐个调用 /speckit-* 技能，
+      每调用一个就检查结果，再进入下一步。
+      技能调用形式因助手而异（下表为常见形式）：
+        GitHub Copilot 默认技能模式：  /speckit-specify
+        点号记法（文档引用用）：       /speckit.specify
+        Codex / ZCode 技能：           $speckit-specify
+        Kimi 技能：                    /skill:speckit-specify
+
+已有代码的老项目，先看官方指南"Adopting Spec Kit in an Existing Project"再初始化。
+
+
+====================================================================
+四、流程一：规范驱动开发 SDD（构建功能/应用）
+====================================================================
+理念：先明确做什么、为什么，再决定怎么实现。
+     顺序：规范（spec）→ 技术方案（plan）→ 任务（tasks）→ 实现（implement）→ 收敛（converge）
+
+【短路径】适合较小功能（5 步）：
+  /speckit-specify     把自然语言需求写成功能规范（只讲 what 和 why）
+  /speckit-plan        根据规范制定技术方案（此时才定技术栈、架构）
+  /speckit-tasks       把方案拆解成可执行任务清单
+  /speckit-implement   逐个执行任务实现功能
+  /speckit-converge    收敛验证，直到报告给出 Converged
+
+【全路径】生产级功能，加质量门（9 步）：
+  /speckit-constitution   确立项目准则（每个项目只跑一次，传准则参数）
+  /speckit-specify        编写规范
+  /speckit-clarify        澄清歧义（就未定细节提问，把答案折回规范）
+  /speckit-plan           制定技术方案
+  /speckit-checklist      生成需求质量检查清单（"需求单测"，逐项确认规范完备）
+  /speckit-tasks          拆解任务
+  /speckit-analyze        实现前一致性分析（额外质量把关）
+  /speckit-implement      实现
+  /speckit-converge       收敛，直到 Converged
+
+产物：项目内 specs/（规范）、plans/（方案）、tasks/（任务）、收敛报告。
+反复执行 implement → converge，直到收敛报告给出 "Converged"。
+
+
+====================================================================
+五、流程二：缺陷修复
+====================================================================
+理念：把诊断、修复、验证分开，针对评估出的原因修复，并复查最初症状。
+      无需先走 SDD 功能开发流程。
+
+第 1 步（终端）：安装 bug 扩展
+    specify extension add bug
+
+第 2 步（助手聊天）：依次调用
+    /speckit-bug-assess "问题描述" slug=问题标识
+    /speckit-bug-fix   slug=问题标识
+    /speckit-bug-test  slug=问题标识
+
+产物：.specify/bugs/<slug>/ 目录
+结论必须明确：verified（已验证）/ partial（部分验证）/ failed（失败）。
+注意：缺少验证环节不算修复成功。
+
+
+====================================================================
+六、流程三：想法评估
+====================================================================
+理念：投入之前先收集证据，判断想法是否值得做。独立流程，
+      即使项目没有源代码、甚至不是软件类想法也能使用。
+
+第 1 步（终端）：安装 assess 扩展
+    specify extension add assess
+
+第 2 步（助手聊天）：依次调用
+    /speckit-assess-intake    "想法描述" slug=想法标识   （收集想法）
+    /speckit-assess-research  slug=想法标识              （调研）
+    /speckit-assess-define    slug=想法标识              （定义问题）
+    /speckit-assess-shape     slug=想法标识              （形成方案）
+    /speckit-assess-decide    slug=想法标识              （决策）
+
+产物：.specify/assessments/<slug>/ 目录
+最终决策三选一：go（推进）/ needs-clarification（需要澄清）/ kill（停止）。
+遇到待澄清问题，直接完善已有 Markdown 制品，不要整个重来。
+若决定开发，把 go 的评估结果交给 /speckit-specify 进入 SDD；
+记录理由后停止（kill）同样是有价值的产出。
+
+
+====================================================================
+七、CLI 命令速查
+====================================================================
+  specify --version / -V      显示版本
+  specify init <项目>         初始化新项目
+  specify check               检查所需工具是否齐备
+  specify version             显示版本与系统信息
+  specify self                管理 CLI 自身：检查新版本、--dry-run 预览、
+                              就地升级
+  specify extension           管理扩展（add/remove：bug、assess、git、
+                              agent-context 等）
+  specify integration         管理编码助手集成（list 查看可用项）
+  specify event               管理并执行事件驱动命令
+  specify preset              管理预设（preset add <name>）
+  specify artifact            检视命令、模板、脚本、钩子
+  specify bundle              发现、安装、创作捆绑包
+  specify workflow            管理并运行自动化工作流
+
+初始化时常用参数：
+  --integration <id>     指定 AI 助手（如 copilot、claude、cursor-agent）
+  --integration-options  附加集成选项（如 Copilot 命令布局 --commands）
+  --non-interactive      无人值守，未指定项用默认值
+  --preset <name>        初始化时同时应用预设（如 lean、constitution-sync）
+  --script sh|ps|py      指定自动化脚本变体
+
+
+====================================================================
+八、工作机制与定制
+====================================================================
+【上下文跟踪】
+  - 当前活动的功能由 .specify/feature.json 记录（可用环境变量
+    SPECIFY_FEATURE_DIRECTORY 覆盖指向其他功能目录）。
+  - 命令从该状态文件解析功能，不依赖 Git 分支（无需 Git）。
+  - 可选的 git 扩展会给功能加编号分支（如 001-feature-name）整理版本，
+    但活动功能仍以 feature.json 为准。
+
+【定制四件套】
+  - 扩展（extensions）：新增能力（bug、assess、git、agent-context 等）
+  - 预设（presets）：调整现有行为/术语本地化（lean、constitution-sync）
+  - 工作流（workflows）：自动执行步骤（speckit 工作流自动随 init 安装）
+  - 捆绑包（bundles）：打包面向角色的配置，一键安装
+  单个项目的一次性模板调整用项目本地覆盖即可，不必动扩展。
+
+【常用机制】
+  - 工具升级 ≠ 需求演进：升级时更新工具文件；需求变化时改 specs/ 制品
+  - 离线/内网环境：pyproject 已把模板、命令、脚本、扩展、预设、工作流
+    打包进 wheel，specify init 无需联网即可工作
+  - 支持大量 AI 助手集成，默认 Copilot 技能模式；其他助手替换 --integration
+
+
+====================================================================
+九、使用要点提醒
+====================================================================
+  1. 技能（/speckit-*）是在 AI 助手聊天里调用的，不是终端命令；
+     只有 CLI 安装与项目初始化在终端执行。
+  2. 每一步技能调用后先检查产物再进下一步，不要一次全跑完。
+  3. 缺陷修复必须验证：结论为 verified 才算完成，缺验证不算。
+  4. 想法评估中遇到待澄清点，完善已有制品而非重新生成。
+  5. Windows 环境建议脚本选 powershell(.ps1) 或 python(.py) 变体。
+  6. 本机无独立 Python，specify 装在豆包运行时环境；若日后失效，
+     用 pip 命令从本地源码包重装：
+       python -m pip install "C:\Users\zzl_l\Desktop\spec-kit-1.0.7\spec-kit-1.0.7"
+
+====================================================================
+（完）本手册依据本地源码包 README.zh-CN.md、docs/quickstart.md、
+docs/reference/integrations.md、pyproject.toml 及 specify --help 整理。
+====================================================================
