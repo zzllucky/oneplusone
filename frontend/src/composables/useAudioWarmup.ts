@@ -87,6 +87,11 @@ export function registerAudioWarmup(): void {
   document.addEventListener('keydown', handler, options)
 }
 
+/** 是否正在播放单词发音：音效据此让位（FR-026 发音优先，音效不得打断朗读）。 */
+export function isPronouncing(): boolean {
+  return Boolean(player && !player.paused)
+}
+
 /** 预取发音：让服务端提前合成并缓存，点击时不再等待合成。 */
 export async function prefetchPronunciation(text: string): Promise<void> {
   const value = text.trim()

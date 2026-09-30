@@ -1,6 +1,6 @@
 [project]
 name = "word-study-quiz"
-version = "0.2.0"
+version = "0.3.0"
 description = "中考英语单词学习测验与错题本（后端）"
 requires-python = ">=3.12"
 dependencies = [

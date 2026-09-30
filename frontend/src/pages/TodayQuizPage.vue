@@ -7,6 +7,7 @@ import { useStudyStore } from '@/stores/study'
 import { useWrongWordsStore } from '@/stores/wrongWords'
 import * as quizApi from '@/api/quiz'
 import { ApiError } from '@/api/client'
+import { onCorrect, onWrong, playQuizStart } from '@/sounds/soundEffects'
 
 const study = useStudyStore()
 const wrongWords = useWrongWordsStore()
@@ -34,6 +35,7 @@ async function start() {
     currentIndex.value = 0
     result.value = null
     report.value = null
+    playQuizStart()
   } catch (error) {
     errorMessage.value =
       error instanceof ApiError ? error.message : '无法开始测验'
@@ -45,6 +47,8 @@ async function start() {
 async function select(choiceIndex: number) {
   if (!current.value) return
   result.value = await quizApi.answerDaily(current.value.question_id, choiceIndex)
+  if (result.value.is_correct) onCorrect()
+  else onWrong()
 }
 
 async function next() {

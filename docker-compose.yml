@@ -1,7 +1,7 @@
 services:
   web:
     build: .
-    image: word-study-quiz:0.2.0
+    image: word-study-quiz:0.3.0
     container_name: word-study-quiz
     restart: unless-stopped
     ports:

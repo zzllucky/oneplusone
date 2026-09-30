@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
+import { playPageSound } from '@/sounds/soundEffects'
 
 const routes: RouteRecordRaw[] = [
   { path: '/', redirect: '/home' },
@@ -75,6 +76,11 @@ router.beforeEach(async (to) => {
   }
 
   return true
+})
+
+// 进入白名单页面时播放对应开场语音（/review、/archive 等不在白名单，进入无声）
+router.afterEach((to) => {
+  playPageSound(to.path)
 })
 
 export default router

@@ -2,11 +2,16 @@
 import { computed, onMounted, ref } from 'vue'
 import { fetchSettings, updateSettings } from '@/api/settings'
 import { ApiError } from '@/api/client'
+import { loadSoundPreferences, setSoundEnabled, setSoundVolume } from '@/sounds/soundEffects'
 
 const goal = ref(20)
 const saved = ref(false)
 const errorMessage = ref('')
 const submitting = ref(false)
+
+/** 音效偏好只存本设备、不进账号；默认关闭（FR-012 / FR-024）。 */
+const soundEnabled = ref(false)
+const soundVolume = ref(70)
 
 const inRange = computed(
   () => Number.isInteger(goal.value) && goal.value >= 1 && goal.value <= 200,
@@ -15,7 +20,22 @@ const inRange = computed(
 onMounted(async () => {
   const settings = await fetchSettings()
   goal.value = settings.daily_goal
+  const preferences = loadSoundPreferences()
+  soundEnabled.value = preferences.enabled
+  soundVolume.value = preferences.volume
 })
+
+function toggleSound(event: Event) {
+  const enabled = (event.target as HTMLInputElement).checked
+  soundEnabled.value = enabled
+  setSoundEnabled(enabled)
+}
+
+function changeVolume(event: Event) {
+  const value = Number((event.target as HTMLInputElement).value)
+  soundVolume.value = value
+  setSoundVolume(value)
+}
 
 async function save() {
   errorMessage.value = ''
@@ -62,5 +82,36 @@ async function save() {
         {{ submitting ? '保存中…' : '保存' }}
       </button>
     </form>
+
+    <section class="card flex flex-col gap-3">
+      <h3 class="font-semibold text-gray-900">音效</h3>
+
+      <label class="flex items-center gap-2 text-sm text-gray-700">
+        <input
+          type="checkbox"
+          class="h-4 w-4"
+          :checked="soundEnabled"
+          @change="toggleSound"
+        />
+        开启音效（答题与进入页面时播放英文语音）
+      </label>
+
+      <label class="flex flex-col gap-1 text-sm text-gray-700">
+        音量（{{ soundVolume }}）
+        <input
+          type="range"
+          min="0"
+          max="100"
+          step="10"
+          :value="soundVolume"
+          :disabled="!soundEnabled"
+          @change="changeVolume"
+        />
+      </label>
+
+      <p class="text-sm text-gray-500">
+        默认关闭；开启后仅在本设备生效，不写入账号、不会同步到其他设备。
+      </p>
+    </section>
   </div>
 </template>
