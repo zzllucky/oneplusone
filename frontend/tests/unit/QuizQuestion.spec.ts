@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { mount } from '@vue/test-utils'
 import QuizQuestion from '@/components/QuizQuestion.vue'
 
@@ -54,5 +54,68 @@ describe('QuizQuestion', () => {
     })
 
     expect(wrapper.text()).toContain('回答正确')
+  })
+})
+
+describe('QuizQuestion 选项锁定窗口', () => {
+  beforeEach(() => {
+    vi.useFakeTimers()
+  })
+  afterEach(() => {
+    vi.useRealTimers()
+  })
+
+  const questionA = {
+    question_id: 1,
+    word_id: 1,
+    type: 'en2zh' as const,
+    prompt: 'a',
+    options: ['A1', 'A2', 'A3', 'A4'],
+  }
+  const questionB = {
+    question_id: 2,
+    word_id: 2,
+    type: 'en2zh' as const,
+    prompt: 'b',
+    options: ['B1', 'B2', 'B3', 'B4'],
+  }
+
+  it('切题后 300ms 内点击选项不触发 select', async () => {
+    const wrapper = mount(QuizQuestion, {
+      props: { question: questionA, index: 0, total: 2 },
+    })
+    await wrapper.setProps({ question: questionB, index: 1 })
+    await wrapper.findAll('button')[0].trigger('click')
+    expect(wrapper.emitted('select')).toBeFalsy()
+  })
+
+  it('切题后 300ms 之后点击选项触发 select', async () => {
+    const wrapper = mount(QuizQuestion, {
+      props: { question: questionA, index: 0, total: 2 },
+    })
+    await wrapper.setProps({ question: questionB, index: 1 })
+    vi.advanceTimersByTime(300)
+    await wrapper.findAll('button')[0].trigger('click')
+    expect(wrapper.emitted('select')).toEqual([[0]])
+  })
+
+  it('锁定窗口内的点击不会在窗口结束后被补提交', async () => {
+    const wrapper = mount(QuizQuestion, {
+      props: { question: questionA, index: 0, total: 2 },
+    })
+    await wrapper.setProps({ question: questionB, index: 1 })
+    await wrapper.findAll('button')[1].trigger('click') // 锁定期内
+    vi.advanceTimersByTime(300)
+    await wrapper.findAll('button')[1].trigger('click') // 窗口结束
+    expect(wrapper.emitted('select')).toEqual([[1]])
+  })
+
+  it('锁定窗口不改变选项的视觉禁用态（无 answered 时不应出现 disabled）', async () => {
+    const wrapper = mount(QuizQuestion, {
+      props: { question: questionA, index: 0, total: 2 },
+    })
+    await wrapper.setProps({ question: questionB, index: 1 })
+    const btn = wrapper.findAll('button')[0]
+    expect(btn.attributes('disabled')).toBeUndefined()
   })
 })

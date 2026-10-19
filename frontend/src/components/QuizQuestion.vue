@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onBeforeUnmount, ref, watch } from 'vue'
 import type { QuizQuestion as Question } from '@/api/quiz'
 
 const props = defineProps<{
@@ -7,9 +7,41 @@ const props = defineProps<{
   index: number
   total: number
   result?: { is_correct: boolean; correct_index: number } | null
+  /** 切题后忽略选项点击的窗口长度（毫秒），默认 300，详见 contracts/ui-guard.md §3 */
+  lockMs?: number
 }>()
 
 const emit = defineEmits<{ (event: 'select', choiceIndex: number): void }>()
+
+// 切题后短暂忽略选项点击，避免连点误选（详见 contracts/ui-guard.md §3）
+const DEFAULT_LOCK_MS = 300
+const locked = ref(false)
+let lockTimer: number | null = null
+
+watch(
+  () => [props.question, props.index] as const,
+  () => {
+    locked.value = true
+    if (lockTimer !== null) window.clearTimeout(lockTimer)
+    lockTimer = window.setTimeout(() => {
+      locked.value = false
+      lockTimer = null
+    }, props.lockMs ?? DEFAULT_LOCK_MS)
+  },
+)
+
+onBeforeUnmount(() => {
+  if (lockTimer !== null) {
+    window.clearTimeout(lockTimer)
+    lockTimer = null
+  }
+})
+
+function onOptionClick(choiceIndex: number) {
+  if (locked.value) return
+  if (answered.value) return
+  emit('select', choiceIndex)
+}
 
 const promptLabel = computed(() =>
   props.question.type === 'en2zh' ? '请选择正确的中文释义' : '请选择正确的英文单词',
@@ -47,7 +79,7 @@ const answered = computed(() => Boolean(props.result))
           !answered ? 'border-gray-300 hover:border-brand-500 hover:bg-brand-50' : '',
         ]"
         :disabled="answered"
-        @click="emit('select', optionIndex)"
+        @click="onOptionClick(optionIndex)"
       >
         <span class="mr-2 text-gray-400">{{ String.fromCharCode(65 + optionIndex) }}</span>
         <span class="break-all">{{ option }}</span>

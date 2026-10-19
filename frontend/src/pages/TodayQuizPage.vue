@@ -8,6 +8,8 @@ import { useWrongWordsStore } from '@/stores/wrongWords'
 import * as quizApi from '@/api/quiz'
 import { ApiError } from '@/api/client'
 import { onCorrect, onWrong, playQuizStart } from '@/sounds/soundEffects'
+import { useQuizExitGuard } from '@/composables/useQuizExitGuard'
+import ConfirmDialog from '@/components/ConfirmDialog.vue'
 
 const study = useStudyStore()
 const wrongWords = useWrongWordsStore()
@@ -64,6 +66,10 @@ async function next() {
 async function backHome() {
   router.push('/home')
 }
+
+const { pending, confirmLeave, cancelLeave } = useQuizExitGuard({
+  isActive: () => questions.value.length > 0 && !report.value,
+})
 </script>
 
 <template>
@@ -116,5 +122,15 @@ async function backHome() {
         <router-link class="btn-primary" to="/wrong-words">查看错题本</router-link>
       </div>
     </QuizResult>
+
+    <ConfirmDialog
+      :open="pending !== null"
+      title="离开测验？"
+      message="离开后本轮测验不会保留，确定离开吗？"
+      confirm-text="离开"
+      cancel-text="继续答题"
+      @confirm="confirmLeave"
+      @cancel="cancelLeave"
+    />
   </div>
 </template>

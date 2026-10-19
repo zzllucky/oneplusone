@@ -3,7 +3,11 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { mount } from '@vue/test-utils'
 
-vi.mock('vue-router', () => ({ useRouter: () => ({ push: vi.fn() }) }))
+vi.mock('vue-router', () => ({
+  useRouter: () => ({ push: vi.fn() }),
+  onBeforeRouteLeave: () => undefined,
+  useRoute: () => ({ path: '/' }),
+}))
 
 vi.mock('@/sounds/soundEffects', () => ({
   playQuizStart: vi.fn(),
@@ -66,10 +70,14 @@ async function startQuiz() {
 describe('测验页音效接线', () => {
   beforeEach(() => {
     vi.clearAllMocks()
+    vi.useFakeTimers()
     vi.mocked(quizApi.answerDaily).mockResolvedValue({
       is_correct: true,
       correct_index: 0,
     } as never)
+  })
+  afterEach(() => {
+    vi.useRealTimers()
   })
 
   it('点击开始测验：播开始语音并重置连对', async () => {
@@ -84,10 +92,11 @@ describe('测验页音效接线', () => {
     await Promise.resolve()
     expect(onCorrect).toHaveBeenCalledTimes(1)
 
-    // 下一题后继续答对
+    // 下一题后继续答对（跨过 QuizQuestion 切题锁定窗口）
     const nextButton = wrapper.findAll('button').find((node) => node.text().includes('下一题'))
     await nextButton!.trigger('click')
     await wrapper.vm.$nextTick()
+    vi.advanceTimersByTime(300)
     await wrapper.findAll('button')[0].trigger('click')
     await Promise.resolve()
     expect(onCorrect).toHaveBeenCalledTimes(2)
