@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T17",
+  "title": "现在分词 -ing 的拼写",
+  "questions": [
+    {
+      "id": "G-T17-L1-01",
+      "level": "L1",
+      "stem": "He ____ (write) a letter to his friend now.",
+      "options": [
+        { "key": "A", "text": "is writeing", "distractor": "write 以不发音的 e 结尾，要先去 e" },
+        { "key": "B", "text": "is writing", "answer": true },
+        { "key": "C", "text": "writing", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "is write", "distractor": "be 动词后要接 -ing 形式" }
+      ],
+      "explanation": "write 去 e 加 -ing：is writing。",
+      "error_tag": "G-T17"
+    },
+    {
+      "id": "G-T17-L1-02",
+      "level": "L1",
+      "stem": "Look! The dog ____ (run) after a cat.",
+      "options": [
+        { "key": "A", "text": "is runing", "distractor": "重读闭音节要双写 n" },
+        { "key": "B", "text": "is running", "answer": true },
+        { "key": "C", "text": "running", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "runs", "distractor": "Look! 说明正在追，要用进行时" }
+      ],
+      "explanation": "run 双写 n 加 -ing：is running。",
+      "error_tag": "G-T17"
+    },
+    {
+      "id": "G-T17-L2-01",
+      "level": "L2",
+      "stem": "She ____ (sit) by the window and reading a book.",
+      "options": [
+        { "key": "A", "text": "is sitting", "answer": true },
+        { "key": "B", "text": "is siting", "distractor": "sit 是重读闭音节，要双写 t" },
+        { "key": "C", "text": "sits", "distractor": "后面的 reading 提示这里也是进行时" },
+        { "key": "D", "text": "siting", "distractor": "缺少 be 动词，且拼写错了" }
+      ],
+      "explanation": "sit 双写 t 加 -ing：is sitting（与 reading 并列）。",
+      "error_tag": "G-T17"
+    },
+    {
+      "id": "G-T17-L2-02",
+      "level": "L2",
+      "stem": "The students ____ (have) a maths lesson at the moment.",
+      "options": [
+        { "key": "A", "text": "have", "distractor": "at the moment 说明此刻正在进行" },
+        { "key": "B", "text": "are having", "answer": true },
+        { "key": "C", "text": "has", "distractor": "the students 是复数，且缺 be 动词" },
+        { "key": "D", "text": "having", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "have 表示“上课、进行某项活动”时可以用进行时：are having。",
+      "error_tag": "G-T17"
+    },
+    {
+      "id": "G-T17-L3-01",
+      "level": "L3",
+      "stem": "下面哪个单词拼写是错误的？",
+      "options": [
+        { "key": "A", "text": "making", "distractor": "正确：make 去 e" },
+        { "key": "B", "text": "running", "distractor": "正确：run 双写 n" },
+        { "key": "C", "text": "swiming", "answer": true },
+        { "key": "D", "text": "writing", "distractor": "正确：write 去 e" }
+      ],
+      "explanation": "swim 是重读闭音节，正确拼写是 swimming（双写 m）。",
+      "error_tag": "G-T17"
+    },
+    {
+      "id": "G-T17-L3-02",
+      "level": "L3",
+      "stem": "He ____ (lie) in bed and reading a story book now.",
+      "options": [
+        { "key": "A", "text": "is lieing", "distractor": "ie 结尾要变 y 再加 ing" },
+        { "key": "B", "text": "is lying", "answer": true },
+        { "key": "C", "text": "lying", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "lies", "distractor": "后面的 reading 和 now 提示用进行时" }
+      ],
+      "explanation": "lie 以 ie 结尾，变 y 加 -ing：is lying（不要写成 lieing）。",
+      "error_tag": "G-T17"
+    }
+  ]
+}

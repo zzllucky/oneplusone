@@ -1,0 +1,99 @@
+{
+  "id": "G-T22",
+  "type": "rule",
+  "module": "T",
+  "module_name": "过去进行时",
+  "title": "长动作被打断",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I was taking a shower when the phone rang.", "zh": "电话响的时候我正在洗澡。" }
+    ],
+    "question": "洗澡和电话响，哪个先开始？",
+    "options": [
+      {
+        "key": "A",
+        "text": "洗澡先开始，正在洗的时候被电话打断",
+        "feedback": "对！长动作用过去进行时，短动作用一般过去时，这就是“长动作被打断”。"
+      },
+      {
+        "key": "B",
+        "text": "电话先响，然后才开始洗澡",
+        "feedback": "不对——句子里 was taking 说明洗澡是已经在进行中的背景动作。"
+      },
+      {
+        "key": "C",
+        "text": "两件事同时开始",
+        "feedback": "不对——洗澡是持续过程，电话响只是一瞬间。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "一个持续的长动作（过去进行时）正在进行时，被一个短暂的动作用（一般过去时）打断",
+    "signals": ["when + 瞬间动词（rang / came / began / went out）"],
+    "formula": "长动作：was / were + 动词-ing　+　when　+　短动作：动词过去式",
+    "anchors": [
+      {
+        "en": "I was taking a shower when the phone rang.",
+        "zh": "电话响的时候我正在洗澡。",
+        "note": "洗澡（长）被电话响（短）打断"
+      },
+      {
+        "en": "We were having dinner when the lights went out.",
+        "zh": "停电的时候我们正在吃饭。",
+        "note": "吃饭（长）被停电（短）打断"
+      }
+    ],
+    "trap": {
+      "wrong": "I took a shower when the phone was ringing.",
+      "right": "I was taking a shower when the phone rang.",
+      "why": "长动作（洗澡）要用过去进行时，短动作（响）用一般过去时，两个时态不能放反。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住口诀：长的用进行时，短的用过去时，when 连中间。",
+  "check": [
+    {
+      "id": "G-T22-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "We ____ (have) dinner when the lights went out.",
+      "options": [
+        { "key": "A", "text": "had", "distractor": "吃饭是长动作，要用进行时表示正在进行" },
+        { "key": "B", "text": "were having", "answer": true },
+        { "key": "C", "text": "have", "distractor": "这是过去的事" },
+        { "key": "D", "text": "are having", "distractor": "went out 说明是过去" }
+      ],
+      "explanation": "吃饭是长动作，用 were having；停电是短动作，用 went out。",
+      "error_tag": "G-T22"
+    },
+    {
+      "id": "G-T22-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "She ____ (walk) home when it began to rain.",
+      "options": [
+        { "key": "A", "text": "walked", "distractor": "走路是长动作，要用进行时" },
+        { "key": "B", "text": "was walking", "answer": true },
+        { "key": "C", "text": "walks", "distractor": "这是过去的事" },
+        { "key": "D", "text": "is walking", "distractor": "began 说明是过去" }
+      ],
+      "explanation": "走路是持续动作，用 was walking；开始下雨是瞬间动作，用 began。",
+      "error_tag": "G-T22"
+    },
+    {
+      "id": "G-T22-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "I was sleeping when the door bell rang.", "answer": true },
+        { "key": "B", "text": "I slept when the door bell was ringing.", "distractor": "睡觉是长动作，要用进行时；铃响是短动作，用过去式" },
+        { "key": "C", "text": "I sleeping when the door bell rang.", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "I was sleep when the door bell rang.", "distractor": "be 动词后要接 -ing 形式" }
+      ],
+      "explanation": "长动作睡觉用 was sleeping，短动作铃响用 rang。",
+      "error_tag": "G-T22"
+    }
+  ]
+}

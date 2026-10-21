@@ -1,0 +1,84 @@
+{
+  "point_id": "G-F04",
+  "title": "make / let / have + do",
+  "questions": [
+    {
+      "id": "G-F04-L1-01",
+      "level": "L1",
+      "stem": "Don't let the children ____ (play) with fire.",
+      "options": [
+        { "key": "A", "text": "play", "answer": true },
+        { "key": "B", "text": "to play", "distractor": "let 后面要省略 to" },
+        { "key": "C", "text": "playing", "distractor": "let sb 后面接动词原形" },
+        { "key": "D", "text": "played", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "let sb do sth（省略 to）。",
+      "error_tag": "G-F04"
+    },
+    {
+      "id": "G-F04-L1-02",
+      "level": "L1",
+      "stem": "The teacher made him ____ (stand) outside the classroom.",
+      "options": [
+        { "key": "A", "text": "stand", "answer": true },
+        { "key": "B", "text": "to stand", "distractor": "make 后面要省略 to" },
+        { "key": "C", "text": "standing", "distractor": "make sb 后面接动词原形" },
+        { "key": "D", "text": "stood", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "make sb do sth（省略 to）。",
+      "error_tag": "G-F04"
+    },
+    {
+      "id": "G-F04-L2-01",
+      "level": "L2",
+      "stem": "The funny film made all of us ____ (laugh).",
+      "options": [
+        { "key": "A", "text": "laugh", "answer": true },
+        { "key": "B", "text": "to laugh", "distractor": "make 后面要省略 to" },
+        { "key": "C", "text": "laughed", "distractor": "这不是谓语位置" },
+        { "key": "D", "text": "laughing", "distractor": "make sb 后面接动词原形" }
+      ],
+      "explanation": "make sb do sth。",
+      "error_tag": "G-F04"
+    },
+    {
+      "id": "G-F04-L2-02",
+      "level": "L2",
+      "stem": "In the old days, the workers were made ____ (work) twelve hours a day.",
+      "options": [
+        { "key": "A", "text": "work", "distractor": "变被动时 to 要还原" },
+        { "key": "B", "text": "to work", "answer": true },
+        { "key": "C", "text": "working", "distractor": "被动后接 to do" },
+        { "key": "D", "text": "worked", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "make 变被动要还原 to：were made to work。",
+      "error_tag": "G-F04"
+    },
+    {
+      "id": "G-F04-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "Let him try again.", "distractor": "正确" },
+        { "key": "B", "text": "The boss made them to work on Sunday.", "answer": true },
+        { "key": "C", "text": "His words made me think a lot.", "distractor": "正确" },
+        { "key": "D", "text": "Let's have a rest now.", "distractor": "正确" }
+      ],
+      "explanation": "make 后面要省略 to：made them work。",
+      "error_tag": "G-F04"
+    },
+    {
+      "id": "G-F04-L3-02",
+      "level": "L3",
+      "stem": "— What did your father have you ____ yesterday? — He had me ____ the car.",
+      "options": [
+        { "key": "A", "text": "do; wash", "answer": true },
+        { "key": "B", "text": "to do; to wash", "distractor": "have sb 后面要省略 to" },
+        { "key": "C", "text": "do; to wash", "distractor": "第二个空也要省略 to" },
+        { "key": "D", "text": "to do; wash", "distractor": "第一个空也要省略 to" }
+      ],
+      "explanation": "have sb do sth，两处都省略 to。",
+      "error_tag": "G-F04"
+    }
+  ]
+}

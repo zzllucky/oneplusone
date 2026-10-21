@@ -1,0 +1,100 @@
+{
+  "id": "G-C01",
+  "type": "rule",
+  "module": "C",
+  "module_name": "定语从句",
+  "title": "关系代词的选择",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "The boy who is standing there is my brother.", "zh": "站在那边的那个男孩是我弟弟。" },
+      { "en": "The book which I bought yesterday is very useful.", "zh": "我昨天买的那本书很有用。" }
+    ],
+    "question": "先行词指人时用什么，指物时用什么？",
+    "options": [
+      {
+        "key": "A",
+        "text": "指人用 who / whom / that，指物用 which / that",
+        "feedback": "对！先看先行词是人还是物，再看在从句里作主语还是宾语。"
+      },
+      {
+        "key": "B",
+        "text": "指人用 which，指物用 who",
+        "feedback": "不对——正好说反了，which 指物、who 指人。"
+      },
+      {
+        "key": "C",
+        "text": "都能用 what",
+        "feedback": "不对——定语从句里没有 what 这个关系词。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "先行词指人用 who（主格）/ whom（宾格）/ that；指物用 which / that；关系代词在从句中作宾语时可以省略；从句谓语的单复数与先行词保持一致",
+    "signals": ["who", "whom", "which", "that", "先行词指人 / 指物"],
+    "formula": "① 人作主语：The girl who / that is singing is my sister.　② 人作宾语：The boy (who / whom / that) I met is Tom.（可省）　③ 物：The book which / that I read was interesting.　④ 谓语随先行词：He is one of the boys who are…",
+    "anchors": [
+      {
+        "en": "The man who lives next door is a doctor.",
+        "zh": "住在隔壁的那个人是医生。",
+        "note": "who 作主语"
+      },
+      {
+        "en": "The pen (which) you gave me is very nice.",
+        "zh": "你给我的那支笔很好用。",
+        "note": "作宾语可省略"
+      }
+    ],
+    "trap": {
+      "wrong": "The book who I bought yesterday is useful.",
+      "right": "The book which / that I bought yesterday is useful.",
+      "why": "book 是物，要用 which / that，不能用 who。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——人用 who/whom，物用 which，两种都能用 that；作宾语时可以省略。",
+  "check": [
+    {
+      "id": "G-C01-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The girl ____ is drawing a picture is my classmate.",
+      "options": [
+        { "key": "A", "text": "who", "answer": true },
+        { "key": "B", "text": "which", "distractor": "先行词 girl 是人" },
+        { "key": "C", "text": "whom", "distractor": "whom 作宾语，这里缺主语" },
+        { "key": "D", "text": "what", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "先行词是人且在从句中作主语 → who。",
+      "error_tag": "G-C01"
+    },
+    {
+      "id": "G-C01-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "This is the book ____ I told you about.",
+      "options": [
+        { "key": "A", "text": "who", "distractor": "book 是物" },
+        { "key": "B", "text": "which", "answer": true },
+        { "key": "C", "text": "what", "distractor": "定语从句不用 what" },
+        { "key": "D", "text": "whom", "distractor": "whom 指人" }
+      ],
+      "explanation": "先行词是物 → which（作宾语也可省略）。",
+      "error_tag": "G-C01"
+    },
+    {
+      "id": "G-C01-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The boy who is playing basketball is Tom.", "answer": true },
+        { "key": "B", "text": "The boy which is playing basketball is Tom.", "distractor": "boy 是人，用 who" },
+        { "key": "C", "text": "The boy what is playing basketball is Tom.", "distractor": "定语从句不用 what" },
+        { "key": "D", "text": "The boy whom is playing basketball is Tom.", "distractor": "whom 作宾语，这里缺主语" }
+      ],
+      "explanation": "人作主语 → who。",
+      "error_tag": "G-C01"
+    }
+  ]
+}

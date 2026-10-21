@@ -1,0 +1,84 @@
+{
+  "point_id": "G-S03",
+  "title": "原因状语从句",
+  "questions": [
+    {
+      "id": "G-S03-L1-01",
+      "level": "L1",
+      "stem": "— Why were you late? — ____ I missed the early bus.",
+      "options": [
+        { "key": "A", "text": "Because", "answer": true },
+        { "key": "B", "text": "So", "distractor": "回答 why 要用 because" },
+        { "key": "C", "text": "But", "distractor": "不是转折关系" },
+        { "key": "D", "text": "Though", "distractor": "不是让步关系" }
+      ],
+      "explanation": "回答 why → Because。",
+      "error_tag": "G-S03"
+    },
+    {
+      "id": "G-S03-L1-02",
+      "level": "L1",
+      "stem": "He couldn't walk fast ____ his broken leg.",
+      "options": [
+        { "key": "A", "text": "because", "distractor": "后面是名词短语，要用 because of" },
+        { "key": "B", "text": "because of", "answer": true },
+        { "key": "C", "text": "though", "distractor": "不是让步关系" },
+        { "key": "D", "text": "so", "distractor": "so 后接结果，不接原因" }
+      ],
+      "explanation": "后面是名词 his broken leg → because of。",
+      "error_tag": "G-S03"
+    },
+    {
+      "id": "G-S03-L2-01",
+      "level": "L2",
+      "stem": "____ everyone is here, let's begin the meeting.",
+      "options": [
+        { "key": "A", "text": "Since", "answer": true },
+        { "key": "B", "text": "Because of", "distractor": "后面是句子，不能用 because of" },
+        { "key": "C", "text": "So", "distractor": "这里要“既然”，不是“所以”" },
+        { "key": "D", "text": "But", "distractor": "不是转折关系" }
+      ],
+      "explanation": "“既然大家都到了” → Since。",
+      "error_tag": "G-S03"
+    },
+    {
+      "id": "G-S03-L2-02",
+      "level": "L2",
+      "stem": "The sports meeting was put off ____ it rained heavily.",
+      "options": [
+        { "key": "A", "text": "because of", "distractor": "后面是句子，要用 because" },
+        { "key": "B", "text": "because", "answer": true },
+        { "key": "C", "text": "so", "distractor": "so 引导结果，位置不对" },
+        { "key": "D", "text": "though", "distractor": "不是让步关系" }
+      ],
+      "explanation": "后面是完整句子 → because。",
+      "error_tag": "G-S03"
+    },
+    {
+      "id": "G-S03-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He didn't go to school because he was ill.", "distractor": "正确" },
+        { "key": "B", "text": "It was raining hard, so we stayed inside.", "distractor": "正确" },
+        { "key": "C", "text": "Because the traffic was heavy, so I was late.", "answer": true },
+        { "key": "D", "text": "We had to wait because of the bad weather.", "distractor": "正确" }
+      ],
+      "explanation": "because 和 so 不能连用，去掉其中一个。",
+      "error_tag": "G-S03"
+    },
+    {
+      "id": "G-S03-L3-02",
+      "level": "L3",
+      "stem": "— I didn't go to the party ____ I had a lot of homework. — What a pity!",
+      "options": [
+        { "key": "A", "text": "because", "answer": true },
+        { "key": "B", "text": "because of", "distractor": "后面是句子，要用 because" },
+        { "key": "C", "text": "so", "distractor": "so 要放在结果句" },
+        { "key": "D", "text": "though", "distractor": "不是让步关系" }
+      ],
+      "explanation": "后面是完整句子 I had… → because。",
+      "error_tag": "G-S03"
+    }
+  ]
+}

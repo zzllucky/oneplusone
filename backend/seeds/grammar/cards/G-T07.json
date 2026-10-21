@@ -1,0 +1,79 @@
+{
+  "id": "G-T07",
+  "type": "memorize",
+  "module": "T",
+  "module_name": "一般过去时",
+  "title": "不规则动词过去式·高频分组",
+  "depth": "核心",
+  "note": "速记卡：浏览即过，不设题目；是否在 L2 变形层做对，才说明真的记住了。",
+  "groups": [
+    {
+      "pattern": "三形不变（AAA）",
+      "tip": "put / cut / read 三个词写出来一个样，read 只是读音变了。",
+      "items": [
+        { "base": "put", "past": "put", "participle": "put", "zh": "放" },
+        { "base": "cut", "past": "cut", "participle": "cut", "zh": "切" },
+        { "base": "read", "past": "read", "participle": "read", "zh": "读（拼写不变，读音变 /e/）" }
+      ],
+      "anchor": { "en": "I put the book on the desk yesterday.", "zh": "我昨天把书放在桌上。" }
+    },
+    {
+      "pattern": "i → a → u（游泳四兄弟）",
+      "tip": "中间变成 a、结尾变成 u，四个词同款。",
+      "items": [
+        { "base": "begin", "past": "began", "participle": "begun", "zh": "开始" },
+        { "base": "drink", "past": "drank", "participle": "drunk", "zh": "喝" },
+        { "base": "sing", "past": "sang", "participle": "sung", "zh": "唱" },
+        { "base": "swim", "past": "swam", "participle": "swum", "zh": "游泳" }
+      ],
+      "anchor": { "en": "We began to learn English three years ago.", "zh": "我们三年前开始学英语。" }
+    },
+    {
+      "pattern": "结尾 -ought / -aught",
+      "tip": "过去式和过去分词同形，都带 -ought 或 -aught。",
+      "items": [
+        { "base": "bring", "past": "brought", "participle": "brought", "zh": "带来" },
+        { "base": "buy", "past": "bought", "participle": "bought", "zh": "买" },
+        { "base": "think", "past": "thought", "participle": "thought", "zh": "想" },
+        { "base": "catch", "past": "caught", "participle": "caught", "zh": "抓住" },
+        { "base": "teach", "past": "taught", "participle": "taught", "zh": "教" }
+      ],
+      "anchor": { "en": "I bought a new bike last week.", "zh": "我上周买了一辆新自行车。" }
+    },
+    {
+      "pattern": "-eep / -ell → -ept / -elt",
+      "tip": "去掉一个 e，末尾直接加 t。",
+      "items": [
+        { "base": "keep", "past": "kept", "participle": "kept", "zh": "保持" },
+        { "base": "sleep", "past": "slept", "participle": "slept", "zh": "睡觉" },
+        { "base": "feel", "past": "felt", "participle": "felt", "zh": "感觉" }
+      ],
+      "anchor": { "en": "He kept the secret for years.", "zh": "他保守这个秘密好几年了。" }
+    },
+    {
+      "pattern": "ow → ew → own",
+      "tip": "过去式变 ew，过去分词变 own。",
+      "items": [
+        { "base": "know", "past": "knew", "participle": "known", "zh": "知道" },
+        { "base": "grow", "past": "grew", "participle": "grown", "zh": "生长" },
+        { "base": "throw", "past": "threw", "participle": "thrown", "zh": "扔" }
+      ],
+      "anchor": { "en": "She knew the answer at once.", "zh": "她立刻就知道了答案。" }
+    },
+    {
+      "pattern": "其他高频（没规律，只能单独记）",
+      "tip": "come 的过去分词回到原形 come；go 的过去分词是 gone，不是 went。",
+      "items": [
+        { "base": "go", "past": "went", "participle": "gone", "zh": "去" },
+        { "base": "do", "past": "did", "participle": "done", "zh": "做" },
+        { "base": "see", "past": "saw", "participle": "seen", "zh": "看见" },
+        { "base": "take", "past": "took", "participle": "taken", "zh": "拿" },
+        { "base": "eat", "past": "ate", "participle": "eaten", "zh": "吃" },
+        { "base": "write", "past": "wrote", "participle": "written", "zh": "写" },
+        { "base": "come", "past": "came", "participle": "come", "zh": "来" },
+        { "base": "give", "past": "gave", "participle": "given", "zh": "给" }
+      ],
+      "anchor": { "en": "They went to the museum last Sunday.", "zh": "他们上周日去了博物馆。" }
+    }
+  ]
+}

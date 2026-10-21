@@ -1,0 +1,84 @@
+{
+  "point_id": "G-U01",
+  "title": "基数词与序数词",
+  "questions": [
+    {
+      "id": "G-U01-L1-01",
+      "level": "L1",
+      "stem": "Thursday is the ____ day of the week.",
+      "options": [
+        { "key": "A", "text": "five", "distractor": "要用序数词" },
+        { "key": "B", "text": "fifth", "answer": true },
+        { "key": "C", "text": "fiveth", "distractor": "拼写错误" },
+        { "key": "D", "text": "fivth", "distractor": "拼写错误" }
+      ],
+      "explanation": "第五天 → fifth（five 变 ve 为 f 加 th）。",
+      "error_tag": "G-U01"
+    },
+    {
+      "id": "G-U01-L1-02",
+      "level": "L1",
+      "stem": "There are ____ days in a week.",
+      "options": [
+        { "key": "A", "text": "seven", "answer": true },
+        { "key": "B", "text": "seventh", "distractor": "这里问数量，用基数词" },
+        { "key": "C", "text": "the seventh", "distractor": "这里问数量，不是排序" },
+        { "key": "D", "text": "seventeen", "distractor": "一周不是十七天" }
+      ],
+      "explanation": "表示数量用基数词 seven。",
+      "error_tag": "G-U01"
+    },
+    {
+      "id": "G-U01-L2-01",
+      "level": "L2",
+      "stem": "He was born on the ____ of May.",
+      "options": [
+        { "key": "A", "text": "twenty-one", "distractor": "日期要用序数词" },
+        { "key": "B", "text": "twenty-first", "answer": true },
+        { "key": "C", "text": "twenty-oneth", "distractor": "拼写错误" },
+        { "key": "D", "text": "twentieth-one", "distractor": "几十几只变个位" }
+      ],
+      "explanation": "21 日 → twenty-first（只把个位变序数）。",
+      "error_tag": "G-U01"
+    },
+    {
+      "id": "G-U01-L2-02",
+      "level": "L2",
+      "stem": "The ____ month of the year is December.",
+      "options": [
+        { "key": "A", "text": "twelve", "distractor": "要用序数词" },
+        { "key": "B", "text": "twelveth", "distractor": "拼写错误" },
+        { "key": "C", "text": "twelfth", "answer": true },
+        { "key": "D", "text": "twelth", "distractor": "拼写错误" }
+      ],
+      "explanation": "第十二个月 → twelfth。",
+      "error_tag": "G-U01"
+    },
+    {
+      "id": "G-U01-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "January is the first month of the year.", "distractor": "正确" },
+        { "key": "B", "text": "He is the third child in his family.", "distractor": "正确" },
+        { "key": "C", "text": "Our classroom is on the nineth floor.", "answer": true },
+        { "key": "D", "text": "This is my twentieth birthday.", "distractor": "正确" }
+      ],
+      "explanation": "第九层应是 the ninth floor，nine 去 e 加 th。",
+      "error_tag": "G-U01"
+    },
+    {
+      "id": "G-U01-L3-02",
+      "level": "L3",
+      "stem": "— How many students took part in it? — ____ of them. About two hundred.",
+      "options": [
+        { "key": "A", "text": "Hundred", "distractor": "表示概数要用 hundreds of" },
+        { "key": "B", "text": "Hundreds", "distractor": "要有 of" },
+        { "key": "C", "text": "Two hundred", "answer": true },
+        { "key": "D", "text": "Two hundreds", "distractor": "有具体数字时不加 s" }
+      ],
+      "explanation": "确切数字：two hundred（不加 s、不加 of）。",
+      "error_tag": "G-U01"
+    }
+  ]
+}

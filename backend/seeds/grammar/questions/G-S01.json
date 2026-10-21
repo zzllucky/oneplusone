@@ -1,0 +1,84 @@
+{
+  "point_id": "G-S01",
+  "title": "时间状语从句",
+  "questions": [
+    {
+      "id": "G-S01-L1-01",
+      "level": "L1",
+      "stem": "I was watching TV ____ my mother came back.",
+      "options": [
+        { "key": "A", "text": "when", "answer": true },
+        { "key": "B", "text": "while", "distractor": "came back 是短暂动作，while 要接持续动作" },
+        { "key": "C", "text": "until", "distractor": "意思不符" },
+        { "key": "D", "text": "as soon as", "distractor": "意思不符" }
+      ],
+      "explanation": "when 可以接短暂动作 came back。",
+      "error_tag": "G-S01"
+    },
+    {
+      "id": "G-S01-L1-02",
+      "level": "L1",
+      "stem": "____ I was walking in the street, I met an old friend of mine.",
+      "options": [
+        { "key": "A", "text": "While", "answer": true },
+        { "key": "B", "text": "Until", "distractor": "意思不符" },
+        { "key": "C", "text": "As soon as", "distractor": "意思不符" },
+        { "key": "D", "text": "After", "distractor": "与“正在走”的语境不符" }
+      ],
+      "explanation": "while 接持续性动作（进行时态）。",
+      "error_tag": "G-S01"
+    },
+    {
+      "id": "G-S01-L2-01",
+      "level": "L2",
+      "stem": "We ____ leave ____ the rain stopped.",
+      "options": [
+        { "key": "A", "text": "didn't; until", "answer": true },
+        { "key": "B", "text": "don't; until", "distractor": "stopped 是过去时，主句也要用过去时" },
+        { "key": "C", "text": "didn't; when", "distractor": "“直到雨停才走”用 not…until" },
+        { "key": "D", "text": "weren't; until", "distractor": "leave 是实义动词，用 didn't 否定" }
+      ],
+      "explanation": "直到雨停才走 → didn't leave until。",
+      "error_tag": "G-S01"
+    },
+    {
+      "id": "G-S01-L2-02",
+      "level": "L2",
+      "stem": "— Please give him the message ____ he comes back. — OK, I will.",
+      "options": [
+        { "key": "A", "text": "as soon as", "answer": true },
+        { "key": "B", "text": "until", "distractor": "意思不符" },
+        { "key": "C", "text": "while", "distractor": "comes back 是短暂动作" },
+        { "key": "D", "text": "before", "distractor": "与“他回来后再给”矛盾" }
+      ],
+      "explanation": "一回来就给 → as soon as。",
+      "error_tag": "G-S01"
+    },
+    {
+      "id": "G-S01-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I'll wait here until he comes.", "distractor": "正确" },
+        { "key": "B", "text": "He was reading while his sister was singing.", "distractor": "正确" },
+        { "key": "C", "text": "The baby stopped crying as soon as he saw his mother.", "distractor": "正确" },
+        { "key": "D", "text": "I will tell her the news when she will come.", "answer": true }
+      ],
+      "explanation": "时间从句要用一般现在时表将来：when she comes。",
+      "error_tag": "G-S01"
+    },
+    {
+      "id": "G-S01-L3-02",
+      "level": "L3",
+      "stem": "— Did you know he was ill? — Yes. I ____ about it ____ he told me.",
+      "options": [
+        { "key": "A", "text": "didn't know; until", "answer": true },
+        { "key": "B", "text": "don't know; until", "distractor": "told 是过去时，主句也要用过去时" },
+        { "key": "C", "text": "didn't know; when", "distractor": "“直到他告诉我才知道”用 not…until" },
+        { "key": "D", "text": "knew; until", "distractor": "缺少否定，意思变成“知道，直到他告诉我”" }
+      ],
+      "explanation": "直到他告诉我才知道 → didn't know until。",
+      "error_tag": "G-S01"
+    }
+  ]
+}

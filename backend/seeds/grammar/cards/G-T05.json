@@ -1,0 +1,100 @@
+{
+  "id": "G-T05",
+  "type": "rule",
+  "module": "T",
+  "module_name": "一般过去时",
+  "title": "一般过去时·基本用法与标志词",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I watched a movie last night.", "zh": "我昨晚看了一场电影。" },
+      { "en": "He went to Beijing three days ago.", "zh": "他三天前去了北京。" }
+    ],
+    "question": "这两句话说的都是什么时候的事？",
+    "options": [
+      {
+        "key": "A",
+        "text": "现在的习惯",
+        "feedback": "不对——习惯要用一般现在时（watches / goes），这里说的是已经发生的一次。"
+      },
+      {
+        "key": "B",
+        "text": "过去某个时间发生、现在已经结束的事",
+        "feedback": "对！last night、three days ago 都指向过去，事情已经结束。"
+      },
+      {
+        "key": "C",
+        "text": "过去发生、对现在还有影响的事",
+        "feedback": "不对——那是现在完成时（I have watched），这两句只是在陈述过去发生了什么。"
+      }
+    ],
+    "answer": "B"
+  },
+  "rule": {
+    "rule": "过去某个时间发生的动作或存在的状态，跟现在没有联系",
+    "signals": ["yesterday", "last night/week/year", "…ago", "in 2019", "just now", "when I was young"],
+    "formula": "动词过去式（规则动词 +ed，不规则动词要单独记）",
+    "anchors": [
+      {
+        "en": "I watched a movie last night.",
+        "zh": "我昨晚看了一场电影。",
+        "note": "标志词 last night"
+      },
+      {
+        "en": "He went to Beijing three days ago.",
+        "zh": "他三天前去了北京。",
+        "note": "标志词 three days ago，go 的过去式是 went"
+      }
+    ],
+    "trap": {
+      "wrong": "I have watched a movie last night.",
+      "right": "I watched a movie last night.",
+      "why": "句子里出现具体过去时间点（last night），就不能用现在完成时。"
+    }
+  },
+  "guess_callback": "你刚才选的是 B——记住：一般过去时说的是“过去某一点发生、已经结束”，看到 yesterday / last… / …ago 就选它。",
+  "check": [
+    {
+      "id": "G-T05-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "We ____ a picnic in the park last Sunday.",
+      "options": [
+        { "key": "A", "text": "have", "distractor": "last Sunday 是过去时间，要用过去式" },
+        { "key": "B", "text": "has", "distractor": "时态和人称都不对" },
+        { "key": "C", "text": "had", "answer": true },
+        { "key": "D", "text": "having", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "last Sunday 表示过去，have 的过去式是 had（不分人称）。",
+      "error_tag": "G-T05"
+    },
+    {
+      "id": "G-T05-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He ____ (go) to the zoo yesterday.",
+      "options": [
+        { "key": "A", "text": "go", "distractor": "yesterday 要用过去式" },
+        { "key": "B", "text": "goes", "distractor": "这是三单形式，不是过去式" },
+        { "key": "C", "text": "goed", "distractor": "go 是不规则动词，过去式不是加 ed" },
+        { "key": "D", "text": "went", "answer": true }
+      ],
+      "explanation": "go 是不规则动词，过去式是 went（没有 goed 这个词）。",
+      "error_tag": "G-T05"
+    },
+    {
+      "id": "G-T05-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "I was very busy yesterday.", "answer": true },
+        { "key": "B", "text": "I am very busy yesterday.", "distractor": "yesterday 要用 be 动词过去式 was" },
+        { "key": "C", "text": "I were very busy yesterday.", "distractor": "I 搭配 was，不是 were" },
+        { "key": "D", "text": "I be very busy yesterday.", "distractor": "be 是原形，不能作谓语" }
+      ],
+      "explanation": "be 动词的过去式：I / he / she / it 用 was，we / you / they 用 were。",
+      "error_tag": "G-T05"
+    }
+  ]
+}

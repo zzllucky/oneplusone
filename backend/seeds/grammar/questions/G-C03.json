@@ -1,0 +1,84 @@
+{
+  "point_id": "G-C03",
+  "title": "关系副词",
+  "questions": [
+    {
+      "id": "G-C03-L1-01",
+      "level": "L1",
+      "stem": "I'll never forget the year ____ I first came to this school.",
+      "options": [
+        { "key": "A", "text": "when", "answer": true },
+        { "key": "B", "text": "where", "distractor": "先行词是时间" },
+        { "key": "C", "text": "which", "distractor": "从句不缺主宾" },
+        { "key": "D", "text": "what", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "先行词表时间 → when。",
+      "error_tag": "G-C03"
+    },
+    {
+      "id": "G-C03-L1-02",
+      "level": "L1",
+      "stem": "The town ____ I grew up is very small but beautiful.",
+      "options": [
+        { "key": "A", "text": "which", "distractor": "从句不缺主宾，缺地点状语" },
+        { "key": "B", "text": "where", "answer": true },
+        { "key": "C", "text": "when", "distractor": "先行词是地点" },
+        { "key": "D", "text": "what", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "先行词表地点 → where。",
+      "error_tag": "G-C03"
+    },
+    {
+      "id": "G-C03-L2-01",
+      "level": "L2",
+      "stem": "— Do you know the reason ____ he didn't come? — His bike was broken.",
+      "options": [
+        { "key": "A", "text": "why", "answer": true },
+        { "key": "B", "text": "which", "distractor": "从句不缺主宾" },
+        { "key": "C", "text": "when", "distractor": "reason 不表时间" },
+        { "key": "D", "text": "where", "distractor": "reason 不表地点" }
+      ],
+      "explanation": "先行词是 the reason → why。",
+      "error_tag": "G-C03"
+    },
+    {
+      "id": "G-C03-L2-02",
+      "level": "L2",
+      "stem": "This is the house in ____ Lu Xun once lived.",
+      "options": [
+        { "key": "A", "text": "that", "distractor": "介词后面不能用 that" },
+        { "key": "B", "text": "which", "answer": true },
+        { "key": "C", "text": "who", "distractor": "house 是物" },
+        { "key": "D", "text": "where", "distractor": "where 前面不能再加介词 in" }
+      ],
+      "explanation": "介词 + which（= where）。",
+      "error_tag": "G-C03"
+    },
+    {
+      "id": "G-C03-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "This is the park where we took photos yesterday.", "distractor": "正确" },
+        { "key": "B", "text": "I remember the day when our team won.", "distractor": "正确" },
+        { "key": "C", "text": "That is the school which I studied three years ago.", "answer": true },
+        { "key": "D", "text": "Tell me the reason why you are unhappy.", "distractor": "正确" }
+      ],
+      "explanation": "从句不缺宾语，要用 where（或 in which）。",
+      "error_tag": "G-C03"
+    },
+    {
+      "id": "G-C03-L3-02",
+      "level": "L3",
+      "stem": "— Is this the village ____ you visited last summer? — Yes. We had a great time there.",
+      "options": [
+        { "key": "A", "text": "where", "distractor": "visited 后面缺宾语，要用关系代词" },
+        { "key": "B", "text": "which", "answer": true },
+        { "key": "C", "text": "when", "distractor": "visited 后面缺宾语" },
+        { "key": "D", "text": "what", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "visited 缺宾语 → 用关系代词 which。",
+      "error_tag": "G-C03"
+    }
+  ]
+}

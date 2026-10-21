@@ -1,0 +1,84 @@
+{
+  "point_id": "G-R03",
+  "title": "it / one / that 的替代",
+  "questions": [
+    {
+      "id": "G-R03-L1-01",
+      "level": "L1",
+      "stem": "I bought a new bike yesterday. ____ is black.",
+      "options": [
+        { "key": "A", "text": "It", "answer": true },
+        { "key": "B", "text": "One", "distractor": "one 指另一辆，这里说的是刚买的那辆" },
+        { "key": "C", "text": "That", "distractor": "这里不是比较句" },
+        { "key": "D", "text": "This", "distractor": "this 不用于替代前句提到的事物" }
+      ],
+      "explanation": "指刚买的那辆（同一个）→ It。",
+      "error_tag": "G-R03"
+    },
+    {
+      "id": "G-R03-L1-02",
+      "level": "L1",
+      "stem": "— I like your new watch. — Thanks. I can buy ____ for you, too.",
+      "options": [
+        { "key": "A", "text": "it", "distractor": "不能买“你这块”，是买同款的另一块" },
+        { "key": "B", "text": "one", "answer": true },
+        { "key": "C", "text": "that", "distractor": "这里不是比较句" },
+        { "key": "D", "text": "this", "distractor": "this 不用于替代" }
+      ],
+      "explanation": "买同款的另一块 → one。",
+      "error_tag": "G-R03"
+    },
+    {
+      "id": "G-R03-L2-01",
+      "level": "L2",
+      "stem": "The population of China is larger than ____ of Japan.",
+      "options": [
+        { "key": "A", "text": "it", "distractor": "比较句里替代 the population 要用 that" },
+        { "key": "B", "text": "that", "answer": true },
+        { "key": "C", "text": "one", "distractor": "one 不能替代不可数名词" },
+        { "key": "D", "text": "this", "distractor": "this 不用于这种替代" }
+      ],
+      "explanation": "比较句中用 that 替代前面的 the population。",
+      "error_tag": "G-R03"
+    },
+    {
+      "id": "G-R03-L2-02",
+      "level": "L2",
+      "stem": "My pen is broken. I'll have to buy a new ____.",
+      "options": [
+        { "key": "A", "text": "it", "distractor": "it 指原来那支坏笔，不能说“买它”" },
+        { "key": "B", "text": "one", "answer": true },
+        { "key": "C", "text": "that", "distractor": "这里不是比较句" },
+        { "key": "D", "text": "pen", "distractor": "语法没错，但前面已有 a new，应填代词 one" }
+      ],
+      "explanation": "买一支新的（同类的另一支）→ one。",
+      "error_tag": "G-R03"
+    },
+    {
+      "id": "G-R03-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I have a new dictionary. It is very useful.", "distractor": "正确" },
+        { "key": "B", "text": "I don't like this red bag. Please show me the black one.", "distractor": "正确" },
+        { "key": "C", "text": "The water in the cup is hotter than one in the bottle.", "answer": true },
+        { "key": "D", "text": "The weather in Beijing is colder than that in Guangzhou.", "distractor": "正确" }
+      ],
+      "explanation": "water 是不可数名词，比较句中要用 that，不能用 one。",
+      "error_tag": "G-R03"
+    },
+    {
+      "id": "G-R03-L3-02",
+      "level": "L3",
+      "stem": "— Did you find your lost key? — No, I couldn't find ____, so I had to make a new ____.",
+      "options": [
+        { "key": "A", "text": "it; one", "answer": true },
+        { "key": "B", "text": "one; it", "distractor": "用反了：找不到的是原来那把" },
+        { "key": "C", "text": "it; it", "distractor": "第二空是配一把新的" },
+        { "key": "D", "text": "one; one", "distractor": "第一空指原来那把钥匙" }
+      ],
+      "explanation": "找不到原来那把（it），只好配一把新的（one）。",
+      "error_tag": "G-R03"
+    }
+  ]
+}

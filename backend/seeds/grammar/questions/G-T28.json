@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T28",
+  "title": "过去完成时·过去的过去",
+  "questions": [
+    {
+      "id": "G-T28-L1-01",
+      "level": "L1",
+      "stem": "When I woke up this morning, it ____ (stop) raining.",
+      "options": [
+        { "key": "A", "text": "stopped", "distractor": "雨停发生在我醒来之前" },
+        { "key": "B", "text": "had stopped", "answer": true },
+        { "key": "C", "text": "has stopped", "distractor": "参照点是过去（woke up）" },
+        { "key": "D", "text": "stops", "distractor": "这是现在时" }
+      ],
+      "explanation": "雨在我醒来之前就停了，用 had stopped。",
+      "error_tag": "G-T28"
+    },
+    {
+      "id": "G-T28-L1-02",
+      "level": "L1",
+      "stem": "He ____ (eat) all the cakes before I came in.",
+      "options": [
+        { "key": "A", "text": "ate", "distractor": "吃蛋糕发生在我进来之前" },
+        { "key": "B", "text": "had eaten", "answer": true },
+        { "key": "C", "text": "has eaten", "distractor": "参照点是过去" },
+        { "key": "D", "text": "eats", "distractor": "这是现在时" }
+      ],
+      "explanation": "我进来之前他就吃完了，用 had eaten。",
+      "error_tag": "G-T28"
+    },
+    {
+      "id": "G-T28-L2-01",
+      "level": "L2",
+      "stem": "The bus ____ (go) when we got to the stop.",
+      "options": [
+        { "key": "A", "text": "went", "distractor": "车开走在我们到达之前" },
+        { "key": "B", "text": "had gone", "answer": true },
+        { "key": "C", "text": "has gone", "distractor": "参照点是过去" },
+        { "key": "D", "text": "goes", "distractor": "这是现在时" }
+      ],
+      "explanation": "我们到站时车已经开走了，用 had gone。",
+      "error_tag": "G-T28"
+    },
+    {
+      "id": "G-T28-L2-02",
+      "level": "L2",
+      "stem": "She said she ____ (see) the film before.",
+      "options": [
+        { "key": "A", "text": "saw", "distractor": "“之前看过”是比 said 更早的事" },
+        { "key": "B", "text": "had seen", "answer": true },
+        { "key": "C", "text": "has seen", "distractor": "主句是过去时，参照点在过去" },
+        { "key": "D", "text": "sees", "distractor": "这是现在时" }
+      ],
+      "explanation": "“她说她以前看过”，看过发生在说之前，用 had seen。",
+      "error_tag": "G-T28"
+    },
+    {
+      "id": "G-T28-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "The train had left when we arrived.", "distractor": "正确" },
+        { "key": "B", "text": "He had finished the work before dinner.", "distractor": "正确" },
+        { "key": "C", "text": "They have gone home when I called.", "answer": true },
+        { "key": "D", "text": "She had read the book before the class.", "distractor": "正确" }
+      ],
+      "explanation": "called 是过去参照点，应改为 They had gone home when I called。",
+      "error_tag": "G-T28"
+    },
+    {
+      "id": "G-T28-L3-02",
+      "level": "L3",
+      "stem": "— Why didn't you see the film? — Because I ____ (see) it twice.",
+      "options": [
+        { "key": "A", "text": "saw", "distractor": "“看过两次”发生在“没去看”之前" },
+        { "key": "B", "text": "had seen", "answer": true },
+        { "key": "C", "text": "have seen", "distractor": "没去看是过去的事，参照点在过去" },
+        { "key": "D", "text": "see", "distractor": "这是现在时" }
+      ],
+      "explanation": "解释过去为什么没去：之前已经看过两次，用 had seen。",
+      "error_tag": "G-T28"
+    }
+  ]
+}

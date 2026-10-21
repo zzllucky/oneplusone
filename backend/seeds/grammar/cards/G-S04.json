@@ -1,0 +1,100 @@
+{
+  "id": "G-S04",
+  "type": "rule",
+  "module": "S",
+  "module_name": "状语从句",
+  "title": "目的与结果状语从句",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "He got up early so that he could catch the first bus.", "zh": "他起得很早，为的是赶上头班车。" },
+      { "en": "He was so tired that he fell asleep at once.", "zh": "他累得立刻就睡着了。" }
+    ],
+    "question": "so that 和 so … that 有什么不一样？",
+    "options": [
+      {
+        "key": "A",
+        "text": "so that 表目的（为了……）；so + 形容词 + that 表结果（如此……以至于）",
+        "feedback": "对！看意思：一个是“为了做到”，一个是“结果是”。"
+      },
+      {
+        "key": "B",
+        "text": "意思完全一样，只是写法不同",
+        "feedback": "不对——一个说目的，一个说结果，完全不同。"
+      },
+      {
+        "key": "C",
+        "text": "只是位置不同而已",
+        "feedback": "不对——结构也不同：so that 连在一起，so…that 中间要夹形容词。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "so that / in order that 引导目的状语从句（从句常含 can / could / will / would）；so + 形容词或副词 + that、such + (a/an) + 形容词 + 名词 + that 引导结果状语从句",
+    "signals": ["so that", "in order that", "so … that", "such … that"],
+    "formula": "① 目的：so that + 从句（常含 can / could）　② 结果：so + 形容词 / 副词 + that　③ 结果：such + (a / an) + 形容词 + 名词 + that　④ 区别：so 后接形容词副词，such 后接名词",
+    "anchors": [
+      {
+        "en": "He worked hard so that he could pass the exam.",
+        "zh": "他努力学习，为的是能通过考试。",
+        "note": "目的状语从句"
+      },
+      {
+        "en": "It was such a difficult question that nobody could answer it.",
+        "zh": "这个问题太难，没人能回答。",
+        "note": "such + 名词短语 + that"
+      }
+    ],
+    "trap": {
+      "wrong": "He was so a tired boy that he fell asleep soon.",
+      "right": "He was such a tired boy that he fell asleep soon.",
+      "why": "后面是名词短语 a tired boy，要用 such，不用 so。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——so that 表“为了”，so/such…that 表“结果是”；so 接形容词，such 接名词。",
+  "check": [
+    {
+      "id": "G-S04-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He got up very early ____ he could catch the first bus.",
+      "options": [
+        { "key": "A", "text": "so that", "answer": true },
+        { "key": "B", "text": "so", "distractor": "so 单独用不引导从句" },
+        { "key": "C", "text": "such that", "distractor": "such 后面要接名词" },
+        { "key": "D", "text": "in order to", "distractor": "in order to 后面接动词原形，不接句子" }
+      ],
+      "explanation": "表目的 → so that（后面接句子）。",
+      "error_tag": "G-S04"
+    },
+    {
+      "id": "G-S04-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The box was ____ heavy ____ I couldn't carry it.",
+      "options": [
+        { "key": "A", "text": "so; that", "answer": true },
+        { "key": "B", "text": "such; that", "distractor": "such 后面要接名词" },
+        { "key": "C", "text": "too; that", "distractor": "too 要搭配 to，不接 that" },
+        { "key": "D", "text": "very; that", "distractor": "very 不接 that 从句" }
+      ],
+      "explanation": "so + 形容词 heavy + that（结果）。",
+      "error_tag": "G-S04"
+    },
+    {
+      "id": "G-S04-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "It was ____ an interesting film ____ I watched it twice.",
+      "options": [
+        { "key": "A", "text": "so; that", "distractor": "后面是名词 an interesting film，要用 such" },
+        { "key": "B", "text": "such; that", "answer": true },
+        { "key": "C", "text": "such a; that", "distractor": "题干里已有 an" },
+        { "key": "D", "text": "so; as", "distractor": "so…as 用于比较，不表结果" }
+      ],
+      "explanation": "such + an interesting film + that。",
+      "error_tag": "G-S04"
+    }
+  ]
+}

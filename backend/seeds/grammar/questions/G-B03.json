@@ -1,0 +1,84 @@
+{
+  "point_id": "G-B03",
+  "title": "情态动词表推测",
+  "questions": [
+    {
+      "id": "G-B03-L1-01",
+      "level": "L1",
+      "stem": "The ground is wet. It ____ have rained last night.",
+      "options": [
+        { "key": "A", "text": "can't", "distractor": "地面湿了，是肯定推测" },
+        { "key": "B", "text": "must", "answer": true },
+        { "key": "C", "text": "needn't", "distractor": "needn't 不用于推测" },
+        { "key": "D", "text": "mustn't", "distractor": "mustn't 不用于推测" }
+      ],
+      "explanation": "对过去情况的肯定推测：must have rained。",
+      "error_tag": "G-B03"
+    },
+    {
+      "id": "G-B03-L1-02",
+      "level": "L1",
+      "stem": "— Is that man your teacher? — He ____ be. He is only twenty.",
+      "options": [
+        { "key": "A", "text": "mustn't", "distractor": "mustn't 不用于推测" },
+        { "key": "B", "text": "can't", "answer": true },
+        { "key": "C", "text": "needn't", "distractor": "needn't 是“不必”" },
+        { "key": "D", "text": "must", "distractor": "与“他才二十岁”矛盾" }
+      ],
+      "explanation": "才二十岁 → 不可能是老师：can't be。",
+      "error_tag": "G-B03"
+    },
+    {
+      "id": "G-B03-L2-01",
+      "level": "L2",
+      "stem": "— Where is Lucy? — I'm not sure. She ____ be in the library.",
+      "options": [
+        { "key": "A", "text": "must", "distractor": "不确定就不用 must" },
+        { "key": "B", "text": "may", "answer": true },
+        { "key": "C", "text": "can't", "distractor": "与不确定语气矛盾" },
+        { "key": "D", "text": "need", "distractor": "need 不用于推测" }
+      ],
+      "explanation": "不确定 → may be（可能）。",
+      "error_tag": "G-B03"
+    },
+    {
+      "id": "G-B03-L2-02",
+      "level": "L2",
+      "stem": "He ____ have gone to Beijing. I saw him in the office just now.",
+      "options": [
+        { "key": "A", "text": "must", "distractor": "刚在办公室见过，是否定推测" },
+        { "key": "B", "text": "can't", "answer": true },
+        { "key": "C", "text": "may", "distractor": "有确凿证据，不是“可能”" },
+        { "key": "D", "text": "needn't", "distractor": "needn't 不用于推测" }
+      ],
+      "explanation": "刚见过他 → 不可能去了北京：can't have gone。",
+      "error_tag": "G-B03"
+    },
+    {
+      "id": "G-B03-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "The book must be Tom's. His name is on it.", "distractor": "正确" },
+        { "key": "B", "text": "He can't have finished the work so soon.", "distractor": "正确" },
+        { "key": "C", "text": "She mustn't be at home now. The door is locked.", "answer": true },
+        { "key": "D", "text": "It may rain tomorrow.", "distractor": "正确" }
+      ],
+      "explanation": "否定推测要用 can't be，mustn't 不表示推测。",
+      "error_tag": "G-B03"
+    },
+    {
+      "id": "G-B03-L3-02",
+      "level": "L3",
+      "stem": "— Listen! Someone is singing in the next room. — It ____ be Lily. She is the only one who can sing so well.",
+      "options": [
+        { "key": "A", "text": "may", "distractor": "有“只有她唱得这么好”作证据，把握很大" },
+        { "key": "B", "text": "must", "answer": true },
+        { "key": "C", "text": "can't", "distractor": "与后句矛盾" },
+        { "key": "D", "text": "might", "distractor": "理由充分时不用 might" }
+      ],
+      "explanation": "有充分证据的肯定推测 → must be。",
+      "error_tag": "G-B03"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "point_id": "G-F02",
+  "title": "不定式作目的状语",
+  "questions": [
+    {
+      "id": "G-F02-L1-01",
+      "level": "L1",
+      "stem": "He got up early ____ catch the first bus.",
+      "options": [
+        { "key": "A", "text": "for", "distractor": "for 后面不能接动词原形" },
+        { "key": "B", "text": "to", "answer": true },
+        { "key": "C", "text": "with", "distractor": "介词错误" },
+        { "key": "D", "text": "of", "distractor": "介词错误" }
+      ],
+      "explanation": "早起的目的，用 to catch。",
+      "error_tag": "G-F02"
+    },
+    {
+      "id": "G-F02-L1-02",
+      "level": "L1",
+      "stem": "She went to the shop ____ some milk.",
+      "options": [
+        { "key": "A", "text": "buy", "distractor": "缺少 to" },
+        { "key": "B", "text": "buying", "distractor": "目的状语用 to do" },
+        { "key": "C", "text": "to buy", "answer": true },
+        { "key": "D", "text": "bought", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "去商店的目的是买牛奶，用 to buy。",
+      "error_tag": "G-F02"
+    },
+    {
+      "id": "G-F02-L2-01",
+      "level": "L2",
+      "stem": "He ran fast ____ (not be) late for school.",
+      "options": [
+        { "key": "A", "text": "not to be", "answer": true },
+        { "key": "B", "text": "to not be", "distractor": "否定词 not 要放在 to 前面" },
+        { "key": "C", "text": "not be", "distractor": "缺少 to" },
+        { "key": "D", "text": "don't be", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "目的状语的否定：not to be late。",
+      "error_tag": "G-F02"
+    },
+    {
+      "id": "G-F02-L2-02",
+      "level": "L2",
+      "stem": "They went to the park ____ fly kites.",
+      "options": [
+        { "key": "A", "text": "for", "distractor": "for 后面不能接动词原形" },
+        { "key": "B", "text": "to", "answer": true },
+        { "key": "C", "text": "in", "distractor": "介词错误" },
+        { "key": "D", "text": "at", "distractor": "介词错误" }
+      ],
+      "explanation": "去公园放风筝，目的用 to fly。",
+      "error_tag": "G-F02"
+    },
+    {
+      "id": "G-F02-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "We went there to help the farmers.", "distractor": "正确" },
+        { "key": "B", "text": "She studies hard in order to pass the exam.", "distractor": "正确" },
+        { "key": "C", "text": "He came here for see me.", "answer": true },
+        { "key": "D", "text": "I got up early to read English.", "distractor": "正确" }
+      ],
+      "explanation": "表示目的要用 to see，for 后面不能接动词原形。",
+      "error_tag": "G-F02"
+    },
+    {
+      "id": "G-F02-L3-02",
+      "level": "L3",
+      "stem": "— Why did you go to the library yesterday? — ____ some books.",
+      "options": [
+        { "key": "A", "text": "Borrow", "distractor": "答语要用不定式表目的" },
+        { "key": "B", "text": "Borrowing", "distractor": "目的状语用 to do" },
+        { "key": "C", "text": "To borrow", "answer": true },
+        { "key": "D", "text": "Borrowed", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "回答 why，用 To borrow some books（为了借书）。",
+      "error_tag": "G-F02"
+    }
+  ]
+}

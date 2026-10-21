@@ -1,0 +1,84 @@
+{
+  "point_id": "G-V01",
+  "title": "被动结构",
+  "questions": [
+    {
+      "id": "G-V01-L1-01",
+      "level": "L1",
+      "stem": "Rice ____ (grow) in the south of China.",
+      "options": [
+        { "key": "A", "text": "grows", "distractor": "稻米是被种的" },
+        { "key": "B", "text": "is grown", "answer": true },
+        { "key": "C", "text": "grew", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "growing", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "稻米是被种植的，用 is grown。",
+      "error_tag": "G-V01"
+    },
+    {
+      "id": "G-V01-L1-02",
+      "level": "L1",
+      "stem": "The classroom ____ (clean) every day.",
+      "options": [
+        { "key": "A", "text": "cleans", "distractor": "教室是被打扫的" },
+        { "key": "B", "text": "is cleaned", "answer": true },
+        { "key": "C", "text": "cleaned", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "cleaning", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "教室每天被打扫，用 is cleaned。",
+      "error_tag": "G-V01"
+    },
+    {
+      "id": "G-V01-L2-01",
+      "level": "L2",
+      "stem": "These bikes ____ (make) in that factory.",
+      "options": [
+        { "key": "A", "text": "make", "distractor": "自行车是被制造的" },
+        { "key": "B", "text": "are made", "answer": true },
+        { "key": "C", "text": "is made", "distractor": "these bikes 是复数" },
+        { "key": "D", "text": "made", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "复数主语用 are made。",
+      "error_tag": "G-V01"
+    },
+    {
+      "id": "G-V01-L2-02",
+      "level": "L2",
+      "stem": "The letter ____ (write) by my sister last night.",
+      "options": [
+        { "key": "A", "text": "wrote", "distractor": "信是被写的" },
+        { "key": "B", "text": "was written", "answer": true },
+        { "key": "C", "text": "is written", "distractor": "last night 是过去时间" },
+        { "key": "D", "text": "written", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "昨晚被写，用 was written。",
+      "error_tag": "G-V01"
+    },
+    {
+      "id": "G-V01-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "Rice is grown in the south.", "distractor": "正确" },
+        { "key": "B", "text": "The book was written by Lu Xun.", "distractor": "正确" },
+        { "key": "C", "text": "English is speak in many countries.", "answer": true },
+        { "key": "D", "text": "The window was broken by Tom.", "distractor": "正确" }
+      ],
+      "explanation": "be 后面要用过去分词 spoken，不是原形 speak。",
+      "error_tag": "G-V01"
+    },
+    {
+      "id": "G-V01-L3-02",
+      "level": "L3",
+      "stem": "— Is the classroom ____ every day? — Yes, it is.",
+      "options": [
+        { "key": "A", "text": "clean", "distractor": "被动要用过去分词" },
+        { "key": "B", "text": "cleaned", "answer": true },
+        { "key": "C", "text": "cleaning", "distractor": "被动不用 -ing" },
+        { "key": "D", "text": "cleans", "distractor": "be 动词后不能接三单形式" }
+      ],
+      "explanation": "被动疑问：Is + 主语 + 过去分词 cleaned？",
+      "error_tag": "G-V01"
+    }
+  ]
+}

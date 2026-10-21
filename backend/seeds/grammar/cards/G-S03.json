@@ -1,0 +1,100 @@
+{
+  "id": "G-S03",
+  "type": "rule",
+  "module": "S",
+  "module_name": "状语从句",
+  "title": "原因状语从句",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "He didn't come because he was ill.", "zh": "他没来，因为他病了。" },
+      { "en": "The match was put off because of the rain.", "zh": "比赛因雨推迟了。" }
+    ],
+    "question": "“因为他病了，所以他没来”能说成 Because he was ill, so he didn't come. 吗？",
+    "options": [
+      {
+        "key": "A",
+        "text": "不行——because 和 so 不能同时用，只能留一个",
+        "feedback": "对！跟汉语不一样，英语里“因为”和“所以”只能出现一个。"
+      },
+      {
+        "key": "B",
+        "text": "可以，两个一起用才完整",
+        "feedback": "不对——同时用是典型的中式英语，是错的。"
+      },
+      {
+        "key": "C",
+        "text": "两个都不能用，要用别的词",
+        "feedback": "不对——because 或 so 单独用哪个都对，只是不能同时出现。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "because 语气最强，用来回答 why；since / as 表示“既然、由于”，多用于句首；because 后面接句子，because of 后面接名词短语；because 与 so 不能连用",
+    "signals": ["because", "since", "as", "because of", "so"],
+    "formula": "① because + 句子：He was late because he missed the bus.　② because of + 名词：because of the rain　③ because 与 so 不能同现　④ since / as 多用于句首，表示显而易见的原因",
+    "anchors": [
+      {
+        "en": "He was late because he missed the bus.",
+        "zh": "他迟到了，因为没赶上公交车。",
+        "note": "because + 句子"
+      },
+      {
+        "en": "The sports meeting was put off because of the rain.",
+        "zh": "运动会因雨被推迟。",
+        "note": "because of + 名词"
+      }
+    ],
+    "trap": {
+      "wrong": "Because it rained, so we stayed at home.",
+      "right": "Because it rained, we stayed at home. / It rained, so we stayed at home.",
+      "why": "because 和 so 只能留一个，不能同时使用。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——because 接句子、because of 接名词；because 和 so 只能二选一。",
+  "check": [
+    {
+      "id": "G-S03-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "____ he was ill, he didn't go to school yesterday.",
+      "options": [
+        { "key": "A", "text": "Because", "answer": true },
+        { "key": "B", "text": "So", "distractor": "so 引导结果，要放在结果那句" },
+        { "key": "C", "text": "But", "distractor": "不是转折关系" },
+        { "key": "D", "text": "And", "distractor": "不是并列关系" }
+      ],
+      "explanation": "“生病”是原因 → Because。",
+      "error_tag": "G-S03"
+    },
+    {
+      "id": "G-S03-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The match was put off ____ the heavy rain.",
+      "options": [
+        { "key": "A", "text": "because", "distractor": "后面是名词短语，要用 because of" },
+        { "key": "B", "text": "because of", "answer": true },
+        { "key": "C", "text": "so", "distractor": "意思和用法都不对" },
+        { "key": "D", "text": "since", "distractor": "since 后面要接句子" }
+      ],
+      "explanation": "后面是名词 the heavy rain → because of。",
+      "error_tag": "G-S03"
+    },
+    {
+      "id": "G-S03-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "Because he was tired, he went to bed early.", "answer": true },
+        { "key": "B", "text": "Because he was tired, so he went to bed early.", "distractor": "because 和 so 不能连用" },
+        { "key": "C", "text": "He was tired, so because he went to bed early.", "distractor": "结构混乱" },
+        { "key": "D", "text": "So he was tired, he went to bed early.", "distractor": "so 不能放在原因句前" }
+      ],
+      "explanation": "because 单独用，主句不再加 so。",
+      "error_tag": "G-S03"
+    }
+  ]
+}

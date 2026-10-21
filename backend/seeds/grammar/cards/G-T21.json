@@ -1,0 +1,105 @@
+{
+  "id": "G-T21",
+  "type": "contrast",
+  "module": "T",
+  "module_name": "过去进行时",
+  "title": "when 与 while",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I was reading when he came in.", "zh": "他进来的时候我正在看书。" },
+      { "en": "While I was reading, he was watching TV.", "zh": "我看书的时候，他在看电视。" }
+    ],
+    "question": "同样是“当……的时候”，为什么一句用 when，一句用 while？",
+    "options": [
+      {
+        "key": "A",
+        "text": "when 后面可以接短暂动作，while 后面要接持续的动作",
+        "feedback": "对！come in 是一瞬间的事，只能用 when；看书、看电视是持续动作，用 while 更贴。"
+      },
+      {
+        "key": "B",
+        "text": "while 更正式，when 更口语",
+        "feedback": "不对——正式程度不是判据，后面动词的“长短”才是。"
+      },
+      {
+        "key": "C",
+        "text": "两者完全一样，随便换",
+        "feedback": "不对——后面是瞬间动词（came、rang）时，只能用 when。"
+      }
+    ],
+    "answer": "A"
+  },
+  "contrast": {
+    "left": {
+      "label": "when",
+      "formula": "when + 一般过去时 或 过去进行时",
+      "anchor": { "en": "I was reading when he came in.", "zh": "他进来的时候我正在看书。" },
+      "focus": "后面可以接瞬间动作（came / rang / arrived），也可以接持续动作"
+    },
+    "right": {
+      "label": "while",
+      "formula": "while + 过去进行时（持续动作）",
+      "anchor": { "en": "While I was reading, he was watching TV.", "zh": "我看书的时候，他在看电视。" },
+      "focus": "后面必须是持续动作，常表示两个动作同时进行"
+    },
+    "diff": "从句动词是 come / arrive / ring / leave 这类一瞬间完成的动作 → 只能用 when；要表达“两个动作同时进行” → 用 while 最贴切。",
+    "traps": [
+      {
+        "wrong": "While he came in, I was reading.",
+        "right": "When he came in, I was reading.",
+        "why": "came in 是瞬间动作，不能放在 while 后面。"
+      },
+      {
+        "wrong": "I was reading while the phone rang.",
+        "right": "I was reading when the phone rang.",
+        "why": "电话响是瞬间动作，要用 when。"
+      }
+    ]
+  },
+  "guess_callback": "你刚才选的是 A——记住一条就够：瞬间动作用 when，两个动作同时进行用 while。",
+  "check": [
+    {
+      "id": "G-T21-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He was doing his homework ____ his mother came back.",
+      "options": [
+        { "key": "A", "text": "when", "answer": true },
+        { "key": "B", "text": "while", "distractor": "came back 是瞬间动作，不能用 while" },
+        { "key": "C", "text": "as soon as", "distractor": "这里要表达“正在做的时候”，不是“一……就”" },
+        { "key": "D", "text": "after", "distractor": "妈妈回来时他正在做，不是回来之后才做" }
+      ],
+      "explanation": "came back 是瞬间动作，用 when。",
+      "error_tag": "G-T21"
+    },
+    {
+      "id": "G-T21-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "I was reading ____ my sister was listening to music.",
+      "options": [
+        { "key": "A", "text": "when", "distractor": "两边都是持续动作且同时进行，用 while 更贴切" },
+        { "key": "B", "text": "while", "answer": true },
+        { "key": "C", "text": "after", "distractor": "两个动作是同时的" },
+        { "key": "D", "text": "because", "distractor": "这里没有因果关系" }
+      ],
+      "explanation": "两边都是过去进行时，表示同时进行的两个动作，用 while。",
+      "error_tag": "G-T21"
+    },
+    {
+      "id": "G-T21-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "When he came in, I was writing a letter.", "distractor": "正确" },
+        { "key": "B", "text": "While I was sleeping, he left quietly.", "distractor": "正确" },
+        { "key": "C", "text": "While the bell rang, we were talking.", "answer": true },
+        { "key": "D", "text": "When I got home, Mum was cooking dinner.", "distractor": "正确" }
+      ],
+      "explanation": "铃响是瞬间动作，应改为 When the bell rang, we were talking。",
+      "error_tag": "G-T21"
+    }
+  ]
+}

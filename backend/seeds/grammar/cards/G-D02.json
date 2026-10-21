@@ -1,0 +1,100 @@
+{
+  "id": "G-D02",
+  "type": "rule",
+  "module": "D",
+  "module_name": "副词",
+  "title": "副词的位置",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "He is always late for school.", "zh": "他上学总是迟到。" },
+      { "en": "He always gets up early.", "zh": "他总是起得很早。" }
+    ],
+    "question": "“他总是迟到”，always 该放在哪里？",
+    "options": [
+      {
+        "key": "A",
+        "text": "放在 be 后面：He is always late.",
+        "feedback": "对！频度副词跟着 be 走，放在 be 后面。"
+      },
+      {
+        "key": "B",
+        "text": "放在 be 前面：He always is late.",
+        "feedback": "不对——be 动词是个例外，频度副词要放在它后面。"
+      },
+      {
+        "key": "C",
+        "text": "放哪儿都行，意思一样",
+        "feedback": "不对——位置有规矩：be 之后、实义动词之前。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "频度副词（always / usually / often / sometimes / seldom / hardly / never）放在 be 动词、助动词、情态动词之后，实义动词之前；sometimes 也可以放在句首或句末",
+    "signals": ["always", "usually", "often", "sometimes", "seldom", "hardly", "never"],
+    "formula": "① be / 情态动词 / 助动词 + 频度副词：He is always late. / I can never forget it.　② 频度副词 + 实义动词：He often goes there.　③ sometimes 可放句首句末",
+    "anchors": [
+      {
+        "en": "She is never late for class.",
+        "zh": "她上课从不迟到。",
+        "note": "be + never"
+      },
+      {
+        "en": "He often goes to school by bike.",
+        "zh": "他经常骑车上学。",
+        "note": "often + 实义动词"
+      }
+    ],
+    "trap": {
+      "wrong": "He always is late for school.",
+      "right": "He is always late for school.",
+      "why": "有 be 动词时，频度副词放在 be 后面。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住一句话：be 后、实义动词前。",
+  "check": [
+    {
+      "id": "G-D02-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "My father ____ goes to work by bus.",
+      "options": [
+        { "key": "A", "text": "always", "answer": true },
+        { "key": "B", "text": "is always", "distractor": "goes 是实义动词，前面不加 be" },
+        { "key": "C", "text": "always is", "distractor": "句子已有谓语 goes" },
+        { "key": "D", "text": "does always", "distractor": "一般现在时不需要助动词 does" }
+      ],
+      "explanation": "频度副词放实义动词前：always goes。",
+      "error_tag": "G-D02"
+    },
+    {
+      "id": "G-D02-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "She ____ late for school. She is a good student.",
+      "options": [
+        { "key": "A", "text": "never is", "distractor": "有 be 动词时，频度副词放 be 后面" },
+        { "key": "B", "text": "is never", "answer": true },
+        { "key": "C", "text": "never does", "distractor": "late 是形容词，前面要用 be" },
+        { "key": "D", "text": "does never", "distractor": "结构错误" }
+      ],
+      "explanation": "be + never：She is never late。",
+      "error_tag": "G-D02"
+    },
+    {
+      "id": "G-D02-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Do you often go to the cinema? — No, I ____ go there. Maybe once a year.",
+      "options": [
+        { "key": "A", "text": "always", "distractor": "与“一年一次”矛盾" },
+        { "key": "B", "text": "often", "distractor": "与“一年一次”矛盾" },
+        { "key": "C", "text": "seldom", "answer": true },
+        { "key": "D", "text": "usually", "distractor": "与“一年一次”矛盾" }
+      ],
+      "explanation": "一年一次 → 很少去：seldom。",
+      "error_tag": "G-D02"
+    }
+  ]
+}

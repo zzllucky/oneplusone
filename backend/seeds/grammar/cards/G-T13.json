@@ -1,0 +1,100 @@
+{
+  "id": "G-T13",
+  "type": "rule",
+  "module": "T",
+  "module_name": "过去将来时",
+  "title": "would + 动词原形",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "He said he would come back the next day.", "zh": "他说他第二天会回来。" },
+      { "en": "I knew it would be a hard day.", "zh": "我知道那会是艰难的一天。" }
+    ],
+    "question": "这里的“会回来”“会是”，是从什么时候看的将来？",
+    "options": [
+      {
+        "key": "A",
+        "text": "从过去的某个时刻看的将来（过去的 will）",
+        "feedback": "对！主句 said / knew 是过去，从句里的“将来”就要用 would。"
+      },
+      {
+        "key": "B",
+        "text": "从现在看的将来",
+        "feedback": "不对——从现在看将来要用 will，这里主句是过去时。"
+      },
+      {
+        "key": "C",
+        "text": "事情已经全部结束了",
+        "feedback": "不对——句子说的正是当时还没发生的事。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "从过去的某个时间点看将来要发生的事（相当于“过去的 will”）",
+    "signals": ["said / thought / knew / told + would", "the next day", "the following week"],
+    "formula": "would + 动词原形（否定 wouldn't + 原形）",
+    "anchors": [
+      {
+        "en": "He said he would help me with my English.",
+        "zh": "他说他会帮我学英语。",
+        "note": "主句 said 是过去，从句用 would"
+      },
+      {
+        "en": "She told me she would be late.",
+        "zh": "她告诉我她会晚到。",
+        "note": "“晚到”在当时还没发生"
+      }
+    ],
+    "trap": {
+      "wrong": "He said he will come back soon.",
+      "right": "He said he would come back soon.",
+      "why": "主句是过去时，从句里的“将来”要退一格，用 would 而不是 will。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——一句话记住：would 就是“过去的 will”，主句一过去，will 就变 would。",
+  "check": [
+    {
+      "id": "G-T13-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He said he ____ back soon.",
+      "options": [
+        { "key": "A", "text": "will come", "distractor": "主句是过去时，will 要变 would" },
+        { "key": "B", "text": "would come", "answer": true },
+        { "key": "C", "text": "comes", "distractor": "这里说的是当时还没发生的事" },
+        { "key": "D", "text": "came", "distractor": "“回来”在当时还没发生" }
+      ],
+      "explanation": "主句 He said 是过去，从句表示之后的动作，用 would come。",
+      "error_tag": "G-T13"
+    },
+    {
+      "id": "G-T13-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "She told us she ____ (be) late for the meeting.",
+      "options": [
+        { "key": "A", "text": "is", "distractor": "时态不对，主句是过去" },
+        { "key": "B", "text": "was", "distractor": "表示“当时已经晚了”，不是“会晚”" },
+        { "key": "C", "text": "will be", "distractor": "主句过去，will 要变 would" },
+        { "key": "D", "text": "would be", "answer": true }
+      ],
+      "explanation": "主句 told 是过去，“会迟到”在当时还没发生，用 would be。",
+      "error_tag": "G-T13"
+    },
+    {
+      "id": "G-T13-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He said he will help me.", "distractor": "主句过去时，will 要变 would" },
+        { "key": "B", "text": "He said he would help me.", "answer": true },
+        { "key": "C", "text": "He said he helps me.", "distractor": "一般现在时不能表示“将要帮”" },
+        { "key": "D", "text": "He said he is helping me.", "distractor": "进行时不表示“将要帮”" }
+      ],
+      "explanation": "主句 said 是过去时，从句表示将来要用 would help。",
+      "error_tag": "G-T13"
+    }
+  ]
+}

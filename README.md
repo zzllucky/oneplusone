@@ -4,6 +4,8 @@
 
 面向初中学生的中考英语单词记忆 Web 站点：注册登录 → 设置每日背词目标 → 按目标学习当日单词（含发音）→ 全部浏览后解锁今日测验 → 答错进入错题本 → **错题专项练习答对才移除**。
 
+另有并列独立的**语法学习**板块：按中考考点大纲浏览 21 模块 / 82 个知识点 → 打开学卡走"猜一猜 → 讲解 → 学后检测"三段式 → 针对知识点做题库练习（L1 识别 → L2 变形 → L3 陷阱，即时判分）→ 答错的知识点进入语法错题本并可直达学卡重学（连续答对 2 次自动移出）。语法与单词两个板块进度互不干扰。
+
 ## 技术栈
 
 - 后端：Python 3.12 + FastAPI + SQLAlchemy 2 + Alembic + SQLite（WAL）
@@ -57,6 +59,7 @@ cd frontend && npm run dev
 
 ```bash
 cd backend && uv run --extra dev pytest        # 单元 / 契约 / 集成（真实 SQLite + TestClient）
+cd backend && uv run --extra dev pytest -k grammar   # 只看语法模块
 cd frontend && npm run test                    # Vitest 组件与状态
 cd backend && uv run python scripts/validate_word_seed.py   # 词表种子体检
 ```
@@ -134,3 +137,6 @@ uv run alembic downgrade 001 && uv run alembic upgrade head          # 重新导
 | `/quiz` | 今日单词测验（需全部浏览解锁） |
 | `/wrong-words` | 错题本 |
 | `/review` | 错题专项练习 |
+| `/grammar` | 语法大纲（模块分组 + 掌握状态 + 只看错题） |
+| `/grammar/{point_id}` | 语法学卡（猜一猜 → 讲解 → 学后检测） |
+| `/grammar/{point_id}/practice` | 语法题库练习（分层出题 + 即时判分） |

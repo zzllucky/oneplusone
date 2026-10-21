@@ -1,0 +1,105 @@
+{
+  "id": "G-T25",
+  "type": "contrast",
+  "module": "T",
+  "module_name": "现在完成时",
+  "title": "been to / gone to / been in",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I have been to Beijing twice.", "zh": "我去过北京两次。" },
+      { "en": "— Where is Tom? — He has gone to the library.", "zh": "— 汤姆在哪？— 他去图书馆了。" }
+    ],
+    "question": "两句都在说“去”，为什么一句用 been，一句用 gone？",
+    "options": [
+      {
+        "key": "A",
+        "text": "第一句人已经回来了（说经历），第二句人还没回来（人在那儿）",
+        "feedback": "对！been 表示“去过、已回”，gone 表示“去了、还没回”。"
+      },
+      {
+        "key": "B",
+        "text": "因为北京比图书馆远",
+        "feedback": "不对——距离远近跟 been/gone 无关。"
+      },
+      {
+        "key": "C",
+        "text": "因为第二句是口语",
+        "feedback": "不对——两者在书面和口语里都这么用，区别在“人回没回来”。"
+      }
+    ],
+    "answer": "A"
+  },
+  "contrast": {
+    "left": {
+      "label": "have been to",
+      "formula": "have / has been to + 地点",
+      "anchor": { "en": "I have been to Beijing twice.", "zh": "我去过北京两次。" },
+      "focus": "去过（人已回来），强调经历；常与 ever / never / twice / three times 连用"
+    },
+    "right": {
+      "label": "have gone to",
+      "formula": "have / has gone to + 地点",
+      "anchor": { "en": "He has gone to the library.", "zh": "他去图书馆了（还没回来）。" },
+      "focus": "去了（人不在说话现场），常用来回答 Where is…?"
+    },
+    "diff": "人在现场、讲经历次数 → been to；人不在现场、讲去了哪儿 → gone to；要说“在那儿待了多久” → been in + 时间段（My uncle has been in Beijing for ten years）。",
+    "traps": [
+      {
+        "wrong": "He has gone to Beijing twice.",
+        "right": "He has been to Beijing twice.",
+        "why": "讲“去过几次”是经历，人已回来，用 been to。"
+      },
+      {
+        "wrong": "— Where is Tom? — He has been to the library.",
+        "right": "— Where is Tom? — He has gone to the library.",
+        "why": "问“人在哪儿”说明他还没回来，用 gone to。"
+      }
+    ]
+  },
+  "guess_callback": "你刚才选的是 A——一句话：人在眼前用 been，人不在用 gone，待了多久用 been in。",
+  "check": [
+    {
+      "id": "G-T25-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Where is your father? — He ____ Shanghai on business.",
+      "options": [
+        { "key": "A", "text": "has been to", "distractor": "been to 表示已经回来了，与“人在哪儿”矛盾" },
+        { "key": "B", "text": "has gone to", "answer": true },
+        { "key": "C", "text": "has been in", "distractor": "been in 要接时间段，如 for a week" },
+        { "key": "D", "text": "went to", "distractor": "回答“他现在在哪儿”要用完成时说明去向" }
+      ],
+      "explanation": "问“爸爸在哪儿”说明人还没回，用 has gone to。",
+      "error_tag": "G-T25"
+    },
+    {
+      "id": "G-T25-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "I ____ Beijing three times. It's a beautiful city.",
+      "options": [
+        { "key": "A", "text": "have gone to", "distractor": "gone to 表示人还没回来，与“讲经历”矛盾" },
+        { "key": "B", "text": "have been to", "answer": true },
+        { "key": "C", "text": "have been in", "distractor": "三次是次数，不是“待了多久”" },
+        { "key": "D", "text": "went to", "distractor": "“去过三次”是到现在为止的经历，用完成时" }
+      ],
+      "explanation": "讲去过的次数，用 have been to。",
+      "error_tag": "G-T25"
+    },
+    {
+      "id": "G-T25-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "She has gone to Paris twice.", "distractor": "讲次数要用 been to" },
+        { "key": "B", "text": "She has been to Paris twice.", "answer": true },
+        { "key": "C", "text": "She has been in Paris twice.", "distractor": "been in 后面接时间段" },
+        { "key": "D", "text": "She has go to Paris twice.", "distractor": "has 后面要接过去分词" }
+      ],
+      "explanation": "“去过两次”是经历，用 has been to。",
+      "error_tag": "G-T25"
+    }
+  ]
+}

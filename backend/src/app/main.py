@@ -12,6 +12,7 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from app.api import (
     auth,
+    grammar,
     home,
     pronounce,
     quiz,
@@ -94,6 +95,7 @@ app.include_router(settings_api.router, prefix="/api")
 app.include_router(home.router, prefix="/api")
 app.include_router(study.router, prefix="/api")
 app.include_router(quiz.router, prefix="/api")
+app.include_router(grammar.router, prefix="/api")
 app.include_router(wrong_words.router, prefix="/api")
 app.include_router(pronounce.router, prefix="/api")
 app.include_router(summary.router, prefix="/api")

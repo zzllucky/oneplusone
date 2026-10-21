@@ -1,0 +1,84 @@
+{
+  "point_id": "G-B06",
+  "title": "动词短语",
+  "questions": [
+    {
+      "id": "G-B06-L1-01",
+      "level": "L1",
+      "stem": "Your coat is on the floor. Please ____.",
+      "options": [
+        { "key": "A", "text": "pick up it", "distractor": "代词要放在中间" },
+        { "key": "B", "text": "pick it up", "answer": true },
+        { "key": "C", "text": "pick up", "distractor": "缺少宾语 it" },
+        { "key": "D", "text": "pick them up", "distractor": "coat 是单数" }
+      ],
+      "explanation": "代词放中间：pick it up。",
+      "error_tag": "G-B06"
+    },
+    {
+      "id": "G-B06-L1-02",
+      "level": "L1",
+      "stem": "It's cold outside. ____ your coat when you go out.",
+      "options": [
+        { "key": "A", "text": "Put on", "answer": true },
+        { "key": "B", "text": "Put off", "distractor": "put off 是“推迟”" },
+        { "key": "C", "text": "Take off", "distractor": "take off 是“脱下”，与天冷矛盾" },
+        { "key": "D", "text": "Take on", "distractor": "take on 是“承担、呈现”" }
+      ],
+      "explanation": "穿上外套 → put on。",
+      "error_tag": "G-B06"
+    },
+    {
+      "id": "G-B06-L2-01",
+      "level": "L2",
+      "stem": "The plane will ____ in ten minutes. Please fasten your seat belt.",
+      "options": [
+        { "key": "A", "text": "take off", "answer": true },
+        { "key": "B", "text": "take up", "distractor": "take up 是“占据、开始从事”" },
+        { "key": "C", "text": "put off", "distractor": "put off 是“推迟”" },
+        { "key": "D", "text": "turn off", "distractor": "turn off 是“关掉”" }
+      ],
+      "explanation": "飞机起飞 → take off。",
+      "error_tag": "G-B06"
+    },
+    {
+      "id": "G-B06-L2-02",
+      "level": "L2",
+      "stem": "— Do you know who ____ the light? It was on a minute ago.",
+      "options": [
+        { "key": "A", "text": "turned it off", "answer": true },
+        { "key": "B", "text": "turned off it", "distractor": "代词要放在中间" },
+        { "key": "C", "text": "turned off", "distractor": "缺少宾语 it" },
+        { "key": "D", "text": "turned them off", "distractor": "light 是单数" }
+      ],
+      "explanation": "关掉它 → turn it off。",
+      "error_tag": "G-B06"
+    },
+    {
+      "id": "G-B06-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "Please look after your little brother.", "distractor": "正确" },
+        { "key": "B", "text": "He gave up smoking two years ago.", "distractor": "正确" },
+        { "key": "C", "text": "The maths problem is hard. Please work out it.", "answer": true },
+        { "key": "D", "text": "They put up a new building last year.", "distractor": "正确" }
+      ],
+      "explanation": "代词放中间：work it out。",
+      "error_tag": "G-B06"
+    },
+    {
+      "id": "G-B06-L3-02",
+      "level": "L3",
+      "stem": "— I can't ____ who broke the window. — Let me help you.",
+      "options": [
+        { "key": "A", "text": "find", "distractor": "find 是“找到”，这里要“查明”" },
+        { "key": "B", "text": "find out", "answer": true },
+        { "key": "C", "text": "look for", "distractor": "look for 是“寻找”，不合语境" },
+        { "key": "D", "text": "look after", "distractor": "look after 是“照顾”" }
+      ],
+      "explanation": "查明真相 → find out。",
+      "error_tag": "G-B06"
+    }
+  ]
+}

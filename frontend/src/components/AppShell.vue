@@ -13,6 +13,7 @@ const navItems = [
   { path: '/home', label: '首页', icon: '🏠' },
   { path: '/study', label: '学习', icon: '📖' },
   { path: '/quiz', label: '测验', icon: '✅' },
+  { path: '/grammar', label: '语法', icon: '📐' },
   { path: '/wrong-words', label: '错题', icon: '🗂️' },
   { path: '/summary', label: '总结', icon: '📊' },
   { path: '/settings', label: '设置', icon: '⚙️' },

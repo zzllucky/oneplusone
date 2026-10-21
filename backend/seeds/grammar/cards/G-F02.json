@@ -1,0 +1,100 @@
+{
+  "id": "G-F02",
+  "type": "rule",
+  "module": "F",
+  "module_name": "不定式",
+  "title": "不定式作目的状语",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "He got up early to catch the first bus.", "zh": "他早起是为了赶上首班车。" },
+      { "en": "She studies hard in order to pass the exam.", "zh": "她努力学习是为了通过考试。" }
+    ],
+    "question": "句子里的 to catch、in order to pass 表示什么？",
+    "options": [
+      {
+        "key": "A",
+        "text": "目的——“为了赶上首班车”",
+        "feedback": "对！不定式放在句末或句首，常表示“为了做什么”。"
+      },
+      {
+        "key": "B",
+        "text": "原因——“因为赶上了首班车”",
+        "feedback": "不对——表示原因要用 because，不定式说的是目的。"
+      },
+      {
+        "key": "C",
+        "text": "结果——“结果赶上了首班车”",
+        "feedback": "不对——结果要说 so…that，这里 early 的目的就是赶车。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "to do / in order to do / so as to do 作目的状语，表示“为了……”",
+    "signals": ["to do", "in order to", "so as to", "句子里问“为什么要做这件事”"],
+    "formula": "主句 + to do　强调时可用 in order to do / so as to do　否定：in order not to do",
+    "anchors": [
+      {
+        "en": "He got up early to catch the first bus.",
+        "zh": "他早起是为了赶上首班车。",
+        "note": "早起的目的 = 赶车"
+      },
+      {
+        "en": "We went to the shop to buy some milk.",
+        "zh": "我们去商店买牛奶。",
+        "note": "去商店的目的 = 买牛奶"
+      }
+    ],
+    "trap": {
+      "wrong": "He got up early for catch the first bus.",
+      "right": "He got up early to catch the first bus.",
+      "why": "表示目的用 to do；for 后面要接名词或 doing，不能接动词原形。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——问自己一句“为了什么”，答案就是那个 to do。",
+  "check": [
+    {
+      "id": "G-F02-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "She went to the library ____ borrow some books.",
+      "options": [
+        { "key": "A", "text": "for", "distractor": "for 后面不能接动词原形" },
+        { "key": "B", "text": "to", "answer": true },
+        { "key": "C", "text": "of", "distractor": "介词错误" },
+        { "key": "D", "text": "with", "distractor": "介词错误" }
+      ],
+      "explanation": "去图书馆的目的是借书，用 to borrow。",
+      "error_tag": "G-F02"
+    },
+    {
+      "id": "G-F02-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He works hard ____ pass the exam.",
+      "options": [
+        { "key": "A", "text": "so that", "distractor": "so that 后面要接从句（he can pass）" },
+        { "key": "B", "text": "in order to", "answer": true },
+        { "key": "C", "text": "in order", "distractor": "结构不完整，缺 to" },
+        { "key": "D", "text": "for", "distractor": "for 后面不能接动词原形" }
+      ],
+      "explanation": "in order to + 动词原形，表示“为了通过考试”。",
+      "error_tag": "G-F02"
+    },
+    {
+      "id": "G-F02-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "We got up early to catch the train.", "answer": true },
+        { "key": "B", "text": "We got up early for catch the train.", "distractor": "for 后不能接原形" },
+        { "key": "C", "text": "We got up early for to catch the train.", "distractor": "for 与 to 不能连用" },
+        { "key": "D", "text": "We got up early catch the train.", "distractor": "缺少 to" }
+      ],
+      "explanation": "目的状语用 to catch。",
+      "error_tag": "G-F02"
+    }
+  ]
+}

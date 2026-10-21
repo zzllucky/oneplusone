@@ -1,0 +1,84 @@
+{
+  "point_id": "G-R01",
+  "title": "人称·物主·反身",
+  "questions": [
+    {
+      "id": "G-R01-L1-01",
+      "level": "L1",
+      "stem": "— Is this your pencil? — No, it isn't ____. ____ is in the pencil-box.",
+      "options": [
+        { "key": "A", "text": "my; My", "distractor": "两处后面都没有名词" },
+        { "key": "B", "text": "mine; Mine", "answer": true },
+        { "key": "C", "text": "my; Mine", "distractor": "第一空后面没有名词" },
+        { "key": "D", "text": "mine; My", "distractor": "第二空后面没有名词" }
+      ],
+      "explanation": "两处后面都没有名词，都用名物代 mine。",
+      "error_tag": "G-R01"
+    },
+    {
+      "id": "G-R01-L1-02",
+      "level": "L1",
+      "stem": "Help ____ to some fish, children.",
+      "options": [
+        { "key": "A", "text": "you", "distractor": "祈使句省略的主语是 you，但要反身形式" },
+        { "key": "B", "text": "yourself", "distractor": "children 是复数，要用 yourselves" },
+        { "key": "C", "text": "yourselves", "answer": true },
+        { "key": "D", "text": "yours", "distractor": "yours 是名物代，不表示“你们自己”" }
+      ],
+      "explanation": "help oneself to…；children 是复数 → yourselves。",
+      "error_tag": "G-R01"
+    },
+    {
+      "id": "G-R01-L2-01",
+      "level": "L2",
+      "stem": "Our classroom is bigger than ____ (they).",
+      "options": [
+        { "key": "A", "text": "their", "distractor": "后面没有名词，不能用形物代" },
+        { "key": "B", "text": "them", "distractor": "宾格不表示所属" },
+        { "key": "C", "text": "theirs", "answer": true },
+        { "key": "D", "text": "themselves", "distractor": "这里不是反身用法" }
+      ],
+      "explanation": "比较的是“我们的教室”和“他们的教室”，后面没名词 → theirs。",
+      "error_tag": "G-R01"
+    },
+    {
+      "id": "G-R01-L2-02",
+      "level": "L2",
+      "stem": "The boy is too young to look after ____.",
+      "options": [
+        { "key": "A", "text": "him", "distractor": "宾格只表示“他”，这里要“他自己”" },
+        { "key": "B", "text": "his", "distractor": "his 是物主代词，不能作 look after 的宾语" },
+        { "key": "C", "text": "himself", "answer": true },
+        { "key": "D", "text": "he", "distractor": "主格不能作宾语" }
+      ],
+      "explanation": "照顾自己 → look after himself。",
+      "error_tag": "G-R01"
+    },
+    {
+      "id": "G-R01-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "This is her dictionary, not his.", "distractor": "正确" },
+        { "key": "B", "text": "We enjoyed ourselves at the party.", "distractor": "正确" },
+        { "key": "C", "text": "The cat is washing it's face.", "answer": true },
+        { "key": "D", "text": "That book of mine is very interesting.", "distractor": "正确" }
+      ],
+      "explanation": "“它的”是 its，没有撇号；it's = it is。",
+      "error_tag": "G-R01"
+    },
+    {
+      "id": "G-R01-L3-02",
+      "level": "L3",
+      "stem": "— Who taught ____ English last year? — Nobody. We taught ____.",
+      "options": [
+        { "key": "A", "text": "your; us", "distractor": "teach sb sth 后接人称，第二空要反身代词" },
+        { "key": "B", "text": "you; ourselves", "answer": true },
+        { "key": "C", "text": "yours; ourselves", "distractor": "第一空是 teach 的宾语，用 you" },
+        { "key": "D", "text": "you; us", "distractor": "第二空“自学”要用反身代词" }
+      ],
+      "explanation": "teach sb sth；teach oneself = 自学。",
+      "error_tag": "G-R01"
+    }
+  ]
+}

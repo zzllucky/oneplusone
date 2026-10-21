@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T03",
+  "title": "否定与疑问",
+  "questions": [
+    {
+      "id": "G-T03-L1-01",
+      "level": "L1",
+      "stem": "He ____ fish, but he likes meat.",
+      "options": [
+        { "key": "A", "text": "don't like", "distractor": "he 是三单，要用 doesn't" },
+        { "key": "B", "text": "doesn't like", "answer": true },
+        { "key": "C", "text": "isn't like", "distractor": "like 是实义动词，否定时用 doesn't，不用 isn't" },
+        { "key": "D", "text": "not like", "distractor": "缺少助动词" }
+      ],
+      "explanation": "三单主语否定时用 doesn't + 动词原形 like。",
+      "error_tag": "G-T03"
+    },
+    {
+      "id": "G-T03-L1-02",
+      "level": "L1",
+      "stem": "____ you ____ English every day?",
+      "options": [
+        { "key": "A", "text": "Do; speak", "answer": true },
+        { "key": "B", "text": "Does; speak", "distractor": "you 不是三单，助动词用 Do" },
+        { "key": "C", "text": "Are; speak", "distractor": "speak 是实义动词，疑问用 Do，不用 be 动词" },
+        { "key": "D", "text": "Do; speaks", "distractor": "Do 之后动词要用原形 speak" }
+      ],
+      "explanation": "主语 you 用助动词 Do，后面动词保持原形 speak。",
+      "error_tag": "G-T03"
+    },
+    {
+      "id": "G-T03-L2-01",
+      "level": "L2",
+      "stem": "She ____ (not go) to school by bus.",
+      "options": [
+        { "key": "A", "text": "don't go", "distractor": "she 是三单，助动词要用 doesn't" },
+        { "key": "B", "text": "doesn't go", "answer": true },
+        { "key": "C", "text": "not go", "distractor": "缺少助动词" },
+        { "key": "D", "text": "doesn't goes", "distractor": "doesn't 之后要用原形 go" }
+      ],
+      "explanation": "三单否定：doesn't + 动词原形 go。",
+      "error_tag": "G-T03"
+    },
+    {
+      "id": "G-T03-L2-02",
+      "level": "L2",
+      "stem": "____ your sister ____ (play) the piano?",
+      "options": [
+        { "key": "A", "text": "Do; play", "distractor": "your sister 是三单，要用 Does" },
+        { "key": "B", "text": "Does; play", "answer": true },
+        { "key": "C", "text": "Does; plays", "distractor": "Does 之后要退回原形 play" },
+        { "key": "D", "text": "Is; play", "distractor": "play 是实义动词，疑问用 Does" }
+      ],
+      "explanation": "三单主语提问用 Does，主要动词退回原形 play。",
+      "error_tag": "G-T03"
+    },
+    {
+      "id": "G-T03-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "Does he like apples?", "distractor": "正确" },
+        { "key": "B", "text": "He doesn't like apples.", "distractor": "正确" },
+        { "key": "C", "text": "Does he likes apples?", "answer": true },
+        { "key": "D", "text": "I don't like apples.", "distractor": "正确" }
+      ],
+      "explanation": "Does 已经表示三单了，后面的 likes 必须退回原形 like。这是最高频的口误和笔误。",
+      "error_tag": "G-T03"
+    },
+    {
+      "id": "G-T03-L3-02",
+      "level": "L3",
+      "stem": "— ____ she ____ her homework every evening? — Yes, she does.",
+      "options": [
+        { "key": "A", "text": "Do; do", "distractor": "she 是三单，助动词要用 Does" },
+        { "key": "B", "text": "Does; do", "answer": true },
+        { "key": "C", "text": "Does; does", "distractor": "第二个空是主要动词，要用原形 do" },
+        { "key": "D", "text": "Do; does", "distractor": "两个空都错了" }
+      ],
+      "explanation": "助动词用 Does（三单），主要动词用原形 do；答语 Yes, she does 也印证了助动词是 does。",
+      "error_tag": "G-T03"
+    }
+  ]
+}

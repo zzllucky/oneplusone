@@ -1,0 +1,84 @@
+{
+  "point_id": "G-C02",
+  "title": "只用 that 的情况",
+  "questions": [
+    {
+      "id": "G-C02-L1-01",
+      "level": "L1",
+      "stem": "This is the first present ____ I got from my parents.",
+      "options": [
+        { "key": "A", "text": "which", "distractor": "序数词修饰时只用 that" },
+        { "key": "B", "text": "that", "answer": true },
+        { "key": "C", "text": "who", "distractor": "present 是物" },
+        { "key": "D", "text": "what", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "序数词 first 修饰 → 只用 that。",
+      "error_tag": "G-C02"
+    },
+    {
+      "id": "G-C02-L1-02",
+      "level": "L1",
+      "stem": "Is there anything ____ I can do for you?",
+      "options": [
+        { "key": "A", "text": "which", "distractor": "不定代词后只用 that" },
+        { "key": "B", "text": "that", "answer": true },
+        { "key": "C", "text": "what", "distractor": "定语从句不用 what" },
+        { "key": "D", "text": "who", "distractor": "anything 指物" }
+      ],
+      "explanation": "先行词是不定代词 anything → 只用 that。",
+      "error_tag": "G-C02"
+    },
+    {
+      "id": "G-C02-L2-01",
+      "level": "L2",
+      "stem": "She is the only student ____ can answer this question.",
+      "options": [
+        { "key": "A", "text": "which", "distractor": "先行词是人，且 the only 后只用 that" },
+        { "key": "B", "text": "that", "answer": true },
+        { "key": "C", "text": "whom", "distractor": "这里缺主语" },
+        { "key": "D", "text": "whose", "distractor": "whose 后接名词" }
+      ],
+      "explanation": "被 the only 修饰 → 只用 that。",
+      "error_tag": "G-C02"
+    },
+    {
+      "id": "G-C02-L2-02",
+      "level": "L2",
+      "stem": "He told me all ____ he knew about the accident.",
+      "options": [
+        { "key": "A", "text": "which", "distractor": "先行词是不定代词 all，只用 that" },
+        { "key": "B", "text": "that", "answer": true },
+        { "key": "C", "text": "what", "distractor": "定语从句不用 what" },
+        { "key": "D", "text": "who", "distractor": "all 指物" }
+      ],
+      "explanation": "先行词是 all → 只用 that。",
+      "error_tag": "G-C02"
+    },
+    {
+      "id": "G-C02-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "This is the best novel that I have read.", "distractor": "正确" },
+        { "key": "B", "text": "Nothing that he said was true.", "distractor": "正确" },
+        { "key": "C", "text": "The driver and his car which fell into the river were saved.", "answer": true },
+        { "key": "D", "text": "It is the very book that I want.", "distractor": "正确" }
+      ],
+      "explanation": "人和物同时作先行词 → 只用 that。",
+      "error_tag": "G-C02"
+    },
+    {
+      "id": "G-C02-L3-02",
+      "level": "L3",
+      "stem": "— Who is the boy ____ is standing at the gate? — He is my brother.",
+      "options": [
+        { "key": "A", "text": "that", "answer": true },
+        { "key": "B", "text": "which", "distractor": "主句以 who 开头时避免用 who，也不用 which" },
+        { "key": "C", "text": "whom", "distractor": "这里缺主语" },
+        { "key": "D", "text": "what", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "主句以 who 开头的疑问句，从句关系词用 that。",
+      "error_tag": "G-C02"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "G-N05",
+  "type": "rule",
+  "module": "N",
+  "module_name": "名词",
+  "title": "名词作定语",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "two apple trees", "zh": "两棵苹果树" },
+      { "en": "a shoe shop", "zh": "一家鞋店" }
+    ],
+    "question": "“两棵苹果树”为什么是 apple trees，而不是 apples trees？",
+    "options": [
+      {
+        "key": "A",
+        "text": "名词作定语时保持单数，只有后面的中心词变复数",
+        "feedback": "对！apple 只是说明“什么树”，所以要变复数的是 trees。"
+      },
+      {
+        "key": "B",
+        "text": "因为苹果不长在树上",
+        "feedback": "不对——跟实际情况无关，这是语法规则。"
+      },
+      {
+        "key": "C",
+        "text": "两种写法都对",
+        "feedback": "不对——apples trees 是错的，只有 apple trees 对。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "名词作定语修饰另一个名词时通常保持单数，只有中心词变复数；man / woman 作定语时例外，要随中心词一起变复数",
+    "signals": ["apple tree", "shoe shop", "book shop", "man teacher", "woman doctor"],
+    "formula": "two apple trees（apple 不变）　a shoe shop　例外：two men teachers / three women doctors",
+    "anchors": [
+      {
+        "en": "There are two apple trees in the garden.",
+        "zh": "花园里有两棵苹果树。",
+        "note": "中心词 tree 变复数"
+      },
+      {
+        "en": "They are men teachers in our school.",
+        "zh": "他们是我们学校的男老师。",
+        "note": "man 作定语要跟着变"
+      }
+    ],
+    "trap": {
+      "wrong": "We have two apples trees in the garden.",
+      "right": "We have two apple trees in the garden.",
+      "why": "作定语的 apple 保持单数，只有 tree 变复数。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——作定语的名词保持单数；只有 man / woman 是例外，要跟着一起变复数。",
+  "check": [
+    {
+      "id": "G-N05-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "There are five ____ in the garden.",
+      "options": [
+        { "key": "A", "text": "apple tree", "distractor": "five 后面中心词要变复数" },
+        { "key": "B", "text": "apples trees", "distractor": "作定语的 apple 不能变复数" },
+        { "key": "C", "text": "apple trees", "answer": true },
+        { "key": "D", "text": "apples tree", "distractor": "变复数的应是中心词 tree" }
+      ],
+      "explanation": "apple 作定语不变，tree 变复数：apple trees。",
+      "error_tag": "G-N05"
+    },
+    {
+      "id": "G-N05-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "In our school there are ten ____ and twenty ____.",
+      "options": [
+        { "key": "A", "text": "man teachers; woman teachers", "distractor": "man / woman 作定语要跟着变复数" },
+        { "key": "B", "text": "men teachers; women teachers", "answer": true },
+        { "key": "C", "text": "man teacher; woman teacher", "distractor": "ten、twenty 后面要用复数" },
+        { "key": "D", "text": "men teacher; women teacher", "distractor": "中心词也要变复数" }
+      ],
+      "explanation": "man / woman 作定语时随中心词变复数：men teachers、women teachers。",
+      "error_tag": "G-N05"
+    },
+    {
+      "id": "G-N05-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He works in a shoe shop.", "answer": true },
+        { "key": "B", "text": "He works in a shoes shop.", "distractor": "shoe 作定语用单数" },
+        { "key": "C", "text": "He works in a shoe's shop.", "distractor": "这里不是所有格" },
+        { "key": "D", "text": "He works in shoes shop.", "distractor": "作定语用单数 shoe" }
+      ],
+      "explanation": "shoe 作定语保持单数：a shoe shop。",
+      "error_tag": "G-N05"
+    }
+  ]
+}

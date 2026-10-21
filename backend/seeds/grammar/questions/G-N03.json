@@ -1,0 +1,84 @@
+{
+  "point_id": "G-N03",
+  "title": "不规则复数与单复同形",
+  "questions": [
+    {
+      "id": "G-N03-L1-01",
+      "level": "L1",
+      "stem": "There are three ____ (man) in the office.",
+      "options": [
+        { "key": "A", "text": "man", "distractor": "three 后面要用复数" },
+        { "key": "B", "text": "mans", "distractor": "man 的复数不是加 s" },
+        { "key": "C", "text": "men", "answer": true },
+        { "key": "D", "text": "mens", "distractor": "拼写错误" }
+      ],
+      "explanation": "man 的复数是 men（变元音）。",
+      "error_tag": "G-N03"
+    },
+    {
+      "id": "G-N03-L1-02",
+      "level": "L1",
+      "stem": "Look! Two ____ (woman) are talking under the tree.",
+      "options": [
+        { "key": "A", "text": "woman", "distractor": "two 后面要用复数" },
+        { "key": "B", "text": "womans", "distractor": "woman 的复数不是加 s" },
+        { "key": "C", "text": "women", "answer": true },
+        { "key": "D", "text": "womens", "distractor": "拼写错误" }
+      ],
+      "explanation": "woman 的复数是 women。",
+      "error_tag": "G-N03"
+    },
+    {
+      "id": "G-N03-L2-01",
+      "level": "L2",
+      "stem": "The farmer keeps twenty ____ (sheep) on his farm.",
+      "options": [
+        { "key": "A", "text": "sheep", "answer": true },
+        { "key": "B", "text": "sheeps", "distractor": "sheep 单复同形" },
+        { "key": "C", "text": "sheepes", "distractor": "拼写错误" },
+        { "key": "D", "text": "sheep's", "distractor": "这里不是所有格" }
+      ],
+      "explanation": "sheep 单复同形，二十只还是 twenty sheep。",
+      "error_tag": "G-N03"
+    },
+    {
+      "id": "G-N03-L2-02",
+      "level": "L2",
+      "stem": "We saw a lot of ____ (fish) in the lake.",
+      "options": [
+        { "key": "A", "text": "fishes", "distractor": "指同一种鱼时单复同形，用 fish" },
+        { "key": "B", "text": "fish", "answer": true },
+        { "key": "C", "text": "fishs", "distractor": "拼写错误" },
+        { "key": "D", "text": "fish's", "distractor": "这里不是所有格" }
+      ],
+      "explanation": "fish 指同一种鱼时单复同形：a lot of fish。",
+      "error_tag": "G-N03"
+    },
+    {
+      "id": "G-N03-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "Her two feet were hurt in the accident.", "distractor": "正确" },
+        { "key": "B", "text": "The children are reading in the library.", "distractor": "正确" },
+        { "key": "C", "text": "There are two mouses in the kitchen.", "answer": true },
+        { "key": "D", "text": "Three sheep are eating grass.", "distractor": "正确" }
+      ],
+      "explanation": "mouse 的复数是 mice，应改为 two mice。",
+      "error_tag": "G-N03"
+    },
+    {
+      "id": "G-N03-L3-02",
+      "level": "L3",
+      "stem": "The two ____ (Japanese) over there are our new teachers.",
+      "options": [
+        { "key": "A", "text": "Japanese", "answer": true },
+        { "key": "B", "text": "Japaneses", "distractor": "Japanese 单复同形" },
+        { "key": "C", "text": "Japanes", "distractor": "拼写错误" },
+        { "key": "D", "text": "Japanese's", "distractor": "这里不是所有格" }
+      ],
+      "explanation": "Japanese（日本人）单复同形，复数仍是 Japanese。",
+      "error_tag": "G-N03"
+    }
+  ]
+}

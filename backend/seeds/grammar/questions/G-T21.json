@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T21",
+  "title": "when 与 while",
+  "questions": [
+    {
+      "id": "G-T21-L1-01",
+      "level": "L1",
+      "stem": "The students were reading ____ the teacher came in.",
+      "options": [
+        { "key": "A", "text": "when", "answer": true },
+        { "key": "B", "text": "while", "distractor": "came in 是瞬间动作，不能用 while" },
+        { "key": "C", "text": "after", "distractor": "老师进来时他们已经在读了" },
+        { "key": "D", "text": "because", "distractor": "这里没有因果关系" }
+      ],
+      "explanation": "came in 是瞬间动作，只能用 when。",
+      "error_tag": "G-T21"
+    },
+    {
+      "id": "G-T21-L1-02",
+      "level": "L1",
+      "stem": "____ Tom was doing his homework, his sister was drawing.",
+      "options": [
+        { "key": "A", "text": "When", "distractor": "两个动作同时进行，用 While 更贴切" },
+        { "key": "B", "text": "While", "answer": true },
+        { "key": "C", "text": "Before", "distractor": "两个动作是同时的" },
+        { "key": "D", "text": "So", "distractor": "这里没有因果或结果关系" }
+      ],
+      "explanation": "两个动作都是过去进行时、同时进行，用 While。",
+      "error_tag": "G-T21"
+    },
+    {
+      "id": "G-T21-L2-01",
+      "level": "L2",
+      "stem": "I met an old friend ____ I ____ (walk) in the park.",
+      "options": [
+        { "key": "A", "text": "while; was walking", "answer": true },
+        { "key": "B", "text": "when; walked", "distractor": "走路是持续动作，要用进行时" },
+        { "key": "C", "text": "while; walked", "distractor": "while 后面通常接持续动作（进行时）" },
+        { "key": "D", "text": "when; was walking", "distractor": "when 也能接进行时，但这里强调“散步过程中”，while 最贴切" }
+      ],
+      "explanation": "“在散步的过程中遇见”，长动作用 while + was walking。",
+      "error_tag": "G-T21"
+    },
+    {
+      "id": "G-T21-L2-02",
+      "level": "L2",
+      "stem": "____ the rain stopped, we were still working in the fields.",
+      "options": [
+        { "key": "A", "text": "When", "answer": true },
+        { "key": "B", "text": "While", "distractor": "stopped 是瞬间动作，不能用 while" },
+        { "key": "C", "text": "During", "distractor": "during 后面接名词，不接句子" },
+        { "key": "D", "text": "Until", "distractor": "句意不通" }
+      ],
+      "explanation": "“雨停”是瞬间动作，用 When。",
+      "error_tag": "G-T21"
+    },
+    {
+      "id": "G-T21-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "When I saw him, he was running.", "distractor": "正确" },
+        { "key": "B", "text": "While we were talking, the bell rang.", "distractor": "正确" },
+        { "key": "C", "text": "While he arrived, we were having dinner.", "answer": true },
+        { "key": "D", "text": "When the phone rang, she was cooking.", "distractor": "正确" }
+      ],
+      "explanation": "arrived 是瞬间动作，应改为 When he arrived, we were having dinner。",
+      "error_tag": "G-T21"
+    },
+    {
+      "id": "G-T21-L3-02",
+      "level": "L3",
+      "stem": "____ I ____ (wait) for the bus, I saw a traffic accident.",
+      "options": [
+        { "key": "A", "text": "While; was waiting", "answer": true },
+        { "key": "B", "text": "When; waited", "distractor": "等车是持续动作，要用进行时" },
+        { "key": "C", "text": "While; waited", "distractor": "while 后面通常接进行时" },
+        { "key": "D", "text": "When; waiting", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "“等车的过程中看见”，用 While I was waiting。",
+      "error_tag": "G-T21"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "point_id": "G-O01",
+  "title": "宾语从句陈述语序",
+  "questions": [
+    {
+      "id": "G-O01-L1-01",
+      "level": "L1",
+      "stem": "— Could you tell me ____? — Sorry, I'm new here too.",
+      "options": [
+        { "key": "A", "text": "where is the nearest hospital", "distractor": "is 不能在主语前" },
+        { "key": "B", "text": "where the nearest hospital is", "answer": true },
+        { "key": "C", "text": "where the nearest hospital", "distractor": "结构不完整" },
+        { "key": "D", "text": "the nearest hospital where is", "distractor": "语序错误" }
+      ],
+      "explanation": "从句用陈述语序：where the nearest hospital is。",
+      "error_tag": "G-O01"
+    },
+    {
+      "id": "G-O01-L1-02",
+      "level": "L1",
+      "stem": "Do you know ____ yesterday?",
+      "options": [
+        { "key": "A", "text": "why did he leave", "distractor": "从句里要去掉 did" },
+        { "key": "B", "text": "why he left", "answer": true },
+        { "key": "C", "text": "why he leaves", "distractor": "yesterday 要用过去时" },
+        { "key": "D", "text": "why does he leave", "distractor": "去掉 does，且时态不对" }
+      ],
+      "explanation": "去掉 did，时态体现在 left 上。",
+      "error_tag": "G-O01"
+    },
+    {
+      "id": "G-O01-L2-01",
+      "level": "L2",
+      "stem": "— I want to know ____. — He is a doctor.",
+      "options": [
+        { "key": "A", "text": "what his father does", "answer": true },
+        { "key": "B", "text": "what does his father do", "distractor": "从句用陈述语序" },
+        { "key": "C", "text": "what his father do", "distractor": "主语是第三人称单数" },
+        { "key": "D", "text": "what is his father", "distractor": "语序和表达都不对" }
+      ],
+      "explanation": "问职业的从句：what his father does。",
+      "error_tag": "G-O01"
+    },
+    {
+      "id": "G-O01-L2-02",
+      "level": "L2",
+      "stem": "Please tell me ____ the meeting will begin.",
+      "options": [
+        { "key": "A", "text": "when", "answer": true },
+        { "key": "B", "text": "when will", "distractor": "连接词后面直接跟主语 the meeting" },
+        { "key": "C", "text": "that when", "distractor": "连接词重复" },
+        { "key": "D", "text": "what time will", "distractor": "will 不能在主语前" }
+      ],
+      "explanation": "when the meeting will begin（陈述语序）。",
+      "error_tag": "G-O01"
+    },
+    {
+      "id": "G-O01-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I don't know who broke the window.", "distractor": "正确：who 作主语，本身就是陈述语序" },
+        { "key": "B", "text": "Can you tell me how much it costs?", "distractor": "正确" },
+        { "key": "C", "text": "Do you know when will the train leave?", "answer": true },
+        { "key": "D", "text": "Tell me where you bought the book.", "distractor": "正确" }
+      ],
+      "explanation": "应改为 when the train will leave。",
+      "error_tag": "G-O01"
+    },
+    {
+      "id": "G-O01-L3-02",
+      "level": "L3",
+      "stem": "— Do you know ____? — He lives in Room 302.",
+      "options": [
+        { "key": "A", "text": "where does Tom live", "distractor": "去掉 does" },
+        { "key": "B", "text": "where Tom lives", "answer": true },
+        { "key": "C", "text": "where Tom live", "distractor": "主语第三人称单数要加 s" },
+        { "key": "D", "text": "where lives Tom", "distractor": "语序错误" }
+      ],
+      "explanation": "where Tom lives（去掉 does 后动词加 s）。",
+      "error_tag": "G-O01"
+    }
+  ]
+}

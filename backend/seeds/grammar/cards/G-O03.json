@@ -1,0 +1,101 @@
+{
+  "id": "G-O03",
+  "type": "rule",
+  "module": "O",
+  "module_name": "宾语从句",
+  "title": "时态呼应",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "He says (that) he is busy now.", "zh": "他说他现在很忙。" },
+      { "en": "He said (that) he was busy then.", "zh": "他说他那时很忙。" },
+      { "en": "The teacher told us the earth moves around the sun.", "zh": "老师告诉我们地球绕着太阳转。" }
+    ],
+    "question": "“他说他明天会来”，英文该怎么说？",
+    "options": [
+      {
+        "key": "A",
+        "text": "He said (that) he would come the next day.",
+        "feedback": "对！主句是过去时，从句也要退成相应的过去时态（will → would）。"
+      },
+      {
+        "key": "B",
+        "text": "He said (that) he will come tomorrow.",
+        "feedback": "不对——主句 said 是过去时，从句的 will 要退成 would。"
+      },
+      {
+        "key": "C",
+        "text": "He said (that) he comes tomorrow.",
+        "feedback": "不对——现在时和 tomorrow 矛盾，也没有体现“退时态”。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "主句是现在时，从句按需要用任何时态；主句是过去时，从句要退成相应的过去时态；从句说的是客观真理时，永远用一般现在时",
+    "signals": ["He says", "He said", "The teacher told us", "客观真理"],
+    "formula": "① 主现从任：He says he is / was / will be busy.　② 主过从过：is/am → was；will → would；do → did；have done → had done　③ 真理永现：The teacher said the earth moves around the sun.",
+    "anchors": [
+      {
+        "en": "He said that he was doing his homework at that time.",
+        "zh": "他说他那时正在做作业。",
+        "note": "现在进行时 → 过去进行时"
+      },
+      {
+        "en": "Our teacher told us that light travels faster than sound.",
+        "zh": "老师告诉我们光比声音传播得快。",
+        "note": "客观真理用一般现在时"
+      }
+    ],
+    "trap": {
+      "wrong": "He said he will come tomorrow.",
+      "right": "He said he would come the next day.",
+      "why": "主句是过去时，从句的 will 要退成 would，tomorrow 也要变成 the next day。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——主过从过要“退一格”，只有客观真理例外，永远用现在时。",
+  "check": [
+    {
+      "id": "G-O03-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He said that he ____ his homework at that time.",
+      "options": [
+        { "key": "A", "text": "is doing", "distractor": "主句是过去时，从句要退成过去进行时" },
+        { "key": "B", "text": "was doing", "answer": true },
+        { "key": "C", "text": "will do", "distractor": "主句是过去时，不能用将来时" },
+        { "key": "D", "text": "does", "distractor": "与 at that time 不符" }
+      ],
+      "explanation": "主过从过 → was doing。",
+      "error_tag": "G-O03"
+    },
+    {
+      "id": "G-O03-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The teacher told us that the moon ____ around the earth.",
+      "options": [
+        { "key": "A", "text": "moved", "distractor": "客观真理永远用一般现在时" },
+        { "key": "B", "text": "moves", "answer": true },
+        { "key": "C", "text": "will move", "distractor": "客观真理不用将来时" },
+        { "key": "D", "text": "is moving", "distractor": "客观真理用一般现在时" }
+      ],
+      "explanation": "客观真理 → moves（一般现在时）。",
+      "error_tag": "G-O03"
+    },
+    {
+      "id": "G-O03-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He said he had finished the work.", "answer": true },
+        { "key": "B", "text": "He said he has finished the work.", "distractor": "主句是过去时，要用 had finished" },
+        { "key": "C", "text": "He said he have finished the work.", "distractor": "主谓不一致，时态也不对" },
+        { "key": "D", "text": "He said he will finish the work.", "distractor": "will 要退成 would" }
+      ],
+      "explanation": "主过从过：现在完成时 → 过去完成时 had finished。",
+      "error_tag": "G-O03"
+    }
+  ]
+}

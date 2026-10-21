@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T25",
+  "title": "been to / gone to / been in",
+  "questions": [
+    {
+      "id": "G-T25-L1-01",
+      "level": "L1",
+      "stem": "— Where are the girls? — They ____ the playground.",
+      "options": [
+        { "key": "A", "text": "have been to", "distractor": "been to 表示人已回来，与“人在哪儿”矛盾" },
+        { "key": "B", "text": "have gone to", "answer": true },
+        { "key": "C", "text": "have been in", "distractor": "been in 要接时间段" },
+        { "key": "D", "text": "went", "distractor": "回答去向、说明现在在哪，用完成时" }
+      ],
+      "explanation": "问“她们在哪儿”说明人还没回来，用 have gone to。",
+      "error_tag": "G-T25"
+    },
+    {
+      "id": "G-T25-L1-02",
+      "level": "L1",
+      "stem": "— ____ you ever ____ to Shanghai? — No, never.",
+      "options": [
+        { "key": "A", "text": "Have; gone", "distractor": "问“你有没有去过”，人应该在现场" },
+        { "key": "B", "text": "Have; been", "answer": true },
+        { "key": "C", "text": "Did; go", "distractor": "ever（曾经）是完成时的标志词" },
+        { "key": "D", "text": "Do; go", "distractor": "问的是到目前为止的经历" }
+      ],
+      "explanation": "ever 与完成时连用，问经历用 Have you ever been to…",
+      "error_tag": "G-T25"
+    },
+    {
+      "id": "G-T25-L2-01",
+      "level": "L2",
+      "stem": "My uncle ____ Beijing for ten years.",
+      "options": [
+        { "key": "A", "text": "has been in", "answer": true },
+        { "key": "B", "text": "has gone to", "distractor": "gone to 表示人还没回来，不能接时间段" },
+        { "key": "C", "text": "has been to", "distractor": "been to 表示去过，不表示“待了多久”" },
+        { "key": "D", "text": "went to", "distractor": "for ten years 要用完成时" }
+      ],
+      "explanation": "“在北京待了十年”用 has been in + 时间段。",
+      "error_tag": "G-T25"
+    },
+    {
+      "id": "G-T25-L2-02",
+      "level": "L2",
+      "stem": "— I can't find Mike anywhere. — He ____ to the teachers' office.",
+      "options": [
+        { "key": "A", "text": "has been", "distractor": "been 表示已经回来了，那现在应该找得到他" },
+        { "key": "B", "text": "has gone", "answer": true },
+        { "key": "C", "text": "went", "distractor": "这里要说明他现在不在这儿的去向" },
+        { "key": "D", "text": "goes", "distractor": "不是习惯性动作" }
+      ],
+      "explanation": "找不到人说明他去了别处还没回来，用 has gone。",
+      "error_tag": "G-T25"
+    },
+    {
+      "id": "G-T25-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He has been to London three times.", "distractor": "正确：讲次数" },
+        { "key": "B", "text": "She has gone to the shop. She'll be back soon.", "distractor": "正确：人还没回" },
+        { "key": "C", "text": "We have gone to the museum twice.", "answer": true },
+        { "key": "D", "text": "They have been in this city for years.", "distractor": "正确：待了多久" }
+      ],
+      "explanation": "讲“去过两次”要用 been to：We have been to the museum twice。",
+      "error_tag": "G-T25"
+    },
+    {
+      "id": "G-T25-L3-02",
+      "level": "L3",
+      "stem": "— How many times ____ you ____ to Beijing? — Twice.",
+      "options": [
+        { "key": "A", "text": "have; been", "answer": true },
+        { "key": "B", "text": "have; gone", "distractor": "问次数说明人在现场、讲的是经历" },
+        { "key": "C", "text": "did; go", "distractor": "问“到目前为止去过几次”，用完成时" },
+        { "key": "D", "text": "do; go", "distractor": "不是习惯性动作" }
+      ],
+      "explanation": "问去过的次数，用 How many times have you been to…",
+      "error_tag": "G-T25"
+    }
+  ]
+}

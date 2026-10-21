@@ -1,0 +1,100 @@
+{
+  "id": "G-T02",
+  "type": "rule",
+  "module": "T",
+  "module_name": "一般现在时",
+  "title": "第三人称单数",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I like apples.", "zh": "我喜欢苹果。" },
+      { "en": "He likes apples.", "zh": "他喜欢苹果。" }
+    ],
+    "question": "意思一样，为什么第二句的动词长得不一样？",
+    "options": [
+      {
+        "key": "A",
+        "text": "因为主语是第三人称单数（he/she/it），动词要变形",
+        "feedback": "对！主语是“他/她/它”或单个的人、物时，动词要加 -s/-es。"
+      },
+      {
+        "key": "B",
+        "text": "因为第二句说的是两个以上的苹果",
+        "feedback": "不对——苹果是复数没错，但决定动词形式的是主语 he，不是宾语 apples。"
+      },
+      {
+        "key": "C",
+        "text": "因为动词加 s 表示复数",
+        "feedback": "不对——只有名词才讲单复数；动词加 -s 恰恰是因为主语是单数。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "主语是第三人称单数时，谓语动词要加 -s / -es",
+    "signals": ["he", "she", "it", "my father", "Tom", "the dog", "单个的人或物"],
+    "formula": "① 一般情况 +s：like→likes，play→plays　② s/x/ch/sh/o 结尾 +es：go→goes，watch→watches，do→does　③ 辅音字母 + y → ies：study→studies，fly→flies　④ 特殊：have→has",
+    "anchors": [
+      {
+        "en": "He likes apples very much.",
+        "zh": "他非常喜欢苹果。",
+        "note": "一般情况直接加 -s"
+      },
+      {
+        "en": "My mother watches TV every evening.",
+        "zh": "我妈妈每天晚上看电视。",
+        "note": "ch 结尾加 -es"
+      }
+    ],
+    "trap": {
+      "wrong": "She study English every day.",
+      "right": "She studies English every day.",
+      "why": "study 以“辅音字母 + y”结尾，要变 y 为 i 再加 -es，不能只加 s。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住：动词变不变形，只看主语是谁，跟宾语、跟动作多少都无关。",
+  "check": [
+    {
+      "id": "G-T02-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "My brother ____ his homework every evening.",
+      "options": [
+        { "key": "A", "text": "do", "distractor": "my brother 是三单，要用 does" },
+        { "key": "B", "text": "does", "answer": true },
+        { "key": "C", "text": "doing", "distractor": "不能单独作谓语" },
+        { "key": "D", "text": "did", "distractor": "every evening 表示习惯，不用过去时" }
+      ],
+      "explanation": "my brother 是第三人称单数，do 的三单形式是 does（属于特殊变化）。",
+      "error_tag": "G-T02"
+    },
+    {
+      "id": "G-T02-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "She ____ English very hard.",
+      "options": [
+        { "key": "A", "text": "study", "distractor": "she 是三单，动词要变形" },
+        { "key": "B", "text": "studys", "distractor": "拼写错误：辅音+y 要变 y 为 i 再加 es" },
+        { "key": "C", "text": "studies", "answer": true },
+        { "key": "D", "text": "studying", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "study 以“辅音字母 + y”结尾，三单形式是 studies。",
+      "error_tag": "G-T02"
+    },
+    {
+      "id": "G-T02-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The cat ____ milk very much.",
+      "options": [
+        { "key": "A", "text": "like", "distractor": "the cat 是三单，要加 -s" },
+        { "key": "B", "text": "likes", "answer": true },
+        { "key": "C", "text": "liking", "distractor": "不能单独作谓语" },
+        { "key": "D", "text": "to like", "distractor": "不定式不能直接作谓语" }
+      ],
+      "explanation": "the cat 属于第三人称单数，动词用 likes。",
+      "error_tag": "G-T02"
+    }
+  ]
+}

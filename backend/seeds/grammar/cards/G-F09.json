@@ -1,0 +1,105 @@
+{
+  "id": "G-F09",
+  "type": "contrast",
+  "module": "F",
+  "module_name": "动名词",
+  "title": "to do 与 doing 义变",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "He stopped to talk to me.", "zh": "他停下来跟我说话。" },
+      { "en": "He stopped talking.", "zh": "他不再说话了。" }
+    ],
+    "question": "两句都有 stopped，意思有什么不同？",
+    "options": [
+      {
+        "key": "A",
+        "text": "第一句是“停下来，去做另一件事”；第二句是“停止正在做的那件事”",
+        "feedback": "对！to do 指向还没做的事，doing 指向正在做的事。"
+      },
+      {
+        "key": "B",
+        "text": "两句意思完全一样",
+        "feedback": "不对——一个开始说话，一个不再说话，方向正相反。"
+      },
+      {
+        "key": "C",
+        "text": "第一句更礼貌一些",
+        "feedback": "不对——差别在意思，不在礼貌程度。"
+      }
+    ],
+    "answer": "A"
+  },
+  "contrast": {
+    "left": {
+      "label": "to do：还没做、将要做的",
+      "formula": "stop / remember / forget / try + to do",
+      "anchor": { "en": "He stopped to have a rest.", "zh": "他停下来休息一会儿。" },
+      "focus": "动作在“之后”发生：停下手头的事，去休息"
+    },
+    "right": {
+      "label": "doing：正在做、已经做过的",
+      "formula": "stop / remember / forget / try + doing",
+      "anchor": { "en": "He stopped having a rest.", "zh": "他不再休息了。" },
+      "focus": "动作本身被停止：休息这个动作结束了"
+    },
+    "diff": "to do 说的是“将来/未做”的动作，doing 说的是“已经发生过”的动作。remember to do 记得去做（还没做），remember doing 记得做过（已做过）；forget 同理；try to do 努力去做，try doing 试着做做看。",
+    "traps": [
+      {
+        "wrong": "I forgot locking the door, so I went back to check it.",
+        "right": "I forgot to lock the door, so I went back to check it.",
+        "why": "忘了去锁门（没锁）用 forget to do；forget doing 是“忘了自己锁过门”。"
+      },
+      {
+        "wrong": "Please remember posting the letter for me.",
+        "right": "Please remember to post the letter for me.",
+        "why": "提醒别人“记得去做”用 remember to do。"
+      }
+    ]
+  },
+  "guess_callback": "你刚才选的是 A——判断口诀：还没做用 to do，已经做过用 doing。",
+  "check": [
+    {
+      "id": "G-F09-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Remember ____ (turn) off the light when you leave.",
+      "options": [
+        { "key": "A", "text": "turning", "distractor": "灯还没关，是“记得去关”，用 to do" },
+        { "key": "B", "text": "to turn", "answer": true },
+        { "key": "C", "text": "turn", "distractor": "缺少 to" },
+        { "key": "D", "text": "turned", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "记得去做（还没做）→ remember to turn。",
+      "error_tag": "G-F09"
+    },
+    {
+      "id": "G-F09-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "I remember ____ (meet) him somewhere before.",
+      "options": [
+        { "key": "A", "text": "to meet", "distractor": "before 说明已经见过，用 doing" },
+        { "key": "B", "text": "meeting", "answer": true },
+        { "key": "C", "text": "meet", "distractor": "缺少 to 或 -ing" },
+        { "key": "D", "text": "met", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "记得做过（已发生）→ remember meeting。",
+      "error_tag": "G-F09"
+    },
+    {
+      "id": "G-F09-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "他很累，于是停下来休息一会儿。",
+      "options": [
+        { "key": "A", "text": "He stopped to have a rest.", "answer": true },
+        { "key": "B", "text": "He stopped having a rest.", "distractor": "这是“不再休息”，与“很累”矛盾" },
+        { "key": "C", "text": "He stopped have a rest.", "distractor": "缺少 to" },
+        { "key": "D", "text": "He stopped to having a rest.", "distractor": "to 后面要接动词原形" }
+      ],
+      "explanation": "停下来去做另一件事 → stopped to have a rest。",
+      "error_tag": "G-F09"
+    }
+  ]
+}

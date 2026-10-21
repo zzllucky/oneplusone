@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T15",
+  "title": "宾语从句的时态呼应",
+  "questions": [
+    {
+      "id": "G-T15-L1-01",
+      "level": "L1",
+      "stem": "She said she ____ (have) a lot of homework to do.",
+      "options": [
+        { "key": "A", "text": "has", "distractor": "主句是过去时，从句要退一格" },
+        { "key": "B", "text": "had", "answer": true },
+        { "key": "C", "text": "will have", "distractor": "will 要退成 would" },
+        { "key": "D", "text": "is having", "distractor": "进行时要退成过去进行时" }
+      ],
+      "explanation": "主句 said 是过去时，从句的一般现在时 has 退成 had。",
+      "error_tag": "G-T15"
+    },
+    {
+      "id": "G-T15-L1-02",
+      "level": "L1",
+      "stem": "They told us they ____ (be) in Beijing last year.",
+      "options": [
+        { "key": "A", "text": "are", "distractor": "last year 表示过去" },
+        { "key": "B", "text": "were", "answer": true },
+        { "key": "C", "text": "will be", "distractor": "时态不对" },
+        { "key": "D", "text": "have been", "distractor": "现在完成时要退成过去完成时" }
+      ],
+      "explanation": "从句里有 last year，本身就用过去时 were，与主句呼应一致。",
+      "error_tag": "G-T15"
+    },
+    {
+      "id": "G-T15-L2-01",
+      "level": "L2",
+      "stem": "He asked me where I ____ (go) the next day.",
+      "options": [
+        { "key": "A", "text": "go", "distractor": "the next day 表示当时之后的将来" },
+        { "key": "B", "text": "went", "distractor": "went 表示已经去过" },
+        { "key": "C", "text": "will go", "distractor": "主句是过去时，will 要退成 would" },
+        { "key": "D", "text": "would go", "answer": true }
+      ],
+      "explanation": "主句 asked 是过去时，“第二天要去”用 would go。",
+      "error_tag": "G-T15"
+    },
+    {
+      "id": "G-T15-L2-02",
+      "level": "L2",
+      "stem": "The teacher said light ____ (travel) much faster than sound.",
+      "options": [
+        { "key": "A", "text": "travels", "answer": true },
+        { "key": "B", "text": "traveled", "distractor": "客观真理不退格" },
+        { "key": "C", "text": "will travel", "distractor": "客观真理不用将来时" },
+        { "key": "D", "text": "is traveling", "distractor": "客观真理不用进行时" }
+      ],
+      "explanation": "光速是客观真理，不管主句什么时态，都用一般现在时 travels。",
+      "error_tag": "G-T15"
+    },
+    {
+      "id": "G-T15-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He said he was ill yesterday.", "distractor": "正确" },
+        { "key": "B", "text": "She said she would come the next day.", "distractor": "正确" },
+        { "key": "C", "text": "The teacher said the sun rose in the east.", "answer": true },
+        { "key": "D", "text": "They said they were very busy.", "distractor": "正确" }
+      ],
+      "explanation": "太阳东升是客观真理，即使主句是过去时也要用 rises。",
+      "error_tag": "G-T15"
+    },
+    {
+      "id": "G-T15-L3-02",
+      "level": "L3",
+      "stem": "I didn't know what ____ (happen) next.",
+      "options": [
+        { "key": "A", "text": "happens", "distractor": "主句是过去时" },
+        { "key": "B", "text": "happened", "distractor": "next 表示当时之后，不是已经发生" },
+        { "key": "C", "text": "will happen", "distractor": "will 要退成 would" },
+        { "key": "D", "text": "would happen", "answer": true }
+      ],
+      "explanation": "主句 didn't know 是过去时，“接下来会发生什么”用 would happen。",
+      "error_tag": "G-T15"
+    }
+  ]
+}

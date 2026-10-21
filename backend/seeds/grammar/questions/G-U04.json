@@ -1,0 +1,84 @@
+{
+  "point_id": "G-U04",
+  "title": "概数表达",
+  "questions": [
+    {
+      "id": "G-U04-L1-01",
+      "level": "L1",
+      "stem": "There are ____ of books in our school library.",
+      "options": [
+        { "key": "A", "text": "thousand", "distractor": "没有具体数字时，thousand 要加 s 加 of" },
+        { "key": "B", "text": "thousands", "distractor": "缺少 of" },
+        { "key": "C", "text": "thousands of", "answer": true },
+        { "key": "D", "text": "thousand of", "distractor": "没有具体数字时 thousand 要加 s" }
+      ],
+      "explanation": "成千上万（概数）→ thousands of。",
+      "error_tag": "G-U04"
+    },
+    {
+      "id": "G-U04-L1-02",
+      "level": "L1",
+      "stem": "The factory has ____ workers.",
+      "options": [
+        { "key": "A", "text": "five hundreds", "distractor": "有具体数字时不加 s" },
+        { "key": "B", "text": "five hundred", "answer": true },
+        { "key": "C", "text": "five hundreds of", "distractor": "有具体数字时不加 s 也不加 of" },
+        { "key": "D", "text": "five hundred of", "distractor": "有具体数字时不加 of" }
+      ],
+      "explanation": "确切数字：five hundred workers。",
+      "error_tag": "G-U04"
+    },
+    {
+      "id": "G-U04-L2-01",
+      "level": "L2",
+      "stem": "____ trees were planted on the hill last year.",
+      "options": [
+        { "key": "A", "text": "Million of", "distractor": "概数时 million 要加 s" },
+        { "key": "B", "text": "Millions of", "answer": true },
+        { "key": "C", "text": "Two millions of", "distractor": "有数字时既不加 s 也不加 of" },
+        { "key": "D", "text": "Two million of", "distractor": "有数字时不加 of" }
+      ],
+      "explanation": "数百万（概数）→ millions of。",
+      "error_tag": "G-U04"
+    },
+    {
+      "id": "G-U04-L2-02",
+      "level": "L2",
+      "stem": "The famous writer was born ____.",
+      "options": [
+        { "key": "A", "text": "in the 1950s", "answer": true },
+        { "key": "B", "text": "in 1950s", "distractor": "年代前要加 the" },
+        { "key": "C", "text": "in the 1950", "distractor": "表示“五十年代”要用复数形式" },
+        { "key": "D", "text": "in his 1950s", "distractor": "his + 整十复数表年龄，不表年代" }
+      ],
+      "explanation": "二十世纪五十年代 → in the 1950s。",
+      "error_tag": "G-U04"
+    },
+    {
+      "id": "G-U04-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "Hundreds of people took part in the race.", "distractor": "正确" },
+        { "key": "B", "text": "She became a teacher in her thirties.", "distractor": "正确" },
+        { "key": "C", "text": "There are three thousands students in the school.", "answer": true },
+        { "key": "D", "text": "Millions of stars are in the sky.", "distractor": "正确" }
+      ],
+      "explanation": "有具体数字 three，thousand 不加 s：three thousand students。",
+      "error_tag": "G-U04"
+    },
+    {
+      "id": "G-U04-L3-02",
+      "level": "L3",
+      "stem": "— How old is your father? — He is ____.",
+      "options": [
+        { "key": "A", "text": "in his forty", "distractor": "“四十多岁”要用复数 forties" },
+        { "key": "B", "text": "in his forties", "answer": true },
+        { "key": "C", "text": "in the forties", "distractor": "表示年龄要用 one's，不是 the" },
+        { "key": "D", "text": "at his forties", "distractor": "介词要用 in" }
+      ],
+      "explanation": "四十多岁 → in his forties。",
+      "error_tag": "G-U04"
+    }
+  ]
+}

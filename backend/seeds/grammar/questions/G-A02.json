@@ -1,0 +1,84 @@
+{
+  "point_id": "G-A02",
+  "title": "比较句型",
+  "questions": [
+    {
+      "id": "G-A02-L1-01",
+      "level": "L1",
+      "stem": "This room is not ____ that one. It's much smaller.",
+      "options": [
+        { "key": "A", "text": "as big as", "answer": true },
+        { "key": "B", "text": "as bigger as", "distractor": "as…as 中间用原级" },
+        { "key": "C", "text": "so bigger as", "distractor": "as…as 中间用原级" },
+        { "key": "D", "text": "as big so", "distractor": "后面的 as 不能换成 so" }
+      ],
+      "explanation": "同级比较否定：not as big as。",
+      "error_tag": "G-A02"
+    },
+    {
+      "id": "G-A02-L1-02",
+      "level": "L1",
+      "stem": "Tom runs ____ than any other student in his class.",
+      "options": [
+        { "key": "A", "text": "fast", "distractor": "有 than 要用比较级" },
+        { "key": "B", "text": "faster", "answer": true },
+        { "key": "C", "text": "fastest", "distractor": "有 than 用比较级" },
+        { "key": "D", "text": "the fastest", "distractor": "有 than 用比较级" }
+      ],
+      "explanation": "比较级 + than：faster than。",
+      "error_tag": "G-A02"
+    },
+    {
+      "id": "G-A02-L2-01",
+      "level": "L2",
+      "stem": "The population of China is ____ than ____ of Japan.",
+      "options": [
+        { "key": "A", "text": "larger; that", "answer": true },
+        { "key": "B", "text": "larger; it", "distractor": "比较句中替代 the population 用 that" },
+        { "key": "C", "text": "more; that", "distractor": "说人口多少用 large / small，不用 much" },
+        { "key": "D", "text": "more; it", "distractor": "两处都不对" }
+      ],
+      "explanation": "人口多用 large；比较句用 that 替代 population。",
+      "error_tag": "G-A02"
+    },
+    {
+      "id": "G-A02-L2-02",
+      "level": "L2",
+      "stem": "— It's getting ____ and ____ in winter here. — Yes, we need more coats.",
+      "options": [
+        { "key": "A", "text": "cold; cold", "distractor": "表示“越来越”要用比较级重复" },
+        { "key": "B", "text": "colder; colder", "answer": true },
+        { "key": "C", "text": "more cold; more cold", "distractor": "cold 是单音节，加 er" },
+        { "key": "D", "text": "coldest; coldest", "distractor": "“越来越”用比较级，不用最高级" }
+      ],
+      "explanation": "越来越冷 → colder and colder。",
+      "error_tag": "G-A02"
+    },
+    {
+      "id": "G-A02-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He is as busy as before.", "distractor": "正确" },
+        { "key": "B", "text": "The Yellow River is the second longest river in China.", "distractor": "正确" },
+        { "key": "C", "text": "This book is more better than that one.", "answer": true },
+        { "key": "D", "text": "The more you read, the more you know.", "distractor": "正确" }
+      ],
+      "explanation": "better 已是比较级，前面不能再加 more。",
+      "error_tag": "G-A02"
+    },
+    {
+      "id": "G-A02-L3-02",
+      "level": "L3",
+      "stem": "— Beijing is bigger than ____ city in Japan. — Really?",
+      "options": [
+        { "key": "A", "text": "any", "answer": true },
+        { "key": "B", "text": "any other", "distractor": "北京不在日本，无需排除自己，不加 other" },
+        { "key": "C", "text": "the other", "distractor": "这里不是两者比较" },
+        { "key": "D", "text": "other", "distractor": "结构不完整" }
+      ],
+      "explanation": "不同范围比较不加 other：bigger than any city in Japan。",
+      "error_tag": "G-A02"
+    }
+  ]
+}

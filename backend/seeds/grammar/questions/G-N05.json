@@ -1,0 +1,84 @@
+{
+  "point_id": "G-N05",
+  "title": "名词作定语",
+  "questions": [
+    {
+      "id": "G-N05-L1-01",
+      "level": "L1",
+      "stem": "My father works in a ____ (shoe) factory.",
+      "options": [
+        { "key": "A", "text": "shoes", "distractor": "名词作定语用单数" },
+        { "key": "B", "text": "shoe", "answer": true },
+        { "key": "C", "text": "shoe's", "distractor": "这里不是所有格" },
+        { "key": "D", "text": "shoes'", "distractor": "这里不是所有格" }
+      ],
+      "explanation": "shoe 作定语保持单数：a shoe factory。",
+      "error_tag": "G-N05"
+    },
+    {
+      "id": "G-N05-L1-02",
+      "level": "L1",
+      "stem": "We planted twenty ____ (banana tree) last spring.",
+      "options": [
+        { "key": "A", "text": "bananas trees", "distractor": "作定语的 banana 不变复数" },
+        { "key": "B", "text": "banana tree", "distractor": "twenty 后面中心词要变复数" },
+        { "key": "C", "text": "banana trees", "answer": true },
+        { "key": "D", "text": "bananas tree", "distractor": "变复数的应是中心词 tree" }
+      ],
+      "explanation": "banana 作定语不变，tree 变复数：banana trees。",
+      "error_tag": "G-N05"
+    },
+    {
+      "id": "G-N05-L2-01",
+      "level": "L2",
+      "stem": "There are three ____ (woman doctor) in the hospital.",
+      "options": [
+        { "key": "A", "text": "woman doctors", "distractor": "woman 作定语要跟着变复数" },
+        { "key": "B", "text": "women doctors", "answer": true },
+        { "key": "C", "text": "woman doctor", "distractor": "three 后面要用复数" },
+        { "key": "D", "text": "women doctor", "distractor": "中心词也要变复数" }
+      ],
+      "explanation": "woman 作定语随中心词变复数：women doctors。",
+      "error_tag": "G-N05"
+    },
+    {
+      "id": "G-N05-L2-02",
+      "level": "L2",
+      "stem": "The ____ (boy student) are having a basketball match.",
+      "options": [
+        { "key": "A", "text": "boys students", "distractor": "boy 作定语不变复数" },
+        { "key": "B", "text": "boy student", "distractor": "谓语是 are，主语要用复数" },
+        { "key": "C", "text": "boy students", "answer": true },
+        { "key": "D", "text": "boys student", "distractor": "变复数的应是中心词 student" }
+      ],
+      "explanation": "boy 作定语不变，student 变复数：boy students。",
+      "error_tag": "G-N05"
+    },
+    {
+      "id": "G-N05-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "There is a book shop near our school.", "distractor": "正确" },
+        { "key": "B", "text": "They are men workers in the factory.", "distractor": "正确：man 随中心词变" },
+        { "key": "C", "text": "We have four pencil-boxs in the bag.", "answer": true },
+        { "key": "D", "text": "She bought two sports shoes shops.", "distractor": "结构错误，但这是下面要判断的干扰项" }
+      ],
+      "explanation": "pencil-box 的复数应是 pencil-boxes（x 结尾加 -es）。",
+      "error_tag": "G-N05"
+    },
+    {
+      "id": "G-N05-L3-02",
+      "level": "L3",
+      "stem": "Our school has two ____ halls and a big ____ field.",
+      "options": [
+        { "key": "A", "text": "sport; sport", "distractor": "sport 作定语通常用复数形式 sports" },
+        { "key": "B", "text": "sports; sports", "answer": true },
+        { "key": "C", "text": "sports; sport", "distractor": "两个空都要用 sports 作定语" },
+        { "key": "D", "text": "sport's; sport's", "distractor": "这里不是所有格" }
+      ],
+      "explanation": "sports 是固定作定语的复数形式：sports hall、sports field。",
+      "error_tag": "G-N05"
+    }
+  ]
+}

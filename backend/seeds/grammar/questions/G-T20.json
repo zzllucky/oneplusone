@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T20",
+  "title": "过去进行时·基本用法",
+  "questions": [
+    {
+      "id": "G-T20-L1-01",
+      "level": "L1",
+      "stem": "This time yesterday I ____ (sit) in the classroom.",
+      "options": [
+        { "key": "A", "text": "sat", "distractor": "“昨天这个时候”强调那一刻正在进行" },
+        { "key": "B", "text": "was sitting", "answer": true },
+        { "key": "C", "text": "am sitting", "distractor": "这是过去的时间" },
+        { "key": "D", "text": "sit", "distractor": "时态不对" }
+      ],
+      "explanation": "this time yesterday 点明过去某个时刻，用 was sitting。",
+      "error_tag": "G-T20"
+    },
+    {
+      "id": "G-T20-L1-02",
+      "level": "L1",
+      "stem": "At that time, the children ____ (play) in the garden.",
+      "options": [
+        { "key": "A", "text": "played", "distractor": "at that time 强调那一刻正在进行" },
+        { "key": "B", "text": "were playing", "answer": true },
+        { "key": "C", "text": "are playing", "distractor": "这是过去的时间" },
+        { "key": "D", "text": "play", "distractor": "时态不对" }
+      ],
+      "explanation": "at that time 提示过去某一刻正在发生，用 were playing。",
+      "error_tag": "G-T20"
+    },
+    {
+      "id": "G-T20-L2-01",
+      "level": "L2",
+      "stem": "— What ____ you ____ (do) at eight last night? — I ____ TV.",
+      "options": [
+        { "key": "A", "text": "were; doing; was watching", "answer": true },
+        { "key": "B", "text": "did; do; watched", "distractor": "问的是昨晚八点那一刻正在做什么" },
+        { "key": "C", "text": "were; doing; watched", "distractor": "答语也要用进行时" },
+        { "key": "D", "text": "do; do; watch", "distractor": "时态不对" }
+      ],
+      "explanation": "问昨晚八点正在做什么，问答都用过去进行时。",
+      "error_tag": "G-T20"
+    },
+    {
+      "id": "G-T20-L2-02",
+      "level": "L2",
+      "stem": "He ____ (not sleep) at ten last night. He was still reading.",
+      "options": [
+        { "key": "A", "text": "didn't sleep", "distractor": "这里要表达“十点那一刻没在睡”，用进行时否定" },
+        { "key": "B", "text": "wasn't sleeping", "answer": true },
+        { "key": "C", "text": "doesn't sleep", "distractor": "这是过去的时间" },
+        { "key": "D", "text": "isn't sleeping", "distractor": "这是过去的时间" }
+      ],
+      "explanation": "“昨晚十点没在睡觉”用过去进行时否定 wasn't sleeping。",
+      "error_tag": "G-T20"
+    },
+    {
+      "id": "G-T20-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "She was cooking dinner at six yesterday.", "distractor": "正确" },
+        { "key": "B", "text": "We were having a meeting at that time.", "distractor": "正确" },
+        { "key": "C", "text": "They was watching a film then.", "answer": true },
+        { "key": "D", "text": "I was walking my dog at that moment.", "distractor": "正确" }
+      ],
+      "explanation": "they 是复数，be 动词要用 were：They were watching a film then。",
+      "error_tag": "G-T20"
+    },
+    {
+      "id": "G-T20-L3-02",
+      "level": "L3",
+      "stem": "I ____ my homework at seven, so I ____ you call me.",
+      "options": [
+        { "key": "A", "text": "did; didn't hear", "distractor": "七点那一刻正在做，要用进行时" },
+        { "key": "B", "text": "was doing; didn't hear", "answer": true },
+        { "key": "C", "text": "was doing; wasn't hearing", "distractor": "hear 是感官动词，不用进行时" },
+        { "key": "D", "text": "did; wasn't hearing", "distractor": "两个空都错了" }
+      ],
+      "explanation": "做作业是长动作用 was doing；“没听见”用 didn't hear（hear 不用进行时）。",
+      "error_tag": "G-T20"
+    }
+  ]
+}

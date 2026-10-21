@@ -1,0 +1,84 @@
+{
+  "point_id": "G-A01",
+  "title": "比较级最高级构成",
+  "questions": [
+    {
+      "id": "G-A01-L1-01",
+      "level": "L1",
+      "stem": "My bag is ____ than yours. It's much bigger.",
+      "options": [
+        { "key": "A", "text": "heavy", "distractor": "有 than 要用比较级" },
+        { "key": "B", "text": "heavier", "answer": true },
+        { "key": "C", "text": "heaviest", "distractor": "两者比较不用最高级" },
+        { "key": "D", "text": "more heavy", "distractor": "辅音+y 结尾变 i 加 er" }
+      ],
+      "explanation": "heavy 是辅音 + y，变 y 为 i 加 er → heavier。",
+      "error_tag": "G-A01"
+    },
+    {
+      "id": "G-A01-L1-02",
+      "level": "L1",
+      "stem": "Which subject do you like ____, English, maths or Chinese?",
+      "options": [
+        { "key": "A", "text": "well", "distractor": "三者比较要用最高级" },
+        { "key": "B", "text": "better", "distractor": "三者比较用最高级" },
+        { "key": "C", "text": "best", "answer": true },
+        { "key": "D", "text": "the better", "distractor": "三者比较用最高级" }
+      ],
+      "explanation": "三者选一 → like best（well 的最高级）。",
+      "error_tag": "G-A01"
+    },
+    {
+      "id": "G-A01-L2-01",
+      "level": "L2",
+      "stem": "The weather today is even ____ than yesterday.",
+      "options": [
+        { "key": "A", "text": "bad", "distractor": "有 than 要用比较级" },
+        { "key": "B", "text": "worse", "answer": true },
+        { "key": "C", "text": "worst", "distractor": "两者比较不用最高级" },
+        { "key": "D", "text": "badder", "distractor": "bad 的比较级是 worse" }
+      ],
+      "explanation": "bad → worse（不规则变化）。",
+      "error_tag": "G-A01"
+    },
+    {
+      "id": "G-A01-L2-02",
+      "level": "L2",
+      "stem": "This is ____ book in our school library.",
+      "options": [
+        { "key": "A", "text": "the most popular", "answer": true },
+        { "key": "B", "text": "the popularest", "distractor": "多音节词用 most" },
+        { "key": "C", "text": "more popular", "distractor": "in our school 是范围，用最高级" },
+        { "key": "D", "text": "most popular", "distractor": "最高级前要加 the" }
+      ],
+      "explanation": "多音节词最高级 → the most popular。",
+      "error_tag": "G-A01"
+    },
+    {
+      "id": "G-A01-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "This box is bigger than that one.", "distractor": "正确" },
+        { "key": "B", "text": "She is the tallest girl in her class.", "distractor": "正确" },
+        { "key": "C", "text": "He is more taller than his brother.", "answer": true },
+        { "key": "D", "text": "This question is the most difficult of all.", "distractor": "正确" }
+      ],
+      "explanation": "more 和 -er 不能同时使用，应改为 taller。",
+      "error_tag": "G-A01"
+    },
+    {
+      "id": "G-A01-L3-02",
+      "level": "L3",
+      "stem": "— Which is ____, the red one or the blue one? — The blue one. It's 200 yuan.",
+      "options": [
+        { "key": "A", "text": "cheap", "distractor": "两者比较用比较级" },
+        { "key": "B", "text": "cheaper", "distractor": "答语“200 元”暗示要选出贵的那个，语义不匹配" },
+        { "key": "C", "text": "more expensive", "answer": true },
+        { "key": "D", "text": "the most expensive", "distractor": "两者比较用比较级" }
+      ],
+      "explanation": "两者比较，多音节词 → more expensive。",
+      "error_tag": "G-A01"
+    }
+  ]
+}

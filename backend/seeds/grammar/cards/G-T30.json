@@ -1,0 +1,105 @@
+{
+  "id": "G-T30",
+  "type": "contrast",
+  "module": "T",
+  "module_name": "过去完成时",
+  "title": "现在完成时 vs 过去完成时",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "I have finished my homework.", "zh": "我写完作业了（现在写完了）。" },
+      { "en": "I had finished my homework before my mother came back.", "zh": "妈妈回来之前我就写完作业了。" }
+    ],
+    "question": "两句都是“写完作业”，参照点有什么不同？",
+    "options": [
+      {
+        "key": "A",
+        "text": "第一句以“现在”为参照，第二句以“过去的某个时刻”为参照",
+        "feedback": "对！参照点是现在用 have/has，参照点是过去用 had。"
+      },
+      {
+        "key": "B",
+        "text": "第二句写得更快",
+        "feedback": "不对——快慢不是判据，参照点才是。"
+      },
+      {
+        "key": "C",
+        "text": "两句意思完全一样",
+        "feedback": "不对——一个说“到现在为止”，一个说“到过去某时为止”。"
+      }
+    ],
+    "answer": "A"
+  },
+  "contrast": {
+    "left": {
+      "label": "现在完成时",
+      "formula": "have / has + 过去分词",
+      "anchor": { "en": "I have finished my homework.", "zh": "我写完作业了。" },
+      "focus": "以“现在”为参照点：到现在为止已经完成"
+    },
+    "right": {
+      "label": "过去完成时",
+      "formula": "had + 过去分词",
+      "anchor": { "en": "I had finished my homework before Mum came back.", "zh": "妈妈回来前我就写完了。" },
+      "focus": "以“过去的某个时刻”为参照点：到那时为止已经完成"
+    },
+    "diff": "句子里有没有一个“过去的时间点”当参照？没有 → 现在完成时（have/has）；有（when I got there / before he came / by the time…）→ 过去完成时（had）。",
+    "traps": [
+      {
+        "wrong": "I have finished my homework before he came.",
+        "right": "I had finished my homework before he came.",
+        "why": "before he came 是过去参照点，要用 had。"
+      },
+      {
+        "wrong": "He had lived here for ten years.",
+        "right": "He has lived here for ten years.",
+        "why": "句子里没有过去参照点，说的是“到现在住了十年”，用 has。"
+      }
+    ]
+  },
+  "guess_callback": "你刚才选的是 A——判断口诀：找参照点，有过去时间点用 had，没有就用 have/has。",
+  "check": [
+    {
+      "id": "G-T30-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "We ____ (learn) 500 words by the end of last term.",
+      "options": [
+        { "key": "A", "text": "have learned", "distractor": "last term 是过去参照点" },
+        { "key": "B", "text": "had learned", "answer": true },
+        { "key": "C", "text": "learned", "distractor": "“到上学期末为止”要用过去完成时" },
+        { "key": "D", "text": "learn", "distractor": "这是现在时" }
+      ],
+      "explanation": "“到上学期末为止”是过去参照点，用 had learned。",
+      "error_tag": "G-T30"
+    },
+    {
+      "id": "G-T30-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Are you free now? — Yes, I ____ (finish) my work.",
+      "options": [
+        { "key": "A", "text": "have finished", "answer": true },
+        { "key": "B", "text": "had finished", "distractor": "这里没有过去参照点，说的是“现在已经做完了”" },
+        { "key": "C", "text": "finished", "distractor": "强调对现在的影响（现在有空），用完成时" },
+        { "key": "D", "text": "finish", "distractor": "这是现在时" }
+      ],
+      "explanation": "参照点是“现在”，用 have finished。",
+      "error_tag": "G-T30"
+    },
+    {
+      "id": "G-T30-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "She had cleaned the room when her friend arrived.", "answer": true },
+        { "key": "B", "text": "She has cleaned the room when her friend arrived.", "distractor": "arrived 是过去参照点，要用 had" },
+        { "key": "C", "text": "She had clean the room when her friend arrived.", "distractor": "had 后面要接过去分词" },
+        { "key": "D", "text": "She was clean the room when her friend arrived.", "distractor": "结构错误" }
+      ],
+      "explanation": "朋友到达（过去参照点）之前她就打扫完了，用 had cleaned。",
+      "error_tag": "G-T30"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "G-T17",
+  "type": "rule",
+  "module": "T",
+  "module_name": "现在进行时",
+  "title": "现在分词 -ing 的拼写",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "make → making", "zh": "制作" },
+      { "en": "run → running", "zh": "跑" }
+    ],
+    "question": "两个词都加了 -ing，为什么 make 去掉了 e，run 却多了一个 n？",
+    "options": [
+      {
+        "key": "A",
+        "text": "因为 -ing 的拼写有三条特殊规则：去 e、双写、ie 变 y",
+        "feedback": "对！以不发音的 e 结尾要去 e；重读闭音节要双写末尾辅音。"
+      },
+      {
+        "key": "B",
+        "text": "因为这两个单词比较短",
+        "feedback": "不对——长短没关系，只看结尾的字母和重音。"
+      },
+      {
+        "key": "C",
+        "text": "因为跑的动作更快",
+        "feedback": "不对——拼写跟词义无关。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "现在分词 = 动词 + -ing，四条拼写规则",
+    "signals": ["am / is / are + -ing"],
+    "formula": "① 一般情况 +ing：play→playing　② 以不发音 e 结尾，去 e +ing：make→making，write→writing　③ 重读闭音节，双写末尾辅音 +ing：run→running，sit→sitting，swim→swimming　④ ie 结尾变 y +ing：die→dying，lie→lying",
+    "anchors": [
+      {
+        "en": "He is making a cake for his mother.",
+        "zh": "他正在给妈妈做蛋糕。",
+        "note": "make 去 e 加 ing"
+      },
+      {
+        "en": "The boys are running on the playground.",
+        "zh": "男孩们正在操场上跑步。",
+        "note": "run 双写 n 加 ing"
+      }
+    ],
+    "trap": {
+      "wrong": "He is runing on the playground.",
+      "right": "He is running on the playground.",
+      "why": "run 是重读闭音节，加 -ing 前要双写末尾辅音 n。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住：去 e（make）、双写（run）、ie 变 y（lie），其余直接加。",
+  "check": [
+    {
+      "id": "G-T17-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "She ____ (make) a cake in the kitchen now.",
+      "options": [
+        { "key": "A", "text": "is makeing", "distractor": "make 以不发音的 e 结尾，要先去 e" },
+        { "key": "B", "text": "is making", "answer": true },
+        { "key": "C", "text": "making", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "is make", "distractor": "be 动词后要接 -ing 形式" }
+      ],
+      "explanation": "make 去掉不发音的 e 再加 -ing：is making。",
+      "error_tag": "G-T17"
+    },
+    {
+      "id": "G-T17-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪个拼写是正确的？",
+      "options": [
+        { "key": "A", "text": "runing", "distractor": "重读闭音节要双写 n" },
+        { "key": "B", "text": "running", "answer": true },
+        { "key": "C", "text": "runying", "distractor": "拼写错误" },
+        { "key": "D", "text": "runeing", "distractor": "run 不是以 e 结尾" }
+      ],
+      "explanation": "run 双写末尾辅音 n 再加 -ing：running。",
+      "error_tag": "G-T17"
+    },
+    {
+      "id": "G-T17-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The cat ____ (lie) under the tree now.",
+      "options": [
+        { "key": "A", "text": "is lieing", "distractor": "ie 结尾要变 y 再加 ing" },
+        { "key": "B", "text": "is lying", "answer": true },
+        { "key": "C", "text": "lying", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "is lie", "distractor": "be 动词后要接 -ing 形式" }
+      ],
+      "explanation": "lie 以 ie 结尾，变 y 再加 -ing：is lying。",
+      "error_tag": "G-T17"
+    }
+  ]
+}

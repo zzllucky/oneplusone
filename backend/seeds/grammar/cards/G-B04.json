@@ -1,0 +1,100 @@
+{
+  "id": "G-B04",
+  "type": "rule",
+  "module": "B",
+  "module_name": "动词",
+  "title": "need 的用法",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "You needn't worry about it.", "zh": "你不必担心这件事。" },
+      { "en": "He needs to get up early.", "zh": "他需要早起。" }
+    ],
+    "question": "“你不必担心”能说成 You don't need worry 吗？",
+    "options": [
+      {
+        "key": "A",
+        "text": "不行——need 作实义动词时要说 don't need to worry",
+        "feedback": "对！need 有两种身份：情态动词（needn't do，无 to）和实义动词（need to do，有 to）。"
+      },
+      {
+        "key": "B",
+        "text": "可以，两种说法完全一样",
+        "feedback": "不对——need 前面有 don't 时，后面必须带 to。"
+      },
+      {
+        "key": "C",
+        "text": "两种都是错的",
+        "feedback": "不对——You needn't worry 是对的，You don't need to worry 也是对的。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "need 作情态动词时：need do / needn't do（无 to、无 s，多用于否定和疑问）；作实义动词时：need to do / don't（doesn't）need to do",
+    "signals": ["need", "needn't", "don't need to", "need to", "Need I"],
+    "formula": "① 情态动词：Need I come? — No, you needn't.（不加 to、不加 s）　② 实义动词：He needs to go. / He doesn't need to go.（有 to、有 s）",
+    "anchors": [
+      {
+        "en": "You needn't come so early.",
+        "zh": "你不必来这么早。",
+        "note": "情态动词：needn't + 原形"
+      },
+      {
+        "en": "We need to buy some bread.",
+        "zh": "我们需要买些面包。",
+        "note": "实义动词：need + to do"
+      }
+    ],
+    "trap": {
+      "wrong": "He needs not to come tomorrow.",
+      "right": "He needn't come tomorrow. / He doesn't need to come tomorrow.",
+      "why": "两种身份不能混用：要么 needn't do，要么 doesn't need to do。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——needn't 后面直接跟动词原形；don't need 后面必须带 to。",
+  "check": [
+    {
+      "id": "G-B04-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "You ____ worry about the exam. It's quite easy.",
+      "options": [
+        { "key": "A", "text": "needn't", "answer": true },
+        { "key": "B", "text": "don't need", "distractor": "don't need 后面要加 to" },
+        { "key": "C", "text": "needn't to", "distractor": "needn't 后面直接跟原形" },
+        { "key": "D", "text": "aren't need", "distractor": "need 不与 be 动词连用" }
+      ],
+      "explanation": "不必担心 → needn't worry。",
+      "error_tag": "G-B04"
+    },
+    {
+      "id": "G-B04-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He ____ to wear a thick coat today. It's very warm.",
+      "options": [
+        { "key": "A", "text": "needn't", "distractor": "needn't 后面不能接 to" },
+        { "key": "B", "text": "doesn't need", "answer": true },
+        { "key": "C", "text": "needs not", "distractor": "否定结构错误" },
+        { "key": "D", "text": "need", "distractor": "与“天气很暖和”矛盾" }
+      ],
+      "explanation": "doesn't need to wear（实义动词用法）。",
+      "error_tag": "G-B04"
+    },
+    {
+      "id": "G-B04-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "You don't need to come tomorrow.", "answer": true },
+        { "key": "B", "text": "You needn't to come tomorrow.", "distractor": "needn't 后面不能加 to" },
+        { "key": "C", "text": "You don't need come tomorrow.", "distractor": "don't need 后面要加 to" },
+        { "key": "D", "text": "You need not coming tomorrow.", "distractor": "结构错误" }
+      ],
+      "explanation": "don't need to come（实义动词）正确。",
+      "error_tag": "G-B04"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "G-T24",
+  "type": "rule",
+  "module": "T",
+  "module_name": "现在完成时",
+  "title": "since 与 for",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I have lived here for three years.", "zh": "我在这里住了三年了。" },
+      { "en": "I have lived here since 2021.", "zh": "我从 2021 年起就住在这里。" }
+    ],
+    "question": "两句都说“住了多久”，为什么一个用 for，一个用 since？",
+    "options": [
+      {
+        "key": "A",
+        "text": "for 后面接“一段时间”（三年），since 后面接“起点时间”（2021 年）",
+        "feedback": "对！for 量长度，since 指起点，记法就是“for 一段，since 一点”。"
+      },
+      {
+        "key": "B",
+        "text": "因为第二句住的时间更长",
+        "feedback": "不对——两句住的时间其实一样长，只是说法不同。"
+      },
+      {
+        "key": "C",
+        "text": "因为 since 比 for 更正式",
+        "feedback": "不对——正式程度不是判据，后面接的是“段”还是“点”才是。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "for + 一段时间；since + 某个时间点，两者都搭配现在完成时",
+    "signals": ["for", "since", "how long"],
+    "formula": "for + 时间段：for three years / for a week / for a long time　since + 时间点：since 2021 / since last Monday / since I was ten / since three years ago",
+    "anchors": [
+      {
+        "en": "I have lived here for three years.",
+        "zh": "我在这里住了三年了。",
+        "note": "for + 三年（一段）"
+      },
+      {
+        "en": "I have lived here since 2021.",
+        "zh": "我从 2021 年起就住在这里。",
+        "note": "since + 2021 年（一点）"
+      }
+    ],
+    "trap": {
+      "wrong": "I have lived here since three years.",
+      "right": "I have lived here for three years.",
+      "why": "three years 是一段长度，要用 for；想用 since 就说 since three years ago。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住六个字：“for 一段，since 一点”。",
+  "check": [
+    {
+      "id": "G-T24-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He has been a teacher ____ ten years.",
+      "options": [
+        { "key": "A", "text": "since", "distractor": "ten years 是一段长度，要用 for" },
+        { "key": "B", "text": "for", "answer": true },
+        { "key": "C", "text": "in", "distractor": "in ten years 表示“十年后”，与完成时矛盾" },
+        { "key": "D", "text": "at", "distractor": "at 接具体时刻，不接一段时间" }
+      ],
+      "explanation": "ten years 是时间段，用 for。",
+      "error_tag": "G-T24"
+    },
+    {
+      "id": "G-T24-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "We have known each other ____ 2018.",
+      "options": [
+        { "key": "A", "text": "for", "distractor": "2018 是起点，要用 since" },
+        { "key": "B", "text": "since", "answer": true },
+        { "key": "C", "text": "in", "distractor": "in 2018 表示过去某一年，不与完成时连用" },
+        { "key": "D", "text": "on", "distractor": "on 接具体某一天，不接年份" }
+      ],
+      "explanation": "2018 是时间点，用 since。",
+      "error_tag": "G-T24"
+    },
+    {
+      "id": "G-T24-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "I have waited for two hours.", "answer": true },
+        { "key": "B", "text": "I have waited since two hours.", "distractor": "two hours 是一段长度，要用 for" },
+        { "key": "C", "text": "I have waited for two hours ago.", "distractor": "for 后面不能接 ago" },
+        { "key": "D", "text": "I have waited for 2020.", "distractor": "2020 是时间点，要用 since" }
+      ],
+      "explanation": "two hours 是时间段，用 for；想用 since 可说 since two hours ago。",
+      "error_tag": "G-T24"
+    }
+  ]
+}

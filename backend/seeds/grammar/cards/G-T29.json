@@ -1,0 +1,100 @@
+{
+  "id": "G-T29",
+  "type": "rule",
+  "module": "T",
+  "module_name": "过去完成时",
+  "title": "by the time / before / when 作参照",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "By the time we got there, the shop had closed.", "zh": "等我们到那儿时，商店已经关门了。" },
+      { "en": "He had finished the work before lunch.", "zh": "午饭前他已经把活干完了。" }
+    ],
+    "question": "这两个句子里的 by the time、before 起什么作用？",
+    "options": [
+      {
+        "key": "A",
+        "text": "给出“到什么时候为止”的参照点，说明动作在那之前就完成了",
+        "feedback": "对！参照点一出现，比它更早的动作用 had + 过去分词。"
+      },
+      {
+        "key": "B",
+        "text": "表示事情将要发生",
+        "feedback": "不对——句子里 got / finished 都是过去的事。"
+      },
+      {
+        "key": "C",
+        "text": "表示原因",
+        "feedback": "不对——它们是时间标志，不是 because 那样的因果词。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "by the time / before / when 引出的过去时间是参照点，在它之前完成的动作用过去完成时",
+    "signals": ["by the time", "before", "when", "after", "by the end of last term"],
+    "formula": "by the time / before + 过去时间，主句用 had + 过去分词",
+    "anchors": [
+      {
+        "en": "By the time we got there, the shop had closed.",
+        "zh": "等我们到那儿时，商店已经关门了。",
+        "note": "got there 是参照点"
+      },
+      {
+        "en": "He had finished the work before lunch.",
+        "zh": "午饭前他已经把活干完了。",
+        "note": "lunch 是参照点"
+      }
+    ],
+    "trap": {
+      "wrong": "By the time we got there, the shop has closed.",
+      "right": "By the time we got there, the shop had closed.",
+      "why": "参照点 got there 是过去，所以要用 had 而不是 has。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——看到 by the time / before，先找参照点，更早的动作用 had done。",
+  "check": [
+    {
+      "id": "G-T29-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "By the time I was twelve, I ____ (learn) 800 English words.",
+      "options": [
+        { "key": "A", "text": "learned", "distractor": "这里要说“到十二岁为止已经学会”，用过去完成时" },
+        { "key": "B", "text": "had learned", "answer": true },
+        { "key": "C", "text": "have learned", "distractor": "参照点是过去（was twelve）" },
+        { "key": "D", "text": "learn", "distractor": "这是现在时" }
+      ],
+      "explanation": "“到十二岁时”是过去参照点，更早完成的动作用 had learned。",
+      "error_tag": "G-T29"
+    },
+    {
+      "id": "G-T29-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The plane ____ (take) off before we arrived at the airport.",
+      "options": [
+        { "key": "A", "text": "took", "distractor": "起飞发生在到达之前，是更早的动作" },
+        { "key": "B", "text": "had taken", "answer": true },
+        { "key": "C", "text": "has taken", "distractor": "参照点是过去" },
+        { "key": "D", "text": "takes", "distractor": "这是现在时" }
+      ],
+      "explanation": "飞机在我们到达前就起飞了，用 had taken off。",
+      "error_tag": "G-T29"
+    },
+    {
+      "id": "G-T29-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He had left before I came.", "answer": true },
+        { "key": "B", "text": "He has left before I came.", "distractor": "参照点是过去（came），要用 had" },
+        { "key": "C", "text": "He had leave before I came.", "distractor": "had 后面要接过去分词 left" },
+        { "key": "D", "text": "He was leave before I came.", "distractor": "结构错误" }
+      ],
+      "explanation": "“我来到之前他就走了”，用 had left。",
+      "error_tag": "G-T29"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "G-B03",
+  "type": "rule",
+  "module": "B",
+  "module_name": "动词",
+  "title": "情态动词表推测",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "He must be at home. The light is on.", "zh": "他一定在家，灯亮着。" },
+      { "en": "He can't be at home. I saw him go out.", "zh": "他不可能在家，我看见他出去了。" }
+    ],
+    "question": "“他不可能在家”该怎么说？",
+    "options": [
+      {
+        "key": "A",
+        "text": "He can't be at home.",
+        "feedback": "对！否定推测“不可能”用 can't，不用 mustn't。"
+      },
+      {
+        "key": "B",
+        "text": "He mustn't be at home.",
+        "feedback": "不对——mustn't 只表示“禁止”，从来不用于推测。"
+      },
+      {
+        "key": "C",
+        "text": "He needn't be at home.",
+        "feedback": "不对——needn't 是“不必”，不表示推测。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "肯定推测用 must（一定，把握大）；否定推测用 can't（不可能）；把握不大时用 may / might（可能）；对过去的情况推测用“情态动词 + have + 过去分词”",
+    "signals": ["must be", "can't be", "may be", "might be", "must have done", "can't have done"],
+    "formula": "① must + 动词原形：一定　② can't + 动词原形：不可能　③ may / might + 动词原形：可能　④ 对过去：must have done（一定做过） / can't have done（不可能做过）",
+    "anchors": [
+      {
+        "en": "The light is on. He must be in the office.",
+        "zh": "灯亮着，他一定在办公室。",
+        "note": "有证据的肯定推测"
+      },
+      {
+        "en": "He can't be a teacher. He is only fifteen.",
+        "zh": "他不可能是老师，他才十五岁。",
+        "note": "否定推测"
+      }
+    ],
+    "trap": {
+      "wrong": "He mustn't be at home.（想表达“他不可能在家”）",
+      "right": "He can't be at home.",
+      "why": "mustn't 表示禁止，不用于推测；否定推测只能用 can't。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——肯定推测 must，否定推测 can't，把握不大用 may。",
+  "check": [
+    {
+      "id": "G-B03-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Look at that boy over there. He ____ be Tom — Tom is much taller.",
+      "options": [
+        { "key": "A", "text": "must", "distractor": "must 是肯定推测，与后句矛盾" },
+        { "key": "B", "text": "can't", "answer": true },
+        { "key": "C", "text": "may", "distractor": "后句给出了确定的排除理由" },
+        { "key": "D", "text": "mustn't", "distractor": "mustn't 不用于推测" }
+      ],
+      "explanation": "个子差很多 → 不可能是 Tom：can't be。",
+      "error_tag": "G-B03"
+    },
+    {
+      "id": "G-B03-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Whose bag is this? — It ____ be Lucy's. Her name is on it.",
+      "options": [
+        { "key": "A", "text": "can't", "distractor": "上面有名字，是肯定推测" },
+        { "key": "B", "text": "must", "answer": true },
+        { "key": "C", "text": "needn't", "distractor": "needn't 不用于推测" },
+        { "key": "D", "text": "may", "distractor": "有名字作证据，把握很大" }
+      ],
+      "explanation": "上面写着名字 → 一定是她的：must be。",
+      "error_tag": "G-B03"
+    },
+    {
+      "id": "G-B03-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He can't be at school. It's Sunday today.", "answer": true },
+        { "key": "B", "text": "He mustn't be at school. It's Sunday today.", "distractor": "mustn't 不用于推测" },
+        { "key": "C", "text": "He needn't be at school. It's Sunday today.", "distractor": "needn't 是“不必”，不是“不可能”" },
+        { "key": "D", "text": "He shouldn't be at school. It's Sunday today.", "distractor": "shouldn't 是“不应该”，不是推测" }
+      ],
+      "explanation": "否定推测用 can't be。",
+      "error_tag": "G-B03"
+    }
+  ]
+}

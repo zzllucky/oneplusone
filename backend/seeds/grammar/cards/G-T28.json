@@ -1,0 +1,99 @@
+{
+  "id": "G-T28",
+  "type": "rule",
+  "module": "T",
+  "module_name": "过去完成时",
+  "title": "过去的过去",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "When I got to the station, the train had left.", "zh": "我到车站的时候，火车已经开走了。" }
+    ],
+    "question": "“火车开走”和“我到达车站”，哪件事先发生？",
+    "options": [
+      {
+        "key": "A",
+        "text": "火车先开走，我到的时候它已经不在了",
+        "feedback": "对！先发生的事用“had + 过去分词”，这就是“过去的过去”。"
+      },
+      {
+        "key": "B",
+        "text": "我先到车站，然后火车才开",
+        "feedback": "不对——那样就该说 the train left when I was there，句子里 had left 表示更早。"
+      },
+      {
+        "key": "C",
+        "text": "两件事同时发生",
+        "feedback": "不对——had left 说明“开走”在“到达”之前就完成了。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "在过去某个时间或动作之前就已经完成的事（过去的过去）",
+    "signals": ["had + 过去分词", "when / before / by the time 引出的过去时间"],
+    "formula": "had + 过去分词（不分人称，所有人称都用 had）",
+    "anchors": [
+      {
+        "en": "When I got to the station, the train had left.",
+        "zh": "我到车站的时候，火车已经开走了。",
+        "note": "开走（更早）→ had left；到达 → got"
+      },
+      {
+        "en": "By the time he was ten, he had learned 500 English words.",
+        "zh": "他十岁时就已经学了 500 个英语单词。",
+        "note": "was ten 是参照点"
+      }
+    ],
+    "trap": {
+      "wrong": "When I got there, the train has left.",
+      "right": "When I got there, the train had left.",
+      "why": "参照点是过去（got there），要用 had 而不是 has。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住：句子里有两个过去的动作时，更早的那个用 had + 过去分词。",
+  "check": [
+    {
+      "id": "G-T28-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "When I arrived, the meeting ____ (begin).",
+      "options": [
+        { "key": "A", "text": "began", "distractor": "会议开始得更早，要用过去完成时" },
+        { "key": "B", "text": "had begun", "answer": true },
+        { "key": "C", "text": "has begun", "distractor": "参照点是过去（arrived），不能用 has" },
+        { "key": "D", "text": "begins", "distractor": "这是现在时" }
+      ],
+      "explanation": "会议在我到达之前就开始了，用 had begun。",
+      "error_tag": "G-T28"
+    },
+    {
+      "id": "G-T28-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "She ____ (finish) her homework before her mother came back.",
+      "options": [
+        { "key": "A", "text": "finished", "distractor": "完成作业发生在妈妈回来之前" },
+        { "key": "B", "text": "had finished", "answer": true },
+        { "key": "C", "text": "has finished", "distractor": "参照点是过去，不能用 has" },
+        { "key": "D", "text": "finishes", "distractor": "这是现在时" }
+      ],
+      "explanation": "写完作业在妈妈回来之前，是更早的动作，用 had finished。",
+      "error_tag": "G-T28"
+    },
+    {
+      "id": "G-T28-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The film had started when we got to the cinema.", "answer": true },
+        { "key": "B", "text": "The film has started when we got to the cinema.", "distractor": "参照点是过去，要用 had" },
+        { "key": "C", "text": "The film had start when we got to the cinema.", "distractor": "had 后面要接过去分词 started" },
+        { "key": "D", "text": "The film was start when we got to the cinema.", "distractor": "被动语态用错了，且时态不对" }
+      ],
+      "explanation": "电影在我们到达之前就开始，用 had started。",
+      "error_tag": "G-T28"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "G-O02",
+  "type": "rule",
+  "module": "O",
+  "module_name": "宾语从句",
+  "title": "连接词的选择",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I think (that) he is right.", "zh": "我认为他是对的。" },
+      { "en": "I don't know if he will come.", "zh": "我不知道他会不会来。" },
+      { "en": "I wonder whether he is at home or not.", "zh": "我想知道他在不在家。" }
+    ],
+    "question": "想说“我不知道他会不会来”，该用哪个连接词？",
+    "options": [
+      {
+        "key": "A",
+        "text": "if 或 whether——表示“是否”",
+        "feedback": "对！一般疑问句变成从句时，用 if / whether 来带，意思是“是否”。"
+      },
+      {
+        "key": "B",
+        "text": "that",
+        "feedback": "不对——that 只用来带陈述句，没有“是否”的意思。"
+      },
+      {
+        "key": "C",
+        "text": "what",
+        "feedback": "不对——what 是“什么”，带的是缺宾语的特殊疑问句。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "陈述句变从句用 that（口语常省略）；一般疑问句变从句用 if / whether（是否）；特殊疑问句变从句保留原疑问词。whether 可以直接加 or not、可以接 to do，if 不行",
+    "signals": ["that", "if", "whether", "whether or not", "whether to do", "特殊疑问词"],
+    "formula": "① 陈述句 → that（可省）：I think (that)…　② 一般疑问句 → if / whether　③ 特殊疑问句 → 保留 what / who / when / where / how　④ whether or not、whether to do（if 不能这么用）",
+    "anchors": [
+      {
+        "en": "I don't know whether he will come or not.",
+        "zh": "我不知道他来不来。",
+        "note": "or not 紧接 whether"
+      },
+      {
+        "en": "Tell me what you are doing.",
+        "zh": "告诉我你在做什么。",
+        "note": "保留疑问词 what"
+      }
+    ],
+    "trap": {
+      "wrong": "I don't know if or not he will come.",
+      "right": "I don't know whether or not he will come.",
+      "why": "or not 只能紧接 whether，不能配 if。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——that 带陈述句，if/whether 带“是否”，特殊疑问句保留原疑问词。",
+  "check": [
+    {
+      "id": "G-O02-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "I don't know ____ he will come to the party tonight.",
+      "options": [
+        { "key": "A", "text": "that", "distractor": "这里要“是否”，that 没有这个意思" },
+        { "key": "B", "text": "if", "answer": true },
+        { "key": "C", "text": "what", "distractor": "从句不缺主语宾语" },
+        { "key": "D", "text": "which", "distractor": "没有选择范围" }
+      ],
+      "explanation": "一般疑问句变从句 → if（是否）。",
+      "error_tag": "G-O02"
+    },
+    {
+      "id": "G-O02-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— I wonder ____ he likes the gift. — I'm sure he does.",
+      "options": [
+        { "key": "A", "text": "that", "distractor": "这里要“是否”，不是陈述内容" },
+        { "key": "B", "text": "what", "distractor": "从句不缺宾语" },
+        { "key": "C", "text": "whether", "answer": true },
+        { "key": "D", "text": "which", "distractor": "没有选择范围" }
+      ],
+      "explanation": "想知道“是否喜欢” → whether。",
+      "error_tag": "G-O02"
+    },
+    {
+      "id": "G-O02-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "I haven't decided whether to go there.", "answer": true },
+        { "key": "B", "text": "I haven't decided if to go there.", "distractor": "if 后面不能接 to do" },
+        { "key": "C", "text": "I haven't decided whether go there.", "distractor": "要用 whether to do" },
+        { "key": "D", "text": "I haven't decided if go there.", "distractor": "结构错误" }
+      ],
+      "explanation": "whether + to do，if 不能这么用。",
+      "error_tag": "G-O02"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T29",
+  "title": "by the time / before / when 作参照",
+  "questions": [
+    {
+      "id": "G-T29-L1-01",
+      "level": "L1",
+      "stem": "By the time he got home, his mother ____ (cook) dinner.",
+      "options": [
+        { "key": "A", "text": "cooked", "distractor": "做饭发生在他到家之前" },
+        { "key": "B", "text": "had cooked", "answer": true },
+        { "key": "C", "text": "has cooked", "distractor": "参照点是过去" },
+        { "key": "D", "text": "cooks", "distractor": "这是现在时" }
+      ],
+      "explanation": "“他到家时”是参照点，做饭更早，用 had cooked。",
+      "error_tag": "G-T29"
+    },
+    {
+      "id": "G-T29-L1-02",
+      "level": "L1",
+      "stem": "They ____ (build) three bridges by the end of last year.",
+      "options": [
+        { "key": "A", "text": "built", "distractor": "“到去年年底为止”要用过去完成时" },
+        { "key": "B", "text": "had built", "answer": true },
+        { "key": "C", "text": "have built", "distractor": "last year 是过去参照点" },
+        { "key": "D", "text": "build", "distractor": "这是现在时" }
+      ],
+      "explanation": "by the end of last year 是过去参照点，用 had built。",
+      "error_tag": "G-T29"
+    },
+    {
+      "id": "G-T29-L2-01",
+      "level": "L2",
+      "stem": "____ the time the teacher came in, the students ____ (open) their books.",
+      "options": [
+        { "key": "A", "text": "By; had opened", "answer": true },
+        { "key": "B", "text": "At; have opened", "distractor": "at the time 不是“到……为止”，且时态不对" },
+        { "key": "C", "text": "By; have opened", "distractor": "参照点是过去（came in）" },
+        { "key": "D", "text": "In; had opened", "distractor": "搭配错误" }
+      ],
+      "explanation": "by the time + 过去时间，主句用 had opened。",
+      "error_tag": "G-T29"
+    },
+    {
+      "id": "G-T29-L2-02",
+      "level": "L2",
+      "stem": "He ____ (be) a worker for ten years before he became a driver.",
+      "options": [
+        { "key": "A", "text": "was", "distractor": "“当工人”发生在“成为司机”之前" },
+        { "key": "B", "text": "had been", "answer": true },
+        { "key": "C", "text": "has been", "distractor": "参照点是过去（became）" },
+        { "key": "D", "text": "is", "distractor": "这是现在时" }
+      ],
+      "explanation": "before he became 是参照点，之前的状态用 had been。",
+      "error_tag": "G-T29"
+    },
+    {
+      "id": "G-T29-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "By the time we arrived, he had left.", "distractor": "正确" },
+        { "key": "B", "text": "She had finished the letter before supper.", "distractor": "正确" },
+        { "key": "C", "text": "We have learned 300 words by the end of last month.", "answer": true },
+        { "key": "D", "text": "They had cleaned the classroom when the teacher came.", "distractor": "正确" }
+      ],
+      "explanation": "last month 是过去参照点，应改为 had learned。",
+      "error_tag": "G-T29"
+    },
+    {
+      "id": "G-T29-L3-02",
+      "level": "L3",
+      "stem": "____ we ____ (get) to the top, the sun ____ (rise).",
+      "options": [
+        { "key": "A", "text": "By the time; got; had risen", "answer": true },
+        { "key": "B", "text": "By the time; had got; rose", "distractor": "到达是参照点用过去时，日出更早" },
+        { "key": "C", "text": "When; got; has risen", "distractor": "参照点是过去，不能用 has" },
+        { "key": "D", "text": "Before; got; rises", "distractor": "时态不对" }
+      ],
+      "explanation": "到达山顶（got）是参照点，太阳升起更早，用 had risen。",
+      "error_tag": "G-T29"
+    }
+  ]
+}

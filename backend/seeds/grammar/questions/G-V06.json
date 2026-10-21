@@ -1,0 +1,84 @@
+{
+  "point_id": "G-V06",
+  "title": "不用被动的情况",
+  "questions": [
+    {
+      "id": "G-V06-L1-01",
+      "level": "L1",
+      "stem": "A big fire ____ in the factory last night.",
+      "options": [
+        { "key": "A", "text": "happened", "answer": true },
+        { "key": "B", "text": "was happened", "distractor": "happen 是不及物动词，没有被动" },
+        { "key": "C", "text": "is happened", "distractor": "时态不对，且 happen 无被动" },
+        { "key": "D", "text": "was happening", "distractor": "happen 一般不用于进行时" }
+      ],
+      "explanation": "happen 没有被动语态，直接用 happened。",
+      "error_tag": "G-V06"
+    },
+    {
+      "id": "G-V06-L1-02",
+      "level": "L1",
+      "stem": "This bike ____ my brother.",
+      "options": [
+        { "key": "A", "text": "is belonged to", "distractor": "belong to 没有被动" },
+        { "key": "B", "text": "belongs to", "answer": true },
+        { "key": "C", "text": "is belonging to", "distractor": "belong to 不用进行时" },
+        { "key": "D", "text": "belonged", "distractor": "缺少介词 to" }
+      ],
+      "explanation": "belong to（属于）没有被动语态。",
+      "error_tag": "G-V06"
+    },
+    {
+      "id": "G-V06-L2-01",
+      "level": "L2",
+      "stem": "The music ____ beautiful.",
+      "options": [
+        { "key": "A", "text": "sounds", "answer": true },
+        { "key": "B", "text": "is sounded", "distractor": "sound 是系动词，没有被动" },
+        { "key": "C", "text": "is sounding", "distractor": "sound 作系动词不用进行时" },
+        { "key": "D", "text": "was sounded", "distractor": "系动词无被动" }
+      ],
+      "explanation": "sound（听起来）是系动词，后接形容词，不用被动。",
+      "error_tag": "G-V06"
+    },
+    {
+      "id": "G-V06-L2-02",
+      "level": "L2",
+      "stem": "These new books ____ well in the shop.",
+      "options": [
+        { "key": "A", "text": "are sold", "distractor": "“卖得好”用主动表被动" },
+        { "key": "B", "text": "sell", "answer": true },
+        { "key": "C", "text": "are selling", "distractor": "描述特性用一般现在时主动" },
+        { "key": "D", "text": "sold", "distractor": "描述特性用现在时" }
+      ],
+      "explanation": "sell well 用主动形式表示“卖得……”。",
+      "error_tag": "G-V06"
+    },
+    {
+      "id": "G-V06-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "Great changes have taken place in my hometown.", "distractor": "正确：take place 无被动" },
+        { "key": "B", "text": "The cloth feels soft.", "distractor": "正确：系动词" },
+        { "key": "C", "text": "His dream was come true last year.", "answer": true },
+        { "key": "D", "text": "The pen writes smoothly.", "distractor": "正确：主动表被动" }
+      ],
+      "explanation": "come true 没有被动，应改为 His dream came true last year。",
+      "error_tag": "G-V06"
+    },
+    {
+      "id": "G-V06-L3-02",
+      "level": "L3",
+      "stem": "— What happened to Tom? — He hurt his leg. The accident ____ on his way home.",
+      "options": [
+        { "key": "A", "text": "happened", "answer": true },
+        { "key": "B", "text": "was happened", "distractor": "happen 无被动" },
+        { "key": "C", "text": "was taken place", "distractor": "take place 也无被动" },
+        { "key": "D", "text": "is happened", "distractor": "时态不对，且无被动" }
+      ],
+      "explanation": "happen 和 take place 都没有被动，这里用 happened。",
+      "error_tag": "G-V06"
+    }
+  ]
+}

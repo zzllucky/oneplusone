@@ -1,0 +1,100 @@
+{
+  "id": "G-B06",
+  "type": "rule",
+  "module": "B",
+  "module_name": "动词",
+  "title": "动词短语",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "Please turn off the light before you leave.", "zh": "离开前请把灯关掉。" },
+      { "en": "The radio is too noisy. Please turn it off.", "zh": "收音机太吵了，请把它关掉。" }
+    ],
+    "question": "把 turn off the light 里的 the light 换成 it，该怎么说？",
+    "options": [
+      {
+        "key": "A",
+        "text": "turn it off——代词作宾语必须放在动词和副词中间",
+        "feedback": "对！turn off 是“动词 + 副词”型，代词只能放中间，放后面是错的。"
+      },
+      {
+        "key": "B",
+        "text": "turn off it——照原来的语序就行",
+        "feedback": "不对——代词放后面是错的，必须说 turn it off。"
+      },
+      {
+        "key": "C",
+        "text": "两种都可以",
+        "feedback": "不对——名词可以两边放（turn off the light / turn the light off），代词只能放中间。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "“动词 + 副词”型短语，宾语是代词时必须放在中间；宾语是名词时中间或后面都可以",
+    "signals": ["turn on", "turn off", "put up", "look after", "give up", "pick up", "take off", "put on", "find out", "work out"],
+    "formula": "① 名词宾语：turn off the light = turn the light off　② 代词宾语：turn it off（只能放中间）　③ 常用短语：look after 照顾 / give up 放弃 / put up 张贴、搭建 / pick up 捡起、接人 / take off 脱下、起飞 / find out 查明",
+    "anchors": [
+      {
+        "en": "Please turn it off before you leave.",
+        "zh": "离开前请把它关掉。",
+        "note": "代词 it 放中间"
+      },
+      {
+        "en": "Don't give up. Try it again.",
+        "zh": "别放弃，再试一次。",
+        "note": "give up 是不及物用法"
+      }
+    ],
+    "trap": {
+      "wrong": "The radio is too noisy. Please turn off it.",
+      "right": "The radio is too noisy. Please turn it off.",
+      "why": "代词 it 必须放在 turn 和 off 中间。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——名词两边都能放，代词只能插中间：turn it off、pick it up、give it up。",
+  "check": [
+    {
+      "id": "G-B06-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The radio is too noisy. Please ____.",
+      "options": [
+        { "key": "A", "text": "turn off it", "distractor": "代词要放在中间" },
+        { "key": "B", "text": "turn it off", "answer": true },
+        { "key": "C", "text": "turn off", "distractor": "缺少宾语 it" },
+        { "key": "D", "text": "turn them off", "distractor": "radio 是单数，用 it" }
+      ],
+      "explanation": "代词宾语放中间：turn it off。",
+      "error_tag": "G-B06"
+    },
+    {
+      "id": "G-B06-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Don't ____. Your dream will come true one day.",
+      "options": [
+        { "key": "A", "text": "give up it", "distractor": "这里没有宾语，直接用 give up" },
+        { "key": "B", "text": "give it up", "distractor": "这里没有宾语 it" },
+        { "key": "C", "text": "give up", "answer": true },
+        { "key": "D", "text": "give them up", "distractor": "这里没有宾语" }
+      ],
+      "explanation": "“别放弃”是不及物用法：give up。",
+      "error_tag": "G-B06"
+    },
+    {
+      "id": "G-B06-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Who ____ your little sister when your mother is out? — My grandma does.",
+      "options": [
+        { "key": "A", "text": "looks after", "answer": true },
+        { "key": "B", "text": "looks for", "distractor": "look for 是“寻找”" },
+        { "key": "C", "text": "looks at", "distractor": "look at 是“看”" },
+        { "key": "D", "text": "looks up", "distractor": "look up 是“查阅、抬头看”" }
+      ],
+      "explanation": "照顾 → look after。",
+      "error_tag": "G-B06"
+    }
+  ]
+}

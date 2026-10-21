@@ -1,0 +1,100 @@
+{
+  "id": "G-T18",
+  "type": "rule",
+  "module": "T",
+  "module_name": "现在进行时",
+  "title": "不用进行时的动词",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I know the answer.", "zh": "我知道答案。" },
+      { "en": "She likes music very much.", "zh": "她非常喜欢音乐。" }
+    ],
+    "question": "同样是说现在的情况，为什么这两句不能用进行时（不说 I am knowing）？",
+    "options": [
+      {
+        "key": "A",
+        "text": "因为它们表示的是“状态”（知道、喜欢），不是一个正在进行的动作",
+        "feedback": "对！know、like、want 这类词没有“正在”的过程，一律用一般现在时。"
+      },
+      {
+        "key": "B",
+        "text": "因为这两个句子太短",
+        "feedback": "不对——跟句子长短无关。"
+      },
+      {
+        "key": "C",
+        "text": "因为进行时只能用在过去",
+        "feedback": "不对——进行时说的正是现在。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "表示状态、心理、感官、所属的动词一般不用进行时，即使有 now 也要用一般现在时",
+    "signals": ["now", "at the moment（有这些标志也不改时态）"],
+    "formula": "状态动词一律用一般现在时：know / like / love / want / need / understand / remember / forget / see / hear / belong / have（表示“有”）",
+    "anchors": [
+      {
+        "en": "I know the answer to this question.",
+        "zh": "我知道这道题的答案。",
+        "note": "不说 I am knowing"
+      },
+      {
+        "en": "She has a new bike.",
+        "zh": "她有一辆新自行车。",
+        "note": "have 表示“有”时不用进行时"
+      }
+    ],
+    "trap": {
+      "wrong": "I am knowing the answer now.",
+      "right": "I know the answer now.",
+      "why": "know 是状态动词，就算有 now 也不能用进行时。注意：have 表示“吃/上课”时可以，如 We are having lunch。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住四类词不用进行时：知道类、喜欢类、看见听见类、拥有类。",
+  "check": [
+    {
+      "id": "G-T18-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "I ____ his telephone number.",
+      "options": [
+        { "key": "A", "text": "am knowing", "distractor": "know 是状态动词，不用进行时" },
+        { "key": "B", "text": "know", "answer": true },
+        { "key": "C", "text": "knows", "distractor": "I 不是三单" },
+        { "key": "D", "text": "knowing", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "know 表示“知道”这种状态，用一般现在时 know。",
+      "error_tag": "G-T18"
+    },
+    {
+      "id": "G-T18-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He is having a new bike.", "distractor": "have 表示“有”时不用进行时" },
+        { "key": "B", "text": "He has a new bike.", "answer": true },
+        { "key": "C", "text": "He is have a new bike.", "distractor": "be 动词后不能接动词原形" },
+        { "key": "D", "text": "He having a new bike.", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "have 表示“拥有”时用一般现在时 has。",
+      "error_tag": "G-T18"
+    },
+    {
+      "id": "G-T18-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Do you like this film? — Yes, I ____ it very much.",
+      "options": [
+        { "key": "A", "text": "like", "answer": true },
+        { "key": "B", "text": "am liking", "distractor": "like 是状态动词，不用进行时" },
+        { "key": "C", "text": "likes", "distractor": "I 不是三单" },
+        { "key": "D", "text": "liking", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "like 表示“喜欢”的状态，用一般现在时 like。",
+      "error_tag": "G-T18"
+    }
+  ]
+}

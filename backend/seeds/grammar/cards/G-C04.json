@@ -1,0 +1,100 @@
+{
+  "id": "G-C04",
+  "type": "rule",
+  "module": "C",
+  "module_name": "定语从句",
+  "title": "whose 与谓语的数",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "This is the boy whose father is a doctor.", "zh": "这就是那个父亲当医生的男孩。" },
+      { "en": "He is one of the students who are good at English.", "zh": "他是擅长英语的学生之一。" }
+    ],
+    "question": "“He is one of the boys who ____ football.” 谓语该用 is 还是 are？",
+    "options": [
+      {
+        "key": "A",
+        "text": "are——先行词是 the boys，是复数",
+        "feedback": "对！one of 后面接的复数名词才是先行词，谓语跟它走。"
+      },
+      {
+        "key": "B",
+        "text": "is——跟着 one 走",
+        "feedback": "不对——先行词是 the boys，不是 one。"
+      },
+      {
+        "key": "C",
+        "text": "看句子意思随便定",
+        "feedback": "不对——有明确规则：one of 后跟复数谓语，the only one of 后跟单数谓语。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "whose + 名词表示“……的”，先行词是人和物都可以用；one of + 复数名词 + who / that 引导的从句谓语用复数；the only one of… 后的谓语用单数",
+    "signals": ["whose", "one of + 复数 + who", "the only one of"],
+    "formula": "① whose + 名词：The girl whose mother is a teacher…　② one of the + 复数 + who + 复数谓语：He is one of the boys who are…　③ the only one of + 复数 + who + 单数谓语　④ whose 也可指物：The house whose windows are broken…",
+    "anchors": [
+      {
+        "en": "The house whose windows are broken is empty.",
+        "zh": "窗户破了的那座房子是空的。",
+        "note": "whose 指物也可以"
+      },
+      {
+        "en": "He is one of the students who have passed the exam.",
+        "zh": "他是通过考试的学生之一。",
+        "note": "先行词是 students → have"
+      }
+    ],
+    "trap": {
+      "wrong": "He is one of the boys who is tall.",
+      "right": "He is one of the boys who are tall.",
+      "why": "先行词是 the boys（复数），谓语要跟它一致，用 are。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——whose 后面一定跟名词；one of 后面的从句谓语用复数，只有 the only one of 才用单数。",
+  "check": [
+    {
+      "id": "G-C04-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "This is the girl ____ mother is a nurse.",
+      "options": [
+        { "key": "A", "text": "who", "distractor": "表示“她的妈妈”要用 whose" },
+        { "key": "B", "text": "whose", "answer": true },
+        { "key": "C", "text": "which", "distractor": "which 不表示所属" },
+        { "key": "D", "text": "that", "distractor": "that 不表示所属" }
+      ],
+      "explanation": "表示所属关系 → whose mother。",
+      "error_tag": "G-C04"
+    },
+    {
+      "id": "G-C04-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He is one of the students who ____ good at maths.",
+      "options": [
+        { "key": "A", "text": "is", "distractor": "先行词是 students，复数" },
+        { "key": "B", "text": "are", "answer": true },
+        { "key": "C", "text": "was", "distractor": "时态和数都不对" },
+        { "key": "D", "text": "be", "distractor": "be 要用 are" }
+      ],
+      "explanation": "先行词是 the students → 谓语用 are。",
+      "error_tag": "G-C04"
+    },
+    {
+      "id": "G-C04-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The room whose window is open is mine.", "answer": true },
+        { "key": "B", "text": "The room which window is open is mine.", "distractor": "表示所属要用 whose" },
+        { "key": "C", "text": "The room that window is open is mine.", "distractor": "that 不表示所属" },
+        { "key": "D", "text": "The room what window is open is mine.", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "whose 指物也可以：the room whose window。",
+      "error_tag": "G-C04"
+    }
+  ]
+}

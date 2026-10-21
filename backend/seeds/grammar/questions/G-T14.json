@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T14",
+  "title": "was / were going to",
+  "questions": [
+    {
+      "id": "G-T14-L1-01",
+      "level": "L1",
+      "stem": "They said they ____ (buy) a new house.",
+      "options": [
+        { "key": "A", "text": "are going to buy", "distractor": "主句是过去时，are 要变 were" },
+        { "key": "B", "text": "were going to buy", "answer": true },
+        { "key": "C", "text": "will buy", "distractor": "主句过去时，will 要变 would" },
+        { "key": "D", "text": "buy", "distractor": "不能表示“打算买”" }
+      ],
+      "explanation": "主句 said 是过去时，打算用 were going to buy。",
+      "error_tag": "G-T14"
+    },
+    {
+      "id": "G-T14-L1-02",
+      "level": "L1",
+      "stem": "I ____ (visit) my friend yesterday, but I was too busy.",
+      "options": [
+        { "key": "A", "text": "visit", "distractor": "这是过去的事" },
+        { "key": "B", "text": "visited", "distractor": "visited 表示去成了，与 but 后面的意思矛盾" },
+        { "key": "C", "text": "was going to visit", "answer": true },
+        { "key": "D", "text": "will visit", "distractor": "事情发生在昨天" }
+      ],
+      "explanation": "but 说明没去成，是“本来打算去”，用 was going to visit。",
+      "error_tag": "G-T14"
+    },
+    {
+      "id": "G-T14-L2-01",
+      "level": "L2",
+      "stem": "He ____ (take) the bus, but he missed it.",
+      "options": [
+        { "key": "A", "text": "takes", "distractor": "这是过去的事" },
+        { "key": "B", "text": "took", "distractor": "took 表示坐上了车，与 missed 矛盾" },
+        { "key": "C", "text": "was going to take", "answer": true },
+        { "key": "D", "text": "will take", "distractor": "事情已经过去了" }
+      ],
+      "explanation": "but he missed it 说明没坐上车，是“本来打算坐”，用 was going to take。",
+      "error_tag": "G-T14"
+    },
+    {
+      "id": "G-T14-L2-02",
+      "level": "L2",
+      "stem": "We ____ (watch) the game together, but the TV didn't work.",
+      "options": [
+        { "key": "A", "text": "watch", "distractor": "这是过去的事" },
+        { "key": "B", "text": "watched", "distractor": "watched 表示看成了，与电视坏了矛盾" },
+        { "key": "C", "text": "were going to watch", "answer": true },
+        { "key": "D", "text": "are watching", "distractor": "时态不对" }
+      ],
+      "explanation": "电视坏了说明没看成，是“本来打算一起看”，用 were going to watch。",
+      "error_tag": "G-T14"
+    },
+    {
+      "id": "G-T14-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He said he was going to come to the party.", "distractor": "正确" },
+        { "key": "B", "text": "We were going to leave when it started to rain.", "distractor": "正确" },
+        { "key": "C", "text": "She said she is going to be late.", "answer": true },
+        { "key": "D", "text": "I was going to call you, but I forgot.", "distractor": "正确" }
+      ],
+      "explanation": "主句 said 是过去时，应改为 She said she was going to be late。",
+      "error_tag": "G-T14"
+    },
+    {
+      "id": "G-T14-L3-02",
+      "level": "L3",
+      "stem": "— Why didn't you come to the party? — I ____ (come), but my bike was broken.",
+      "options": [
+        { "key": "A", "text": "come", "distractor": "这是过去的事" },
+        { "key": "B", "text": "came", "distractor": "came 表示来了，与问句矛盾" },
+        { "key": "C", "text": "was going to come", "answer": true },
+        { "key": "D", "text": "will come", "distractor": "派对已经过去了" }
+      ],
+      "explanation": "没去成派对，是“本来打算来”，用 was going to come。",
+      "error_tag": "G-T14"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "point_id": "G-U03",
+  "title": "分数与百分数",
+  "questions": [
+    {
+      "id": "G-U03-L1-01",
+      "level": "L1",
+      "stem": "One ____ of the students in our school come from the countryside.",
+      "options": [
+        { "key": "A", "text": "three", "distractor": "分母要用序数词" },
+        { "key": "B", "text": "third", "answer": true },
+        { "key": "C", "text": "thirds", "distractor": "分子是 one，分母不加 s" },
+        { "key": "D", "text": "threeth", "distractor": "拼写错误" }
+      ],
+      "explanation": "三分之一 → one third（分子为 1，分母不加 s）。",
+      "error_tag": "G-U03"
+    },
+    {
+      "id": "G-U03-L1-02",
+      "level": "L1",
+      "stem": "About seventy ____ of the surface of the earth is water.",
+      "options": [
+        { "key": "A", "text": "percent", "answer": true },
+        { "key": "B", "text": "percents", "distractor": "percent 没有复数形式" },
+        { "key": "C", "text": "percentage", "distractor": "percentage 是“百分比”这个名词" },
+        { "key": "D", "text": "per cent's", "distractor": "结构错误" }
+      ],
+      "explanation": "百分数用 percent，永远不加 s。",
+      "error_tag": "G-U03"
+    },
+    {
+      "id": "G-U03-L2-01",
+      "level": "L2",
+      "stem": "Three fifths of the books ____ sold out already.",
+      "options": [
+        { "key": "A", "text": "has been", "distractor": "of 后 books 是复数" },
+        { "key": "B", "text": "have been", "answer": true },
+        { "key": "C", "text": "has", "distractor": "数和结构都不对" },
+        { "key": "D", "text": "was", "distractor": "books 是复数" }
+      ],
+      "explanation": "of 后是复数 books → 谓语用 have been。",
+      "error_tag": "G-U03"
+    },
+    {
+      "id": "G-U03-L2-02",
+      "level": "L2",
+      "stem": "Nine twelfths of the food ____ gone bad.",
+      "options": [
+        { "key": "A", "text": "have", "distractor": "food 不可数，谓语用单数" },
+        { "key": "B", "text": "has", "answer": true },
+        { "key": "C", "text": "are", "distractor": "food 不可数，谓语用单数" },
+        { "key": "D", "text": "were", "distractor": "数和时态都不合适" }
+      ],
+      "explanation": "food 不可数 → 谓语用 has。",
+      "error_tag": "G-U03"
+    },
+    {
+      "id": "G-U03-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "One third of the water is dirty.", "distractor": "正确" },
+        { "key": "B", "text": "Two fifths of the boys like football.", "distractor": "正确" },
+        { "key": "C", "text": "Three fourth of the teachers are women.", "answer": true },
+        { "key": "D", "text": "A quarter of the students are absent.", "distractor": "正确" }
+      ],
+      "explanation": "分子 three 大于 1，分母要加 s：three fourths（或 three quarters）。",
+      "error_tag": "G-U03"
+    },
+    {
+      "id": "G-U03-L3-02",
+      "level": "L3",
+      "stem": "— ____ of the workers in the factory are women? — About 40%.",
+      "options": [
+        { "key": "A", "text": "How many", "distractor": "答语是百分比，问比例用 what 或 how much" },
+        { "key": "B", "text": "What percent", "answer": true },
+        { "key": "C", "text": "How much percent", "distractor": "表达累赘，通常用 what percent" },
+        { "key": "D", "text": "Which percent", "distractor": "不用于提问比例" }
+      ],
+      "explanation": "问百分比：What percent of…?",
+      "error_tag": "G-U03"
+    }
+  ]
+}

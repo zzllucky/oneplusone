@@ -2,6 +2,13 @@
 
 from app.models.base import Base
 from app.models.daily_set import DailySet, DailySetItem
+from app.models.grammar import GrammarOption, GrammarPoint, GrammarQuestion
+from app.models.grammar_progress import (
+    GrammarAnswer,
+    GrammarAttempt,
+    GrammarPointProgress,
+    GrammarWrongPoint,
+)
 from app.models.quiz import QuizAnswer, QuizAttempt
 from app.models.study_round import StudyRound
 from app.models.user import User
@@ -14,6 +21,13 @@ __all__ = [
     "Base",
     "DailySet",
     "DailySetItem",
+    "GrammarAnswer",
+    "GrammarAttempt",
+    "GrammarOption",
+    "GrammarPoint",
+    "GrammarPointProgress",
+    "GrammarQuestion",
+    "GrammarWrongPoint",
     "QuizAnswer",
     "QuizAttempt",
     "StudyRound",

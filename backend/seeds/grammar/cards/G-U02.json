@@ -1,0 +1,100 @@
+{
+  "id": "G-U02",
+  "type": "rule",
+  "module": "U",
+  "module_name": "数词",
+  "title": "编号·日期·时刻",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "We live in Room 205.", "zh": "我们住在 205 房间。" },
+      { "en": "June 1st is Children's Day.", "zh": "六月一日是儿童节。" }
+    ],
+    "question": "“205 房间”英文怎么写？",
+    "options": [
+      {
+        "key": "A",
+        "text": "Room 205——编号用基数词，名词在前且首字母大写",
+        "feedback": "对！编号不用序数词，Room 205 读作 Room two o five。"
+      },
+      {
+        "key": "B",
+        "text": "Room 205th",
+        "feedback": "不对——编号一律用基数词，不加 th。"
+      },
+      {
+        "key": "C",
+        "text": "The 205 Room",
+        "feedback": "不对——名词要放前面，Room 205。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "编号用“名词 + 基数词”（名词首字母大写）；日期用“月份 + 序数词”；时刻直接读数字，或用 past / to 表达",
+    "signals": ["Room 205", "Class 3, Grade 9", "Bus No. 5", "Page 40", "June 1st", "at 7:30"],
+    "formula": "① 编号：Room 205 / Class 3, Grade 9 / Bus No. 5 / Page 40　② 日期：June 1st / on May 4th / in 2019　③ 时刻：at seven thirty = at half past seven；7:45 = a quarter to eight",
+    "anchors": [
+      {
+        "en": "We are in Class 3, Grade 9.",
+        "zh": "我们在九年级三班。",
+        "note": "英文是小单位在前"
+      },
+      {
+        "en": "School starts at half past seven.",
+        "zh": "学校七点半开始上课。",
+        "note": "half past seven = 7:30"
+      }
+    ],
+    "trap": {
+      "wrong": "They live in the 205 Room.",
+      "right": "They live in Room 205.",
+      "why": "编号表达是“名词 + 基数词”，名词在前、不加 the。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——编号 Room 205、日期 June 1st、时刻 half past seven，各有一套写法。",
+  "check": [
+    {
+      "id": "G-U02-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Which class are you in? — I'm in ____.",
+      "options": [
+        { "key": "A", "text": "Class 3, Grade 9", "answer": true },
+        { "key": "B", "text": "3 Class, 9 Grade", "distractor": "名词要放在数字前面" },
+        { "key": "C", "text": "Class 3th, Grade 9th", "distractor": "编号用基数词，不加 th" },
+        { "key": "D", "text": "the Class 3, the Grade 9", "distractor": "编号前不加 the" }
+      ],
+      "explanation": "班级年级编号：Class 3, Grade 9。",
+      "error_tag": "G-U02"
+    },
+    {
+      "id": "G-U02-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Children's Day is on ____.",
+      "options": [
+        { "key": "A", "text": "June 1st", "answer": true },
+        { "key": "B", "text": "June 1", "distractor": "日期要用序数词 1st" },
+        { "key": "C", "text": "June 1th", "distractor": "1 的序数词是 1st" },
+        { "key": "D", "text": "the June 1st", "distractor": "月份前不加 the" }
+      ],
+      "explanation": "日期表达：June 1st（六月一日）。",
+      "error_tag": "G-U02"
+    },
+    {
+      "id": "G-U02-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The meeting starts at half past seven.", "answer": true },
+        { "key": "B", "text": "The meeting starts at seven half.", "distractor": "半点表达是 half past seven" },
+        { "key": "C", "text": "The meeting starts at half seven.", "distractor": "缺少 past" },
+        { "key": "D", "text": "The meeting starts at seven past half.", "distractor": "语序错误" }
+      ],
+      "explanation": "七点半 = half past seven。",
+      "error_tag": "G-U02"
+    }
+  ]
+}

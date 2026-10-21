@@ -1,0 +1,100 @@
+{
+  "id": "G-O01",
+  "type": "rule",
+  "module": "O",
+  "module_name": "宾语从句",
+  "title": "陈述语序",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "Do you know where he lives?", "zh": "你知道他住在哪儿吗？" },
+      { "en": "Can you tell me how I can get to the station?", "zh": "你能告诉我怎么去车站吗？" }
+    ],
+    "question": "从句里为什么是 where he lives，而不是 where does he live？",
+    "options": [
+      {
+        "key": "A",
+        "text": "宾语从句一律用陈述语序，助动词不能提到主语前面",
+        "feedback": "对！从句里永远是“主语 + 谓语”，does 这类助动词要去掉。"
+      },
+      {
+        "key": "B",
+        "text": "因为主句已经是疑问句了",
+        "feedback": "不对——从句里本来就是陈述语序，跟主句是不是疑问句没关系。"
+      },
+      {
+        "key": "C",
+        "text": "两种都可以",
+        "feedback": "不对——where does he live 放在从句里是错的。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "宾语从句一律用陈述语序：连接词 + 主语 + 谓语；原来疑问句里的 do / does / did 要去掉，时态体现在谓语动词上",
+    "signals": ["Do you know", "Can you tell me", "I don't know", "I wonder", "Please tell me"],
+    "formula": "① 正确：I don't know where he is.　② 错误：I don't know where is he.　③ 去助动词：Where does he live? → where he lives　④ 去助动词：What did he say? → what he said",
+    "anchors": [
+      {
+        "en": "Can you tell me where the post office is?",
+        "zh": "你能告诉我邮局在哪儿吗？",
+        "note": "the post office is 是陈述语序"
+      },
+      {
+        "en": "Do you know when the train will arrive?",
+        "zh": "你知道火车什么时候到吗？",
+        "note": "the train will arrive 不倒装"
+      }
+    ],
+    "trap": {
+      "wrong": "Do you know where does he live?",
+      "right": "Do you know where he lives?",
+      "why": "从句里要去掉助动词 does，时态体现在 lives 上。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——从句里主谓不倒装，does / did 一律去掉，把时态还给谓语动词。",
+  "check": [
+    {
+      "id": "G-O01-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Do you know ____? — Next Monday.",
+      "options": [
+        { "key": "A", "text": "when will he come back", "distractor": "从句里 will 不能提到主语前" },
+        { "key": "B", "text": "when he will come back", "answer": true },
+        { "key": "C", "text": "when he comes back", "distractor": "答语是将来时间，从句要用将来时" },
+        { "key": "D", "text": "when does he come back", "distractor": "从句里去掉 does，且时态不对" }
+      ],
+      "explanation": "陈述语序 + 将来时：when he will come back。",
+      "error_tag": "G-O01"
+    },
+    {
+      "id": "G-O01-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Can you tell me ____?",
+      "options": [
+        { "key": "A", "text": "where is the bank", "distractor": "is 不能放在主语前" },
+        { "key": "B", "text": "where the bank is", "answer": true },
+        { "key": "C", "text": "where does the bank", "distractor": "结构不完整" },
+        { "key": "D", "text": "the bank where is", "distractor": "语序错误" }
+      ],
+      "explanation": "where the bank is（陈述语序）。",
+      "error_tag": "G-O01"
+    },
+    {
+      "id": "G-O01-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "I don't know what he wants.", "answer": true },
+        { "key": "B", "text": "I don't know what does he want.", "distractor": "从句里要去掉 does" },
+        { "key": "C", "text": "I don't know what he want.", "distractor": "主语 he 后动词要加 s" },
+        { "key": "D", "text": "I don't know what want he.", "distractor": "语序错误" }
+      ],
+      "explanation": "what he wants（去掉 does，时态体现在 wants）。",
+      "error_tag": "G-O01"
+    }
+  ]
+}

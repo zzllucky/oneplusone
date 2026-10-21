@@ -37,6 +37,13 @@ ERROR_MESSAGES: dict[str, str] = {
     "validation_error": "请求参数不合法",
     "invalid_month": "月份格式需为 YYYY-MM",
     "invalid_date": "日期格式需为 YYYY-MM-DD",
+    # 语法模块（006-grammar-study）
+    "grammar_point_not_found": "该语法知识点不存在",
+    "grammar_question_not_found": "该语法题目不存在",
+    "grammar_attempt_not_found": "该轮练习不存在或不属于当前账号",
+    "grammar_attempt_already_finished": "本轮已结束，无法继续作答或结算",
+    "no_grammar_questions": "该知识点暂无练习题",
+    "invalid_choice_key": "选项不合法",
 }
 
 

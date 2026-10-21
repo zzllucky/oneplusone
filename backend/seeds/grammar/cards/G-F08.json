@@ -1,0 +1,100 @@
+{
+  "id": "G-F08",
+  "type": "rule",
+  "module": "F",
+  "module_name": "动名词",
+  "title": "固定搭配接 doing",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I spent two hours doing my homework.", "zh": "我花了两小时做作业。" },
+      { "en": "We are looking forward to seeing you.", "zh": "我们盼着见到你。" }
+    ],
+    "question": "look forward to 里的 to 是介词还是不定式的标志？",
+    "options": [
+      {
+        "key": "A",
+        "text": "是介词，所以后面要接 doing",
+        "feedback": "对！这里的 to 是介词，to see you 是错的，要说 seeing you。"
+      },
+      {
+        "key": "B",
+        "text": "是不定式标志，后面接动词原形",
+        "feedback": "不对——look forward to 的 to 是介词，跟 want to do 的 to 不是一回事。"
+      },
+      {
+        "key": "C",
+        "text": "两种接法都可以",
+        "feedback": "不对——只能接 doing，接原形就是错的。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "spend…(in) doing / be busy doing / look forward to doing / be used to doing / give up doing 等固定搭配接 doing",
+    "signals": ["spend … (in)", "be busy", "look forward to", "be used to", "give up", "keep on"],
+    "formula": "spend + 时间/钱 + (in) doing　be busy (in) doing　look forward to + doing　be used to + doing",
+    "anchors": [
+      {
+        "en": "She spent an hour reading the book.",
+        "zh": "她花了一小时读这本书。",
+        "note": "spend + 时间 + doing"
+      },
+      {
+        "en": "They are looking forward to meeting you.",
+        "zh": "他们盼着见到你。",
+        "note": "to 是介词"
+      }
+    ],
+    "trap": {
+      "wrong": "I'm looking forward to see you soon.",
+      "right": "I'm looking forward to seeing you soon.",
+      "why": "look forward to 的 to 是介词，后面接 doing。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——这几个搭配里的 to 都是介词：look forward to / be used to / pay attention to。",
+  "check": [
+    {
+      "id": "G-F08-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He spent two hours ____ (finish) the work.",
+      "options": [
+        { "key": "A", "text": "finish", "distractor": "spend 后面要接 doing" },
+        { "key": "B", "text": "to finish", "distractor": "spend 不接 to do" },
+        { "key": "C", "text": "finishing", "answer": true },
+        { "key": "D", "text": "finished", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "spend + 时间 + doing。",
+      "error_tag": "G-F08"
+    },
+    {
+      "id": "G-F08-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "We are looking forward to ____ (see) you again.",
+      "options": [
+        { "key": "A", "text": "see", "distractor": "这里的 to 是介词，不能接原形" },
+        { "key": "B", "text": "to see", "distractor": "to 已经在了，不能重复" },
+        { "key": "C", "text": "seeing", "answer": true },
+        { "key": "D", "text": "saw", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "look forward to + seeing。",
+      "error_tag": "G-F08"
+    },
+    {
+      "id": "G-F08-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The farmers are busy getting in the crops.", "answer": true },
+        { "key": "B", "text": "The farmers are busy to get in the crops.", "distractor": "be busy 后面接 doing" },
+        { "key": "C", "text": "The farmers are busy get in the crops.", "distractor": "缺少 in 或 -ing" },
+        { "key": "D", "text": "The farmers are busy got in the crops.", "distractor": "结构错误" }
+      ],
+      "explanation": "be busy + doing。",
+      "error_tag": "G-F08"
+    }
+  ]
+}

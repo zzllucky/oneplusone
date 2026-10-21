@@ -1,0 +1,100 @@
+{
+  "id": "G-T27",
+  "type": "rule",
+  "module": "T",
+  "module_name": "现在完成时",
+  "title": "短暂动词不接时间段",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I have bought this bike for three years.", "zh": "（错句）我买这辆车三年了。" },
+      { "en": "I have had this bike for three years.", "zh": "（对句）我买这辆车三年了。" }
+    ],
+    "question": "第二句才是对的，问题出在 buy 这个词上——它有什么问题？",
+    "options": [
+      {
+        "key": "A",
+        "text": "buy 是一瞬间完成的动作，没法“持续三年”",
+        "feedback": "对！买车这个动作一秒钟就完成了，能持续三年的是“拥有”，所以要换成 had。"
+      },
+      {
+        "key": "B",
+        "text": "因为 buy 拼写错了",
+        "feedback": "不对——buy 拼写没错，问题在它不能表示持续。"
+      },
+      {
+        "key": "C",
+        "text": "因为 for 应该改成 since",
+        "feedback": "不对——换 since 也救不了：since 后面也要接能持续的说法。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "buy / die / leave / join / begin / borrow 这类“一瞬间完成”的动词，不能和 for / since 引导的时间段连用，要换成对应的持续表达",
+    "signals": ["for three years / since 2020 + 短暂动词 → 必须换词"],
+    "formula": "buy → have had　die → have been dead　leave → have been away　join → have been in / have been a member of　begin / start → have been on　borrow → have kept　come / arrive → have been here",
+    "anchors": [
+      {
+        "en": "I have had this bike for three years.",
+        "zh": "我买这辆车三年了。",
+        "note": "buy 换成 had（拥有）"
+      },
+      {
+        "en": "His grandfather has been dead for ten years.",
+        "zh": "他爷爷去世十年了。",
+        "note": "die 换成 been dead（状态）"
+      }
+    ],
+    "trap": {
+      "wrong": "He has joined the army for two years.",
+      "right": "He has been in the army for two years.",
+      "why": "join 是一瞬间的动作，能持续的是“在部队里”，改用 has been in。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住换词表：买→拥有、死→已故、离开→不在、加入→在……里、借→保留。",
+  "check": [
+    {
+      "id": "G-T27-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "I ____ this book from the library for two weeks.",
+      "options": [
+        { "key": "A", "text": "have borrowed", "distractor": "borrow 是短暂动词，不能接 for two weeks" },
+        { "key": "B", "text": "have kept", "answer": true },
+        { "key": "C", "text": "borrowed", "distractor": "for two weeks 要用完成时" },
+        { "key": "D", "text": "borrow", "distractor": "时态不对" }
+      ],
+      "explanation": "“借”换成能持续的“保留”：have kept。",
+      "error_tag": "G-T27"
+    },
+    {
+      "id": "G-T27-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "His dog ____ for a year.",
+      "options": [
+        { "key": "A", "text": "has died", "distractor": "die 是短暂动词，不能接 for a year" },
+        { "key": "B", "text": "has been dead", "answer": true },
+        { "key": "C", "text": "died", "distractor": "for a year 要用完成时" },
+        { "key": "D", "text": "dies", "distractor": "时态不对" }
+      ],
+      "explanation": "die 换成状态表达 has been dead。",
+      "error_tag": "G-T27"
+    },
+    {
+      "id": "G-T27-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He has left home for two years.", "distractor": "leave 是短暂动词，要换成 been away from" },
+        { "key": "B", "text": "He has been away from home for two years.", "answer": true },
+        { "key": "C", "text": "He has left home since two years.", "distractor": "换 since 也没用，动词仍要换" },
+        { "key": "D", "text": "He left home for two years.", "distractor": "一般过去时不与 for 时间段连用表示状态" }
+      ],
+      "explanation": "leave 换成 been away from，表示“离开的状态”持续了两年。",
+      "error_tag": "G-T27"
+    }
+  ]
+}

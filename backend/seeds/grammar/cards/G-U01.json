@@ -1,0 +1,100 @@
+{
+  "id": "G-U01",
+  "type": "rule",
+  "module": "U",
+  "module_name": "数词",
+  "title": "基数词与序数词",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "There are forty students in our class.", "zh": "我们班有四十名学生。" },
+      { "en": "He lives on the twelfth floor.", "zh": "他住在十二楼。" }
+    ],
+    "question": "“十二”是 twelve，那么“第十二”该怎么写？",
+    "options": [
+      {
+        "key": "A",
+        "text": "the twelfth——序数词前面一般加 the，而且拼写不是 twelve 直接加 th",
+        "feedback": "对！five→fifth、twelve→twelfth 这类词拼写会变，得单独记。"
+      },
+      {
+        "key": "B",
+        "text": "twelve——跟基数词一样",
+        "feedback": "不对——“第十二层”是排序，要用序数词 twelfth。"
+      },
+      {
+        "key": "C",
+        "text": "the twelveth",
+        "feedback": "不对——拼写错了，twelve 要去掉 ve 再加 fth，是 twelfth。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "序数词前一般加 the；1–3 形式特殊（first / second / third）；整十变序数把 y 改成 ie 再加 th；几十几只把个位数变序数",
+    "signals": ["first", "second", "third", "fifth", "eighth", "ninth", "twelfth", "twentieth", "twenty-first"],
+    "formula": "① the + 序数词：the first day　② 整十：twenty → twentieth　③ 几十几：twenty-one → twenty-first（只变个位）　④ 特殊拼写：five→fifth, eight→eighth, nine→ninth, twelve→twelfth",
+    "anchors": [
+      {
+        "en": "Sunday is the first day of the week.",
+        "zh": "星期日是一周的第一天。",
+        "note": "the + first"
+      },
+      {
+        "en": "He lives on the twelfth floor.",
+        "zh": "他住在十二楼。",
+        "note": "twelve → twelfth"
+      }
+    ],
+    "trap": {
+      "wrong": "He was the twelve to come.",
+      "right": "He was the twelfth to come.",
+      "why": "表示“第几个”要用序数词 twelfth。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——序数词前加 the，整十变 ie+th，几十几只变个位。",
+  "check": [
+    {
+      "id": "G-U01-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "September is the ____ month of the year.",
+      "options": [
+        { "key": "A", "text": "nine", "distractor": "表示“第九个”要用序数词" },
+        { "key": "B", "text": "ninth", "answer": true },
+        { "key": "C", "text": "nineth", "distractor": "拼写错误：nine 去 e 加 th" },
+        { "key": "D", "text": "nineteenth", "distractor": "这是“第十九”，九月不是第十九个月" }
+      ],
+      "explanation": "第九个月 → ninth（nine 去 e 加 th）。",
+      "error_tag": "G-U01"
+    },
+    {
+      "id": "G-U01-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "There are ____ students in our class.",
+      "options": [
+        { "key": "A", "text": "forty", "answer": true },
+        { "key": "B", "text": "fourty", "distractor": "拼写错误，四十是 forty" },
+        { "key": "C", "text": "fortieth", "distractor": "这里要基数词，不是“第四十”" },
+        { "key": "D", "text": "fourteenth", "distractor": "这是“第十四”" }
+      ],
+      "explanation": "表示数量用基数词 forty。",
+      "error_tag": "G-U01"
+    },
+    {
+      "id": "G-U01-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He lives on the twelfth floor.", "answer": true },
+        { "key": "B", "text": "He lives on the twelve floor.", "distractor": "要用序数词 twelfth" },
+        { "key": "C", "text": "He lives on the twelveth floor.", "distractor": "拼写错误" },
+        { "key": "D", "text": "He lives on twelveth floor.", "distractor": "缺 the，且拼写错误" }
+      ],
+      "explanation": "第十二层：the twelfth floor。",
+      "error_tag": "G-U01"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "point_id": "G-R02",
+  "title": "不定代词",
+  "questions": [
+    {
+      "id": "G-R02-L1-01",
+      "level": "L1",
+      "stem": "There isn't ____ wrong with my bike.",
+      "options": [
+        { "key": "A", "text": "something", "distractor": "否定句要用 any 系列" },
+        { "key": "B", "text": "anything", "answer": true },
+        { "key": "C", "text": "wrong something", "distractor": "形容词要后置，且否定句用 anything" },
+        { "key": "D", "text": "wrong anything", "distractor": "形容词不能前置" }
+      ],
+      "explanation": "isn't 是否定句 → anything；wrong 后置。",
+      "error_tag": "G-R02"
+    },
+    {
+      "id": "G-R02-L1-02",
+      "level": "L1",
+      "stem": "— Would you like ____ to drink? — Yes, a cup of tea, please.",
+      "options": [
+        { "key": "A", "text": "anything", "distractor": "表示委婉邀请的问句用 something" },
+        { "key": "B", "text": "something", "answer": true },
+        { "key": "C", "text": "everything", "distractor": "意思不对" },
+        { "key": "D", "text": "nothing", "distractor": "与答语矛盾" }
+      ],
+      "explanation": "Would you like… 是委婉邀请，用 something。",
+      "error_tag": "G-R02"
+    },
+    {
+      "id": "G-R02-L2-01",
+      "level": "L2",
+      "stem": "— Do you have ____ else to say? — No, ____ else.",
+      "options": [
+        { "key": "A", "text": "anything; nothing", "answer": true },
+        { "key": "B", "text": "something; nothing", "distractor": "疑问句第一空用 anything" },
+        { "key": "C", "text": "anything; something", "distractor": "答语是否定，用 nothing" },
+        { "key": "D", "text": "nothing; anything", "distractor": "用反了" }
+      ],
+      "explanation": "疑问句用 anything；答语“没有别的”用 nothing。",
+      "error_tag": "G-R02"
+    },
+    {
+      "id": "G-R02-L2-02",
+      "level": "L2",
+      "stem": "Is there ____ at the door? I heard a noise.",
+      "options": [
+        { "key": "A", "text": "someone", "distractor": "一般疑问句用 anyone" },
+        { "key": "B", "text": "anyone", "answer": true },
+        { "key": "C", "text": "everyone", "distractor": "意思是“每个人”，不合语境" },
+        { "key": "D", "text": "no one", "distractor": "与“我听见声音”矛盾" }
+      ],
+      "explanation": "一般疑问句 → anyone。",
+      "error_tag": "G-R02"
+    },
+    {
+      "id": "G-R02-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "There is nothing interesting in the box.", "distractor": "正确" },
+        { "key": "B", "text": "He didn't say anything about it.", "distractor": "正确" },
+        { "key": "C", "text": "I have important something to tell you.", "answer": true },
+        { "key": "D", "text": "Anyone can answer this question.", "distractor": "正确" }
+      ],
+      "explanation": "应改为 something important，形容词要后置。",
+      "error_tag": "G-R02"
+    },
+    {
+      "id": "G-R02-L3-02",
+      "level": "L3",
+      "stem": "— What's in the box? — ____. It's empty.",
+      "options": [
+        { "key": "A", "text": "Nothing", "answer": true },
+        { "key": "B", "text": "Anything", "distractor": "any 系列不用于肯定回答" },
+        { "key": "C", "text": "Something", "distractor": "与 It's empty 矛盾" },
+        { "key": "D", "text": "Everything", "distractor": "与 It's empty 矛盾" }
+      ],
+      "explanation": "空的 → Nothing（什么都没有）。",
+      "error_tag": "G-R02"
+    }
+  ]
+}

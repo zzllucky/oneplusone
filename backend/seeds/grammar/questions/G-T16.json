@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T16",
+  "title": "现在进行时·基本用法",
+  "questions": [
+    {
+      "id": "G-T16-L1-01",
+      "level": "L1",
+      "stem": "Look! The boys ____ (play) basketball over there.",
+      "options": [
+        { "key": "A", "text": "play", "distractor": "Look! 说明正在发生，要用进行时" },
+        { "key": "B", "text": "are playing", "answer": true },
+        { "key": "C", "text": "plays", "distractor": "the boys 是复数，且缺 be 动词" },
+        { "key": "D", "text": "played", "distractor": "这是过去式" }
+      ],
+      "explanation": "Look! 提示眼前正在发生，用 are playing。",
+      "error_tag": "G-T16"
+    },
+    {
+      "id": "G-T16-L1-02",
+      "level": "L1",
+      "stem": "— What is she doing? — She ____ (read) a book.",
+      "options": [
+        { "key": "A", "text": "reads", "distractor": "问句已经用了进行时，答语要一致" },
+        { "key": "B", "text": "is reading", "answer": true },
+        { "key": "C", "text": "read", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "is read", "distractor": "be 动词后要接 -ing 形式" }
+      ],
+      "explanation": "问的是“正在做什么”，答语也用现在进行时 is reading。",
+      "error_tag": "G-T16"
+    },
+    {
+      "id": "G-T16-L2-01",
+      "level": "L2",
+      "stem": "Listen! The birds ____ (sing) in the tree.",
+      "options": [
+        { "key": "A", "text": "sing", "distractor": "Listen! 说明此刻正在唱" },
+        { "key": "B", "text": "are singing", "answer": true },
+        { "key": "C", "text": "sings", "distractor": "the birds 是复数，且缺 be 动词" },
+        { "key": "D", "text": "sang", "distractor": "这是过去式" }
+      ],
+      "explanation": "Listen! 提示正在听到的声音，用 are singing。",
+      "error_tag": "G-T16"
+    },
+    {
+      "id": "G-T16-L2-02",
+      "level": "L2",
+      "stem": "Don't make any noise. The baby ____ (sleep).",
+      "options": [
+        { "key": "A", "text": "sleeps", "distractor": "“别出声”说明此刻正在睡" },
+        { "key": "B", "text": "is sleeping", "answer": true },
+        { "key": "C", "text": "slept", "distractor": "这是过去式" },
+        { "key": "D", "text": "sleeping", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "语境说明宝宝此刻正在睡觉，用 is sleeping。",
+      "error_tag": "G-T16"
+    },
+    {
+      "id": "G-T16-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He is doing his homework now.", "distractor": "正确" },
+        { "key": "B", "text": "They are playing football on the playground.", "distractor": "正确" },
+        { "key": "C", "text": "Look! It rain now.", "answer": true },
+        { "key": "D", "text": "Listen! Someone is crying in the next room.", "distractor": "正确" }
+      ],
+      "explanation": "有 Look! 和 now，应改为 Look! It is raining now。",
+      "error_tag": "G-T16"
+    },
+    {
+      "id": "G-T16-L3-02",
+      "level": "L3",
+      "stem": "— Where are the children? — They ____ (run) on the playground.",
+      "options": [
+        { "key": "A", "text": "run", "distractor": "问的是此刻的位置和动作" },
+        { "key": "B", "text": "runs", "distractor": "they 是复数，且缺 be 动词" },
+        { "key": "C", "text": "are running", "answer": true },
+        { "key": "D", "text": "ran", "distractor": "这是过去式" }
+      ],
+      "explanation": "问孩子们现在在哪、在干什么，答语用现在进行时 are running。",
+      "error_tag": "G-T16"
+    }
+  ]
+}

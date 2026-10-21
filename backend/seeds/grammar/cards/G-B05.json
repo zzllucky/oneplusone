@@ -1,0 +1,101 @@
+{
+  "id": "G-B05",
+  "type": "rule",
+  "module": "B",
+  "module_name": "动词",
+  "title": "易混动词辨析",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I borrowed a book from the library.", "zh": "我从图书馆借了一本书。" },
+      { "en": "Can you lend me your pen?", "zh": "你能把笔借给我吗？" },
+      { "en": "You can keep it for two weeks.", "zh": "你可以借两个星期。" }
+    ],
+    "question": "想问“我能借你的字典吗”，该用哪一个？",
+    "options": [
+      {
+        "key": "A",
+        "text": "borrow——往自己这边借，说 borrow sth from sb",
+        "feedback": "对！borrow 是借入（from），lend 是借出（to），方向正好相反。"
+      },
+      {
+        "key": "B",
+        "text": "lend——把东西借给别人",
+        "feedback": "不对——lend 是“借给别人”，你要用别人的字典，是借入。"
+      },
+      {
+        "key": "C",
+        "text": "keep——保留一段时间",
+        "feedback": "不对——keep 说的是“能借多久”，不能表示“借来”这个动作。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "say + 说的内容 / speak + 语言 / tell + 人 / talk + with·to；borrow 借入（from）/ lend 借出（to）/ keep 保留（接时间段）；bring 带来 / take 带走 / carry 搬运 / fetch 去取来",
+    "signals": ["say", "speak", "tell", "talk", "borrow", "lend", "keep", "bring", "take", "carry", "fetch"],
+    "formula": "① speak English（说某种语言）　say it in English（说内容）　tell sb sth　talk with sb about sth　② borrow sth from sb　lend sb sth = lend sth to sb　keep sth for + 时间段　③ bring here / take there / carry 搬运 / fetch 去拿来",
+    "anchors": [
+      {
+        "en": "I borrowed a dictionary from Tom.",
+        "zh": "我从汤姆那儿借了本词典。",
+        "note": "借入用 borrow from"
+      },
+      {
+        "en": "How long can I keep the book?",
+        "zh": "这本书我能借多久？",
+        "note": "接时间段用 keep"
+      }
+    ],
+    "trap": {
+      "wrong": "Can I lend your dictionary?",
+      "right": "Can I borrow your dictionary?",
+      "why": "你要用别人的东西是借入，用 borrow；lend 是“借给别人”。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——borrow 借进来、lend 借出去、keep 借多久，方向别搞反。",
+  "check": [
+    {
+      "id": "G-B05-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Can I ____ your bike? — Sure, but you can only ____ it for two hours.",
+      "options": [
+        { "key": "A", "text": "borrow; keep", "answer": true },
+        { "key": "B", "text": "lend; keep", "distractor": "第一空是借入，用 borrow" },
+        { "key": "C", "text": "borrow; borrow", "distractor": "第二空接时间段 for two hours，用 keep" },
+        { "key": "D", "text": "keep; borrow", "distractor": "两空用反了" }
+      ],
+      "explanation": "借入用 borrow；接时间段用 keep。",
+      "error_tag": "G-B05"
+    },
+    {
+      "id": "G-B05-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Please ____ it in English. We don't understand Chinese.",
+      "options": [
+        { "key": "A", "text": "say", "answer": true },
+        { "key": "B", "text": "tell", "distractor": "tell 后面要接“人”" },
+        { "key": "C", "text": "speak", "distractor": "speak 后面接语言，不接 it" },
+        { "key": "D", "text": "talk", "distractor": "talk 是不及物动词，不接 it" }
+      ],
+      "explanation": "“用英语说它” → say it in English。",
+      "error_tag": "G-B05"
+    },
+    {
+      "id": "G-B05-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "My father told me an interesting story.", "answer": true },
+        { "key": "B", "text": "My father said me an interesting story.", "distractor": "say 后面不能接人" },
+        { "key": "C", "text": "My father told an interesting story me.", "distractor": "语序错误" },
+        { "key": "D", "text": "My father said an interesting story me.", "distractor": "say 后面不能接人" }
+      ],
+      "explanation": "tell sb sth：tell me a story。",
+      "error_tag": "G-B05"
+    }
+  ]
+}

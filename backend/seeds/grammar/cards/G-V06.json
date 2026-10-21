@@ -1,0 +1,100 @@
+{
+  "id": "G-V06",
+  "type": "rule",
+  "module": "V",
+  "module_name": "被动语态",
+  "title": "不用被动的情况",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "The accident happened yesterday.", "zh": "事故昨天发生了。" },
+      { "en": "This kind of book sells well.", "zh": "这种书卖得很好。" }
+    ],
+    "question": "“事故发生”为什么不能说成 The accident was happened？",
+    "options": [
+      {
+        "key": "A",
+        "text": "因为 happen 是不及物动词，后面接不了宾语，也就没有被动",
+        "feedback": "对！没有宾语的动词变不了被动，这是第一条。"
+      },
+      {
+        "key": "B",
+        "text": "因为事故是坏事",
+        "feedback": "不对——能不能用被动跟好事坏事无关。"
+      },
+      {
+        "key": "C",
+        "text": "因为 happened 已经是过去式了",
+        "feedback": "不对——过去式照样能变被动，如 was broken。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "不及物动词、系动词、belong to 等没有被动；另有一类动词用主动形式表示被动含义",
+    "signals": ["happen", "take place", "come true", "belong to", "look / sound / smell / taste / feel", "sell well / write smoothly"],
+    "formula": "① 无被动：happen / take place / come true / belong to / appear / disappear　② 系动词 + 形容词：The flower smells sweet.　③ 主动表被动：The book sells well. / The pen writes smoothly.",
+    "anchors": [
+      {
+        "en": "The accident happened yesterday.",
+        "zh": "事故昨天发生了。",
+        "note": "不说 was happened"
+      },
+      {
+        "en": "This kind of book sells well.",
+        "zh": "这种书卖得很好。",
+        "note": "主动形式表被动含义"
+      }
+    ],
+    "trap": {
+      "wrong": "The accident was happened yesterday.",
+      "right": "The accident happened yesterday.",
+      "why": "happen 是不及物动词，没有被动语态。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住三不用：发生类（happen/take place）、感官系动词（look/sound/taste）、所属类（belong to）。",
+  "check": [
+    {
+      "id": "G-V06-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "把 “The meeting took place yesterday.” 判断一下，哪句写法正确？",
+      "options": [
+        { "key": "A", "text": "The meeting took place yesterday.", "answer": true },
+        { "key": "B", "text": "The meeting was taken place yesterday.", "distractor": "take place 没有被动" },
+        { "key": "C", "text": "The meeting was took place yesterday.", "distractor": "结构错误，且无被动" },
+        { "key": "D", "text": "The meeting took place by them yesterday.", "distractor": "不及物短语不接 by" }
+      ],
+      "explanation": "take place（发生、举行）没有被动语态。",
+      "error_tag": "G-V06"
+    },
+    {
+      "id": "G-V06-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "This kind of pen ____ smoothly.",
+      "options": [
+        { "key": "A", "text": "writes", "answer": true },
+        { "key": "B", "text": "is written", "distractor": "“写起来流畅”用主动表被动" },
+        { "key": "C", "text": "wrote", "distractor": "这是描述特性，用现在时" },
+        { "key": "D", "text": "is wrote", "distractor": "结构错误" }
+      ],
+      "explanation": "“这笔写起来很流畅”用主动形式 writes smoothly。",
+      "error_tag": "G-V06"
+    },
+    {
+      "id": "G-V06-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "The book belongs to Tom.", "distractor": "正确：belong to 无被动" },
+        { "key": "B", "text": "The flower smells sweet.", "distractor": "正确：系动词 + 形容词" },
+        { "key": "C", "text": "The accident was happened last night.", "answer": true },
+        { "key": "D", "text": "The cake tastes good.", "distractor": "正确：系动词 + 形容词" }
+      ],
+      "explanation": "happen 没有被动，应改为 The accident happened last night。",
+      "error_tag": "G-V06"
+    }
+  ]
+}

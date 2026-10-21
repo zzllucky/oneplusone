@@ -1,0 +1,100 @@
+{
+  "id": "G-R02",
+  "type": "rule",
+  "module": "R",
+  "module_name": "代词",
+  "title": "不定代词",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "There is something interesting in today's newspaper.", "zh": "今天的报纸上有件有趣的事。" },
+      { "en": "I have nothing to say.", "zh": "我没什么可说的。" }
+    ],
+    "question": "为什么是 something interesting，而不是 interesting something？",
+    "options": [
+      {
+        "key": "A",
+        "text": "复合不定代词被形容词修饰时，形容词一律放在后面",
+        "feedback": "对！something / anything / nothing 的形容词永远后置，这是一条硬规则。"
+      },
+      {
+        "key": "B",
+        "text": "因为 interesting 这个词比较长",
+        "feedback": "不对——长短无关，something new 也一样后置。"
+      },
+      {
+        "key": "C",
+        "text": "两种顺序都可以",
+        "feedback": "不对——只能后置，放前面就是错的。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "some 系列多用于肯定句，any 系列多用于否定句和疑问句；形容词修饰复合不定代词时必须后置",
+    "signals": ["something", "anything", "nothing", "everything", "someone", "anyone", "somebody", "anybody"],
+    "formula": "① 肯定句：something / someone　② 否定句、疑问句：anything / anyone　③ 形容词后置：something new / anything important　④ nothing = not…anything",
+    "anchors": [
+      {
+        "en": "I have something important to tell you.",
+        "zh": "我有件重要的事要告诉你。",
+        "note": "important 后置"
+      },
+      {
+        "en": "Is there anyone in the room?",
+        "zh": "房间里有人吗？",
+        "note": "疑问句用 anyone"
+      }
+    ],
+    "trap": {
+      "wrong": "I have interesting something to tell you.",
+      "right": "I have something interesting to tell you.",
+      "why": "形容词修饰复合不定代词要后置。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住两条：形容词往后放；否定疑问用 any 系列。",
+  "check": [
+    {
+      "id": "G-R02-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "There is ____ in today's newspaper.",
+      "options": [
+        { "key": "A", "text": "new something", "distractor": "形容词不能放在复合不定代词前面" },
+        { "key": "B", "text": "something new", "answer": true },
+        { "key": "C", "text": "anything new", "distractor": "这是肯定句，要用 something" },
+        { "key": "D", "text": "new anything", "distractor": "语序和用词都错" }
+      ],
+      "explanation": "肯定句 + 形容词后置：something new。",
+      "error_tag": "G-R02"
+    },
+    {
+      "id": "G-R02-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Is there ____ at home? — No, ____ is out.",
+      "options": [
+        { "key": "A", "text": "anyone; everyone", "answer": true },
+        { "key": "B", "text": "someone; anyone", "distractor": "第二空要表达“大家”，用 everyone" },
+        { "key": "C", "text": "anyone; someone", "distractor": "答语说“都出去了”，用 everyone" },
+        { "key": "D", "text": "everyone; anyone", "distractor": "疑问句第一空用 anyone" }
+      ],
+      "explanation": "疑问句用 anyone；答语“都出去了”用 everyone。",
+      "error_tag": "G-R02"
+    },
+    {
+      "id": "G-R02-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "I have something important to do.", "answer": true },
+        { "key": "B", "text": "I have important something to do.", "distractor": "形容词要后置" },
+        { "key": "C", "text": "I have important anything to do.", "distractor": "肯定句用 something，且形容词要后置" },
+        { "key": "D", "text": "I have anything important to do.", "distractor": "肯定句要用 something" }
+      ],
+      "explanation": "something important（形容词后置）。",
+      "error_tag": "G-R02"
+    }
+  ]
+}

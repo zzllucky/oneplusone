@@ -1,0 +1,84 @@
+{
+  "point_id": "G-D04",
+  "title": "副词比较级与 enough",
+  "questions": [
+    {
+      "id": "G-D04-L1-01",
+      "level": "L1",
+      "stem": "He runs much ____ than his brother.",
+      "options": [
+        { "key": "A", "text": "fast", "distractor": "有 than 要用比较级" },
+        { "key": "B", "text": "faster", "answer": true },
+        { "key": "C", "text": "fastest", "distractor": "两者比较用比较级" },
+        { "key": "D", "text": "more fast", "distractor": "fast 是单音节，加 er" }
+      ],
+      "explanation": "much + 比较级 faster。",
+      "error_tag": "G-D04"
+    },
+    {
+      "id": "G-D04-L1-02",
+      "level": "L1",
+      "stem": "The boy is not ____ to reach the shelf.",
+      "options": [
+        { "key": "A", "text": "tall enough", "answer": true },
+        { "key": "B", "text": "enough tall", "distractor": "enough 要放在形容词后面" },
+        { "key": "C", "text": "enough taller", "distractor": "语序错，且不需比较级" },
+        { "key": "D", "text": "taller enough", "distractor": "这里不需要比较级" }
+      ],
+      "explanation": "形容词 + enough：tall enough。",
+      "error_tag": "G-D04"
+    },
+    {
+      "id": "G-D04-L2-01",
+      "level": "L2",
+      "stem": "We don't have ____ to finish the work today.",
+      "options": [
+        { "key": "A", "text": "enough time", "answer": true },
+        { "key": "B", "text": "time enough", "distractor": "修饰名词时 enough 通常放前面" },
+        { "key": "C", "text": "times enough", "distractor": "time 不可数，且语序错" },
+        { "key": "D", "text": "enough times", "distractor": "time 这里不可数" }
+      ],
+      "explanation": "修饰名词：enough time（放在名词前）。",
+      "error_tag": "G-D04"
+    },
+    {
+      "id": "G-D04-L2-02",
+      "level": "L2",
+      "stem": "— Can you speak a little ____? I can't hear you. — Sorry.",
+      "options": [
+        { "key": "A", "text": "loud", "distractor": "修饰动词 speak 要用副词" },
+        { "key": "B", "text": "louder", "answer": true },
+        { "key": "C", "text": "loudest", "distractor": "这里是比较，不是最高级" },
+        { "key": "D", "text": "more loudly", "distractor": "a little 后面接比较级 louder 更自然" }
+      ],
+      "explanation": "a little + 比较级 louder。",
+      "error_tag": "G-D04"
+    },
+    {
+      "id": "G-D04-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He works harder than anyone else in his office.", "distractor": "正确" },
+        { "key": "B", "text": "The room is big enough for ten people.", "distractor": "正确" },
+        { "key": "C", "text": "She is not enough careful to do the job.", "answer": true },
+        { "key": "D", "text": "Tom runs fastest of the three boys.", "distractor": "正确" }
+      ],
+      "explanation": "enough 要后置：not careful enough。",
+      "error_tag": "G-D04"
+    },
+    {
+      "id": "G-D04-L3-02",
+      "level": "L3",
+      "stem": "— Why didn't you catch the train? — I didn't run ____.",
+      "options": [
+        { "key": "A", "text": "fast enough", "answer": true },
+        { "key": "B", "text": "enough fast", "distractor": "enough 要放在副词后面" },
+        { "key": "C", "text": "faster enough", "distractor": "这里不需要比较级" },
+        { "key": "D", "text": "enough faster", "distractor": "语序和结构都错" }
+      ],
+      "explanation": "副词 + enough：fast enough。",
+      "error_tag": "G-D04"
+    }
+  ]
+}

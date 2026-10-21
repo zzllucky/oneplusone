@@ -1,0 +1,99 @@
+{
+  "id": "G-V05",
+  "type": "rule",
+  "module": "V",
+  "module_name": "被动语态",
+  "title": "主动变被动三步",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "Tom broke the window. → The window was broken by Tom.", "zh": "汤姆打破了窗户。→ 窗户被汤姆打破了。" }
+    ],
+    "question": "变被动的时候，原来的宾语 the window 去了哪里？",
+    "options": [
+      {
+        "key": "A",
+        "text": "提到前面，变成了新句子的主语",
+        "feedback": "对！被动句的主语就是原来被动作影响的那个（宾语）。"
+      },
+      {
+        "key": "B",
+        "text": "直接删掉了",
+        "feedback": "不对——它变成了新句子的主语，句子必须有主语。"
+      },
+      {
+        "key": "C",
+        "text": "变成了动词的一部分",
+        "feedback": "不对——动词部分变成的是“be + 过去分词”。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "主动变被动三步：宾语提前当主语 → 动词改成 be + 过去分词 → 原主语放到 by 后面（可省略）",
+    "signals": ["只有及物动词（带宾语的动词）才能变被动"],
+    "formula": "主语 + 动词 + 宾语 → 宾语 + be(随时态) + 过去分词 + (by 原主语)",
+    "anchors": [
+      {
+        "en": "Tom broke the window. → The window was broken by Tom.",
+        "zh": "汤姆打破了窗户。→ 窗户被汤姆打破了。",
+        "note": "过去时 → was + done"
+      },
+      {
+        "en": "We clean the classroom every day. → The classroom is cleaned every day.",
+        "zh": "我们每天打扫教室。→ 教室每天被打扫。",
+        "note": "现在时 → is + done"
+      }
+    ],
+    "trap": {
+      "wrong": "The window was broke by Tom.",
+      "right": "The window was broken by Tom.",
+      "why": "be 后面要接过去分词 broken，break 的过去分词不是过去式 broke。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——三步记法：宾语提前、动词变 be+done、原主语挂 by 后面（不重要的就省略）。",
+  "check": [
+    {
+      "id": "G-V05-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "把 “He wrote the letter.” 改成被动语态。",
+      "options": [
+        { "key": "A", "text": "The letter was written by him.", "answer": true },
+        { "key": "B", "text": "The letter wrote by him.", "distractor": "缺少 be 动词" },
+        { "key": "C", "text": "The letter was wrote by him.", "distractor": "be 后要接过去分词 written" },
+        { "key": "D", "text": "He was written the letter.", "distractor": "提前的应该是宾语 the letter" }
+      ],
+      "explanation": "宾语 the letter 提前，动词变 was written，原主语放 by 后。",
+      "error_tag": "G-V05"
+    },
+    {
+      "id": "G-V05-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "把 “They will finish the work.” 改成被动语态。",
+      "options": [
+        { "key": "A", "text": "The work will finish by them.", "distractor": "被动要加 be" },
+        { "key": "B", "text": "The work will be finished by them.", "answer": true },
+        { "key": "C", "text": "The work will been finished by them.", "distractor": "will 后要接 be 原形" },
+        { "key": "D", "text": "The work is finished by them.", "distractor": "时态要与原句一致（将来时）" }
+      ],
+      "explanation": "原句是将来时，被动保持 will be finished。",
+      "error_tag": "G-V05"
+    },
+    {
+      "id": "G-V05-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The book was written by Lu Xun.", "answer": true },
+        { "key": "B", "text": "The book wrote by Lu Xun.", "distractor": "缺少 be 动词" },
+        { "key": "C", "text": "Lu Xun was written the book.", "distractor": "被提前的应是宾语 the book" },
+        { "key": "D", "text": "The book was wrote by Lu Xun.", "distractor": "be 后要接过去分词 written" }
+      ],
+      "explanation": "主动 Lu Xun wrote the book → 被动 The book was written by Lu Xun。",
+      "error_tag": "G-V05"
+    }
+  ]
+}

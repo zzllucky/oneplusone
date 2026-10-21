@@ -1,0 +1,84 @@
+{
+  "point_id": "G-U02",
+  "title": "编号·日期·时刻",
+  "questions": [
+    {
+      "id": "G-U02-L1-01",
+      "level": "L1",
+      "stem": "— Excuse me, where is ____? — It's on the second floor.",
+      "options": [
+        { "key": "A", "text": "Room 205", "answer": true },
+        { "key": "B", "text": "Room 205th", "distractor": "编号用基数词" },
+        { "key": "C", "text": "the 205 Room", "distractor": "名词要放在前面" },
+        { "key": "D", "text": "205th Room", "distractor": "编号不用序数词，且名词在前" }
+      ],
+      "explanation": "编号表达：Room 205。",
+      "error_tag": "G-U02"
+    },
+    {
+      "id": "G-U02-L1-02",
+      "level": "L1",
+      "stem": "We go to school ____ seven o'clock every morning.",
+      "options": [
+        { "key": "A", "text": "in", "distractor": "具体时刻用 at" },
+        { "key": "B", "text": "on", "distractor": "on 用于具体某天" },
+        { "key": "C", "text": "at", "answer": true },
+        { "key": "D", "text": "for", "distractor": "for 表示持续一段时间" }
+      ],
+      "explanation": "具体时刻前用 at：at seven o'clock。",
+      "error_tag": "G-U02"
+    },
+    {
+      "id": "G-U02-L2-01",
+      "level": "L2",
+      "stem": "— What's the date today? — It's ____.",
+      "options": [
+        { "key": "A", "text": "Monday", "distractor": "问 date 是问日期，不是星期" },
+        { "key": "B", "text": "May 4th", "answer": true },
+        { "key": "C", "text": "May four", "distractor": "日期用序数词" },
+        { "key": "D", "text": "the May 4th", "distractor": "月份前不加 the" }
+      ],
+      "explanation": "日期表达：May 4th。",
+      "error_tag": "G-U02"
+    },
+    {
+      "id": "G-U02-L2-02",
+      "level": "L2",
+      "stem": "The No. 5 bus will take you there. You can also take ____.",
+      "options": [
+        { "key": "A", "text": "Bus No. 5", "distractor": "与前一句重复，这里要说另一路车" },
+        { "key": "B", "text": "the Bus 5", "distractor": "编号前不加 the" },
+        { "key": "C", "text": "Bus No. 12", "answer": true },
+        { "key": "D", "text": "Bus 12th", "distractor": "编号用基数词" }
+      ],
+      "explanation": "公交线路编号：Bus No. 12。",
+      "error_tag": "G-U02"
+    },
+    {
+      "id": "G-U02-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "Please open your books at Page 40.", "distractor": "正确" },
+        { "key": "B", "text": "He was born on July 2nd, 2008.", "distractor": "正确" },
+        { "key": "C", "text": "The film begins at a quarter past eight.", "distractor": "正确" },
+        { "key": "D", "text": "We are in Grade 9, Class 3.", "answer": true }
+      ],
+      "explanation": "英文顺序是小单位在前：Class 3, Grade 9。",
+      "error_tag": "G-U02"
+    },
+    {
+      "id": "G-U02-L3-02",
+      "level": "L3",
+      "stem": "— It's 7:45 now. We must hurry. — Yes, it's ____.",
+      "options": [
+        { "key": "A", "text": "a quarter to eight", "answer": true },
+        { "key": "B", "text": "a quarter past seven", "distractor": "这是 7:15" },
+        { "key": "C", "text": "a quarter past eight", "distractor": "这是 8:15" },
+        { "key": "D", "text": "a quarter to seven", "distractor": "这是 6:45" }
+      ],
+      "explanation": "7:45 = 差一刻八点 → a quarter to eight。",
+      "error_tag": "G-U02"
+    }
+  ]
+}

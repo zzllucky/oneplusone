@@ -1,0 +1,100 @@
+{
+  "id": "G-T06",
+  "type": "rule",
+  "module": "T",
+  "module_name": "一般过去时",
+  "title": "规则动词过去式 -ed",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I played basketball yesterday.", "zh": "我昨天打篮球了。" },
+      { "en": "She studied English last night.", "zh": "她昨晚学了英语。" }
+    ],
+    "question": "两个动词都表示过去，为什么 study 变成 studied（y 改成了 i）？",
+    "options": [
+      {
+        "key": "A",
+        "text": "因为 study 是“辅音字母 + y”结尾，要先变 y 为 i 再加 ed",
+        "feedback": "对！study 里 d 是辅音，所以 y 要变 i；像 play 里 a 是元音，就直接加 ed。"
+      },
+      {
+        "key": "B",
+        "text": "因为 study 这个单词更长",
+        "feedback": "不对——长短没关系，只看结尾字母。"
+      },
+      {
+        "key": "C",
+        "text": "因为句子说的是昨晚",
+        "feedback": "不对——时间只决定用不用过去式，不决定怎么拼写。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "规则动词的过去式在词尾加 -ed，拼写有四条变化规则",
+    "signals": ["yesterday", "last…", "…ago", "in 2019"],
+    "formula": "① 一般情况 +ed：play→played，watch→watched　② 以 e 结尾 +d：like→liked，live→lived　③ 辅音字母 + y → ied：study→studied，carry→carried　④ 重读闭音节双写末尾辅音 +ed：stop→stopped，plan→planned",
+    "anchors": [
+      {
+        "en": "I played basketball with my friends yesterday.",
+        "zh": "我昨天和朋友打篮球了。",
+        "note": "一般情况直接加 -ed"
+      },
+      {
+        "en": "She studied English for two hours last night.",
+        "zh": "她昨晚学了两个小时英语。",
+        "note": "辅音 + y → ied"
+      }
+    ],
+    "trap": {
+      "wrong": "He stoped the car.",
+      "right": "He stopped the car.",
+      "why": "stop 是重读闭音节，要先双写末尾辅音 p 再加 -ed。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住顺序：先看结尾字母，再决定怎么加 ed；元音 + y 直接加（played），辅音 + y 变 ied（studied）。",
+  "check": [
+    {
+      "id": "G-T06-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "They ____ (play) football yesterday afternoon.",
+      "options": [
+        { "key": "A", "text": "play", "distractor": "yesterday afternoon 要用过去式" },
+        { "key": "B", "text": "plays", "distractor": "这是三单形式" },
+        { "key": "C", "text": "played", "answer": true },
+        { "key": "D", "text": "playing", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "play 以元音 + y 结尾，过去式直接加 -ed：played。",
+      "error_tag": "G-T06"
+    },
+    {
+      "id": "G-T06-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪个拼写是正确的？",
+      "options": [
+        { "key": "A", "text": "stoped", "distractor": "重读闭音节要双写 p" },
+        { "key": "B", "text": "stoppd", "distractor": "拼写错误" },
+        { "key": "C", "text": "stopped", "answer": true },
+        { "key": "D", "text": "stopping", "distractor": "这是现在分词，不是过去式" }
+      ],
+      "explanation": "stop 是重读闭音节，双写末尾辅音 p 再加 -ed：stopped。",
+      "error_tag": "G-T06"
+    },
+    {
+      "id": "G-T06-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "She ____ the film very much last week.",
+      "options": [
+        { "key": "A", "text": "like", "distractor": "last week 要用过去式" },
+        { "key": "B", "text": "liked", "answer": true },
+        { "key": "C", "text": "likes", "distractor": "这是三单形式" },
+        { "key": "D", "text": "liking", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "like 以 e 结尾，过去式只加 -d：liked。",
+      "error_tag": "G-T06"
+    }
+  ]
+}

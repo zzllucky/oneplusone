@@ -1,0 +1,84 @@
+{
+  "point_id": "G-C04",
+  "title": "whose 与谓语的数",
+  "questions": [
+    {
+      "id": "G-C04-L1-01",
+      "level": "L1",
+      "stem": "This is the boy ____ sister is in my class.",
+      "options": [
+        { "key": "A", "text": "who", "distractor": "表示“他的姐姐”要用 whose" },
+        { "key": "B", "text": "whose", "answer": true },
+        { "key": "C", "text": "which", "distractor": "先行词是人，且不表所属" },
+        { "key": "D", "text": "that", "distractor": "that 不表所属" }
+      ],
+      "explanation": "表示所属 → whose sister。",
+      "error_tag": "G-C04"
+    },
+    {
+      "id": "G-C04-L1-02",
+      "level": "L1",
+      "stem": "He is one of the best players who ____ on our school team.",
+      "options": [
+        { "key": "A", "text": "is", "distractor": "先行词是 players，复数" },
+        { "key": "B", "text": "are", "answer": true },
+        { "key": "C", "text": "was", "distractor": "时态和数都不对" },
+        { "key": "D", "text": "be", "distractor": "be 要用 are" }
+      ],
+      "explanation": "先行词是 the players → 谓语用 are。",
+      "error_tag": "G-C04"
+    },
+    {
+      "id": "G-C04-L2-01",
+      "level": "L2",
+      "stem": "The book ____ cover is blue is my English textbook.",
+      "options": [
+        { "key": "A", "text": "whose", "answer": true },
+        { "key": "B", "text": "which", "distractor": "which 不表所属" },
+        { "key": "C", "text": "that", "distractor": "that 不表所属" },
+        { "key": "D", "text": "what", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "whose 指物也可以：whose cover。",
+      "error_tag": "G-C04"
+    },
+    {
+      "id": "G-C04-L2-02",
+      "level": "L2",
+      "stem": "She is the only one of the girls who ____ been to Beijing.",
+      "options": [
+        { "key": "A", "text": "have", "distractor": "the only one of 后面谓语用单数" },
+        { "key": "B", "text": "has", "answer": true },
+        { "key": "C", "text": "are", "distractor": "结构错误，且要用单数" },
+        { "key": "D", "text": "were", "distractor": "结构错误，且要用单数" }
+      ],
+      "explanation": "the only one of… 后谓语用单数 → has been。",
+      "error_tag": "G-C04"
+    },
+    {
+      "id": "G-C04-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "The man whose car was stolen called the police.", "distractor": "正确" },
+        { "key": "B", "text": "He is one of the boys who are in the football team.", "distractor": "正确" },
+        { "key": "C", "text": "This is the house whose roof was damaged in the storm.", "distractor": "正确" },
+        { "key": "D", "text": "Tom is one of the students who has passed the exam.", "answer": true }
+      ],
+      "explanation": "先行词是 the students（复数），应改为 who have passed。",
+      "error_tag": "G-C04"
+    },
+    {
+      "id": "G-C04-L3-02",
+      "level": "L3",
+      "stem": "— Look at that tall building ____ windows are all bright. — It's our new library.",
+      "options": [
+        { "key": "A", "text": "whose", "answer": true },
+        { "key": "B", "text": "which", "distractor": "which 不表所属" },
+        { "key": "C", "text": "who", "distractor": "building 是物" },
+        { "key": "D", "text": "what", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "表示“它的窗户” → whose windows。",
+      "error_tag": "G-C04"
+    }
+  ]
+}

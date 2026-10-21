@@ -1,0 +1,84 @@
+{
+  "point_id": "G-R04",
+  "title": "数量代词辨析",
+  "questions": [
+    {
+      "id": "G-R04-L1-01",
+      "level": "L1",
+      "stem": "There are flowers on ____ sides of the road.",
+      "options": [
+        { "key": "A", "text": "both", "answer": true },
+        { "key": "B", "text": "either", "distractor": "either 后面接单数名词" },
+        { "key": "C", "text": "all", "distractor": "all 用于三者及以上" },
+        { "key": "D", "text": "neither", "distractor": "neither 表否定，且接单数名词" }
+      ],
+      "explanation": "路有两边，sides 是复数 → both。",
+      "error_tag": "G-R04"
+    },
+    {
+      "id": "G-R04-L1-02",
+      "level": "L1",
+      "stem": "— Can I have some more bread? — Sorry, there is ____ left.",
+      "options": [
+        { "key": "A", "text": "none", "answer": true },
+        { "key": "B", "text": "neither", "distractor": "neither 只用于两者" },
+        { "key": "C", "text": "both", "distractor": "both 表肯定且用于两者" },
+        { "key": "D", "text": "either", "distractor": "either 表“任一”，与 sorry 矛盾" }
+      ],
+      "explanation": "bread 不可数、没有剩余 → none。",
+      "error_tag": "G-R04"
+    },
+    {
+      "id": "G-R04-L2-01",
+      "level": "L2",
+      "stem": "____ of the two answers is correct. Think again.",
+      "options": [
+        { "key": "A", "text": "Neither", "answer": true },
+        { "key": "B", "text": "None", "distractor": "两者用 neither，不用 none" },
+        { "key": "C", "text": "Both", "distractor": "both 作主语谓语用复数 are" },
+        { "key": "D", "text": "All", "distractor": "all 用于三者及以上" }
+      ],
+      "explanation": "两个答案都不对 → Neither，谓语用单数 is。",
+      "error_tag": "G-R04"
+    },
+    {
+      "id": "G-R04-L2-02",
+      "level": "L2",
+      "stem": "— When shall we meet, Saturday or Sunday? — ____ day is OK. I'm free.",
+      "options": [
+        { "key": "A", "text": "Both", "distractor": "both 后面要接复数 days，谓语用 are" },
+        { "key": "B", "text": "Either", "answer": true },
+        { "key": "C", "text": "Neither", "distractor": "与 I'm free 矛盾" },
+        { "key": "D", "text": "None", "distractor": "none 不用于两者，也不接 day" }
+      ],
+      "explanation": "两天中任一天都行，day 是单数 → Either。",
+      "error_tag": "G-R04"
+    },
+    {
+      "id": "G-R04-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "Each of the students has a new book.", "distractor": "正确" },
+        { "key": "B", "text": "Both Tom and Jim are from England.", "distractor": "正确" },
+        { "key": "C", "text": "All of the money are spent.", "answer": true },
+        { "key": "D", "text": "None of us knows his address.", "distractor": "正确" }
+      ],
+      "explanation": "money 不可数，all of the money 按单数处理，谓语用 is。",
+      "error_tag": "G-R04"
+    },
+    {
+      "id": "G-R04-L3-02",
+      "level": "L3",
+      "stem": "— Are the two boys both from Class 3? — No. ____ of them is in Class 3.",
+      "options": [
+        { "key": "A", "text": "Either", "distractor": "either 表示“有一个是”，与 No 不符" },
+        { "key": "B", "text": "Neither", "answer": true },
+        { "key": "C", "text": "None", "distractor": "两个人的“都不”用 neither" },
+        { "key": "D", "text": "Both", "distractor": "both 作主语谓语用 are，且表肯定" }
+      ],
+      "explanation": "两个人都不是 → Neither，谓语用 is。",
+      "error_tag": "G-R04"
+    }
+  ]
+}

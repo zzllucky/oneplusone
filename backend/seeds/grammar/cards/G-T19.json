@@ -1,0 +1,106 @@
+{
+  "id": "G-T19",
+  "type": "contrast",
+  "module": "T",
+  "module_name": "现在进行时",
+  "title": "三种“表将来”的说法",
+  "depth": "了解",
+  "covers": ["G-T04", "G-T19"],
+  "guess": {
+    "examples": [
+      { "en": "The train leaves at 8:00 every morning.", "zh": "火车每天早上八点开。" },
+      { "en": "I am leaving for Beijing tomorrow. My ticket is ready.", "zh": "我明天去北京，票已经买好了。" }
+    ],
+    "question": "两句都说将来的事，为什么一句用一般现在时，一句用现在进行时？",
+    "options": [
+      {
+        "key": "A",
+        "text": "第一句是时刻表（不会变），第二句是我已经安排好的事",
+        "feedback": "对！时刻表用一般现在时，已安排好的近期动作常用现在进行时。"
+      },
+      {
+        "key": "B",
+        "text": "第二句的事发生得更早",
+        "feedback": "不对——时间早晚不是判据，关键是“时刻表”还是“已安排”。"
+      },
+      {
+        "key": "C",
+        "text": "两种说法完全一样，随便换",
+        "feedback": "不对——时刻表上的时间不能用进行时表示。"
+      }
+    ],
+    "answer": "A"
+  },
+  "contrast": {
+    "left": {
+      "label": "一般现在时表将来",
+      "formula": "动词原形 / 三单 + -s",
+      "anchor": { "en": "The train leaves at 8:00.", "zh": "火车八点开。" },
+      "focus": "时刻表、日程、计划表上的固定时间（不会随便改）"
+    },
+    "right": {
+      "label": "现在进行时表将来",
+      "formula": "am / is / are + 动词-ing",
+      "anchor": { "en": "I am leaving for Beijing tomorrow.", "zh": "我明天动身去北京。" },
+      "focus": "已经安排好、很快就要做的动作（常用 come / go / leave / arrive 等位移动词）"
+    },
+    "diff": "时刻表上写死的时间 → 一般现在时；已经安排好的近期动作 → 现在进行时；单纯预测或临时决定 → will / be going to。三种都表将来，不能混着用。",
+    "traps": [
+      {
+        "wrong": "Look at the timetable. The train is leaving at 8:00.",
+        "right": "Look at the timetable. The train leaves at 8:00.",
+        "why": "时刻表上的固定时间用一般现在时，不用进行时。"
+      },
+      {
+        "wrong": "I leave for Shanghai tomorrow. My ticket is booked.",
+        "right": "I am leaving for Shanghai tomorrow. My ticket is booked.",
+        "why": "票已买好、马上要做的安排，用现在进行时表将来。"
+      }
+    ]
+  },
+  "guess_callback": "你刚才选的是 A——一句话：时刻表用现在，已安排用进行时，单纯预测用 will。",
+  "check": [
+    {
+      "id": "G-T19-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Look at the timetable. The plane ____ (take) off at 9:30.",
+      "options": [
+        { "key": "A", "text": "takes", "answer": true },
+        { "key": "B", "text": "is taking", "distractor": "时刻表上的时间用一般现在时" },
+        { "key": "C", "text": "took", "distractor": "这是过去式" },
+        { "key": "D", "text": "taking", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "时刻表上的起飞时间是固定的，用一般现在时 takes off。",
+      "error_tag": "G-T19"
+    },
+    {
+      "id": "G-T19-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "I ____ (leave) for Shanghai tomorrow. My ticket is booked.",
+      "options": [
+        { "key": "A", "text": "leave", "distractor": "已经安排好的事，用进行时表将来" },
+        { "key": "B", "text": "am leaving", "answer": true },
+        { "key": "C", "text": "left", "distractor": "这是过去式" },
+        { "key": "D", "text": "leaves", "distractor": "I 不是三单" }
+      ],
+      "explanation": "票已买好，是安排妥当的近期动作，用 am leaving。",
+      "error_tag": "G-T19"
+    },
+    {
+      "id": "G-T19-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "Hurry up! The bus is coming.", "answer": true },
+        { "key": "B", "text": "Hurry up! The bus comes.", "distractor": "come 在这里表示“马上就到”，用进行时表将来" },
+        { "key": "C", "text": "Hurry up! The bus came.", "distractor": "车还没到" },
+        { "key": "D", "text": "Hurry up! The bus come.", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "“快点！车来了”是马上要发生的事，位移动词 come 用 is coming 表将来。",
+      "error_tag": "G-T19"
+    }
+  ]
+}

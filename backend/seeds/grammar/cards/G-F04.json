@@ -1,0 +1,100 @@
+{
+  "id": "G-F04",
+  "type": "rule",
+  "module": "F",
+  "module_name": "不定式",
+  "title": "make / let / have + do",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "The joke made me laugh.", "zh": "那个笑话把我逗笑了。" },
+      { "en": "Let him go with us.", "zh": "让他跟我们一起去吧。" }
+    ],
+    "question": "make、let 后面的动词为什么不带 to？",
+    "options": [
+      {
+        "key": "A",
+        "text": "它们是使役动词，后面固定接不带 to 的动词原形",
+        "feedback": "对！make / let / have 后面一律 sb do，加了 to 就错。"
+      },
+      {
+        "key": "B",
+        "text": "因为句子是过去时",
+        "feedback": "不对——时态不影响，现在时也一样说 Let him go。"
+      },
+      {
+        "key": "C",
+        "text": "因为 laugh 和 go 是不及物动词",
+        "feedback": "不对——及物不及物都一样，比如 made me clean the room。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "make / let / have 后面接 sb do（省略 to）；help 后面 to 可有可无；变成被动时 to 要还原",
+    "signals": ["make", "let", "have", "help"],
+    "formula": "make / let / have + sb + do　help + sb + (to) do　被动：be made to do（to 要还原）",
+    "anchors": [
+      {
+        "en": "The joke made me laugh.",
+        "zh": "那个笑话把我逗笑了。",
+        "note": "made + sb + do"
+      },
+      {
+        "en": "He was made to work ten hours a day.",
+        "zh": "他被迫每天工作十小时。",
+        "note": "被动时 to 要还原"
+      }
+    ],
+    "trap": {
+      "wrong": "The boss made the workers to work ten hours.",
+      "right": "The boss made the workers work ten hours.",
+      "why": "make 后面要省略 to，加了 to 是高频错误。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住：make / let / have + sb do，只有变被动时才把 to 找回来。",
+  "check": [
+    {
+      "id": "G-F04-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The sad story made her ____ (cry).",
+      "options": [
+        { "key": "A", "text": "cry", "answer": true },
+        { "key": "B", "text": "to cry", "distractor": "make 后面要省略 to" },
+        { "key": "C", "text": "cried", "distractor": "这不是谓语位置" },
+        { "key": "D", "text": "crying", "distractor": "make sb 后面接动词原形" }
+      ],
+      "explanation": "made her cry（省略 to）。",
+      "error_tag": "G-F04"
+    },
+    {
+      "id": "G-F04-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Let me ____ (carry) the bag for you.",
+      "options": [
+        { "key": "A", "text": "carry", "answer": true },
+        { "key": "B", "text": "to carry", "distractor": "let 后面要省略 to" },
+        { "key": "C", "text": "carrying", "distractor": "let sb 后面接动词原形" },
+        { "key": "D", "text": "carried", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "let me carry（省略 to）。",
+      "error_tag": "G-F04"
+    },
+    {
+      "id": "G-F04-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He was made to wait for hours.", "answer": true },
+        { "key": "B", "text": "He was made wait for hours.", "distractor": "变被动时 to 要还原" },
+        { "key": "C", "text": "He made to wait for hours.", "distractor": "缺少 be 动词，且主动句应省略 to" },
+        { "key": "D", "text": "He was made waiting for hours.", "distractor": "被动后接 to do，不接 doing" }
+      ],
+      "explanation": "make 变被动要还原 to：be made to wait。",
+      "error_tag": "G-F04"
+    }
+  ]
+}

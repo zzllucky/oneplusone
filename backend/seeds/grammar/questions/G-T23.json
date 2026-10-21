@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T23",
+  "title": "现在完成时·基本用法",
+  "questions": [
+    {
+      "id": "G-T23-L1-01",
+      "level": "L1",
+      "stem": "I ____ (finish) my homework already.",
+      "options": [
+        { "key": "A", "text": "finish", "distractor": "already 是完成时的标志词" },
+        { "key": "B", "text": "have finished", "answer": true },
+        { "key": "C", "text": "finished", "distractor": "这里强调“已经完成”，对现在有影响" },
+        { "key": "D", "text": "finishing", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "already 标志现在完成时，用 have finished。",
+      "error_tag": "G-T23"
+    },
+    {
+      "id": "G-T23-L1-02",
+      "level": "L1",
+      "stem": "— ____ you ____ (see) the new film? — Not yet.",
+      "options": [
+        { "key": "A", "text": "Do; see", "distractor": "问的是到目前为止有没有看过" },
+        { "key": "B", "text": "Did; see", "distractor": "答语 Not yet 提示用完成时" },
+        { "key": "C", "text": "Have; seen", "answer": true },
+        { "key": "D", "text": "Are; seeing", "distractor": "see 一般不用进行时" }
+      ],
+      "explanation": "答语 Not yet 对应现在完成时：Have you seen…?",
+      "error_tag": "G-T23"
+    },
+    {
+      "id": "G-T23-L2-01",
+      "level": "L2",
+      "stem": "She ____ (live) in this city for ten years.",
+      "options": [
+        { "key": "A", "text": "lives", "distractor": "for ten years 表示持续到现在" },
+        { "key": "B", "text": "lived", "distractor": "lived 表示过去住过、现在不住了" },
+        { "key": "C", "text": "has lived", "answer": true },
+        { "key": "D", "text": "is living", "distractor": "for ten years 不与进行时连用表示长期状态" }
+      ],
+      "explanation": "从十年前持续到现在，用 has lived。",
+      "error_tag": "G-T23"
+    },
+    {
+      "id": "G-T23-L2-02",
+      "level": "L2",
+      "stem": "We ____ (not hear) from him so far.",
+      "options": [
+        { "key": "A", "text": "don't hear", "distractor": "so far（到目前为止）是完成时的标志" },
+        { "key": "B", "text": "didn't hear", "distractor": "so far 表示到现在为止" },
+        { "key": "C", "text": "haven't heard", "answer": true },
+        { "key": "D", "text": "won't hear", "distractor": "不是将来" }
+      ],
+      "explanation": "so far 搭配现在完成时，用 haven't heard。",
+      "error_tag": "G-T23"
+    },
+    {
+      "id": "G-T23-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I have already finished my lunch.", "distractor": "正确" },
+        { "key": "B", "text": "He has just come back from school.", "distractor": "正确" },
+        { "key": "C", "text": "I have finished my homework yesterday.", "answer": true },
+        { "key": "D", "text": "They have never been abroad.", "distractor": "正确" }
+      ],
+      "explanation": "yesterday 是具体过去时间点，应改为 I finished my homework yesterday。",
+      "error_tag": "G-T26"
+    },
+    {
+      "id": "G-T23-L3-02",
+      "level": "L3",
+      "stem": "— Would you like something to eat? — No, thanks. I ____ lunch already.",
+      "options": [
+        { "key": "A", "text": "have", "distractor": "缺少过去分词，句子不完整" },
+        { "key": "B", "text": "had", "distractor": "already 提示要用完成时" },
+        { "key": "C", "text": "have had", "answer": true },
+        { "key": "D", "text": "has had", "distractor": "I 要搭配 have" }
+      ],
+      "explanation": "“已经吃过午饭了”用 have had（have 的过去分词是 had）。",
+      "error_tag": "G-T23"
+    }
+  ]
+}

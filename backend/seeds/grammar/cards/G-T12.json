@@ -1,0 +1,100 @@
+{
+  "id": "G-T12",
+  "type": "rule",
+  "module": "T",
+  "module_name": "一般将来时",
+  "title": "主将从现",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "If it rains tomorrow, we will stay at home.", "zh": "如果明天下雨，我们就待在家里。" },
+      { "en": "I will tell him the news when he comes back.", "zh": "他回来时我会告诉他这个消息。" }
+    ],
+    "question": "两句话说的都是将来的事，为什么 if 和 when 后面的动词用的是现在时（rains / comes）？",
+    "options": [
+      {
+        "key": "A",
+        "text": "因为英语里时间和条件从句要用一般现在时表示将来",
+        "feedback": "对！这条规矩叫“主将从现”——主句表将来，从句用现在时。"
+      },
+      {
+        "key": "B",
+        "text": "因为下雨、回来这两件事是现在发生的",
+        "feedback": "不对——tomorrow 说明这些都还没发生。"
+      },
+      {
+        "key": "C",
+        "text": "因为这两个句子写错了",
+        "feedback": "不对——这正是正确的写法，写成 will rain 才是错的。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "时间状语从句和条件状语从句里，用一般现在时表示将来的动作，主句仍用将来时",
+    "signals": ["if", "unless", "as long as", "when", "as soon as", "before", "after", "until"],
+    "formula": "主句：will + 动词原形　从句：一般现在时（三单加 -s）",
+    "anchors": [
+      {
+        "en": "If it rains tomorrow, we will stay at home.",
+        "zh": "如果明天下雨，我们就待在家里。",
+        "note": "rains 现在时表将来，will stay 主句将来"
+      },
+      {
+        "en": "I will call you as soon as I get there.",
+        "zh": "我一到那儿就给你打电话。",
+        "note": "as soon as 从句用 get，不用 will get"
+      }
+    ],
+    "trap": {
+      "wrong": "If it will rain tomorrow, we will stay at home.",
+      "right": "If it rains tomorrow, we will stay at home.",
+      "why": "if 引导的条件从句里不能出现 will（除非 will 表示“愿意”，那是另一种用法）。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住四字口诀“主将从现”：主句给将来，从句退回到现在时。",
+  "check": [
+    {
+      "id": "G-T12-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "If he ____ (come) tomorrow, I ____ tell him the good news.",
+      "options": [
+        { "key": "A", "text": "comes; will tell", "answer": true },
+        { "key": "B", "text": "will come; will tell", "distractor": "if 从句不能用将来时" },
+        { "key": "C", "text": "comes; tells", "distractor": "主句要说将来的结果，应用 will tell" },
+        { "key": "D", "text": "will come; tells", "distractor": "两个空都错了" }
+      ],
+      "explanation": "主将从现：if 从句用 comes，主句用 will tell。",
+      "error_tag": "G-T12"
+    },
+    {
+      "id": "G-T12-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "We ____ (go) for a picnic if it is sunny tomorrow.",
+      "options": [
+        { "key": "A", "text": "go", "distractor": "主句表示将来的结果，要用 will go" },
+        { "key": "B", "text": "will go", "answer": true },
+        { "key": "C", "text": "went", "distractor": "tomorrow 表示将来" },
+        { "key": "D", "text": "going", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "从句 if it is sunny 已经是现在时，主句用 will go。",
+      "error_tag": "G-T12"
+    },
+    {
+      "id": "G-T12-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "I'll call you when I will get home.", "distractor": "when 从句不能用 will" },
+        { "key": "B", "text": "I'll call you when I get home.", "answer": true },
+        { "key": "C", "text": "I call you when I will get home.", "distractor": "两个空都错了" },
+        { "key": "D", "text": "I will call you when I will get home.", "distractor": "when 从句不能用 will" }
+      ],
+      "explanation": "when 引导的时间从句用一般现在时 get，主句用 will call。",
+      "error_tag": "G-T12"
+    }
+  ]
+}

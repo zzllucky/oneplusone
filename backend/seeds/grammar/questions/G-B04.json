@@ -1,0 +1,84 @@
+{
+  "point_id": "G-B04",
+  "title": "need 的用法",
+  "questions": [
+    {
+      "id": "G-B04-L1-01",
+      "level": "L1",
+      "stem": "— ____ I come with you? — No, you needn't.",
+      "options": [
+        { "key": "A", "text": "Need", "answer": true },
+        { "key": "B", "text": "Do", "distractor": "答语是 needn't，问句也要用 need" },
+        { "key": "C", "text": "Am", "distractor": "need 不与 be 动词搭配" },
+        { "key": "D", "text": "Must", "distractor": "must 的否定回答才是 needn't，但答语要求问句一致" }
+      ],
+      "explanation": "need 作情态动词的疑问句：Need I come?",
+      "error_tag": "G-B04"
+    },
+    {
+      "id": "G-B04-L1-02",
+      "level": "L1",
+      "stem": "We ____ to water the flowers today. It rained last night.",
+      "options": [
+        { "key": "A", "text": "needn't", "distractor": "needn't 后面不能接 to" },
+        { "key": "B", "text": "don't need", "answer": true },
+        { "key": "C", "text": "needn't to", "distractor": "needn't 后面直接跟原形" },
+        { "key": "D", "text": "doesn't need", "distractor": "主语是 we，助动词用 do" }
+      ],
+      "explanation": "don't need to water（实义动词用法）。",
+      "error_tag": "G-B04"
+    },
+    {
+      "id": "G-B04-L2-01",
+      "level": "L2",
+      "stem": "She ____ any help. She can do it herself.",
+      "options": [
+        { "key": "A", "text": "needn't", "distractor": "needn't 后面要接动词原形，这里接的是名词 help" },
+        { "key": "B", "text": "doesn't need", "answer": true },
+        { "key": "C", "text": "needs not", "distractor": "否定结构错误" },
+        { "key": "D", "text": "need", "distractor": "与“她自己能做”矛盾" }
+      ],
+      "explanation": "后面接名词 help → 实义动词 doesn't need。",
+      "error_tag": "G-B04"
+    },
+    {
+      "id": "G-B04-L2-02",
+      "level": "L2",
+      "stem": "You ____ finish the work today if you are tired.",
+      "options": [
+        { "key": "A", "text": "needn't to", "distractor": "needn't 后面不加 to" },
+        { "key": "B", "text": "needn't", "answer": true },
+        { "key": "C", "text": "don't need", "distractor": "don't need 后面要加 to" },
+        { "key": "D", "text": "aren't need to", "distractor": "结构错误" }
+      ],
+      "explanation": "情态动词用法：needn't finish。",
+      "error_tag": "G-B04"
+    },
+    {
+      "id": "G-B04-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "You needn't get up so early on Sunday.", "distractor": "正确" },
+        { "key": "B", "text": "He doesn't need to go there today.", "distractor": "正确" },
+        { "key": "C", "text": "She needs not come to the meeting.", "answer": true },
+        { "key": "D", "text": "We need to buy some fruit.", "distractor": "正确" }
+      ],
+      "explanation": "应改为 She needn't come 或 She doesn't need to come。",
+      "error_tag": "G-B04"
+    },
+    {
+      "id": "G-B04-L3-02",
+      "level": "L3",
+      "stem": "— Must I return the book now? — No, you ____. You may ____ it for another week.",
+      "options": [
+        { "key": "A", "text": "needn't; keep", "answer": true },
+        { "key": "B", "text": "mustn't; keep", "distractor": "mustn't 是“禁止”，这里说“不必”" },
+        { "key": "C", "text": "needn't; borrow", "distractor": "书已经在手上，不能再说 borrow" },
+        { "key": "D", "text": "can't; keep", "distractor": "can't 是“不能”，与答语矛盾" }
+      ],
+      "explanation": "不必 → needn't；再借一周 → keep。",
+      "error_tag": "G-B04"
+    }
+  ]
+}

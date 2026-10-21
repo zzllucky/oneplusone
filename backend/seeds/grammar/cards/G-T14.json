@@ -1,0 +1,100 @@
+{
+  "id": "G-T14",
+  "type": "rule",
+  "module": "T",
+  "module_name": "过去将来时",
+  "title": "was / were going to",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "He said he was going to visit his grandparents.", "zh": "他说他打算去看望祖父母。" },
+      { "en": "We were going to have a picnic, but it rained.", "zh": "我们本来打算去野餐，但下雨了。" }
+    ],
+    "question": "第二句里的野餐，最后去了没有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "没去成——计划被下雨打断了",
+        "feedback": "对！was/were going to 常常暗含“本来打算，但没做成”。"
+      },
+      {
+        "key": "B",
+        "text": "去了，而且玩得很开心",
+        "feedback": "不对——后半句 but it rained 说明计划没实现。"
+      },
+      {
+        "key": "C",
+        "text": "现在正在去",
+        "feedback": "不对——were 说明这是过去的事。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "从过去的某个时刻看打算要做的事，常暗含“本来打算、结果没做成”",
+    "signals": ["said / thought + was/were going to", "but…（转折说明没做成）"],
+    "formula": "was / were going to + 动词原形",
+    "anchors": [
+      {
+        "en": "He said he was going to help me with my homework.",
+        "zh": "他说他打算帮我做作业。",
+        "note": "过去版本的 be going to"
+      },
+      {
+        "en": "We were going to play basketball, but it began to rain.",
+        "zh": "我们本来打算打篮球，但天开始下雨了。",
+        "note": "but 后面说明没做成"
+      }
+    ],
+    "trap": {
+      "wrong": "He said he is going to come.",
+      "right": "He said he was going to come.",
+      "why": "主句是过去时，be 动词要跟着退成 was/were。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住：was/were going to 是“过去的打算”，句子里出现 but 时，往往就是没做成。",
+  "check": [
+    {
+      "id": "G-T14-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "She said she ____ visit her aunt the next week.",
+      "options": [
+        { "key": "A", "text": "is going to", "distractor": "主句是过去时，is 要变 was" },
+        { "key": "B", "text": "was going to", "answer": true },
+        { "key": "C", "text": "will", "distractor": "主句过去时，will 要变 would 或用 was going to" },
+        { "key": "D", "text": "goes", "distractor": "不能表示“打算去”" }
+      ],
+      "explanation": "主句 said 是过去时，打算用 was going to visit。",
+      "error_tag": "G-T14"
+    },
+    {
+      "id": "G-T14-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "We ____ (have) a sports meeting, but the weather was bad.",
+      "options": [
+        { "key": "A", "text": "have", "distractor": "这是过去的事" },
+        { "key": "B", "text": "had", "distractor": "had 表示开成了，与 but 后面的意思矛盾" },
+        { "key": "C", "text": "were going to have", "answer": true },
+        { "key": "D", "text": "will have", "distractor": "事情发生在过去" }
+      ],
+      "explanation": "but 说明运动会没开成，是“本来打算”，用 were going to have。",
+      "error_tag": "G-T14"
+    },
+    {
+      "id": "G-T14-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He said he is going to help me.", "distractor": "主句过去时，is 要变 was" },
+        { "key": "B", "text": "He said he was going to help me.", "answer": true },
+        { "key": "C", "text": "He said he would going to help me.", "distractor": "would 后面不能接 going to" },
+        { "key": "D", "text": "He said he will going to help me.", "distractor": "结构错误，且时态不对" }
+      ],
+      "explanation": "过去时主句后表示打算，用 was going to + 动词原形。",
+      "error_tag": "G-T14"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "G-R04",
+  "type": "rule",
+  "module": "R",
+  "module_name": "代词",
+  "title": "数量代词辨析",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "Both of my parents are teachers.", "zh": "我父母两个人都是老师。" },
+      { "en": "Neither of the two boys is right.", "zh": "这两个男孩都不对。" },
+      { "en": "None of the students was late.", "zh": "没有一个学生迟到。" }
+    ],
+    "question": "Neither of the boys ____ right. 这里谓语用 is 还是 are？",
+    "options": [
+      {
+        "key": "A",
+        "text": "用 is——neither 表示“两个都不”，按单数处理",
+        "feedback": "对！neither、either、each、none 都按单数处理，考试以单数为标准答案。"
+      },
+      {
+        "key": "B",
+        "text": "用 are——因为 boys 是复数",
+        "feedback": "不对——neither 才是主语，后面的 of 短语只是补充说明范围。"
+      },
+      {
+        "key": "C",
+        "text": "两个都可以，随便选",
+        "feedback": "不对——考试统一按单数算，写 are 会被扣分。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "both（两者都，复数）／either（两者中任一，单数）／neither（两者都不，单数且表否定）／all（三者及以上都）／none（三者及以上都不）／each（每一个，单数）",
+    "signals": ["both", "either", "neither", "all", "none", "each", "every"],
+    "formula": "① 两者：both A and B（复数）　② either A or B / neither A nor B（谓语就近）　③ 三者及以上：all / none　④ each / every + 单数谓语　⑤ both + 复数名词；either + 单数名词",
+    "anchors": [
+      {
+        "en": "There are trees on both sides of the street.",
+        "zh": "街道两边都有树。",
+        "note": "both + 复数 sides"
+      },
+      {
+        "en": "You can sit on either side of the table.",
+        "zh": "桌子两边你坐哪边都行。",
+        "note": "either + 单数 side"
+      }
+    ],
+    "trap": {
+      "wrong": "Neither of the answers are correct.",
+      "right": "Neither of the answers is correct.",
+      "why": "neither 作主语按单数处理，谓语用 is。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——both 跟复数，either / neither / each / none 跟单数；说到“两个”用 both/neither，说到“三个以上”用 all/none。",
+  "check": [
+    {
+      "id": "G-R04-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Which do you like, tea or coffee? — ____. I'd like some water.",
+      "options": [
+        { "key": "A", "text": "Both", "distractor": "两个都喜欢的话就不会要水了" },
+        { "key": "B", "text": "Either", "distractor": "任一都行的话就不会要水了" },
+        { "key": "C", "text": "Neither", "answer": true },
+        { "key": "D", "text": "None", "distractor": "none 用于三者及以上" }
+      ],
+      "explanation": "两个都不要 → Neither。",
+      "error_tag": "G-R04"
+    },
+    {
+      "id": "G-R04-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "There are many tall trees on ____ side of the street.",
+      "options": [
+        { "key": "A", "text": "both", "distractor": "both 后面要接复数 sides" },
+        { "key": "B", "text": "either", "answer": true },
+        { "key": "C", "text": "all", "distractor": "all 用于三者及以上" },
+        { "key": "D", "text": "every", "distractor": "every 用于三者及以上" }
+      ],
+      "explanation": "空后 side 是单数，用 either（两边中任一边）。",
+      "error_tag": "G-R04"
+    },
+    {
+      "id": "G-R04-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "Neither of the boys is from Beijing.", "answer": true },
+        { "key": "B", "text": "Neither of the boys are from Beijing.", "distractor": "neither 作主语按单数处理" },
+        { "key": "C", "text": "Neither of the boys be from Beijing.", "distractor": "be 要用 is" },
+        { "key": "D", "text": "Neither of the boys were from Beijing.", "distractor": "这里用一般现在时，且要用单数" }
+      ],
+      "explanation": "neither 作主语，谓语用 is。",
+      "error_tag": "G-R04"
+    }
+  ]
+}

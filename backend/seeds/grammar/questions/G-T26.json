@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T26",
+  "title": "现在完成时 vs 一般过去时",
+  "questions": [
+    {
+      "id": "G-T26-L1-01",
+      "level": "L1",
+      "stem": "I ____ my key. I can't get into the house now.",
+      "options": [
+        { "key": "A", "text": "lost", "distractor": "后半句说“现在进不去”，强调对现在的影响" },
+        { "key": "B", "text": "have lost", "answer": true },
+        { "key": "C", "text": "lose", "distractor": "丢钥匙是已经发生的事" },
+        { "key": "D", "text": "am losing", "distractor": "lose 不用进行时表示“弄丢”" }
+      ],
+      "explanation": "“现在进不去”说明丢钥匙影响了现在，用 have lost。",
+      "error_tag": "G-T26"
+    },
+    {
+      "id": "G-T26-L1-02",
+      "level": "L1",
+      "stem": "He ____ the film last week.",
+      "options": [
+        { "key": "A", "text": "has seen", "distractor": "last week 是具体过去时间点，不能用完成时" },
+        { "key": "B", "text": "saw", "answer": true },
+        { "key": "C", "text": "sees", "distractor": "last week 是过去" },
+        { "key": "D", "text": "seen", "distractor": "过去分词不能单独作谓语" }
+      ],
+      "explanation": "last week 是具体过去时间点，用一般过去时 saw。",
+      "error_tag": "G-T26"
+    },
+    {
+      "id": "G-T26-L2-01",
+      "level": "L2",
+      "stem": "— ____ you ____ your homework? — Yes, I have.",
+      "options": [
+        { "key": "A", "text": "Have; finished", "answer": true },
+        { "key": "B", "text": "Did; finish", "distractor": "答语是 Yes, I have，问句要一致" },
+        { "key": "C", "text": "Do; finish", "distractor": "问的是到目前为止有没有完成" },
+        { "key": "D", "text": "Will; finish", "distractor": "不是将来" }
+      ],
+      "explanation": "答语 Yes, I have 说明问句是 Have you finished…",
+      "error_tag": "G-T26"
+    },
+    {
+      "id": "G-T26-L2-02",
+      "level": "L2",
+      "stem": "She ____ in this factory since she left school.",
+      "options": [
+        { "key": "A", "text": "works", "distractor": "since 从句说明状态从过去持续到现在" },
+        { "key": "B", "text": "worked", "distractor": "worked 表示过去工作过、现在不在这了" },
+        { "key": "C", "text": "has worked", "answer": true },
+        { "key": "D", "text": "is working", "distractor": "since 引导的时间段不与进行时连用" }
+      ],
+      "explanation": "since 引导的起点 + 持续到现在，用 has worked。",
+      "error_tag": "G-T26"
+    },
+    {
+      "id": "G-T26-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I saw him yesterday.", "distractor": "正确：具体过去时间" },
+        { "key": "B", "text": "I have seen the film twice.", "distractor": "正确：讲经历次数" },
+        { "key": "C", "text": "I have bought the book yesterday.", "answer": true },
+        { "key": "D", "text": "We have lived here for years.", "distractor": "正确：持续到现在" }
+      ],
+      "explanation": "yesterday 是具体过去时间点，应改为 I bought the book yesterday。",
+      "error_tag": "G-T26"
+    },
+    {
+      "id": "G-T26-L3-02",
+      "level": "L3",
+      "stem": "— When ____ you ____ (buy) this bike? — Last month.",
+      "options": [
+        { "key": "A", "text": "have; bought", "distractor": "答语是具体过去时间点，不能用完成时" },
+        { "key": "B", "text": "did; buy", "answer": true },
+        { "key": "C", "text": "do; buy", "distractor": "这是过去的事" },
+        { "key": "D", "text": "will; buy", "distractor": "不是将来" }
+      ],
+      "explanation": "问“什么时候买的”指向具体过去时间，用 did…buy。",
+      "error_tag": "G-T26"
+    }
+  ]
+}

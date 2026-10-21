@@ -1,0 +1,84 @@
+{
+  "point_id": "G-F08",
+  "title": "固定搭配接 doing",
+  "questions": [
+    {
+      "id": "G-F08-L1-01",
+      "level": "L1",
+      "stem": "She spent the whole morning ____ (clean) the house.",
+      "options": [
+        { "key": "A", "text": "clean", "distractor": "spend 后面要接 doing" },
+        { "key": "B", "text": "cleaning", "answer": true },
+        { "key": "C", "text": "to clean", "distractor": "spend 后面不接 to do" },
+        { "key": "D", "text": "cleaned", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "spend + 时间 + cleaning。",
+      "error_tag": "G-F08"
+    },
+    {
+      "id": "G-F08-L1-02",
+      "level": "L1",
+      "stem": "They are looking forward to ____ (visit) the Great Wall.",
+      "options": [
+        { "key": "A", "text": "visit", "distractor": "这里的 to 是介词，不能接原形" },
+        { "key": "B", "text": "visiting", "answer": true },
+        { "key": "C", "text": "to visit", "distractor": "to 已经在了，不能重复" },
+        { "key": "D", "text": "visited", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "look forward to + visiting。",
+      "error_tag": "G-F08"
+    },
+    {
+      "id": "G-F08-L2-01",
+      "level": "L2",
+      "stem": "The students are busy ____ (get) ready for the exam.",
+      "options": [
+        { "key": "A", "text": "get", "distractor": "be busy 后面要接 doing" },
+        { "key": "B", "text": "getting", "answer": true },
+        { "key": "C", "text": "to get", "distractor": "be busy 后面不接 to do" },
+        { "key": "D", "text": "got", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "be busy + getting ready。",
+      "error_tag": "G-F08"
+    },
+    {
+      "id": "G-F08-L2-02",
+      "level": "L2",
+      "stem": "My father is used to ____ (get) up early in the morning.",
+      "options": [
+        { "key": "A", "text": "get", "distractor": "这里的 to 是介词，不能接原形" },
+        { "key": "B", "text": "to get", "distractor": "to 已经在了，不能重复" },
+        { "key": "C", "text": "getting", "answer": true },
+        { "key": "D", "text": "got", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "be used to + getting up（习惯于早起）。",
+      "error_tag": "G-F08"
+    },
+    {
+      "id": "G-F08-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He spent two hours doing his homework.", "distractor": "正确" },
+        { "key": "B", "text": "We are looking forward to seeing you soon.", "distractor": "正确" },
+        { "key": "C", "text": "She is busy to cook dinner in the kitchen.", "answer": true },
+        { "key": "D", "text": "He gave up smoking two years ago.", "distractor": "正确" }
+      ],
+      "explanation": "be busy 后面接 doing：She is busy cooking dinner。",
+      "error_tag": "G-F08"
+    },
+    {
+      "id": "G-F08-L3-02",
+      "level": "L3",
+      "stem": "— How do you spend your free time? — I spend it ____ books.",
+      "options": [
+        { "key": "A", "text": "read", "distractor": "spend 后面要接 doing" },
+        { "key": "B", "text": "to read", "distractor": "spend 后面不接 to do" },
+        { "key": "C", "text": "reading", "answer": true },
+        { "key": "D", "text": "reads", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "spend time reading books。",
+      "error_tag": "G-F08"
+    }
+  ]
+}

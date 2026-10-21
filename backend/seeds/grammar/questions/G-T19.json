@@ -1,0 +1,163 @@
+{
+  "point_id": "G-T19",
+  "title": "三种“表将来”的说法",
+  "covers": ["G-T04", "G-T19"],
+  "questions": [
+    {
+      "id": "G-T19-L1-01",
+      "level": "L1",
+      "stem": "Look at the timetable. The train ____ (leave) at 8:00.",
+      "options": [
+        { "key": "A", "text": "leaves", "answer": true },
+        { "key": "B", "text": "is leaving", "distractor": "时刻表上的时间用一般现在时" },
+        { "key": "C", "text": "left", "distractor": "这是过去式" },
+        { "key": "D", "text": "leaving", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "时刻表上写好的时间，用一般现在时 leaves。",
+      "error_tag": "G-T19"
+    },
+    {
+      "id": "G-T19-L1-02",
+      "level": "L1",
+      "stem": "I ____ (go) to the zoo with my parents this Sunday. It's all planned.",
+      "options": [
+        { "key": "A", "text": "go", "distractor": "已经安排好的事，用进行时表将来" },
+        { "key": "B", "text": "am going", "answer": true },
+        { "key": "C", "text": "went", "distractor": "这是过去式" },
+        { "key": "D", "text": "goes", "distractor": "I 不是三单" }
+      ],
+      "explanation": "已经计划妥当的近期安排，用 am going。",
+      "error_tag": "G-T19"
+    },
+    {
+      "id": "G-T19-L2-01",
+      "level": "L2",
+      "stem": "— When ____ the film ____ (start)? — At 7:30. Let me check the timetable.",
+      "options": [
+        { "key": "A", "text": "does; start", "answer": true },
+        { "key": "B", "text": "is; starting", "distractor": "查时刻表问的是固定场次，用一般现在时" },
+        { "key": "C", "text": "did; start", "distractor": "电影还没开始" },
+        { "key": "D", "text": "do; start", "distractor": "the film 是三单，助动词用 does" }
+      ],
+      "explanation": "看时刻表问的场次时间，用一般现在时 does…start。",
+      "error_tag": "G-T19"
+    },
+    {
+      "id": "G-T19-L2-02",
+      "level": "L2",
+      "stem": "He ____ (come) to see me this evening. We've arranged it.",
+      "options": [
+        { "key": "A", "text": "comes", "distractor": "已经约好的安排，用进行时表将来" },
+        { "key": "B", "text": "is coming", "answer": true },
+        { "key": "C", "text": "came", "distractor": "这是过去式" },
+        { "key": "D", "text": "come", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "come 是位移动词，已经约好的事用 is coming 表将来。",
+      "error_tag": "G-T19"
+    },
+    {
+      "id": "G-T19-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "The plane takes off at 10:00.", "distractor": "正确：时刻表" },
+        { "key": "B", "text": "I'm visiting my aunt this weekend.", "distractor": "正确：已安排" },
+        { "key": "C", "text": "Hurry up! The bus comes.", "answer": true },
+        { "key": "D", "text": "School starts on September 1st.", "distractor": "正确：固定日程" }
+      ],
+      "explanation": "“快点，车来了”是马上要发生的事，应用 The bus is coming。",
+      "error_tag": "G-T19"
+    },
+    {
+      "id": "G-T19-L3-02",
+      "level": "L3",
+      "stem": "My father ____ (leave) for Guangzhou tomorrow morning. His ticket is ready.",
+      "options": [
+        { "key": "A", "text": "leaves", "distractor": "这里不是时刻表，而是票已买好的安排" },
+        { "key": "B", "text": "is leaving", "answer": true },
+        { "key": "C", "text": "left", "distractor": "这是过去式" },
+        { "key": "D", "text": "leave", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "票已准备好，是安排好的近期动作，用 is leaving 表将来（leaves 只在时刻表语境下才对）。",
+      "error_tag": "G-T19"
+    },
+    {
+      "id": "G-T19-L1-03",
+      "level": "L1",
+      "stem": "The shop ____ (open) at 9:00 every morning.",
+      "options": [
+        { "key": "A", "text": "opens", "answer": true },
+        { "key": "B", "text": "is opening", "distractor": "固定营业时间属于日程，用一般现在时" },
+        { "key": "C", "text": "opened", "distractor": "这是过去式" },
+        { "key": "D", "text": "opening", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "每天固定的营业时间属于日程表性质，用一般现在时 opens。",
+      "error_tag": "G-T19"
+    },
+    {
+      "id": "G-T19-L1-04",
+      "level": "L1",
+      "stem": "My uncle ____ (arrive) here tonight. His train ticket is ready.",
+      "options": [
+        { "key": "A", "text": "is arriving", "answer": true },
+        { "key": "B", "text": "arrives", "distractor": "票已买好是安排妥当的事，用进行时表将来" },
+        { "key": "C", "text": "arrived", "distractor": "这是过去式" },
+        { "key": "D", "text": "arrive", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "票已准备好，arrive 是位移动词，用 is arriving 表将来。",
+      "error_tag": "G-T19"
+    },
+    {
+      "id": "G-T19-L2-03",
+      "level": "L2",
+      "stem": "The first class ____ (begin) at 8:00. Don't be late.",
+      "options": [
+        { "key": "A", "text": "begins", "answer": true },
+        { "key": "B", "text": "is beginning", "distractor": "课程表上的固定时间用一般现在时" },
+        { "key": "C", "text": "began", "distractor": "这是过去式" },
+        { "key": "D", "text": "begin", "distractor": "the first class 是三单" }
+      ],
+      "explanation": "课表上写好的上课时间，用一般现在时 begins。",
+      "error_tag": "G-T19"
+    },
+    {
+      "id": "G-T19-L2-04",
+      "level": "L2",
+      "stem": "— Why are you in such a hurry? — I ____ (meet) Mr Li at the station at 3:00. It's arranged.",
+      "options": [
+        { "key": "A", "text": "am meeting", "answer": true },
+        { "key": "B", "text": "meet", "distractor": "已经约好的安排，用进行时表将来" },
+        { "key": "C", "text": "met", "distractor": "见面还没发生" },
+        { "key": "D", "text": "meets", "distractor": "主语是 I，且这里表已安排的将来" }
+      ],
+      "explanation": "已经约好、马上要做的安排，用 am meeting 表将来。",
+      "error_tag": "G-T19"
+    },
+    {
+      "id": "G-T19-L3-03",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "School begins on Monday.", "distractor": "正确：固定日程" },
+        { "key": "B", "text": "We are moving to a new house next week.", "distractor": "正确：已安排" },
+        { "key": "C", "text": "The plane is taking off at 10:00.", "answer": true },
+        { "key": "D", "text": "Hurry! The train is leaving.", "distractor": "正确：马上发生" }
+      ],
+      "explanation": "时刻表上的起飞时间是固定的，应改为 The plane takes off at 10:00。",
+      "error_tag": "G-T19"
+    },
+    {
+      "id": "G-T19-L3-04",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "The concert starts at 7:30. Don't be late.", "distractor": "正确：日程" },
+        { "key": "B", "text": "They are getting married next month.", "distractor": "正确：已安排" },
+        { "key": "C", "text": "I am leaving for Beijing. My ticket is booked.", "distractor": "正确：已安排" },
+        { "key": "D", "text": "The film is starting at 8:00 every night.", "answer": true }
+      ],
+      "explanation": "“每晚八点”是固定场次，属于日程表，应改为 The film starts at 8:00 every night。",
+      "error_tag": "G-T19"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "G-T09",
+  "type": "contrast",
+  "module": "T",
+  "module_name": "一般将来时",
+  "title": "will 与 be going to",
+  "depth": "核心",
+  "covers": ["G-T09", "G-T10", "G-T11"],
+  "guess": {
+    "examples": [
+      { "en": "Look at the dark clouds. It's going to rain.", "zh": "看那些乌云，要下雨了。" },
+      { "en": "Don't worry. I will help you.", "zh": "别担心，我来帮你。" }
+    ],
+    "question": "两句都说将来的事，为什么一句用 be going to，一句用 will？",
+    "options": [
+      {
+        "key": "A",
+        "text": "第一句眼前有迹象（乌云），第二句是说话时才做的决定",
+        "feedback": "对！有没有迹象、是不是临时决定，是两者的分水岭。"
+      },
+      {
+        "key": "B",
+        "text": "第一句更正式，第二句更口语",
+        "feedback": "不对——正式程度不是判据，两者口语里都用。"
+      },
+      {
+        "key": "C",
+        "text": "两者完全一样，随便换",
+        "feedback": "不对——多数情况可以换，但“眼前有迹象”时只能用 be going to。"
+      }
+    ],
+    "answer": "A"
+  },
+  "contrast": {
+    "left": {
+      "label": "will + 动词原形",
+      "formula": "will + 原形（否定 won't + 原形）",
+      "anchor": { "en": "Don't worry. I will help you.", "zh": "别担心，我会帮你的。" },
+      "focus": "说话当下才做的决定，或单纯预测将来"
+    },
+    "right": {
+      "label": "be going to + 动词原形",
+      "formula": "am/is/are going to + 原形",
+      "anchor": { "en": "Look at the clouds. It's going to rain.", "zh": "看那些云，要下雨了。" },
+      "focus": "事先已经打算好，或眼前有迹象表明要发生"
+    },
+    "diff": "事先有计划、眼前有迹象 → be going to；说话时才决定、单纯预测 → will。多数句子两者都能用，但“有迹象”这一条只能用 be going to。",
+    "traps": [
+      {
+        "wrong": "Look at the sky! It will snow.",
+        "right": "Look at the sky! It's going to snow.",
+        "why": "眼前有迹象（天色、乌云）时，必须用 be going to。"
+      },
+      {
+        "wrong": "The phone is ringing. I'm going to answer it.",
+        "right": "The phone is ringing. I'll answer it.",
+        "why": "电话响了才临时决定去接，属于临时决定，用 will 更自然。"
+      }
+    ]
+  },
+  "guess_callback": "你刚才选的是 A——记住一句话：有迹象、早打算用 be going to；临时决定用 will。",
+  "check": [
+    {
+      "id": "G-T09-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Look at the dark clouds. It ____ rain soon.",
+      "options": [
+        { "key": "A", "text": "will", "distractor": "眼前有迹象时要用 be going to" },
+        { "key": "B", "text": "is going to", "answer": true },
+        { "key": "C", "text": "going to", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "shall", "distractor": "现代英语里 shall 极少用于陈述句" }
+      ],
+      "explanation": "乌云是眼前迹象，用 is going to rain。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— The phone is ringing. — I ____ answer it.",
+      "options": [
+        { "key": "A", "text": "will", "answer": true },
+        { "key": "B", "text": "am going to", "distractor": "这是临时决定，不是事先计划" },
+        { "key": "C", "text": "going to", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "will to", "distractor": "will 后面直接接动词原形" }
+      ],
+      "explanation": "听到铃声才决定去接，是临时决定，用 will。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "I will to go there tomorrow.", "distractor": "will 后面直接接原形 go" },
+        { "key": "B", "text": "I going to go there tomorrow.", "distractor": "缺少 be 动词" },
+        { "key": "C", "text": "I am going go there tomorrow.", "distractor": "going 后面要有 to" },
+        { "key": "D", "text": "I am going to go there tomorrow.", "answer": true }
+      ],
+      "explanation": "be going to 的完整结构是 am/is/are going to + 动词原形。",
+      "error_tag": "G-T09"
+    }
+  ]
+}

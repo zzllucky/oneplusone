@@ -1,0 +1,101 @@
+{
+  "id": "G-R05",
+  "type": "rule",
+  "module": "R",
+  "module_name": "代词",
+  "title": "疑问代词",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "— Who is that man? — He is my uncle.", "zh": "——那个人是谁？——他是我叔叔。" },
+      { "en": "— Whose book is this? — It's mine.", "zh": "——这是谁的书？——是我的。" },
+      { "en": "— What is your father? — He is a doctor.", "zh": "——你爸爸是做什么的？——他是医生。" }
+    ],
+    "question": "想知道对方的职业，应该问哪一个？",
+    "options": [
+      {
+        "key": "A",
+        "text": "What is your father?（或 What does your father do?）",
+        "feedback": "对！问职业用 what，问“是谁（身份、姓名）”才用 who。"
+      },
+      {
+        "key": "B",
+        "text": "Who is your father?",
+        "feedback": "不对——这句问的是“谁是你爸爸”（找人），不是问职业。"
+      },
+      {
+        "key": "C",
+        "text": "Which is your father?",
+        "feedback": "不对——which 用在“从几个人里挑一个”的场合。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "who 问人（身份、姓名）／what 问事物、职业、内容／which 问给定范围内的“哪一个”／whose 问所属／whom 作宾语（介词后必须用 whom）",
+    "signals": ["who", "whom", "whose", "what", "which"],
+    "formula": "① Who is he? 问身份　② What is he? 问职业　③ Whose + 名词 问所属　④ Which + （A or B）问选择　⑤ 介词 + whom：To whom did you write?",
+    "anchors": [
+      {
+        "en": "— Whose bag is this? — It's Tom's.",
+        "zh": "——这是谁的包？——是汤姆的。",
+        "note": "whose 问所属"
+      },
+      {
+        "en": "— Which season do you like best? — Autumn.",
+        "zh": "——你最喜欢哪个季节？——秋天。",
+        "note": "which 问选择"
+      }
+    ],
+    "trap": {
+      "wrong": "Who is your mother?（想问职业）",
+      "right": "What is your mother? / What does your mother do?",
+      "why": "问职业用 what；who 问的是“这人是谁”。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住：问身份 who、问职业 what、问所属 whose、有范围挑一个用 which。",
+  "check": [
+    {
+      "id": "G-R05-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— ____ is your mother? — She is a nurse.",
+      "options": [
+        { "key": "A", "text": "Who", "distractor": "who 问的是“这人是谁”，答语应是姓名或身份" },
+        { "key": "B", "text": "What", "answer": true },
+        { "key": "C", "text": "Which", "distractor": "这里没有给出选择范围" },
+        { "key": "D", "text": "Whose", "distractor": "whose 问所属，后面要接名词" }
+      ],
+      "explanation": "答语是职业 → What is your mother?",
+      "error_tag": "G-R05"
+    },
+    {
+      "id": "G-R05-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— ____ pen is this? — It's Tom's.",
+      "options": [
+        { "key": "A", "text": "Who", "distractor": "who 后面不能接名词" },
+        { "key": "B", "text": "Whose", "answer": true },
+        { "key": "C", "text": "What", "distractor": "问所属要用 whose" },
+        { "key": "D", "text": "Which", "distractor": "这里没有选择范围" }
+      ],
+      "explanation": "问“谁的” → Whose pen。",
+      "error_tag": "G-R05"
+    },
+    {
+      "id": "G-R05-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— ____ do you like better, apples or oranges? — Apples.",
+      "options": [
+        { "key": "A", "text": "What", "distractor": "给出了两种选择，要用 which" },
+        { "key": "B", "text": "Which", "answer": true },
+        { "key": "C", "text": "Who", "distractor": "问的不是人" },
+        { "key": "D", "text": "Whose", "distractor": "问的不是所属" }
+      ],
+      "explanation": "在两者中选择 → Which。",
+      "error_tag": "G-R05"
+    }
+  ]
+}

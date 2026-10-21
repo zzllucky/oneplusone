@@ -56,6 +56,21 @@ const routes: RouteRecordRaw[] = [
     name: 'summary',
     component: () => import('@/pages/SummaryPage.vue'),
   },
+  {
+    path: '/grammar',
+    name: 'grammar',
+    component: () => import('@/pages/GrammarOutlinePage.vue'),
+  },
+  {
+    path: '/grammar/:pointId',
+    name: 'grammar-point',
+    component: () => import('@/pages/GrammarCardPage.vue'),
+  },
+  {
+    path: '/grammar/:pointId/practice',
+    name: 'grammar-practice',
+    component: () => import('@/pages/GrammarPracticePage.vue'),
+  },
   { path: '/:pathMatch(.*)*', redirect: '/home' },
 ]
 

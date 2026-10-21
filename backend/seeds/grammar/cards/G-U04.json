@@ -1,0 +1,100 @@
+{
+  "id": "G-U04",
+  "type": "rule",
+  "module": "U",
+  "module_name": "数词",
+  "title": "概数表达",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "There are two hundred workers in the factory.", "zh": "工厂里有两百名工人。" },
+      { "en": "Hundreds of people come here every year.", "zh": "每年有数百人来这里。" }
+    ],
+    "question": "“两百人”和“数百人”在英文里差在哪？",
+    "options": [
+      {
+        "key": "A",
+        "text": "确切数字是 two hundred（不加 s、不加 of）；概数是 hundreds of（加 s、加 of）",
+        "feedback": "对！有具体数字就老老实实写 hundred，没有数字才用 hundreds of。"
+      },
+      {
+        "key": "B",
+        "text": "没有区别，两种说法一样",
+        "feedback": "不对——two hundred 是精确的两百，hundreds of 是“几百”，数量差很多。"
+      },
+      {
+        "key": "C",
+        "text": "概数后面不用 of",
+        "feedback": "不对——hundreds of 的 of 必须有，少了就是错的。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "确切数字 + hundred / thousand / million（不加 s、不加 of）；概数用 hundreds / thousands / millions + of；年代与年龄段另有固定表达",
+    "signals": ["hundreds of", "thousands of", "millions of", "two hundred", "in one's twenties", "in the 1990s"],
+    "formula": "① 确切：two hundred students（无 s、无 of）　② 概数：hundreds of students（有 s、有 of）　③ 年龄段：in his twenties（二十多岁）　④ 年代：in the 1990s（二十世纪九十年代）",
+    "anchors": [
+      {
+        "en": "There are two hundred workers in the factory.",
+        "zh": "工厂里有两百名工人。",
+        "note": "确切数字不加 s"
+      },
+      {
+        "en": "Thousands of people visit the museum every year.",
+        "zh": "每年有成千上万的人参观这个博物馆。",
+        "note": "概数加 s 加 of"
+      }
+    ],
+    "trap": {
+      "wrong": "There are two hundreds students in our school.",
+      "right": "There are two hundred students in our school.",
+      "why": "前面有具体数字 two，hundred 既不加 s 也不加 of。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——有具体数字就不加 s 不加 of；没有数字才 hundreds of。",
+  "check": [
+    {
+      "id": "G-U04-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "There are about ____ students in our school.",
+      "options": [
+        { "key": "A", "text": "two thousands", "distractor": "前面有数字时不加 s" },
+        { "key": "B", "text": "two thousand", "answer": true },
+        { "key": "C", "text": "two thousands of", "distractor": "前面有数字时既不加 s 也不加 of" },
+        { "key": "D", "text": "thousand of", "distractor": "缺少数字，且 thousand 要加 s" }
+      ],
+      "explanation": "two thousand students（确切数字，不加 s）。",
+      "error_tag": "G-U04"
+    },
+    {
+      "id": "G-U04-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "____ people come to visit the Great Wall every day.",
+      "options": [
+        { "key": "A", "text": "Thousand of", "distractor": "thousand 要加 s" },
+        { "key": "B", "text": "Thousands of", "answer": true },
+        { "key": "C", "text": "Thousands", "distractor": "缺少 of" },
+        { "key": "D", "text": "Two thousands of", "distractor": "有数字时既不加 s 也不加 of" }
+      ],
+      "explanation": "成千上万 → thousands of。",
+      "error_tag": "G-U04"
+    },
+    {
+      "id": "G-U04-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He moved to Beijing in his twenties.", "answer": true },
+        { "key": "B", "text": "He moved to Beijing in his twenty.", "distractor": "“二十多岁”要用复数 twenties" },
+        { "key": "C", "text": "He moved to Beijing in the his twenties.", "distractor": "有 his 就不能再加 the" },
+        { "key": "D", "text": "He moved to Beijing in twenties.", "distractor": "缺少物主代词 his" }
+      ],
+      "explanation": "在某人几十多岁：in one's + 整十的复数（in his twenties）。",
+      "error_tag": "G-U04"
+    }
+  ]
+}

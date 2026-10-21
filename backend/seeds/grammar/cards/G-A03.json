@@ -1,0 +1,100 @@
+{
+  "id": "G-A03",
+  "type": "rule",
+  "module": "A",
+  "module_name": "形容词",
+  "title": "-ed 与 -ing 及顺序",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "I am interested in the film.", "zh": "我对这部电影感兴趣。" },
+      { "en": "The film is very interesting.", "zh": "这部电影很有趣。" }
+    ],
+    "question": "“我对这部电影感兴趣”该用 interested 还是 interesting？",
+    "options": [
+      {
+        "key": "A",
+        "text": "interested——人作主语用 -ed，表示“感到……的”",
+        "feedback": "对！人是“感到有趣”，所以用 interested；电影才是“令人有趣的” interesting。"
+      },
+      {
+        "key": "B",
+        "text": "interesting——因为电影很有趣",
+        "feedback": "不对——interesting 是描述电影的，描述“我”要用 interested。"
+      },
+      {
+        "key": "C",
+        "text": "两个都一样，随便用",
+        "feedback": "不对——主语不同，用的形式就不同，不能互换。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "-ed 形容词描述人的感受（“感到……的”）；-ing 形容词描述事物的性质（“令人……的”）；多个形容词并列时顺序是：观点 → 大小/形状 → 年龄 → 颜色 → 国籍 → 材料",
+    "signals": ["excited / exciting", "interested / interesting", "bored / boring", "surprised / surprising", "tired / tiring", "多个形容词排序"],
+    "formula": "① 人 + be + -ed：I am interested / excited / bored　② 物 + be + -ing：The film is interesting / exciting / boring　③ 排序口诀：观点 → 大小 → 形状 → 年龄 → 颜色 → 国籍 → 材料",
+    "anchors": [
+      {
+        "en": "The children are excited about the trip.",
+        "zh": "孩子们对这次旅行感到兴奋。",
+        "note": "人 + -ed"
+      },
+      {
+        "en": "It was an exciting match.",
+        "zh": "那是一场激动人心的比赛。",
+        "note": "物 + -ing"
+      }
+    ],
+    "trap": {
+      "wrong": "I am interesting in English.",
+      "right": "I am interested in English.",
+      "why": "主语是人，要用 -ed 形式 interested。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——人用 -ed、物用 -ing；多个形容词按“观点→大小→形状→年龄→颜色→国籍→材料”排。",
+  "check": [
+    {
+      "id": "G-A03-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The film was so ____ that most of us fell asleep.",
+      "options": [
+        { "key": "A", "text": "bored", "distractor": "bored 描述人，这里主语是电影" },
+        { "key": "B", "text": "boring", "answer": true },
+        { "key": "C", "text": "bore", "distractor": "bore 是动词" },
+        { "key": "D", "text": "bores", "distractor": "bores 是动词第三人称单数" }
+      ],
+      "explanation": "电影令人无聊 → boring。",
+      "error_tag": "G-A03"
+    },
+    {
+      "id": "G-A03-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "We were very ____ when we heard the good news.",
+      "options": [
+        { "key": "A", "text": "exciting", "distractor": "exciting 描述事物" },
+        { "key": "B", "text": "excited", "answer": true },
+        { "key": "C", "text": "excite", "distractor": "excite 是动词" },
+        { "key": "D", "text": "excites", "distractor": "结构错误" }
+      ],
+      "explanation": "我们感到兴奋 → excited。",
+      "error_tag": "G-A03"
+    },
+    {
+      "id": "G-A03-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "It is a beautiful small Chinese vase.", "answer": true },
+        { "key": "B", "text": "It is a small beautiful Chinese vase.", "distractor": "观点 beautiful 要放在大小 small 前面" },
+        { "key": "C", "text": "It is a Chinese beautiful small vase.", "distractor": "国籍 Chinese 要靠近名词" },
+        { "key": "D", "text": "It is a beautiful Chinese small vase.", "distractor": "大小 small 要放在国籍前面" }
+      ],
+      "explanation": "排序：观点 → 大小 → 国籍。",
+      "error_tag": "G-A03"
+    }
+  ]
+}

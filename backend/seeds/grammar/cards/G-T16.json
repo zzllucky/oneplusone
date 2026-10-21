@@ -1,0 +1,100 @@
+{
+  "id": "G-T16",
+  "type": "rule",
+  "module": "T",
+  "module_name": "现在进行时",
+  "title": "现在进行时·基本用法",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "Look! The children are playing football on the playground.", "zh": "看！孩子们正在操场上踢足球。" },
+      { "en": "He is writing a letter to his friend now.", "zh": "他现在正在给朋友写信。" }
+    ],
+    "question": "这两句话说的都是什么时候的事？",
+    "options": [
+      {
+        "key": "A",
+        "text": "经常发生的事",
+        "feedback": "不对——习惯性动作用一般现在时（play / writes），这里说的是此刻正在做。"
+      },
+      {
+        "key": "B",
+        "text": "说话这一刻正在发生的事",
+        "feedback": "对！Look! 和 now 都在提示“正在发生”。"
+      },
+      {
+        "key": "C",
+        "text": "已经结束的事",
+        "feedback": "不对——已经结束要用一般过去时。"
+      }
+    ],
+    "answer": "B"
+  },
+  "rule": {
+    "rule": "说话此刻或现阶段正在进行的动作",
+    "signals": ["now", "look", "listen", "at the moment", "these days"],
+    "formula": "am / is / are + 动词-ing（be 动词随主语变，动词一律加 -ing）",
+    "anchors": [
+      {
+        "en": "Look! The children are playing football on the playground.",
+        "zh": "看！孩子们正在操场上踢足球。",
+        "note": "Look! 提示正在发生"
+      },
+      {
+        "en": "He is writing a letter to his friend now.",
+        "zh": "他现在正在给朋友写信。",
+        "note": "now 提示此刻正在进行"
+      }
+    ],
+    "trap": {
+      "wrong": "Look! He plays football over there.",
+      "right": "Look! He is playing football over there.",
+      "why": "句首有 Look! 说明动作正在眼前发生，必须用现在进行时。"
+    }
+  },
+  "guess_callback": "你刚才选的是 B——记住两个钩子：看到 Look! / Listen! / now，就往现在进行时上想。",
+  "check": [
+    {
+      "id": "G-T16-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Listen! Someone ____ at the door.",
+      "options": [
+        { "key": "A", "text": "knocks", "distractor": "Listen! 说明正在发生，要用进行时" },
+        { "key": "B", "text": "is knocking", "answer": true },
+        { "key": "C", "text": "knocked", "distractor": "这是过去式" },
+        { "key": "D", "text": "knock", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "Listen! 提示动作正在发生，用 is knocking。",
+      "error_tag": "G-T16"
+    },
+    {
+      "id": "G-T16-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Where is Tom? — He ____ (do) his homework in his room.",
+      "options": [
+        { "key": "A", "text": "does", "distractor": "问的是“他现在在哪、在干什么”" },
+        { "key": "B", "text": "is doing", "answer": true },
+        { "key": "C", "text": "did", "distractor": "这是过去式" },
+        { "key": "D", "text": "do", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "回答“此刻正在做什么”，用 is doing。",
+      "error_tag": "G-T16"
+    },
+    {
+      "id": "G-T16-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "Look! It is raining.", "answer": true },
+        { "key": "B", "text": "Look! It rains.", "distractor": "Look! 说明此刻正在下，要用进行时" },
+        { "key": "C", "text": "Look! It rained.", "distractor": "时态不对" },
+        { "key": "D", "text": "Look! It rain.", "distractor": "缺少 be 动词，动词也没变形" }
+      ],
+      "explanation": "Look! 之后用现在进行时 is raining。",
+      "error_tag": "G-T16"
+    }
+  ]
+}

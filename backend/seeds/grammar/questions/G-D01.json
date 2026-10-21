@@ -1,0 +1,84 @@
+{
+  "point_id": "G-D01",
+  "title": "副词的构成与分类",
+  "questions": [
+    {
+      "id": "G-D01-L1-01",
+      "level": "L1",
+      "stem": "The boy is drawing ____ (happy) in the room.",
+      "options": [
+        { "key": "A", "text": "happy", "distractor": "修饰动词要用副词" },
+        { "key": "B", "text": "happily", "answer": true },
+        { "key": "C", "text": "happylly", "distractor": "拼写错误" },
+        { "key": "D", "text": "happiness", "distractor": "happiness 是名词" }
+      ],
+      "explanation": "happy 变 i 为 y 加 ly → happily。",
+      "error_tag": "G-D01"
+    },
+    {
+      "id": "G-D01-L1-02",
+      "level": "L1",
+      "stem": "Don't drive so ____! It's dangerous.",
+      "options": [
+        { "key": "A", "text": "fast", "answer": true },
+        { "key": "B", "text": "fastly", "distractor": "fast 形副同形，不加 ly" },
+        { "key": "C", "text": "faster", "distractor": "这里没有比较对象" },
+        { "key": "D", "text": "more fast", "distractor": "结构错误" }
+      ],
+      "explanation": "fast 本身就是副词。",
+      "error_tag": "G-D01"
+    },
+    {
+      "id": "G-D01-L2-01",
+      "level": "L2",
+      "stem": "It rained ____ last night, so the ground is wet.",
+      "options": [
+        { "key": "A", "text": "heavy", "distractor": "修饰动词 rain 要用副词" },
+        { "key": "B", "text": "heavily", "answer": true },
+        { "key": "C", "text": "heavier", "distractor": "这里没有比较对象" },
+        { "key": "D", "text": "heavilyly", "distractor": "拼写错误" }
+      ],
+      "explanation": "雨下得大 → rain heavily。",
+      "error_tag": "G-D01"
+    },
+    {
+      "id": "G-D01-L2-02",
+      "level": "L2",
+      "stem": "— How ____ do you visit your grandparents? — Once a week.",
+      "options": [
+        { "key": "A", "text": "long", "distractor": "答语是频率，不是时长" },
+        { "key": "B", "text": "often", "answer": true },
+        { "key": "C", "text": "soon", "distractor": "how soon 问“多久以后”" },
+        { "key": "D", "text": "far", "distractor": "how far 问距离" }
+      ],
+      "explanation": "答语是频率 → how often。",
+      "error_tag": "G-D01"
+    },
+    {
+      "id": "G-D01-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He is a careful boy and does everything carefully.", "distractor": "正确" },
+        { "key": "B", "text": "The train arrived late because of the snow.", "distractor": "正确" },
+        { "key": "C", "text": "She can speak English very good.", "answer": true },
+        { "key": "D", "text": "He studies hardest in our class.", "distractor": "正确" }
+      ],
+      "explanation": "修饰动词 speak 要用副词 well，不是 good。",
+      "error_tag": "G-D01"
+    },
+    {
+      "id": "G-D01-L3-02",
+      "level": "L3",
+      "stem": "— I can ____ understand what he said. — Me too. He speaks too fast.",
+      "options": [
+        { "key": "A", "text": "hard", "distractor": "hard 是“努力地”，这里要“几乎不”" },
+        { "key": "B", "text": "hardly", "answer": true },
+        { "key": "C", "text": "nearly", "distractor": "nearly 是“几乎”，意思相反" },
+        { "key": "D", "text": "almost", "distractor": "almost 是“几乎”，意思相反" }
+      ],
+      "explanation": "几乎听不懂 → can hardly understand。",
+      "error_tag": "G-D01"
+    }
+  ]
+}

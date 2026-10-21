@@ -1,0 +1,84 @@
+{
+  "point_id": "G-A03",
+  "title": "-ed 与 -ing 及顺序",
+  "questions": [
+    {
+      "id": "G-A03-L1-01",
+      "level": "L1",
+      "stem": "The children were ____ in the ____ story.",
+      "options": [
+        { "key": "A", "text": "interesting; interested", "distractor": "前后用反了" },
+        { "key": "B", "text": "interested; interesting", "answer": true },
+        { "key": "C", "text": "interesting; interesting", "distractor": "孩子们是“感到有趣”，用 interested" },
+        { "key": "D", "text": "interested; interested", "distractor": "故事是“令人有趣”，用 interesting" }
+      ],
+      "explanation": "人用 interested，物用 interesting。",
+      "error_tag": "G-A03"
+    },
+    {
+      "id": "G-A03-L1-02",
+      "level": "L1",
+      "stem": "We felt ____ after walking for three hours in the mountains.",
+      "options": [
+        { "key": "A", "text": "tiring", "distractor": "tiring 描述事物" },
+        { "key": "B", "text": "tired", "answer": true },
+        { "key": "C", "text": "tire", "distractor": "tire 是动词" },
+        { "key": "D", "text": "tires", "distractor": "结构错误" }
+      ],
+      "explanation": "我们感到累 → tired。",
+      "error_tag": "G-A03"
+    },
+    {
+      "id": "G-A03-L2-01",
+      "level": "L2",
+      "stem": "There is ____ news on TV today. Let's watch it.",
+      "options": [
+        { "key": "A", "text": "an exciting", "distractor": "news 不可数，不能加 an" },
+        { "key": "B", "text": "some exciting", "answer": true },
+        { "key": "C", "text": "some excited", "distractor": "news 是事物，用 exciting" },
+        { "key": "D", "text": "an excited", "distractor": "两处都错" }
+      ],
+      "explanation": "news 不可数用 some；令人兴奋的消息用 exciting。",
+      "error_tag": "G-A03"
+    },
+    {
+      "id": "G-A03-L2-02",
+      "level": "L2",
+      "stem": "She was ____ to see her old friend again.",
+      "options": [
+        { "key": "A", "text": "surprising", "distractor": "surprising 描述事物" },
+        { "key": "B", "text": "surprised", "answer": true },
+        { "key": "C", "text": "surprise", "distractor": "surprise 是名词或动词" },
+        { "key": "D", "text": "surprises", "distractor": "结构错误" }
+      ],
+      "explanation": "她感到惊讶 → surprised。",
+      "error_tag": "G-A03"
+    },
+    {
+      "id": "G-A03-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I am bored with this long meeting.", "distractor": "正确" },
+        { "key": "B", "text": "He told us an exciting piece of news.", "distractor": "正确" },
+        { "key": "C", "text": "The movie was so bored that I left early.", "answer": true },
+        { "key": "D", "text": "She has a nice new red dress.", "distractor": "正确" }
+      ],
+      "explanation": "电影是事物，要用 boring（令人无聊）。",
+      "error_tag": "G-A03"
+    },
+    {
+      "id": "G-A03-L3-02",
+      "level": "L3",
+      "stem": "— Look at that ____ girl over there. — Yes, she is my new classmate.",
+      "options": [
+        { "key": "A", "text": "young tall American", "distractor": "大小 tall 要放在年龄 young 前面" },
+        { "key": "B", "text": "tall young American", "answer": true },
+        { "key": "C", "text": "American tall young", "distractor": "国籍要靠近名词" },
+        { "key": "D", "text": "tall American young", "distractor": "年龄要放在国籍前面" }
+      ],
+      "explanation": "排序：大小 → 年龄 → 国籍 → 名词。",
+      "error_tag": "G-A03"
+    }
+  ]
+}

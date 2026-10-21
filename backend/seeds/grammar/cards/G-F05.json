@@ -1,0 +1,101 @@
+{
+  "id": "G-F05",
+  "type": "rule",
+  "module": "F",
+  "module_name": "不定式",
+  "title": "疑问词 + to do / too…to / enough to",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I don't know what to do next.", "zh": "我不知道下一步做什么。" },
+      { "en": "The box is too heavy to carry.", "zh": "箱子太重，搬不动。" },
+      { "en": "He is old enough to go to school.", "zh": "他够大了，可以上学了。" }
+    ],
+    "question": "I don't know what to do 里的 what to do 是什么结构？",
+    "options": [
+      {
+        "key": "A",
+        "text": "疑问词 + to do 构成的短语，相当于一个简化了的从句",
+        "feedback": "对！它等于 what I should do，但更短，且不用倒装。"
+      },
+      {
+        "key": "B",
+        "text": "what 是句子的主语",
+        "feedback": "不对——what 是 do 的宾语，整个短语作 know 的宾语。"
+      },
+      {
+        "key": "C",
+        "text": "这是一个疑问句",
+        "feedback": "不对——这是陈述语序的短语，没有问号和倒装。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "疑问词 + to do 可作宾语；too + 形容词 + to do 表示“太……而不能”；形容词 + enough + to do 表示“足够……可以做”",
+    "signals": ["what / how / where / when + to do", "too…to", "enough to"],
+    "formula": "① 疑问词 + to do：I don't know how to get there.　② too + adj. + to do：too young to go　③ adj. + enough + to do：old enough to join",
+    "anchors": [
+      {
+        "en": "I don't know how to get to the station.",
+        "zh": "我不知道怎么去车站。",
+        "note": "疑问词短语作宾语"
+      },
+      {
+        "en": "She is old enough to join the army.",
+        "zh": "她够大了，可以参军了。",
+        "note": "形容词 + enough + to do"
+      }
+    ],
+    "trap": {
+      "wrong": "I don't know what to do it.",
+      "right": "I don't know what to do.",
+      "why": "what 本身就是 do 的宾语，后面不能再加 it。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——三个公式：疑问词+to do、too…to（太……不能）、adj.+enough+to do（够……可以）。",
+  "check": [
+    {
+      "id": "G-F05-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— I don't know ____ to get to the station. — Let me show you the way.",
+      "options": [
+        { "key": "A", "text": "what", "distractor": "问的是方式，不是“什么”" },
+        { "key": "B", "text": "how", "answer": true },
+        { "key": "C", "text": "which", "distractor": "这里没有选择范围" },
+        { "key": "D", "text": "where", "distractor": "答语是指路，问的是怎么去" }
+      ],
+      "explanation": "不知道怎么去 → how to get there。",
+      "error_tag": "G-F05"
+    },
+    {
+      "id": "G-F05-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The boy is ____ young ____ go to school.",
+      "options": [
+        { "key": "A", "text": "so; that", "distractor": "so…that 后面要接从句" },
+        { "key": "B", "text": "too; to", "answer": true },
+        { "key": "C", "text": "very; to", "distractor": "very 不与 to do 构成此结构" },
+        { "key": "D", "text": "enough; to", "distractor": "enough 要放在形容词后面" }
+      ],
+      "explanation": "太小不能上学 → too young to go。",
+      "error_tag": "G-F05"
+    },
+    {
+      "id": "G-F05-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He is old enough to go to school.", "distractor": "正确" },
+        { "key": "B", "text": "The box is too heavy to carry.", "distractor": "正确" },
+        { "key": "C", "text": "I don't know how to do it.", "distractor": "正确" },
+        { "key": "D", "text": "I don't know what to do it.", "answer": true }
+      ],
+      "explanation": "what 已是 do 的宾语，不能再加 it，应改为 what to do。",
+      "error_tag": "G-F05"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T24",
+  "title": "since 与 for",
+  "questions": [
+    {
+      "id": "G-T24-L1-01",
+      "level": "L1",
+      "stem": "She has worked in this hospital ____ five years.",
+      "options": [
+        { "key": "A", "text": "since", "distractor": "five years 是一段长度，要用 for" },
+        { "key": "B", "text": "for", "answer": true },
+        { "key": "C", "text": "in", "distractor": "in 表示“在……之后”，与完成时矛盾" },
+        { "key": "D", "text": "at", "distractor": "at 不接一段时间" }
+      ],
+      "explanation": "five years 是时间段，用 for。",
+      "error_tag": "G-T24"
+    },
+    {
+      "id": "G-T24-L1-02",
+      "level": "L1",
+      "stem": "They have lived in this city ____ they were children.",
+      "options": [
+        { "key": "A", "text": "for", "distractor": "后面是一个起点时间（从童年起）" },
+        { "key": "B", "text": "since", "answer": true },
+        { "key": "C", "text": "when", "distractor": "when 不用于完成时的时间起点" },
+        { "key": "D", "text": "in", "distractor": "in 不与完成时连用表示起点" }
+      ],
+      "explanation": "“从他们还是孩子的时候起”是时间点（从句形式），用 since。",
+      "error_tag": "G-T24"
+    },
+    {
+      "id": "G-T24-L2-01",
+      "level": "L2",
+      "stem": "— How long ____ you ____ (study) English? — For three years.",
+      "options": [
+        { "key": "A", "text": "have; studied", "answer": true },
+        { "key": "B", "text": "did; study", "distractor": "答语 For three years 说明要用完成时" },
+        { "key": "C", "text": "do; study", "distractor": "问的是到目前为止学了多久" },
+        { "key": "D", "text": "are; studying", "distractor": "这里不强调“正在学”" }
+      ],
+      "explanation": "How long 问持续多久，用现在完成时 have studied。",
+      "error_tag": "G-T24"
+    },
+    {
+      "id": "G-T24-L2-02",
+      "level": "L2",
+      "stem": "We haven't seen each other ____ last summer.",
+      "options": [
+        { "key": "A", "text": "for", "distractor": "last summer 是起点，要用 since" },
+        { "key": "B", "text": "since", "answer": true },
+        { "key": "C", "text": "in", "distractor": "in last summer 不是正确搭配" },
+        { "key": "D", "text": "during", "distractor": "during 表示“在……期间”，不是起点" }
+      ],
+      "explanation": "last summer 是时间点，用 since。",
+      "error_tag": "G-T24"
+    },
+    {
+      "id": "G-T24-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I have known him for ten years.", "distractor": "正确" },
+        { "key": "B", "text": "She has been here since Monday.", "distractor": "正确" },
+        { "key": "C", "text": "He has waited for two hours ago.", "answer": true },
+        { "key": "D", "text": "They have worked here since 2015.", "distractor": "正确" }
+      ],
+      "explanation": "for 后面不能接 ago，应改为 for two hours 或 since two hours ago。",
+      "error_tag": "G-T24"
+    },
+    {
+      "id": "G-T24-L3-02",
+      "level": "L3",
+      "stem": "My brother ____ (be) in the army since he finished school.",
+      "options": [
+        { "key": "A", "text": "was", "distractor": "since 引导的从句说明状态持续到现在" },
+        { "key": "B", "text": "has been", "answer": true },
+        { "key": "C", "text": "is", "distractor": "主句要用现在完成时" },
+        { "key": "D", "text": "had been", "distractor": "这里没有“过去的过去”的参照点" }
+      ],
+      "explanation": "since 从句 + 到现在为止的状态，主句用 has been。",
+      "error_tag": "G-T24"
+    }
+  ]
+}

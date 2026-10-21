@@ -1,0 +1,105 @@
+{
+  "id": "G-F03",
+  "type": "contrast",
+  "module": "F",
+  "module_name": "不定式",
+  "title": "宾补：带 to 与省略 to",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "The teacher asked us to be quiet.", "zh": "老师让我们安静。" },
+      { "en": "I saw him enter the room.", "zh": "我看见他进了房间。" }
+    ],
+    "question": "同样是“宾语 + 动词”，为什么第一句有 to，第二句没有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "ask/tell 后面要带 to，感官动词（see/hear）后面要省略 to",
+        "feedback": "对！“让某人做”用 to do，“看见/听见某人做”用 do（不带 to）。"
+      },
+      {
+        "key": "B",
+        "text": "因为第二句更短",
+        "feedback": "不对——长短不是判据，看前面的动词是什么。"
+      },
+      {
+        "key": "C",
+        "text": "to 加不加都行",
+        "feedback": "不对——see / hear / make / let 后面加了 to 就是错的。"
+      }
+    ],
+    "answer": "A"
+  },
+  "contrast": {
+    "left": {
+      "label": "带 to：ask / tell / want sb to do",
+      "formula": "ask / tell / want / would like + sb + to do",
+      "anchor": { "en": "The teacher asked us to be quiet.", "zh": "老师让我们安静。" },
+      "focus": "“要求、告诉、想要”某人去做某事"
+    },
+    "right": {
+      "label": "省略 to：see / hear / make / let sb do",
+      "formula": "see / hear / watch / notice + sb + do；make / let + sb + do",
+      "anchor": { "en": "I saw him enter the room.", "zh": "我看见他进了房间。" },
+      "focus": "感官动词和使役动词后面接不带 to 的动词原形"
+    },
+    "diff": "看见、听见、让、使 → sb do（不带 to）；要求、告诉、想要 → sb to do。判断就看前面那个动词属于哪一类。",
+    "traps": [
+      {
+        "wrong": "I saw him to enter the room.",
+        "right": "I saw him enter the room.",
+        "why": "see / hear 这类感官动词后面要省略 to。"
+      },
+      {
+        "wrong": "The teacher asked us stop talking.",
+        "right": "The teacher asked us to stop talking.",
+        "why": "ask 后面必须带 to。"
+      }
+    ]
+  },
+  "guess_callback": "你刚才选的是 A——记住分两组：看听让（do）／要求告诉想要（to do）。",
+  "check": [
+    {
+      "id": "G-F03-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "My mother told me ____ (clean) my room at once.",
+      "options": [
+        { "key": "A", "text": "clean", "distractor": "tell 后面要带 to" },
+        { "key": "B", "text": "to clean", "answer": true },
+        { "key": "C", "text": "cleaning", "distractor": "tell sb 后面接 to do" },
+        { "key": "D", "text": "cleaned", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "tell sb to do sth。",
+      "error_tag": "G-F03"
+    },
+    {
+      "id": "G-F03-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "I heard her ____ (sing) in the next room.",
+      "options": [
+        { "key": "A", "text": "to sing", "distractor": "hear 后面要省略 to" },
+        { "key": "B", "text": "sing", "answer": true },
+        { "key": "C", "text": "sang", "distractor": "这不是谓语位置" },
+        { "key": "D", "text": "sings", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "hear sb do sth，省略 to。",
+      "error_tag": "G-F03"
+    },
+    {
+      "id": "G-F03-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The teacher asked us to stop talking.", "answer": true },
+        { "key": "B", "text": "The teacher asked us stop talking.", "distractor": "ask 后面要带 to" },
+        { "key": "C", "text": "The teacher asked us stopping talking.", "distractor": "ask sb 后面接 to do" },
+        { "key": "D", "text": "The teacher asked us stopped talking.", "distractor": "结构错误" }
+      ],
+      "explanation": "ask sb to do sth。",
+      "error_tag": "G-F03"
+    }
+  ]
+}

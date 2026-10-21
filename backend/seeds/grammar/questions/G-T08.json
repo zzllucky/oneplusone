@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T08",
+  "title": "否定与疑问 didn't / Did",
+  "questions": [
+    {
+      "id": "G-T08-L1-01",
+      "level": "L1",
+      "stem": "I ____ (not finish) my homework yesterday.",
+      "options": [
+        { "key": "A", "text": "don't finish", "distractor": "yesterday 要用过去时的否定" },
+        { "key": "B", "text": "didn't finish", "answer": true },
+        { "key": "C", "text": "not finish", "distractor": "缺少助动词" },
+        { "key": "D", "text": "didn't finished", "distractor": "didn't 之后要用原形 finish" }
+      ],
+      "explanation": "过去时否定：didn't + 动词原形 finish。",
+      "error_tag": "G-T08"
+    },
+    {
+      "id": "G-T08-L1-02",
+      "level": "L1",
+      "stem": "____ Tom ____ to the party last night?",
+      "options": [
+        { "key": "A", "text": "Did; go", "answer": true },
+        { "key": "B", "text": "Did; went", "distractor": "Did 之后要用原形 go" },
+        { "key": "C", "text": "Do; go", "distractor": "last night 要用 Did" },
+        { "key": "D", "text": "Was; go", "distractor": "go 是实义动词，疑问要用 Did" }
+      ],
+      "explanation": "过去时提问用 Did，主要动词退回原形 go。",
+      "error_tag": "G-T08"
+    },
+    {
+      "id": "G-T08-L2-01",
+      "level": "L2",
+      "stem": "They ____ (not come) to school yesterday.",
+      "options": [
+        { "key": "A", "text": "don't come", "distractor": "yesterday 要用过去时" },
+        { "key": "B", "text": "didn't come", "answer": true },
+        { "key": "C", "text": "didn't came", "distractor": "didn't 之后要用原形 come" },
+        { "key": "D", "text": "not came", "distractor": "缺少助动词，且动词不该用过去式" }
+      ],
+      "explanation": "didn't 之后一律用动词原形 come。",
+      "error_tag": "G-T08"
+    },
+    {
+      "id": "G-T08-L2-02",
+      "level": "L2",
+      "stem": "— When ____ he ____ (leave)? — An hour ago.",
+      "options": [
+        { "key": "A", "text": "did; leave", "answer": true },
+        { "key": "B", "text": "did; left", "distractor": "did 之后要用原形 leave" },
+        { "key": "C", "text": "does; leave", "distractor": "答语是过去时间，要用 Did" },
+        { "key": "D", "text": "was; leave", "distractor": "leave 是实义动词，疑问要用 Did" }
+      ],
+      "explanation": "答语 An hour ago 说明问的是过去，用 Did + 原形 leave。",
+      "error_tag": "G-T08"
+    },
+    {
+      "id": "G-T08-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I didn't like the food.", "distractor": "正确" },
+        { "key": "B", "text": "Did she come yesterday?", "distractor": "正确" },
+        { "key": "C", "text": "He didn't went home early.", "answer": true },
+        { "key": "D", "text": "We didn't see him at the party.", "distractor": "正确" }
+      ],
+      "explanation": "didn't 之后必须用原形 go，应改为 He didn't go home early。",
+      "error_tag": "G-T08"
+    },
+    {
+      "id": "G-T08-L3-02",
+      "level": "L3",
+      "stem": "— Why ____ you late for school this morning? — Because I ____ up late.",
+      "options": [
+        { "key": "A", "text": "were; get", "distractor": "第二空要解释迟到的原因，用过去式 got" },
+        { "key": "B", "text": "was; got", "distractor": "you 要搭配 were" },
+        { "key": "C", "text": "were; got", "answer": true },
+        { "key": "D", "text": "did; got", "distractor": "late 是形容词，前面要用 be 动词 were，不能用 did" }
+      ],
+      "explanation": "第一空：late 是形容词，用 be 动词过去式 were（不用 did）；第二空：陈述过去的事实，用 got。",
+      "error_tag": "G-T08"
+    }
+  ]
+}

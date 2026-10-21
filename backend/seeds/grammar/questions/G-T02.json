@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T02",
+  "title": "第三人称单数",
+  "questions": [
+    {
+      "id": "G-T02-L1-01",
+      "level": "L1",
+      "stem": "My sister ____ TV every evening.",
+      "options": [
+        { "key": "A", "text": "watch", "distractor": "my sister 是三单，动词要变形" },
+        { "key": "B", "text": "watches", "answer": true },
+        { "key": "C", "text": "watching", "distractor": "不能单独作谓语" },
+        { "key": "D", "text": "watched", "distractor": "every evening 表示习惯，不用过去时" }
+      ],
+      "explanation": "watch 以 ch 结尾，三单要加 -es，变成 watches。",
+      "error_tag": "G-T02"
+    },
+    {
+      "id": "G-T02-L1-02",
+      "level": "L1",
+      "stem": "下面哪个是 study 的第三人称单数形式？",
+      "options": [
+        { "key": "A", "text": "studys", "distractor": "辅音字母 + y 结尾，不能只加 s" },
+        { "key": "B", "text": "studies", "answer": true },
+        { "key": "C", "text": "studyes", "distractor": "y 后面不能直接加 es，要先变 y 为 i" },
+        { "key": "D", "text": "study", "distractor": "这是原形，三单要变形" }
+      ],
+      "explanation": "study 以“辅音字母 + y”结尾，三单形式是 studies。",
+      "error_tag": "G-T02"
+    },
+    {
+      "id": "G-T02-L2-01",
+      "level": "L2",
+      "stem": "Tom ____ (do) his homework after dinner.",
+      "options": [
+        { "key": "A", "text": "do", "distractor": "Tom 是三单" },
+        { "key": "B", "text": "does", "answer": true },
+        { "key": "C", "text": "doing", "distractor": "不能单独作谓语" },
+        { "key": "D", "text": "did", "distractor": "每天晚饭后都如此，不用过去时" }
+      ],
+      "explanation": "do 的三单是不规则变化 does（不是 dos）。",
+      "error_tag": "G-T02"
+    },
+    {
+      "id": "G-T02-L2-02",
+      "level": "L2",
+      "stem": "The little girl ____ (wash) her hands before meals.",
+      "options": [
+        { "key": "A", "text": "wash", "distractor": "the little girl 是三单" },
+        { "key": "B", "text": "washs", "distractor": "sh 结尾要加 -es，不是加 s" },
+        { "key": "C", "text": "washes", "answer": true },
+        { "key": "D", "text": "washing", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "wash 以 sh 结尾，三单加 -es，变成 washes。",
+      "error_tag": "G-T02"
+    },
+    {
+      "id": "G-T02-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He goes to school by bike.", "distractor": "正确" },
+        { "key": "B", "text": "She does her homework carefully.", "distractor": "正确" },
+        { "key": "C", "text": "My mother watch TV in the evening.", "answer": true },
+        { "key": "D", "text": "The dog runs very fast.", "distractor": "正确" }
+      ],
+      "explanation": "my mother 是三单，watch 应改为 watches。这是最容易漏掉的一个 s。",
+      "error_tag": "G-T02"
+    },
+    {
+      "id": "G-T02-L3-02",
+      "level": "L3",
+      "stem": "Everyone in my class ____ (like) the new teacher.",
+      "options": [
+        { "key": "A", "text": "like", "distractor": "everyone 作主语视为单数，动词要变形" },
+        { "key": "B", "text": "likes", "answer": true },
+        { "key": "C", "text": "are like", "distractor": "like 是实义动词，不能与 are 连用" },
+        { "key": "D", "text": "liking", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "everyone / everybody / everything 作主语时都算第三人称单数，动词用 likes（不要被 class 里的“很多人”迷惑）。",
+      "error_tag": "G-T02"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "G-N02",
+  "type": "rule",
+  "module": "N",
+  "module_name": "名词",
+  "title": "复数变化规则",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "bus → buses　box → boxes　watch → watches　dish → dishes", "zh": "（这四个词变复数都加了 -es）" },
+      { "en": "city → cities　leaf → leaves", "zh": "（辅音+y 变 i，f 变 v）" }
+    ],
+    "question": "bus 的复数为什么是 buses，而不是 buss？",
+    "options": [
+      {
+        "key": "A",
+        "text": "s / x / ch / sh 结尾的词读起来要加一个音节，所以加 -es",
+        "feedback": "对！不然 bus+s 念不出来，所以统一加 -es。"
+      },
+      {
+        "key": "B",
+        "text": "因为 bus 这个词很短",
+        "feedback": "不对——长短不是判据，看的是词尾字母。"
+      },
+      {
+        "key": "C",
+        "text": "随便加的，没有规律",
+        "feedback": "不对——有很清楚的四条规则，记住就能搞定绝大多数词。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "一般直接加 -s；s / x / ch / sh 结尾加 -es；辅音字母 + y 结尾变 y 为 i 再加 -es；f / fe 结尾变 v 再加 -es",
+    "signals": ["词尾是 s", "x", "ch", "sh", "辅音 + y", "f / fe"],
+    "formula": "① 一般：book → books　② s/x/ch/sh：bus → buses　③ 辅音+y：city → cities（元音+y 直接加 s：boy → boys）　④ f/fe：leaf → leaves, knife → knives",
+    "anchors": [
+      {
+        "en": "There are two buses at the stop.",
+        "zh": "车站里有两辆公共汽车。",
+        "note": "bus → buses"
+      },
+      {
+        "en": "The leaves turn yellow in autumn.",
+        "zh": "秋天树叶变黄。",
+        "note": "leaf → leaves"
+      }
+    ],
+    "trap": {
+      "wrong": "Give me two knifes, please.",
+      "right": "Give me two knives, please.",
+      "why": "fe 结尾要变 v 再加 -es：knife → knives。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——四条规则：直接加 s、加 es、y 变 i 加 es、f 变 v 加 es。",
+  "check": [
+    {
+      "id": "G-N02-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "There are many ____ (box) on the desk.",
+      "options": [
+        { "key": "A", "text": "box", "distractor": "这里要用复数" },
+        { "key": "B", "text": "boxs", "distractor": "x 结尾要加 -es" },
+        { "key": "C", "text": "boxes", "answer": true },
+        { "key": "D", "text": "boxies", "distractor": "拼写错误" }
+      ],
+      "explanation": "box 以 x 结尾，复数加 -es：boxes。",
+      "error_tag": "G-N02"
+    },
+    {
+      "id": "G-N02-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "How many ____ (city) have you been to in China?",
+      "options": [
+        { "key": "A", "text": "city", "distractor": "many 后面要用复数" },
+        { "key": "B", "text": "citys", "distractor": "辅音+y 要变 i 再加 es" },
+        { "key": "C", "text": "cities", "answer": true },
+        { "key": "D", "text": "cityes", "distractor": "拼写错误" }
+      ],
+      "explanation": "city 是辅音 t + y，变 y 为 i 加 es：cities。",
+      "error_tag": "G-N02"
+    },
+    {
+      "id": "G-N02-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The two knives are on the table.", "answer": true },
+        { "key": "B", "text": "The two knifes are on the table.", "distractor": "fe 结尾要变 v 加 es" },
+        { "key": "C", "text": "The two knive are on the table.", "distractor": "拼写错误" },
+        { "key": "D", "text": "The two knife are on the table.", "distractor": "two 后面要用复数" }
+      ],
+      "explanation": "knife → knives（fe 变 v 加 es）。",
+      "error_tag": "G-N02"
+    }
+  ]
+}

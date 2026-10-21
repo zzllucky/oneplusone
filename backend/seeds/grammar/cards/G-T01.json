@@ -1,0 +1,100 @@
+{
+  "id": "G-T01",
+  "type": "rule",
+  "module": "T",
+  "module_name": "一般现在时",
+  "title": "一般现在时·基本用法",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "He gets up at six every morning.", "zh": "他每天早上六点起床。" },
+      { "en": "The sun rises in the east.", "zh": "太阳从东方升起。" }
+    ],
+    "question": "这两句话为什么都用一般现在时？",
+    "options": [
+      {
+        "key": "A",
+        "text": "因为事情现在正在发生",
+        "feedback": "不对——正在发生要用现在进行时（is getting up）。这两句说的是“经常这样”和“一直如此”。"
+      },
+      {
+        "key": "B",
+        "text": "因为它们是经常性习惯或客观真理",
+        "feedback": "对！every morning 是习惯，太阳升起是不变的真理，两种都用一般现在时。"
+      },
+      {
+        "key": "C",
+        "text": "因为事情已经发生了",
+        "feedback": "不对——已经发生的事要用一般过去时。"
+      }
+    ],
+    "answer": "B"
+  },
+  "rule": {
+    "rule": "表示经常性、习惯性的动作，客观真理，或现在的状态",
+    "signals": ["every day", "usually", "often", "always", "sometimes", "never", "on Sundays"],
+    "formula": "动词原形（第三人称单数加 -s/-es）",
+    "anchors": [
+      {
+        "en": "He gets up at six every morning.",
+        "zh": "他每天早上六点起床。",
+        "note": "习惯动作：every morning"
+      },
+      {
+        "en": "The sun rises in the east.",
+        "zh": "太阳从东方升起。",
+        "note": "客观真理：永远如此"
+      }
+    ],
+    "trap": {
+      "wrong": "The sun is rising in the east.",
+      "right": "The sun rises in the east.",
+      "why": "客观真理、习惯动作不用现在进行时，它表示“正在”，不表示“一直”。"
+    }
+  },
+  "guess_callback": "你刚才选的是 B——记住两个词就够：一般现在时说的是“经常这样”和“一直如此”。",
+  "check": [
+    {
+      "id": "G-T01-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "We ____ to school every day.",
+      "options": [
+        { "key": "A", "text": "go", "answer": true },
+        { "key": "B", "text": "goes", "distractor": "we 不是第三人称单数，不能加 -es" },
+        { "key": "C", "text": "going", "distractor": "缺 be 动词，不能单独作谓语" },
+        { "key": "D", "text": "went", "distractor": "every day 表示习惯，不能用过去时" }
+      ],
+      "explanation": "we 是复数，动词用原形 go；every day 说明是习惯动作。",
+      "error_tag": "G-T01"
+    },
+    {
+      "id": "G-T01-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The earth ____ around the sun.",
+      "options": [
+        { "key": "A", "text": "move", "distractor": "the earth 是第三人称单数，动词要加 -s" },
+        { "key": "B", "text": "moves", "answer": true },
+        { "key": "C", "text": "moved", "distractor": "客观真理不用过去时" },
+        { "key": "D", "text": "is moving", "distractor": "客观真理不用进行时" }
+      ],
+      "explanation": "地球绕太阳转是客观真理，一律用一般现在时 moves。",
+      "error_tag": "G-T01"
+    },
+    {
+      "id": "G-T01-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He go to school every day.", "distractor": "he 是三单，go 要变成 goes" },
+        { "key": "B", "text": "He goes to school every day.", "answer": true },
+        { "key": "C", "text": "He going to school every day.", "distractor": "缺 be 动词，不构成谓语" },
+        { "key": "D", "text": "He is go to school every day.", "distractor": "be 动词后不能接动词原形" }
+      ],
+      "explanation": "主语 he 是第三人称单数，谓语动词用 goes；every day 表示习惯。",
+      "error_tag": "G-T01"
+    }
+  ]
+}

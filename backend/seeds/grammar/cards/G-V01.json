@@ -1,0 +1,100 @@
+{
+  "id": "G-V01",
+  "type": "rule",
+  "module": "V",
+  "module_name": "被动语态",
+  "title": "被动结构",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "The classroom is cleaned every day.", "zh": "教室每天都被打扫。" },
+      { "en": "The window was broken by Tom.", "zh": "窗户被汤姆打破了。" }
+    ],
+    "question": "这两句话的主语（教室、窗户）是“做动作的人”还是“承受动作的人”？",
+    "options": [
+      {
+        "key": "A",
+        "text": "承受动作的人——教室被打扫、窗户被打碎",
+        "feedback": "对！主语是“被怎么样的那个”，这就是被动语态。"
+      },
+      {
+        "key": "B",
+        "text": "做动作的人——教室在打扫、窗户在打碎",
+        "feedback": "不对——那是主动语态，比如 We clean the classroom。"
+      },
+      {
+        "key": "C",
+        "text": "两者都不是",
+        "feedback": "不对——主语就是被动作影响的那个，正是承受者。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "主语是动作的承受者时用被动语态，强调“被怎么样”",
+    "signals": ["by sb（由谁做的）", "句子里不出现做动作的人"],
+    "formula": "be + 过去分词（be 随时态和人称变化）",
+    "anchors": [
+      {
+        "en": "Rice is grown in the south of China.",
+        "zh": "稻米在中国南方种植。",
+        "note": "“稻米”不是自己种的，是被种的"
+      },
+      {
+        "en": "The letter was written by my sister.",
+        "zh": "这封信是我姐姐写的。",
+        "note": "by my sister 点出执行者"
+      }
+    ],
+    "trap": {
+      "wrong": "The window is break by him.",
+      "right": "The window is broken by him.",
+      "why": "be 后面要接过去分词 broken，不能接动词原形 break。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住被动的两块砖：be 动词 + 过去分词，缺一不可。",
+  "check": [
+    {
+      "id": "G-V01-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "English ____ (speak) in many countries.",
+      "options": [
+        { "key": "A", "text": "speaks", "distractor": "英语是被说的，不是自己说" },
+        { "key": "B", "text": "is spoken", "answer": true },
+        { "key": "C", "text": "spoke", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "speaking", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "英语是“被说”的，用 is spoken。",
+      "error_tag": "G-V01"
+    },
+    {
+      "id": "G-V01-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "These cars ____ (make) in Japan.",
+      "options": [
+        { "key": "A", "text": "make", "distractor": "汽车是被制造的" },
+        { "key": "B", "text": "are made", "answer": true },
+        { "key": "C", "text": "made", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "making", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "汽车是“被制造”的，复数用 are made。",
+      "error_tag": "G-V01"
+    },
+    {
+      "id": "G-V01-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The homework is done by me every day.", "answer": true },
+        { "key": "B", "text": "The homework is do by me every day.", "distractor": "be 后要接过去分词 done" },
+        { "key": "C", "text": "The homework is did by me every day.", "distractor": "did 是过去式，这里要过去分词 done" },
+        { "key": "D", "text": "The homework is doing by me every day.", "distractor": "被动不用 -ing 形式" }
+      ],
+      "explanation": "被动结构：is + 过去分词 done。",
+      "error_tag": "G-V01"
+    }
+  ]
+}

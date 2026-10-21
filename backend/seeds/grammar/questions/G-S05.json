@@ -1,0 +1,84 @@
+{
+  "point_id": "G-S05",
+  "title": "让步与比较状语从句",
+  "questions": [
+    {
+      "id": "G-S05-L1-01",
+      "level": "L1",
+      "stem": "____ he is poor, he is very happy.",
+      "options": [
+        { "key": "A", "text": "Though", "answer": true },
+        { "key": "B", "text": "But", "distractor": "but 不能这样引导从句" },
+        { "key": "C", "text": "Because", "distractor": "前后不是因果关系" },
+        { "key": "D", "text": "So", "distractor": "前后不是因果结果关系" }
+      ],
+      "explanation": "“虽然穷但快乐” → Though。",
+      "error_tag": "G-S05"
+    },
+    {
+      "id": "G-S05-L1-02",
+      "level": "L1",
+      "stem": "This book is ____ interesting ____ that one.",
+      "options": [
+        { "key": "A", "text": "as; as", "answer": true },
+        { "key": "B", "text": "as; than", "distractor": "as…as 是固定搭配" },
+        { "key": "C", "text": "more; as", "distractor": "结构错误" },
+        { "key": "D", "text": "so; than", "distractor": "结构错误" }
+      ],
+      "explanation": "同级比较：as interesting as。",
+      "error_tag": "G-S05"
+    },
+    {
+      "id": "G-S05-L2-01",
+      "level": "L2",
+      "stem": "He still went to work ____ he had a bad cold.",
+      "options": [
+        { "key": "A", "text": "though", "answer": true },
+        { "key": "B", "text": "but", "distractor": "but 不能引导从句" },
+        { "key": "C", "text": "because", "distractor": "前后不是因果关系" },
+        { "key": "D", "text": "so", "distractor": "前后不是因果结果关系" }
+      ],
+      "explanation": "“虽然重感冒还是去上班” → though。",
+      "error_tag": "G-S05"
+    },
+    {
+      "id": "G-S05-L2-02",
+      "level": "L2",
+      "stem": "She doesn't sing ____ well ____ her sister.",
+      "options": [
+        { "key": "A", "text": "so; as", "answer": true },
+        { "key": "B", "text": "so; than", "distractor": "so…as 搭配，不用 than" },
+        { "key": "C", "text": "more; as", "distractor": "结构错误" },
+        { "key": "D", "text": "much; than", "distractor": "well 的比较级是 better" }
+      ],
+      "explanation": "not so + 原级 + as。",
+      "error_tag": "G-S05"
+    },
+    {
+      "id": "G-S05-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "Though it was late, he went on working.", "distractor": "正确" },
+        { "key": "B", "text": "He is taller than any other boy in his team.", "distractor": "正确" },
+        { "key": "C", "text": "Even though he tried hard, but he failed.", "answer": true },
+        { "key": "D", "text": "This river is not as long as that one.", "distractor": "正确" }
+      ],
+      "explanation": "even though 后面不能再加 but。",
+      "error_tag": "G-S05"
+    },
+    {
+      "id": "G-S05-L3-02",
+      "level": "L3",
+      "stem": "— The box is heavier than I thought. — Yes, and it's ____ to carry alone.",
+      "options": [
+        { "key": "A", "text": "too heavy for me", "answer": true },
+        { "key": "B", "text": "so heavy for me", "distractor": "so 要接 that 从句" },
+        { "key": "C", "text": "very heavy for me", "distractor": "very 不接 to do" },
+        { "key": "D", "text": "such heavy for me", "distractor": "such 后接名词" }
+      ],
+      "explanation": "too + 形容词 + for sb to do。",
+      "error_tag": "G-S05"
+    }
+  ]
+}

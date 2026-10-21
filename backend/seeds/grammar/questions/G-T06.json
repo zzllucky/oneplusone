@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T06",
+  "title": "规则动词过去式 -ed",
+  "questions": [
+    {
+      "id": "G-T06-L1-01",
+      "level": "L1",
+      "stem": "We ____ (watch) a football match last night.",
+      "options": [
+        { "key": "A", "text": "watch", "distractor": "last night 要用过去式" },
+        { "key": "B", "text": "watched", "answer": true },
+        { "key": "C", "text": "watching", "distractor": "不能单独作谓语" },
+        { "key": "D", "text": "watches", "distractor": "这是三单形式" }
+      ],
+      "explanation": "watch 是规则动词，过去式直接加 -ed：watched。",
+      "error_tag": "G-T06"
+    },
+    {
+      "id": "G-T06-L1-02",
+      "level": "L1",
+      "stem": "He ____ his homework an hour ago.",
+      "options": [
+        { "key": "A", "text": "finish", "distractor": "an hour ago 要用过去式" },
+        { "key": "B", "text": "finishs", "distractor": "拼写错误，也不是过去式" },
+        { "key": "C", "text": "finished", "answer": true },
+        { "key": "D", "text": "finishing", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "finish 是规则动词，过去式直接加 -ed：finished。",
+      "error_tag": "G-T06"
+    },
+    {
+      "id": "G-T06-L2-01",
+      "level": "L2",
+      "stem": "She ____ (study) in the library last weekend.",
+      "options": [
+        { "key": "A", "text": "study", "distractor": "last weekend 要用过去式" },
+        { "key": "B", "text": "studied", "answer": true },
+        { "key": "C", "text": "studyed", "distractor": "辅音 + y 结尾要变 y 为 i 再加 ed" },
+        { "key": "D", "text": "studying", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "study 以“辅音字母 + y”结尾，变 y 为 i 再加 -ed：studied。",
+      "error_tag": "G-T06"
+    },
+    {
+      "id": "G-T06-L2-02",
+      "level": "L2",
+      "stem": "It ____ (rain) heavily yesterday afternoon.",
+      "options": [
+        { "key": "A", "text": "rain", "distractor": "yesterday afternoon 要用过去式" },
+        { "key": "B", "text": "rained", "answer": true },
+        { "key": "C", "text": "raining", "distractor": "不能单独作谓语" },
+        { "key": "D", "text": "raind", "distractor": "rain 不是以 e 结尾，要加完整的 ed" }
+      ],
+      "explanation": "rain 是一般情况，直接加 -ed：rained。",
+      "error_tag": "G-T06"
+    },
+    {
+      "id": "G-T06-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句的拼写是错误的？",
+      "options": [
+        { "key": "A", "text": "We played games after school.", "distractor": "正确：元音 + y 直接加 ed" },
+        { "key": "B", "text": "He stopped the car at the gate.", "distractor": "正确：双写 p" },
+        { "key": "C", "text": "She studyed English last night.", "answer": true },
+        { "key": "D", "text": "I liked the book very much.", "distractor": "正确：以 e 结尾只加 d" }
+      ],
+      "explanation": "study 的正确过去式是 studied，不是 studyed——辅音 + y 要先变 y 为 i。",
+      "error_tag": "G-T06"
+    },
+    {
+      "id": "G-T06-L3-02",
+      "level": "L3",
+      "stem": "He ____ (plan) the trip very carefully last month.",
+      "options": [
+        { "key": "A", "text": "plan", "distractor": "last month 要用过去式" },
+        { "key": "B", "text": "planed", "distractor": "plan 是重读闭音节，要双写 n" },
+        { "key": "C", "text": "planned", "answer": true },
+        { "key": "D", "text": "planing", "distractor": "这是现在分词的拼法，不是过去式" }
+      ],
+      "explanation": "plan 是重读闭音节，双写末尾辅音 n 再加 -ed：planned。",
+      "error_tag": "G-T06"
+    }
+  ]
+}

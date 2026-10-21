@@ -1,0 +1,100 @@
+{
+  "id": "G-O04",
+  "type": "rule",
+  "module": "O",
+  "module_name": "宾语从句",
+  "title": "否定转移与简化",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "I don't think he is right.", "zh": "我认为他不对。" },
+      { "en": "I don't know what to do.", "zh": "我不知道该怎么办。" }
+    ],
+    "question": "想说“我认为他不会来”，英语该怎么说？",
+    "options": [
+      {
+        "key": "A",
+        "text": "I don't think he will come.——否定放在主句上",
+        "feedback": "对！think / believe 这类词要把否定提到前面，这叫否定转移。"
+      },
+      {
+        "key": "B",
+        "text": "I think he won't come.",
+        "feedback": "不对——英语习惯把否定放在 think 前面，说成 I don't think…"
+      },
+      {
+        "key": "C",
+        "text": "I think he doesn't come.",
+        "feedback": "不对——这里说的是将来的事，且否定位置不对。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "think / believe / suppose 后接从句时，否定要转移到主句；当从句主语与主句主语一致时，从句可以简化成“疑问词 + to do”",
+    "signals": ["I don't think", "I don't believe", "I don't suppose", "疑问词 + to do"],
+    "formula": "① 否定转移：I don't think he is right.（不说 I think he isn't right.）　② 简化：I don't know what I should do. → I don't know what to do.　③ 反意疑问句看从句：I don't think he is right, is he?",
+    "anchors": [
+      {
+        "en": "I don't think he will come tomorrow.",
+        "zh": "我认为他明天不会来。",
+        "note": "否定在主句 think 上"
+      },
+      {
+        "en": "I don't know how to get there.",
+        "zh": "我不知道怎么去那儿。",
+        "note": "从句简化成 how to get"
+      }
+    ],
+    "trap": {
+      "wrong": "I think he won't come to the party.",
+      "right": "I don't think he will come to the party.",
+      "why": "think 引导的从句，否定要转移到主句。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——think 的否定往前挪；主语相同时可以把从句缩成“疑问词 + to do”。",
+  "check": [
+    {
+      "id": "G-O04-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "I ____ think he ____ right. Let me check it again.",
+      "options": [
+        { "key": "A", "text": "don't; is", "answer": true },
+        { "key": "B", "text": "don't; isn't", "distractor": "否定已转移，从句里不能再否定" },
+        { "key": "C", "text": "do; isn't", "distractor": "否定要转移到主句" },
+        { "key": "D", "text": "am not; is", "distractor": "think 是实义动词，用 don't 否定" }
+      ],
+      "explanation": "否定转移：I don't think he is right。",
+      "error_tag": "G-O04"
+    },
+    {
+      "id": "G-O04-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "“I don't know what I should do.” 可以简化成 ____.",
+      "options": [
+        { "key": "A", "text": "I don't know what doing", "distractor": "结构错误" },
+        { "key": "B", "text": "I don't know what to do", "answer": true },
+        { "key": "C", "text": "I don't know how to do", "distractor": "how to do 后面要接宾语" },
+        { "key": "D", "text": "I don't know to do what", "distractor": "语序错误" }
+      ],
+      "explanation": "简化成“疑问词 + to do”：what to do。",
+      "error_tag": "G-O04"
+    },
+    {
+      "id": "G-O04-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "I don't think he will come.", "answer": true },
+        { "key": "B", "text": "I think he won't come.", "distractor": "否定要转移到主句" },
+        { "key": "C", "text": "I think he doesn't come.", "distractor": "否定位置和时态都不对" },
+        { "key": "D", "text": "I don't think he won't come.", "distractor": "双重否定，意思变成“我认为他会来”" }
+      ],
+      "explanation": "否定转移：I don't think he will come。",
+      "error_tag": "G-O04"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "point_id": "G-V05",
+  "title": "主动变被动三步",
+  "questions": [
+    {
+      "id": "G-V05-L1-01",
+      "level": "L1",
+      "stem": "把 “We clean the classroom every day.” 改成被动语态。",
+      "options": [
+        { "key": "A", "text": "The classroom is cleaned every day.", "answer": true },
+        { "key": "B", "text": "The classroom cleans every day.", "distractor": "缺少 be 动词" },
+        { "key": "C", "text": "The classroom is clean every day.", "distractor": "这里 clean 是形容词，不是被动" },
+        { "key": "D", "text": "We are cleaned the classroom every day.", "distractor": "被提前的应是宾语 the classroom" }
+      ],
+      "explanation": "宾语提前 + is cleaned，一般现在时保持不变。",
+      "error_tag": "G-V05"
+    },
+    {
+      "id": "G-V05-L1-02",
+      "level": "L1",
+      "stem": "把 “Someone broke the window last night.” 改成被动语态。",
+      "options": [
+        { "key": "A", "text": "The window was broken last night.", "answer": true },
+        { "key": "B", "text": "The window broke last night.", "distractor": "缺少 be 动词" },
+        { "key": "C", "text": "The window was broke last night.", "distractor": "be 后要接过去分词 broken" },
+        { "key": "D", "text": "Someone was broken the window.", "distractor": "被提前的应是宾语" }
+      ],
+      "explanation": "过去时被动：The window was broken（by someone 可省略）。",
+      "error_tag": "G-V05"
+    },
+    {
+      "id": "G-V05-L2-01",
+      "level": "L2",
+      "stem": "把 “They are building a new hospital.” 改成被动语态。",
+      "options": [
+        { "key": "A", "text": "A new hospital is being built.", "answer": true },
+        { "key": "B", "text": "A new hospital is built.", "distractor": "原句是进行时，被动要保留进行" },
+        { "key": "C", "text": "A new hospital is building.", "distractor": "被动不能用 -ing 代替 be + done" },
+        { "key": "D", "text": "A new hospital was built.", "distractor": "时态要与原句一致" }
+      ],
+      "explanation": "进行时被动：is being built。",
+      "error_tag": "G-V05"
+    },
+    {
+      "id": "G-V05-L2-02",
+      "level": "L2",
+      "stem": "把 “You must finish the work today.” 改成被动语态。",
+      "options": [
+        { "key": "A", "text": "The work must finish today.", "distractor": "被动要加 be" },
+        { "key": "B", "text": "The work must be finished today.", "answer": true },
+        { "key": "C", "text": "The work must is finished today.", "distractor": "情态动词后不能接 is" },
+        { "key": "D", "text": "The work must finished today.", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "情态动词被动：must be finished。",
+      "error_tag": "G-V05"
+    },
+    {
+      "id": "G-V05-L3-01",
+      "level": "L3",
+      "stem": "把 “He gave me a book.” 改成以 a book 为主语的被动语态。",
+      "options": [
+        { "key": "A", "text": "A book was given to me by him.", "answer": true },
+        { "key": "B", "text": "A book was gave to me by him.", "distractor": "be 后要用过去分词 given" },
+        { "key": "C", "text": "I was given a book by him.", "distractor": "这里要求以 a book 为主语" },
+        { "key": "D", "text": "A book gave to me by him.", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "双宾语变被动，以物作主语时要保留 to：was given to me。",
+      "error_tag": "G-V05"
+    },
+    {
+      "id": "G-V05-L3-02",
+      "level": "L3",
+      "stem": "把 “We should take care of the old people.” 改成被动语态。",
+      "options": [
+        { "key": "A", "text": "The old people should take care of.", "distractor": "被动缺少 be，且短语动词的介词不能丢" },
+        { "key": "B", "text": "The old people should be taken care of.", "answer": true },
+        { "key": "C", "text": "The old people should be taken care.", "distractor": "短语动词变被动要保留 of" },
+        { "key": "D", "text": "The old people should been taken care of.", "distractor": "情态动词后要接 be 原形" }
+      ],
+      "explanation": "短语动词 take care of 变被动时 of 必须保留：should be taken care of。",
+      "error_tag": "G-V05"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T05",
+  "title": "一般过去时·基本用法与标志词",
+  "questions": [
+    {
+      "id": "G-T05-L1-01",
+      "level": "L1",
+      "stem": "They ____ in Beijing in 2020.",
+      "options": [
+        { "key": "A", "text": "live", "distractor": "in 2020 是过去时间，要用过去式" },
+        { "key": "B", "text": "lived", "answer": true },
+        { "key": "C", "text": "lives", "distractor": "这是三单形式" },
+        { "key": "D", "text": "living", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "in 2020 是具体过去时间，用一般过去时 lived。",
+      "error_tag": "G-T05"
+    },
+    {
+      "id": "G-T05-L1-02",
+      "level": "L1",
+      "stem": "I ____ (see) an interesting film yesterday.",
+      "options": [
+        { "key": "A", "text": "see", "distractor": "yesterday 要用过去式" },
+        { "key": "B", "text": "saw", "answer": true },
+        { "key": "C", "text": "seen", "distractor": "seen 是过去分词，不能单独作谓语" },
+        { "key": "D", "text": "seeing", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "see 是不规则动词，过去式是 saw（see-saw-seen）。",
+      "error_tag": "G-T05"
+    },
+    {
+      "id": "G-T05-L2-01",
+      "level": "L2",
+      "stem": "Tom ____ (buy) a new bike last week.",
+      "options": [
+        { "key": "A", "text": "buy", "distractor": "last week 要用过去式" },
+        { "key": "B", "text": "buys", "distractor": "这是三单形式" },
+        { "key": "C", "text": "buyed", "distractor": "buy 是不规则动词，没有 buyed 这个词" },
+        { "key": "D", "text": "bought", "answer": true }
+      ],
+      "explanation": "buy 是不规则动词，过去式是 bought。",
+      "error_tag": "G-T05"
+    },
+    {
+      "id": "G-T05-L2-02",
+      "level": "L2",
+      "stem": "We ____ (be) very tired after the trip.",
+      "options": [
+        { "key": "A", "text": "are", "distractor": "旅行已经结束，要用过去式" },
+        { "key": "B", "text": "was", "distractor": "we 要搭配 were" },
+        { "key": "C", "text": "were", "answer": true },
+        { "key": "D", "text": "be", "distractor": "be 是原形，不能作谓语" }
+      ],
+      "explanation": "be 动词过去式：we / you / they 用 were，I / he / she / it 用 was。",
+      "error_tag": "G-T05"
+    },
+    {
+      "id": "G-T05-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I watched TV last night.", "distractor": "正确" },
+        { "key": "B", "text": "He went to school yesterday.", "distractor": "正确" },
+        { "key": "C", "text": "I have seen him yesterday.", "answer": true },
+        { "key": "D", "text": "We had a good time last week.", "distractor": "正确" }
+      ],
+      "explanation": "yesterday 是具体过去时间点，不能与现在完成时连用，应改为 I saw him yesterday。",
+      "error_tag": "G-T26"
+    },
+    {
+      "id": "G-T05-L3-02",
+      "level": "L3",
+      "stem": "He ____ (live) here in 2015, but now he ____ in Shanghai.",
+      "options": [
+        { "key": "A", "text": "lives; lives", "distractor": "in 2015 是过去，第一空要用过去式" },
+        { "key": "B", "text": "lived; lives", "answer": true },
+        { "key": "C", "text": "lived; lived", "distractor": "now 说明第二空是现在的情况" },
+        { "key": "D", "text": "lives; lived", "distractor": "两个空的时态反了" }
+      ],
+      "explanation": "in 2015 指过去用 lived，now 指现在用 lives；同一个句子里两个时间标志要分别判断。",
+      "error_tag": "G-T05"
+    }
+  ]
+}

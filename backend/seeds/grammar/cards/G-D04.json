@@ -1,0 +1,100 @@
+{
+  "id": "G-D04",
+  "type": "rule",
+  "module": "D",
+  "module_name": "副词",
+  "title": "副词比较级与 enough",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "He runs faster than me.", "zh": "他跑得比我快。" },
+      { "en": "He is old enough to go to school.", "zh": "他够大了，可以上学了。" }
+    ],
+    "question": "enough 应该放在形容词的前面还是后面？",
+    "options": [
+      {
+        "key": "A",
+        "text": "放在后面——old enough、fast enough",
+        "feedback": "对！enough 修饰形容词和副词时要后置，这是它跟别的词不一样的地方。"
+      },
+      {
+        "key": "B",
+        "text": "放在前面——enough old",
+        "feedback": "不对——enough 修饰形容词副词必须放后面，放前面就错了。"
+      },
+      {
+        "key": "C",
+        "text": "前后都行",
+        "feedback": "不对——只能放后面；只有修饰名词时（enough time）才放前面。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "副词比较级前可加 much / even / a lot / a little 表示程度；enough 修饰形容词或副词时必须后置，修饰名词时放在名词前",
+    "signals": ["副词比较级 + than", "much / even + 比较级", "形容词 / 副词 + enough", "enough + 名词"],
+    "formula": "① 副修动比较：He runs faster than me.　② much / even / a lot / a little + 比较级　③ 形容词 / 副词 + enough：old enough / fast enough　④ enough + 名词：enough time",
+    "anchors": [
+      {
+        "en": "He doesn't run fast enough to catch the bus.",
+        "zh": "他跑得不够快，赶不上那班车。",
+        "note": "副词 + enough"
+      },
+      {
+        "en": "The room is big enough for us to live in.",
+        "zh": "这房间够大，我们住得下。",
+        "note": "形容词 + enough"
+      }
+    ],
+    "trap": {
+      "wrong": "He is enough old to go to school.",
+      "right": "He is old enough to go to school.",
+      "why": "enough 修饰形容词要放在后面：old enough。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——enough 跟在形容词副词后面，但放在名词前面（enough time）。",
+  "check": [
+    {
+      "id": "G-D04-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Don't worry about him. He is ____ to look after himself.",
+      "options": [
+        { "key": "A", "text": "enough old", "distractor": "enough 要放在形容词后面" },
+        { "key": "B", "text": "old enough", "answer": true },
+        { "key": "C", "text": "older enough", "distractor": "这里有 enough 就不需要比较级" },
+        { "key": "D", "text": "enough older", "distractor": "语序和结构都错" }
+      ],
+      "explanation": "形容词 + enough：old enough。",
+      "error_tag": "G-D04"
+    },
+    {
+      "id": "G-D04-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Please speak ____ so that everyone can hear you.",
+      "options": [
+        { "key": "A", "text": "loud enough", "answer": true },
+        { "key": "B", "text": "enough loud", "distractor": "enough 要放在副词后面" },
+        { "key": "C", "text": "louder enough", "distractor": "这里不需要比较级" },
+        { "key": "D", "text": "enough loudly", "distractor": "语序错，且 loud 本身可作副词" }
+      ],
+      "explanation": "副词 + enough：loud enough。",
+      "error_tag": "G-D04"
+    },
+    {
+      "id": "G-D04-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The box is light enough for me to carry.", "answer": true },
+        { "key": "B", "text": "The box is enough light for me to carry.", "distractor": "enough 要后置" },
+        { "key": "C", "text": "The box is light enough for me carry.", "distractor": "缺少 to" },
+        { "key": "D", "text": "The box is enough light for me carry.", "distractor": "两处都错" }
+      ],
+      "explanation": "light enough + for sb to do。",
+      "error_tag": "G-D04"
+    }
+  ]
+}

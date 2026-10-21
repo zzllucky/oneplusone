@@ -1,0 +1,100 @@
+{
+  "id": "G-N03",
+  "type": "rule",
+  "module": "N",
+  "module_name": "名词",
+  "title": "不规则复数与单复同形",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "man → men　woman → women　child → children", "zh": "（这三个词变复数不是加 s）" },
+      { "en": "There are three sheep behind the house.", "zh": "房子后面有三只羊。" }
+    ],
+    "question": "“三只羊”英文该怎么说？",
+    "options": [
+      {
+        "key": "A",
+        "text": "three sheep——sheep 单数和复数长得一样",
+        "feedback": "对！sheep、deer、fish 这类词单复同形，看到一个就是一只，看到 three sheep 就是三只。"
+      },
+      {
+        "key": "B",
+        "text": "three sheeps",
+        "feedback": "不对——sheep 不能加 s，加了反而是错的。"
+      },
+      {
+        "key": "C",
+        "text": "three sheepes",
+        "feedback": "不对——拼写也不对，sheep 什么都不能加。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "不规则变化要逐个记；还有一批词单复数同形（sheep / deer / fish / Chinese / Japanese）",
+    "signals": ["man", "woman", "child", "foot", "tooth", "mouse", "sheep", "deer", "Chinese"],
+    "formula": "变元音：man→men, woman→women, foot→feet, tooth→teeth, mouse→mice　加 -en：child→children, ox→oxen　单复同形：sheep, deer, fish, Chinese, Japanese",
+    "anchors": [
+      {
+        "en": "The children are playing games.",
+        "zh": "孩子们在做游戏。",
+        "note": "child → children"
+      },
+      {
+        "en": "We saw five deer in the forest.",
+        "zh": "我们在森林里看见五只鹿。",
+        "note": "deer 单复同形"
+      }
+    ],
+    "trap": {
+      "wrong": "There are ten sheeps on the hill.",
+      "right": "There are ten sheep on the hill.",
+      "why": "sheep 单复同形，不能加 s。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——分两类记：改元音（men/feet/teeth）和怎么都不变（sheep/deer/fish）。",
+  "check": [
+    {
+      "id": "G-N03-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "There are fifty ____ (child) in the playground.",
+      "options": [
+        { "key": "A", "text": "child", "distractor": "fifty 后面要用复数" },
+        { "key": "B", "text": "childs", "distractor": "child 的复数不是加 s" },
+        { "key": "C", "text": "children", "answer": true },
+        { "key": "D", "text": "childes", "distractor": "拼写错误" }
+      ],
+      "explanation": "child 的复数是 children。",
+      "error_tag": "G-N03"
+    },
+    {
+      "id": "G-N03-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The baby has two ____ (tooth) now.",
+      "options": [
+        { "key": "A", "text": "tooth", "distractor": "two 后面要用复数" },
+        { "key": "B", "text": "tooths", "distractor": "tooth 的复数不是加 s" },
+        { "key": "C", "text": "teeth", "answer": true },
+        { "key": "D", "text": "toothes", "distractor": "拼写错误" }
+      ],
+      "explanation": "tooth 的复数是 teeth（变元音）。",
+      "error_tag": "G-N03"
+    },
+    {
+      "id": "G-N03-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "We saw five deer in the forest.", "answer": true },
+        { "key": "B", "text": "We saw five deers in the forest.", "distractor": "deer 单复同形" },
+        { "key": "C", "text": "We saw five deer's in the forest.", "distractor": "这里不是所有格" },
+        { "key": "D", "text": "We saw five deeres in the forest.", "distractor": "拼写错误" }
+      ],
+      "explanation": "deer 单复同形，五只鹿还是 five deer。",
+      "error_tag": "G-N03"
+    }
+  ]
+}

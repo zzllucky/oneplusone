@@ -44,10 +44,13 @@ docker compose start web
 3. 执行迁移：`docker compose run --rm web alembic upgrade head`
    - `001` 建立全部业务表
    - `002` 按 `spelling` **幂等 upsert** 导入词表种子（重复执行结果不变，不删用户数据）
+   - `006` 建语法内容表并按主键 upsert 导入 `seeds/grammar` 的 82 个知识点与题库
+   - `007` 建语法学习记录层四表（进度 / 轮次 / 作答 / 语法错题本），不改动任何既有表
 4. 启动：`docker compose up -d`
 5. 冒烟：
    - `curl localhost:8000/api/health` → `{"status":"ok"}`
    - 注册 → 设置目标 → 学习 → 标记浏览 → 开始测验 → 答错 → 查看错题本 → 专项练习答对 → 错题消失
+   - 语法：进入 `/grammar` 看到 82 个知识点 → 打开学卡走猜一猜 → 讲解 → 学后检测全对 → 状态变"已掌握" → 发起练习答错 → 语法错题本出现该知识点 → 连续答对 2 题后消失
 
 ## 回滚
 

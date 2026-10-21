@@ -1,0 +1,101 @@
+{
+  "id": "G-V02",
+  "type": "rule",
+  "module": "V",
+  "module_name": "被动语态",
+  "title": "三种基本时态的被动",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "The room is cleaned every day.", "zh": "房间每天都被打扫。" },
+      { "en": "The room was cleaned yesterday.", "zh": "房间昨天被打扫了。" },
+      { "en": "The room will be cleaned tomorrow.", "zh": "房间明天会被打扫。" }
+    ],
+    "question": "三句话的“被打扫”形式都不一样，变的是哪个部分？",
+    "options": [
+      {
+        "key": "A",
+        "text": "变的是 be 动词（is / was / will be），cleaned 一直不变",
+        "feedback": "对！被动的时态全部由 be 动词承担，过去分词永远不动。"
+      },
+      {
+        "key": "B",
+        "text": "变的是 cleaned",
+        "feedback": "不对——过去分词三句都一样，始终是 cleaned。"
+      },
+      {
+        "key": "C",
+        "text": "变的是主语 the room",
+        "feedback": "不对——主语三句完全相同。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "被动语态的时态只体现在 be 动词上，过去分词保持不变",
+    "signals": ["every day（现在）", "yesterday（过去）", "tomorrow（将来）"],
+    "formula": "一般现在：am / is / are + done　一般过去：was / were + done　一般将来：will be + done",
+    "anchors": [
+      {
+        "en": "The room is cleaned every day.",
+        "zh": "房间每天都被打扫。",
+        "note": "现在：is + done"
+      },
+      {
+        "en": "The room will be cleaned tomorrow.",
+        "zh": "房间明天会被打扫。",
+        "note": "将来：will be + done"
+      }
+    ],
+    "trap": {
+      "wrong": "The room will been cleaned tomorrow.",
+      "right": "The room will be cleaned tomorrow.",
+      "why": "will 后面一律接 be 的原形，不能写成 been 或 is。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住：过去分词不动，时态全看 be 怎么变。",
+  "check": [
+    {
+      "id": "G-V02-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The sports meeting ____ (hold) last week.",
+      "options": [
+        { "key": "A", "text": "is held", "distractor": "last week 是过去时间" },
+        { "key": "B", "text": "was held", "answer": true },
+        { "key": "C", "text": "will be held", "distractor": "这是将来时" },
+        { "key": "D", "text": "holds", "distractor": "运动会是被举办的" }
+      ],
+      "explanation": "上周被举办，用过去时被动 was held。",
+      "error_tag": "G-V02"
+    },
+    {
+      "id": "G-V02-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "A new hospital ____ (build) here next year.",
+      "options": [
+        { "key": "A", "text": "builds", "distractor": "医院是被建的" },
+        { "key": "B", "text": "will be built", "answer": true },
+        { "key": "C", "text": "is built", "distractor": "next year 表示将来" },
+        { "key": "D", "text": "was built", "distractor": "这是过去时" }
+      ],
+      "explanation": "明年将被建成，用 will be built。",
+      "error_tag": "G-V02"
+    },
+    {
+      "id": "G-V02-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The work will be finished tomorrow.", "answer": true },
+        { "key": "B", "text": "The work will been finished tomorrow.", "distractor": "will 后要接 be 原形" },
+        { "key": "C", "text": "The work will is finished tomorrow.", "distractor": "will 后不能接 is" },
+        { "key": "D", "text": "The work will finished tomorrow.", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "将来时被动：will be + 过去分词。",
+      "error_tag": "G-V02"
+    }
+  ]
+}

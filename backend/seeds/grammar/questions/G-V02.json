@@ -1,0 +1,84 @@
+{
+  "point_id": "G-V02",
+  "title": "三种基本时态的被动",
+  "questions": [
+    {
+      "id": "G-V02-L1-01",
+      "level": "L1",
+      "stem": "The bridge ____ (build) in 1998.",
+      "options": [
+        { "key": "A", "text": "is built", "distractor": "in 1998 是过去时间" },
+        { "key": "B", "text": "was built", "answer": true },
+        { "key": "C", "text": "will be built", "distractor": "这是将来时" },
+        { "key": "D", "text": "builds", "distractor": "桥是被建的" }
+      ],
+      "explanation": "1998 年建成，用过去时被动 was built。",
+      "error_tag": "G-V02"
+    },
+    {
+      "id": "G-V02-L1-02",
+      "level": "L1",
+      "stem": "A new road ____ (build) in our town next year.",
+      "options": [
+        { "key": "A", "text": "builds", "distractor": "路是被修的" },
+        { "key": "B", "text": "will be built", "answer": true },
+        { "key": "C", "text": "is built", "distractor": "next year 表示将来" },
+        { "key": "D", "text": "was built", "distractor": "这是过去时" }
+      ],
+      "explanation": "明年将被修建，用 will be built。",
+      "error_tag": "G-V02"
+    },
+    {
+      "id": "G-V02-L2-01",
+      "level": "L2",
+      "stem": "The students ____ (tell) the good news yesterday.",
+      "options": [
+        { "key": "A", "text": "tell", "distractor": "时态不对" },
+        { "key": "B", "text": "were told", "answer": true },
+        { "key": "C", "text": "are told", "distractor": "yesterday 是过去时间" },
+        { "key": "D", "text": "was told", "distractor": "the students 是复数" }
+      ],
+      "explanation": "昨天被告知，复数用 were told。",
+      "error_tag": "G-V02"
+    },
+    {
+      "id": "G-V02-L2-02",
+      "level": "L2",
+      "stem": "The problem ____ (discuss) at the meeting tomorrow.",
+      "options": [
+        { "key": "A", "text": "discusses", "distractor": "问题是被讨论的" },
+        { "key": "B", "text": "will be discussed", "answer": true },
+        { "key": "C", "text": "was discussed", "distractor": "tomorrow 表示将来" },
+        { "key": "D", "text": "is discussed", "distractor": "tomorrow 表示将来" }
+      ],
+      "explanation": "明天将被讨论，用 will be discussed。",
+      "error_tag": "G-V02"
+    },
+    {
+      "id": "G-V02-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "The letter was sent last Monday.", "distractor": "正确" },
+        { "key": "B", "text": "The house will be sold next month.", "distractor": "正确" },
+        { "key": "C", "text": "The work will been done tomorrow.", "answer": true },
+        { "key": "D", "text": "The floor is cleaned every morning.", "distractor": "正确" }
+      ],
+      "explanation": "will 后面要接 be 原形：will be done，不是 will been done。",
+      "error_tag": "G-V02"
+    },
+    {
+      "id": "G-V02-L3-02",
+      "level": "L3",
+      "stem": "— When ____ the new library ____ (open)? — Next month.",
+      "options": [
+        { "key": "A", "text": "will; be opened", "answer": true },
+        { "key": "B", "text": "will; opened", "distractor": "缺少 be 动词" },
+        { "key": "C", "text": "was; opened", "distractor": "答语是下个月，表将来" },
+        { "key": "D", "text": "is; opened", "distractor": "答语是下个月，表将来" }
+      ],
+      "explanation": "将来时被动疑问：When will the new library be opened?",
+      "error_tag": "G-V02"
+    }
+  ]
+}

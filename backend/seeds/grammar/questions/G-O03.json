@@ -1,0 +1,84 @@
+{
+  "point_id": "G-O03",
+  "title": "时态呼应",
+  "questions": [
+    {
+      "id": "G-O03-L1-01",
+      "level": "L1",
+      "stem": "— What did he say just now? — He said that he ____ busy then.",
+      "options": [
+        { "key": "A", "text": "is", "distractor": "主句是过去时，从句要退成 was" },
+        { "key": "B", "text": "was", "answer": true },
+        { "key": "C", "text": "will be", "distractor": "主句是过去时，不能用将来时" },
+        { "key": "D", "text": "has been", "distractor": "主句是过去时，要用 had been" }
+      ],
+      "explanation": "主过从过：is → was。",
+      "error_tag": "G-O03"
+    },
+    {
+      "id": "G-O03-L1-02",
+      "level": "L1",
+      "stem": "The geography teacher said that the sun ____ in the east.",
+      "options": [
+        { "key": "A", "text": "rose", "distractor": "客观真理永远用一般现在时" },
+        { "key": "B", "text": "rises", "answer": true },
+        { "key": "C", "text": "will rise", "distractor": "客观真理不用将来时" },
+        { "key": "D", "text": "has risen", "distractor": "客观真理用一般现在时" }
+      ],
+      "explanation": "客观真理 → rises。",
+      "error_tag": "G-O03"
+    },
+    {
+      "id": "G-O03-L2-01",
+      "level": "L2",
+      "stem": "He asked me where I ____ the day before.",
+      "options": [
+        { "key": "A", "text": "go", "distractor": "主句是过去时，从句要退成过去时" },
+        { "key": "B", "text": "went", "answer": true },
+        { "key": "C", "text": "will go", "distractor": "主句是过去时，不能用将来时" },
+        { "key": "D", "text": "have gone", "distractor": "要用过去完成时 had gone" }
+      ],
+      "explanation": "主过从过：go → went。",
+      "error_tag": "G-O03"
+    },
+    {
+      "id": "G-O03-L2-02",
+      "level": "L2",
+      "stem": "She says that she ____ to Beijing twice.",
+      "options": [
+        { "key": "A", "text": "has been", "answer": true },
+        { "key": "B", "text": "had been", "distractor": "主句是现在时，从句不需要退时态" },
+        { "key": "C", "text": "was", "distractor": "twice 表示经历，用现在完成时" },
+        { "key": "D", "text": "will be", "distractor": "twice 表示已发生的经历" }
+      ],
+      "explanation": "主句是现在时，从句按需要用现在完成时。",
+      "error_tag": "G-O03"
+    },
+    {
+      "id": "G-O03-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He told me he would visit the museum the next day.", "distractor": "正确" },
+        { "key": "B", "text": "The teacher said practice makes perfect.", "distractor": "正确：谚语/真理用现在时" },
+        { "key": "C", "text": "She said she has seen the film before.", "answer": true },
+        { "key": "D", "text": "We knew that he was ill.", "distractor": "正确" }
+      ],
+      "explanation": "主句是过去时，应改为 she had seen the film before。",
+      "error_tag": "G-O03"
+    },
+    {
+      "id": "G-O03-L3-02",
+      "level": "L3",
+      "stem": "— Did Mr Li tell you ____? — Yes, he said the earth is round.",
+      "options": [
+        { "key": "A", "text": "what did he say", "distractor": "语序错误" },
+        { "key": "B", "text": "what he said", "answer": true },
+        { "key": "C", "text": "what he says", "distractor": "主句是过去时，从句要退时态" },
+        { "key": "D", "text": "that what he said", "distractor": "连接词重复" }
+      ],
+      "explanation": "what he said（陈述语序 + 过去时）。",
+      "error_tag": "G-O03"
+    }
+  ]
+}

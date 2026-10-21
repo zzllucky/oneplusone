@@ -1,0 +1,84 @@
+{
+  "point_id": "G-D02",
+  "title": "副词的位置",
+  "questions": [
+    {
+      "id": "G-D02-L1-01",
+      "level": "L1",
+      "stem": "— How do you go to school? — I ____ go there on foot.",
+      "options": [
+        { "key": "A", "text": "usually", "answer": true },
+        { "key": "B", "text": "am usually", "distractor": "go 是实义动词，前面不加 be" },
+        { "key": "C", "text": "usually am", "distractor": "结构错误" },
+        { "key": "D", "text": "do usually", "distractor": "一般现在时不需要助动词" }
+      ],
+      "explanation": "频度副词放实义动词前：usually go。",
+      "error_tag": "G-D02"
+    },
+    {
+      "id": "G-D02-L1-02",
+      "level": "L1",
+      "stem": "He ____ forgets to do his homework. His teacher is angry with him.",
+      "options": [
+        { "key": "A", "text": "never", "distractor": "与“老师生气”矛盾" },
+        { "key": "B", "text": "often", "answer": true },
+        { "key": "C", "text": "seldom", "distractor": "与“老师生气”矛盾" },
+        { "key": "D", "text": "hardly", "distractor": "与“老师生气”矛盾" }
+      ],
+      "explanation": "老师生气 → 经常忘：often。",
+      "error_tag": "G-D02"
+    },
+    {
+      "id": "G-D02-L2-01",
+      "level": "L2",
+      "stem": "My mother ____ at home on Sundays. She goes shopping.",
+      "options": [
+        { "key": "A", "text": "is seldom", "answer": true },
+        { "key": "B", "text": "seldom is", "distractor": "有 be 动词时，频度副词放 be 后面" },
+        { "key": "C", "text": "seldom does", "distractor": "at home 前要用 be" },
+        { "key": "D", "text": "does seldom", "distractor": "结构错误" }
+      ],
+      "explanation": "be + seldom：is seldom at home。",
+      "error_tag": "G-D02"
+    },
+    {
+      "id": "G-D02-L2-02",
+      "level": "L2",
+      "stem": "— I ____ eat fast food now. — That's why you are healthier.",
+      "options": [
+        { "key": "A", "text": "always", "distractor": "与“更健康了”矛盾" },
+        { "key": "B", "text": "often", "distractor": "与“更健康了”矛盾" },
+        { "key": "C", "text": "hardly ever", "answer": true },
+        { "key": "D", "text": "usually", "distractor": "与“更健康了”矛盾" }
+      ],
+      "explanation": "几乎不吃 → hardly ever。",
+      "error_tag": "G-D02"
+    },
+    {
+      "id": "G-D02-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He often helps his mother with housework.", "distractor": "正确" },
+        { "key": "B", "text": "She is always the first to come.", "distractor": "正确" },
+        { "key": "C", "text": "We can never forget that day.", "distractor": "正确" },
+        { "key": "D", "text": "He goes always to school by bike.", "answer": true }
+      ],
+      "explanation": "频度副词要在实义动词前：He always goes to school by bike。",
+      "error_tag": "G-D02"
+    },
+    {
+      "id": "G-D02-L3-02",
+      "level": "L3",
+      "stem": "— ____ do you go to the library? — Sometimes.",
+      "options": [
+        { "key": "A", "text": "How long", "distractor": "how long 问时长" },
+        { "key": "B", "text": "How often", "answer": true },
+        { "key": "C", "text": "How soon", "distractor": "how soon 问“多久以后”" },
+        { "key": "D", "text": "How many", "distractor": "how many 问数量，后面接名词" }
+      ],
+      "explanation": "答语是频度副词 → how often。",
+      "error_tag": "G-D02"
+    }
+  ]
+}

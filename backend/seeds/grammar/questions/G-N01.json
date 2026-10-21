@@ -1,0 +1,84 @@
+{
+  "point_id": "G-N01",
+  "title": "可数与不可数",
+  "questions": [
+    {
+      "id": "G-N01-L1-01",
+      "level": "L1",
+      "stem": "— What would you like? — Two ____ of tea, please.",
+      "options": [
+        { "key": "A", "text": "cup", "distractor": "two 后面单位词要变复数" },
+        { "key": "B", "text": "cups", "answer": true },
+        { "key": "C", "text": "cup's", "distractor": "这里不是所有格" },
+        { "key": "D", "text": "tea", "distractor": "tea 不可数，要借 cup 来数" }
+      ],
+      "explanation": "两杯茶：two cups of tea。",
+      "error_tag": "G-N01"
+    },
+    {
+      "id": "G-N01-L1-02",
+      "level": "L1",
+      "stem": "There is ____ bread on the plate.",
+      "options": [
+        { "key": "A", "text": "a", "distractor": "bread 不可数，不能直接加 a" },
+        { "key": "B", "text": "a piece of", "answer": true },
+        { "key": "C", "text": "many", "distractor": "many 修饰可数名词复数" },
+        { "key": "D", "text": "two breads", "distractor": "bread 没有复数" }
+      ],
+      "explanation": "一片面包：a piece of bread。",
+      "error_tag": "G-N01"
+    },
+    {
+      "id": "G-N01-L2-01",
+      "level": "L2",
+      "stem": "My teacher gave me ____ on how to learn English.",
+      "options": [
+        { "key": "A", "text": "some advice", "answer": true },
+        { "key": "B", "text": "an advice", "distractor": "advice 不可数，不能加 an" },
+        { "key": "C", "text": "many advices", "distractor": "advice 没有复数" },
+        { "key": "D", "text": "a advice", "distractor": "advice 不可数，要用 a piece of" }
+      ],
+      "explanation": "advice 不可数：some advice（一些建议）。",
+      "error_tag": "G-N01"
+    },
+    {
+      "id": "G-N01-L2-02",
+      "level": "L2",
+      "stem": "— How much ____ do you need? — Two bottles.",
+      "options": [
+        { "key": "A", "text": "apple", "distractor": "apple 可数，要用 how many" },
+        { "key": "B", "text": "water", "answer": true },
+        { "key": "C", "text": "book", "distractor": "book 可数，要用 how many" },
+        { "key": "D", "text": "pen", "distractor": "pen 可数，要用 how many" }
+      ],
+      "explanation": "how much 问不可数名词的量，water 符合。",
+      "error_tag": "G-N01"
+    },
+    {
+      "id": "G-N01-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He gave me three pieces of advice.", "distractor": "正确" },
+        { "key": "B", "text": "There is some milk in the glass.", "distractor": "正确" },
+        { "key": "C", "text": "I have many homeworks to do today.", "answer": true },
+        { "key": "D", "text": "We need two bottles of water.", "distractor": "正确" }
+      ],
+      "explanation": "homework 不可数，应改为 much homework 或 a lot of homework。",
+      "error_tag": "G-N01"
+    },
+    {
+      "id": "G-N01-L3-02",
+      "level": "L3",
+      "stem": "— I'm thirsty. — Help yourself to some ____.",
+      "options": [
+        { "key": "A", "text": "orange", "distractor": "orange 作“橘子”可数，这里要饮料" },
+        { "key": "B", "text": "waters", "distractor": "water 没有复数" },
+        { "key": "C", "text": "water", "answer": true },
+        { "key": "D", "text": "a water", "distractor": "water 不可数，不能加 a" }
+      ],
+      "explanation": "解渴用不可数名词 water：some water。",
+      "error_tag": "G-N01"
+    }
+  ]
+}

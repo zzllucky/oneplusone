@@ -1,0 +1,84 @@
+{
+  "point_id": "G-C01",
+  "title": "关系代词的选择",
+  "questions": [
+    {
+      "id": "G-C01-L1-01",
+      "level": "L1",
+      "stem": "The man ____ helped me yesterday is a policeman.",
+      "options": [
+        { "key": "A", "text": "who", "answer": true },
+        { "key": "B", "text": "which", "distractor": "先行词是人" },
+        { "key": "C", "text": "whom", "distractor": "这里缺主语，whom 作宾语" },
+        { "key": "D", "text": "what", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "先行词是人、在从句中作主语 → who。",
+      "error_tag": "G-C01"
+    },
+    {
+      "id": "G-C01-L1-02",
+      "level": "L1",
+      "stem": "The film ____ we watched last night was wonderful.",
+      "options": [
+        { "key": "A", "text": "who", "distractor": "先行词是物" },
+        { "key": "B", "text": "which", "answer": true },
+        { "key": "C", "text": "what", "distractor": "定语从句不用 what" },
+        { "key": "D", "text": "whom", "distractor": "whom 指人" }
+      ],
+      "explanation": "先行词是物 → which（作宾语也可省略）。",
+      "error_tag": "G-C01"
+    },
+    {
+      "id": "G-C01-L2-01",
+      "level": "L2",
+      "stem": "The teacher ____ you met just now is our new headmaster.",
+      "options": [
+        { "key": "A", "text": "which", "distractor": "先行词是人" },
+        { "key": "B", "text": "who", "answer": true },
+        { "key": "C", "text": "what", "distractor": "定语从句不用 what" },
+        { "key": "D", "text": "whose", "distractor": "whose 后面要接名词" }
+      ],
+      "explanation": "先行词是人、在从句中作 met 的宾语 → who（也可 whom）。",
+      "error_tag": "G-C01"
+    },
+    {
+      "id": "G-C01-L2-02",
+      "level": "L2",
+      "stem": "The students ____ are in the classroom are from Class 2.",
+      "options": [
+        { "key": "A", "text": "which", "distractor": "先行词是人" },
+        { "key": "B", "text": "whose", "distractor": "whose 后面要接名词" },
+        { "key": "C", "text": "who", "answer": true },
+        { "key": "D", "text": "what", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "先行词是人、作主语 → who。",
+      "error_tag": "G-C01"
+    },
+    {
+      "id": "G-C01-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "The letter which I got this morning is from my aunt.", "distractor": "正确" },
+        { "key": "B", "text": "The boy who lives next door is my classmate.", "distractor": "正确" },
+        { "key": "C", "text": "The dog who was lost yesterday has been found.", "answer": true },
+        { "key": "D", "text": "The car that he drives is very expensive.", "distractor": "正确" }
+      ],
+      "explanation": "dog 是动物，要用 which / that，不用 who。",
+      "error_tag": "G-C01"
+    },
+    {
+      "id": "G-C01-L3-02",
+      "level": "L3",
+      "stem": "— Do you know the girl ____ is talking with Miss Li? — Yes, she is my cousin.",
+      "options": [
+        { "key": "A", "text": "who", "answer": true },
+        { "key": "B", "text": "which", "distractor": "先行词是人" },
+        { "key": "C", "text": "whom", "distractor": "这里缺主语" },
+        { "key": "D", "text": "whose", "distractor": "whose 后接名词" }
+      ],
+      "explanation": "先行词是人、作主语 → who。",
+      "error_tag": "G-C01"
+    }
+  ]
+}

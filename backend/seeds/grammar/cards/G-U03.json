@@ -1,0 +1,100 @@
+{
+  "id": "G-U03",
+  "type": "rule",
+  "module": "U",
+  "module_name": "数词",
+  "title": "分数与百分数",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "Two thirds of the students are girls.", "zh": "三分之二的学生是女生。" },
+      { "en": "About 60% of the land is covered with water.", "zh": "大约 60% 的陆地被水覆盖。" }
+    ],
+    "question": "“三分之二”为什么写成 two thirds，third 后面要加 s？",
+    "options": [
+      {
+        "key": "A",
+        "text": "因为分子 two 大于 1，分母的序数词要变复数加 s",
+        "feedback": "对！分子是 1 时 one third，大于 1 时 two thirds。"
+      },
+      {
+        "key": "B",
+        "text": "因为 three 本身是复数",
+        "feedback": "不对——是分母序数词加 s，跟 three 是不是复数没关系。"
+      },
+      {
+        "key": "C",
+        "text": "没有理由，是固定写法",
+        "feedback": "不对——有清楚的规则：分子大于 1，分母加 s。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "分数：分子用基数词，分母用序数词；分子大于 1 时分母加 s。分数 / 百分数 + of + 名词作主语时，谓语与 of 后面的名词保持一致",
+    "signals": ["one third", "two thirds", "three quarters", "60 percent", "分数 / 百分数 + of"],
+    "formula": "① 分子基数 + 分母序数（>1 加 s）：two thirds　② 1/4 = a quarter，3/4 = three quarters　③ 百分数：60% = sixty percent　④ 谓语看 of 后的名词：two thirds of the students are… / two thirds of the land is…",
+    "anchors": [
+      {
+        "en": "Two thirds of the students are from the city.",
+        "zh": "三分之二的学生来自城里。",
+        "note": "students 是复数 → are"
+      },
+      {
+        "en": "Two thirds of the land is covered with snow.",
+        "zh": "三分之二的土地被雪覆盖。",
+        "note": "land 不可数 → is"
+      }
+    ],
+    "trap": {
+      "wrong": "Two third of the students are girls.",
+      "right": "Two thirds of the students are girls.",
+      "why": "分子 two 大于 1，分母要加 s：thirds。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——分母加不加 s 看分子；谓语单复数看 of 后面的名词。",
+  "check": [
+    {
+      "id": "G-U03-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "About two ____ of the earth is covered with water.",
+      "options": [
+        { "key": "A", "text": "third", "distractor": "分子 two 大于 1，分母要加 s" },
+        { "key": "B", "text": "thirds", "answer": true },
+        { "key": "C", "text": "threes", "distractor": "分母要用序数词" },
+        { "key": "D", "text": "third's", "distractor": "这里不是所有格" }
+      ],
+      "explanation": "三分之二 → two thirds。",
+      "error_tag": "G-U03"
+    },
+    {
+      "id": "G-U03-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Two thirds of the students in our class ____ boys.",
+      "options": [
+        { "key": "A", "text": "are", "answer": true },
+        { "key": "B", "text": "is", "distractor": "of 后面 students 是复数，谓语用 are" },
+        { "key": "C", "text": "was", "distractor": "时态和数都不对" },
+        { "key": "D", "text": "be", "distractor": "be 要用 are" }
+      ],
+      "explanation": "of 后是复数 students → are。",
+      "error_tag": "G-U03"
+    },
+    {
+      "id": "G-U03-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "Three quarters of the work is done.", "answer": true },
+        { "key": "B", "text": "Three quarter of the work are done.", "distractor": "quarter 要用复数，且 work 不可数" },
+        { "key": "C", "text": "Three quarters of the work are done.", "distractor": "work 不可数，谓语用 is" },
+        { "key": "D", "text": "Three quarter of the work is done.", "distractor": "3/4 要用复数 quarters" }
+      ],
+      "explanation": "四分之三 = three quarters；work 不可数 → is。",
+      "error_tag": "G-U03"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "point_id": "G-B05",
+  "title": "易混动词辨析",
+  "questions": [
+    {
+      "id": "G-B05-L1-01",
+      "level": "L1",
+      "stem": "— How long can I ____ the magazine? — For two weeks.",
+      "options": [
+        { "key": "A", "text": "borrow", "distractor": "borrow 是短暂动作，不能接 how long" },
+        { "key": "B", "text": "keep", "answer": true },
+        { "key": "C", "text": "lend", "distractor": "lend 是借出，且不能接时间段" },
+        { "key": "D", "text": "buy", "distractor": "与答语“两周”不符" }
+      ],
+      "explanation": "与 how long / for + 时间段连用 → keep。",
+      "error_tag": "G-B05"
+    },
+    {
+      "id": "G-B05-L1-02",
+      "level": "L1",
+      "stem": "Can you ____ Chinese? We don't understand English.",
+      "options": [
+        { "key": "A", "text": "say", "distractor": "say 后面接说的内容" },
+        { "key": "B", "text": "speak", "answer": true },
+        { "key": "C", "text": "tell", "distractor": "tell 后面要接人" },
+        { "key": "D", "text": "talk", "distractor": "talk 是不及物动词" }
+      ],
+      "explanation": "说某种语言 → speak Chinese。",
+      "error_tag": "G-B05"
+    },
+    {
+      "id": "G-B05-L2-01",
+      "level": "L2",
+      "stem": "— Remember to ____ your homework to school tomorrow. — OK, I will.",
+      "options": [
+        { "key": "A", "text": "take", "distractor": "说话人在学校语境外，这里是“带来”" },
+        { "key": "B", "text": "bring", "answer": true },
+        { "key": "C", "text": "carry", "distractor": "carry 强调搬运重物" },
+        { "key": "D", "text": "fetch", "distractor": "fetch 是“去取来”，不合语境" }
+      ],
+      "explanation": "把作业带到学校来 → bring。",
+      "error_tag": "G-B05"
+    },
+    {
+      "id": "G-B05-L2-02",
+      "level": "L2",
+      "stem": "My grandma often ____ me stories before I go to bed.",
+      "options": [
+        { "key": "A", "text": "says", "distractor": "say 后面不能接人" },
+        { "key": "B", "text": "speaks", "distractor": "speak 后面接语言" },
+        { "key": "C", "text": "tells", "answer": true },
+        { "key": "D", "text": "talks", "distractor": "talk 是不及物动词" }
+      ],
+      "explanation": "tell sb stories（给某人讲故事）。",
+      "error_tag": "G-B05"
+    },
+    {
+      "id": "G-B05-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I borrowed a pen from my deskmate.", "distractor": "正确" },
+        { "key": "B", "text": "He lent his bike to me yesterday.", "distractor": "正确" },
+        { "key": "C", "text": "You can borrow the book for two weeks.", "answer": true },
+        { "key": "D", "text": "Please take an umbrella with you. It's raining.", "distractor": "正确" }
+      ],
+      "explanation": "borrow 是短暂动作，接时间段要改用 keep。",
+      "error_tag": "G-B05"
+    },
+    {
+      "id": "G-B05-L3-02",
+      "level": "L3",
+      "stem": "— What did the teacher ____ you just now? — She asked me to clean the blackboard.",
+      "options": [
+        { "key": "A", "text": "say", "distractor": "say 后面不能接人" },
+        { "key": "B", "text": "speak", "distractor": "speak 后面接语言" },
+        { "key": "C", "text": "tell", "answer": true },
+        { "key": "D", "text": "talk", "distractor": "talk 是不及物动词" }
+      ],
+      "explanation": "tell sb sth：老师对你说了什么。",
+      "error_tag": "G-B05"
+    }
+  ]
+}

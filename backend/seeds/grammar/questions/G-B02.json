@@ -1,0 +1,84 @@
+{
+  "point_id": "G-B02",
+  "title": "情态动词基本用法",
+  "questions": [
+    {
+      "id": "G-B02-L1-01",
+      "level": "L1",
+      "stem": "— ____ you ride a bike? — Yes, I can.",
+      "options": [
+        { "key": "A", "text": "May", "distractor": "答语是 I can，问句也要用 can" },
+        { "key": "B", "text": "Can", "answer": true },
+        { "key": "C", "text": "Must", "distractor": "答语不是 must" },
+        { "key": "D", "text": "Need", "distractor": "问能力用 can" }
+      ],
+      "explanation": "问能力用 Can you…?",
+      "error_tag": "G-B02"
+    },
+    {
+      "id": "G-B02-L1-02",
+      "level": "L1",
+      "stem": "You ____ be careful when you cross the road.",
+      "options": [
+        { "key": "A", "text": "can", "distractor": "语气不够，这里是“必须”" },
+        { "key": "B", "text": "must", "answer": true },
+        { "key": "C", "text": "may", "distractor": "may 是“可以”，语气太弱" },
+        { "key": "D", "text": "need", "distractor": "need 作情态动词多用于否定疑问" }
+      ],
+      "explanation": "过马路必须小心 → must。",
+      "error_tag": "G-B02"
+    },
+    {
+      "id": "G-B02-L2-01",
+      "level": "L2",
+      "stem": "— Must I finish the work today? — No, you ____. Tomorrow is OK.",
+      "options": [
+        { "key": "A", "text": "mustn't", "distractor": "mustn't 是“禁止”，这里要说“不必”" },
+        { "key": "B", "text": "don't have to", "answer": true },
+        { "key": "C", "text": "can't", "distractor": "can't 是“不能”，与 Tomorrow is OK 矛盾" },
+        { "key": "D", "text": "shouldn't", "distractor": "这里说的是“不必”，不是“不应该”" }
+      ],
+      "explanation": "不必 = needn't = don't have to。",
+      "error_tag": "G-B02"
+    },
+    {
+      "id": "G-B02-L2-02",
+      "level": "L2",
+      "stem": "Students ____ run in the hallways. It's a school rule.",
+      "options": [
+        { "key": "A", "text": "needn't", "distractor": "校规是禁止，不是“不必”" },
+        { "key": "B", "text": "mustn't", "answer": true },
+        { "key": "C", "text": "don't have to", "distractor": "语气不对，这里是明令禁止" },
+        { "key": "D", "text": "may not", "distractor": "表示“不允许”时语气不如 mustn't 强" }
+      ],
+      "explanation": "校规禁止 → mustn't。",
+      "error_tag": "G-B02"
+    },
+    {
+      "id": "G-B02-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "— Must I go now? — No, you needn't.", "distractor": "正确" },
+        { "key": "B", "text": "You mustn't swim in this river.", "distractor": "正确" },
+        { "key": "C", "text": "— May I come in? — Yes, please.", "distractor": "正确" },
+        { "key": "D", "text": "— Must I come tomorrow? — No, you mustn't.", "answer": true }
+      ],
+      "explanation": "“不必来”应回答 needn't，mustn't 是“不准来”。",
+      "error_tag": "G-B02"
+    },
+    {
+      "id": "G-B02-L3-02",
+      "level": "L3",
+      "stem": "— Can you come to my party tonight? — Sorry, I ____. I have to look after my sister.",
+      "options": [
+        { "key": "A", "text": "can't", "answer": true },
+        { "key": "B", "text": "mustn't", "distractor": "这里是“不能去”，不是“禁止去”" },
+        { "key": "C", "text": "needn't", "distractor": "needn't 是“不必”，与 sorry 矛盾" },
+        { "key": "D", "text": "may not", "distractor": "回答 Can you…? 用 can't" }
+      ],
+      "explanation": "不能去 → can't。",
+      "error_tag": "G-B02"
+    }
+  ]
+}

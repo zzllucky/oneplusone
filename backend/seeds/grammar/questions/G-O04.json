@@ -1,0 +1,84 @@
+{
+  "point_id": "G-O04",
+  "title": "否定转移与简化",
+  "questions": [
+    {
+      "id": "G-O04-L1-01",
+      "level": "L1",
+      "stem": "I ____ believe he ____ tell lies. He is an honest boy.",
+      "options": [
+        { "key": "A", "text": "don't; will", "answer": true },
+        { "key": "B", "text": "don't; won't", "distractor": "否定已转移，从句不能再否定" },
+        { "key": "C", "text": "do; won't", "distractor": "否定要转移到主句" },
+        { "key": "D", "text": "am not; will", "distractor": "believe 是实义动词，用 don't" }
+      ],
+      "explanation": "否定转移：I don't believe he will tell lies。",
+      "error_tag": "G-O04"
+    },
+    {
+      "id": "G-O04-L1-02",
+      "level": "L1",
+      "stem": "— Could you tell me how I can get to the zoo? — 这句话可以简化为：Could you tell me ____?",
+      "options": [
+        { "key": "A", "text": "how to get to the zoo", "answer": true },
+        { "key": "B", "text": "how getting to the zoo", "distractor": "要用 to do" },
+        { "key": "C", "text": "how can get to the zoo", "distractor": "结构错误" },
+        { "key": "D", "text": "to get how to the zoo", "distractor": "语序错误" }
+      ],
+      "explanation": "简化成 how to get to the zoo。",
+      "error_tag": "G-O04"
+    },
+    {
+      "id": "G-O04-L2-01",
+      "level": "L2",
+      "stem": "I don't think he is a teacher, ____?",
+      "options": [
+        { "key": "A", "text": "is he", "answer": true },
+        { "key": "B", "text": "isn't he", "distractor": "否定已转移，疑问部分用肯定" },
+        { "key": "C", "text": "do I", "distractor": "反意疑问句要针对从句提问" },
+        { "key": "D", "text": "don't I", "distractor": "要针对从句，且用肯定形式" }
+      ],
+      "explanation": "否定转移后的反意疑问句看从句：is he?",
+      "error_tag": "G-O04"
+    },
+    {
+      "id": "G-O04-L2-02",
+      "level": "L2",
+      "stem": "We don't suppose they ____ the match. They are much weaker.",
+      "options": [
+        { "key": "A", "text": "will win", "answer": true },
+        { "key": "B", "text": "won't win", "distractor": "否定已转移，从句不能再否定" },
+        { "key": "C", "text": "win", "distractor": "这里说将来的事，用 will win" },
+        { "key": "D", "text": "are winning", "distractor": "时态不合适" }
+      ],
+      "explanation": "否定转移：don't suppose they will win。",
+      "error_tag": "G-O04"
+    },
+    {
+      "id": "G-O04-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I don't think it will rain today.", "distractor": "正确" },
+        { "key": "B", "text": "She doesn't know where to go.", "distractor": "正确" },
+        { "key": "C", "text": "I think he isn't at home now.", "answer": true },
+        { "key": "D", "text": "Please tell me when to start.", "distractor": "正确" }
+      ],
+      "explanation": "应改为 I don't think he is at home now（否定转移）。",
+      "error_tag": "G-O04"
+    },
+    {
+      "id": "G-O04-L3-02",
+      "level": "L3",
+      "stem": "— I can't decide which one I should buy. — 简化后的说法是 ____.",
+      "options": [
+        { "key": "A", "text": "I can't decide which one to buy", "answer": true },
+        { "key": "B", "text": "I can't decide which one buying", "distractor": "要用 to do" },
+        { "key": "C", "text": "I can't decide to buy which one", "distractor": "语序错误" },
+        { "key": "D", "text": "I can't decide which to one buy", "distractor": "结构错误" }
+      ],
+      "explanation": "简化：which one to buy。",
+      "error_tag": "G-O04"
+    }
+  ]
+}

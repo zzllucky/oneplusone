@@ -1,0 +1,100 @@
+{
+  "id": "G-D01",
+  "type": "rule",
+  "module": "D",
+  "module_name": "副词",
+  "title": "副词的构成与分类",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "He runs very fast.", "zh": "他跑得非常快。" },
+      { "en": "She sings beautifully.", "zh": "她唱得很美。" }
+    ],
+    "question": "careful 的副词形式怎么写？",
+    "options": [
+      {
+        "key": "A",
+        "text": "carefully——直接在形容词后面加 ly",
+        "feedback": "对！绝大多数副词就是“形容词 + ly”。"
+      },
+      {
+        "key": "B",
+        "text": "carefull——双写 l 再加 y",
+        "feedback": "不对——careful 只有一个 l，直接加 ly 就是 carefully。"
+      },
+      {
+        "key": "C",
+        "text": "carefuly",
+        "feedback": "不对——拼写少了一个 l。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "副词多由“形容词 + ly”构成；按意义分为时间、地点、方式、频度、程度五类；fast / hard / late / early / high 等词形副同形",
+    "signals": ["-ly", "now", "yesterday", "here", "quickly", "often", "always", "very", "quite"],
+    "formula": "① 一般加 ly：quick → quickly　② 辅音 + y 变 i 加 ly：happy → happily　③ le 结尾去 e 加 y：terrible → terribly　④ 形副同形：fast, hard, late, early, high　⑤ 分类：时间 / 地点 / 方式 / 频度 / 程度",
+    "anchors": [
+      {
+        "en": "He works hard every day.",
+        "zh": "他每天努力工作。",
+        "note": "hard 形副同形"
+      },
+      {
+        "en": "She answered the question quickly.",
+        "zh": "她很快地回答了问题。",
+        "note": "形容词 + ly"
+      }
+    ],
+    "trap": {
+      "wrong": "He runs very fastly.",
+      "right": "He runs very fast.",
+      "why": "fast 本身就是副词，形副同形，不能再加 ly。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——形容词加 ly 变副词，但 fast / hard / late 这些词本来就身兼两职。",
+  "check": [
+    {
+      "id": "G-D01-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Please listen to the teacher ____.",
+      "options": [
+        { "key": "A", "text": "careful", "distractor": "修饰动词 listen 要用副词" },
+        { "key": "B", "text": "carefully", "answer": true },
+        { "key": "C", "text": "carelessly", "distractor": "意思变成了“粗心地”" },
+        { "key": "D", "text": "care", "distractor": "care 是名词或动词" }
+      ],
+      "explanation": "修饰动词用副词 carefully。",
+      "error_tag": "G-D01"
+    },
+    {
+      "id": "G-D01-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He is a ____ worker, and he works ____ every day.",
+      "options": [
+        { "key": "A", "text": "hard; hard", "answer": true },
+        { "key": "B", "text": "hardly; hardly", "distractor": "hardly 是“几乎不”，意思完全相反" },
+        { "key": "C", "text": "hard; hardly", "distractor": "hardly 是“几乎不”，与“努力”矛盾" },
+        { "key": "D", "text": "hardly; hard", "distractor": "第一空是形容词，要用 hard" }
+      ],
+      "explanation": "hard 形副同形；hardly 是另一个词，意为“几乎不”。",
+      "error_tag": "G-D01"
+    },
+    {
+      "id": "G-D01-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The girl writes very carefully.", "answer": true },
+        { "key": "B", "text": "The girl writes very careful.", "distractor": "修饰动词要用副词" },
+        { "key": "C", "text": "The girl writes very care.", "distractor": "care 不是副词" },
+        { "key": "D", "text": "The girl writes very carefull.", "distractor": "拼写错误" }
+      ],
+      "explanation": "修饰动词 write 用 carefully。",
+      "error_tag": "G-D01"
+    }
+  ]
+}

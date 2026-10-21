@@ -1,0 +1,84 @@
+{
+  "point_id": "G-N04",
+  "title": "名词所有格",
+  "questions": [
+    {
+      "id": "G-N04-L1-01",
+      "level": "L1",
+      "stem": "The ____ (students) classroom is on the second floor.",
+      "options": [
+        { "key": "A", "text": "student's", "distractor": "这里指多个学生共用的教室" },
+        { "key": "B", "text": "students'", "answer": true },
+        { "key": "C", "text": "students", "distractor": "表示所属要用所有格" },
+        { "key": "D", "text": "students's", "distractor": "已带 s 的复数只加撇号" }
+      ],
+      "explanation": "复数且已带 s，所有格只加 '：students' classroom。",
+      "error_tag": "G-N04"
+    },
+    {
+      "id": "G-N04-L1-02",
+      "level": "L1",
+      "stem": "The door ____ the room is broken.",
+      "options": [
+        { "key": "A", "text": "to", "distractor": "表示“……的”用 of" },
+        { "key": "B", "text": "of", "answer": true },
+        { "key": "C", "text": "in", "distractor": "介词意思不对" },
+        { "key": "D", "text": "with", "distractor": "介词意思不对" }
+      ],
+      "explanation": "无生命名词用 of 表示所属：the door of the room。",
+      "error_tag": "G-N04"
+    },
+    {
+      "id": "G-N04-L2-01",
+      "level": "L2",
+      "stem": "____ mothers are both doctors in the same hospital.",
+      "options": [
+        { "key": "A", "text": "Lily's and Lucy's", "answer": true },
+        { "key": "B", "text": "Lily and Lucy's", "distractor": "共同所有意味着一位妈妈，与 mothers are both 矛盾" },
+        { "key": "C", "text": "Lily and Lucy", "distractor": "缺少所有格" },
+        { "key": "D", "text": "Lily's and Lucy", "distractor": "结构不完整" }
+      ],
+      "explanation": "两位妈妈 → 各自所有，两个名词都加 's。",
+      "error_tag": "G-N04"
+    },
+    {
+      "id": "G-N04-L2-02",
+      "level": "L2",
+      "stem": "— Where are you going? — To my ____. He is ill in hospital.",
+      "options": [
+        { "key": "A", "text": "uncle", "distractor": "要用所有格表示“叔叔家”" },
+        { "key": "B", "text": "uncle's", "answer": true },
+        { "key": "C", "text": "uncles'", "distractor": "这里是一位叔叔，用单数所有格" },
+        { "key": "D", "text": "uncles", "distractor": "结构错误" }
+      ],
+      "explanation": "my uncle's 表示“我叔叔家”（省略了 house/home）。",
+      "error_tag": "G-N04"
+    },
+    {
+      "id": "G-N04-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "Today is March 8th, Women's Day.", "distractor": "正确" },
+        { "key": "B", "text": "The students' books are on the desk.", "distractor": "正确" },
+        { "key": "C", "text": "This is Lily and Lucy's mothers.", "answer": true },
+        { "key": "D", "text": "The window of the classroom is open.", "distractor": "正确" }
+      ],
+      "explanation": "两位妈妈是各自所有，应改为 Lily's and Lucy's mothers。",
+      "error_tag": "G-N04"
+    },
+    {
+      "id": "G-N04-L3-02",
+      "level": "L3",
+      "stem": "It's about ten ____ walk from my home to school.",
+      "options": [
+        { "key": "A", "text": "minute", "distractor": "ten 后面要用复数" },
+        { "key": "B", "text": "minutes'", "answer": true },
+        { "key": "C", "text": "minute's", "distractor": "十分钟是复数" },
+        { "key": "D", "text": "minutes", "distractor": "表示“十分钟的”要用所有格" }
+      ],
+      "explanation": "复数所有格：ten minutes' walk（步行十分钟的路）。",
+      "error_tag": "G-N04"
+    }
+  ]
+}

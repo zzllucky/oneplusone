@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T12",
+  "title": "主将从现",
+  "questions": [
+    {
+      "id": "G-T12-L1-01",
+      "level": "L1",
+      "stem": "If it ____ (not rain) tomorrow, we ____ to the park.",
+      "options": [
+        { "key": "A", "text": "doesn't rain; will go", "answer": true },
+        { "key": "B", "text": "won't rain; will go", "distractor": "if 从句不能用将来时" },
+        { "key": "C", "text": "doesn't rain; go", "distractor": "主句表示将来的结果，要用 will go" },
+        { "key": "D", "text": "isn't rain; will go", "distractor": "rain 是实义动词，否定用 doesn't rain" }
+      ],
+      "explanation": "主将从现：if 从句用 doesn't rain，主句用 will go。",
+      "error_tag": "G-T12"
+    },
+    {
+      "id": "G-T12-L1-02",
+      "level": "L1",
+      "stem": "I ____ (tell) him the news as soon as he ____ back.",
+      "options": [
+        { "key": "A", "text": "will tell; comes", "answer": true },
+        { "key": "B", "text": "tell; will come", "distractor": "两个空都反了" },
+        { "key": "C", "text": "will tell; will come", "distractor": "as soon as 从句不能用将来时" },
+        { "key": "D", "text": "tell; comes", "distractor": "主句要用将来时" }
+      ],
+      "explanation": "as soon as 引导时间从句用 comes，主句用 will tell。",
+      "error_tag": "G-T12"
+    },
+    {
+      "id": "G-T12-L2-01",
+      "level": "L2",
+      "stem": "She ____ (be) very happy if she ____ the exam.",
+      "options": [
+        { "key": "A", "text": "will be; passes", "answer": true },
+        { "key": "B", "text": "is; passes", "distractor": "主句说的是将来的结果" },
+        { "key": "C", "text": "will be; will pass", "distractor": "if 从句不能用将来时" },
+        { "key": "D", "text": "is; will pass", "distractor": "两个空都错了" }
+      ],
+      "explanation": "主句 will be，if 从句用一般现在时 passes。",
+      "error_tag": "G-T12"
+    },
+    {
+      "id": "G-T12-L2-02",
+      "level": "L2",
+      "stem": "We ____ (not start) the game until everyone ____ here.",
+      "options": [
+        { "key": "A", "text": "won't start; is", "answer": true },
+        { "key": "B", "text": "don't start; will be", "distractor": "until 从句不能用将来时，主句要用将来时" },
+        { "key": "C", "text": "won't start; will be", "distractor": "until 从句不能用将来时" },
+        { "key": "D", "text": "don't start; is", "distractor": "主句说的是将来的动作" }
+      ],
+      "explanation": "until 引导时间从句用 is，主句用 won't start。",
+      "error_tag": "G-T12"
+    },
+    {
+      "id": "G-T12-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "If it is sunny tomorrow, we will go out.", "distractor": "正确" },
+        { "key": "B", "text": "I'll wait here until he comes back.", "distractor": "正确" },
+        { "key": "C", "text": "We will start when the teacher will come.", "answer": true },
+        { "key": "D", "text": "If you work hard, you will pass the exam.", "distractor": "正确" }
+      ],
+      "explanation": "when 从句不能用 will come，应改为 when the teacher comes。",
+      "error_tag": "G-T12"
+    },
+    {
+      "id": "G-T12-L3-02",
+      "level": "L3",
+      "stem": "If you ____ (not hurry), you ____ the last bus.",
+      "options": [
+        { "key": "A", "text": "don't hurry; will miss", "answer": true },
+        { "key": "B", "text": "won't hurry; miss", "distractor": "if 从句不能用将来时" },
+        { "key": "C", "text": "don't hurry; miss", "distractor": "主句要用将来时表示结果" },
+        { "key": "D", "text": "won't hurry; will miss", "distractor": "if 从句不能用将来时" }
+      ],
+      "explanation": "if 从句用 don't hurry，主句用 will miss（赶不上是之后的结果）。",
+      "error_tag": "G-T12"
+    }
+  ]
+}

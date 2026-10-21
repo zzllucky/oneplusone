@@ -1,0 +1,84 @@
+{
+  "point_id": "G-F01",
+  "title": "不定式作宾语",
+  "questions": [
+    {
+      "id": "G-F01-L1-01",
+      "level": "L1",
+      "stem": "I hope ____ (see) you again soon.",
+      "options": [
+        { "key": "A", "text": "see", "distractor": "hope 后面要加 to" },
+        { "key": "B", "text": "to see", "answer": true },
+        { "key": "C", "text": "seeing", "distractor": "hope 后面不接 doing" },
+        { "key": "D", "text": "saw", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "hope + to do。",
+      "error_tag": "G-F01"
+    },
+    {
+      "id": "G-F01-L1-02",
+      "level": "L1",
+      "stem": "They plan ____ (visit) the museum next week.",
+      "options": [
+        { "key": "A", "text": "visit", "distractor": "plan 后面要加 to" },
+        { "key": "B", "text": "to visit", "answer": true },
+        { "key": "C", "text": "visiting", "distractor": "plan 后面不接 doing" },
+        { "key": "D", "text": "visited", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "plan + to do。",
+      "error_tag": "G-F01"
+    },
+    {
+      "id": "G-F01-L2-01",
+      "level": "L2",
+      "stem": "He refused ____ (answer) my question.",
+      "options": [
+        { "key": "A", "text": "answer", "distractor": "refuse 后面要加 to" },
+        { "key": "B", "text": "answering", "distractor": "refuse 后面不接 doing" },
+        { "key": "C", "text": "to answer", "answer": true },
+        { "key": "D", "text": "answered", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "refuse + to do。",
+      "error_tag": "G-F01"
+    },
+    {
+      "id": "G-F01-L2-02",
+      "level": "L2",
+      "stem": "We decided ____ (not go) there by bus.",
+      "options": [
+        { "key": "A", "text": "not go", "distractor": "缺少 to" },
+        { "key": "B", "text": "not to go", "answer": true },
+        { "key": "C", "text": "don't go", "distractor": "这不是谓语位置，不能用助动词" },
+        { "key": "D", "text": "to not go", "distractor": "否定词 not 要放在 to 前面" }
+      ],
+      "explanation": "不定式的否定：not to go（not 放在 to 前）。",
+      "error_tag": "G-F01"
+    },
+    {
+      "id": "G-F01-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I want to buy a new pen.", "distractor": "正确" },
+        { "key": "B", "text": "She hopes visiting Paris next year.", "answer": true },
+        { "key": "C", "text": "He decided to stay at home.", "distractor": "正确" },
+        { "key": "D", "text": "They plan to leave tomorrow.", "distractor": "正确" }
+      ],
+      "explanation": "hope 后面接 to do，应改为 She hopes to visit Paris。",
+      "error_tag": "G-F01"
+    },
+    {
+      "id": "G-F01-L3-02",
+      "level": "L3",
+      "stem": "— What do you want ____ when you grow up? — A doctor.",
+      "options": [
+        { "key": "A", "text": "to be", "answer": true },
+        { "key": "B", "text": "be", "distractor": "want 后面要加 to" },
+        { "key": "C", "text": "being", "distractor": "want 后面不接 doing" },
+        { "key": "D", "text": "are", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "want to be（想成为……）。",
+      "error_tag": "G-F01"
+    }
+  ]
+}

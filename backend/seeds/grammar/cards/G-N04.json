@@ -1,0 +1,100 @@
+{
+  "id": "G-N04",
+  "type": "rule",
+  "module": "N",
+  "module_name": "名词",
+  "title": "名词所有格",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "This is Tom and Jim's room.", "zh": "这是汤姆和吉姆（共有）的房间。" },
+      { "en": "These are Tom's and Jim's rooms.", "zh": "这些是汤姆的房间和吉姆的房间（各自的）。" }
+    ],
+    "question": "两句只差一个 's，意思有什么不同？",
+    "options": [
+      {
+        "key": "A",
+        "text": "第一句是两人共有一间房，第二句是两人各自的房间（共两间）",
+        "feedback": "对！只在最后加 's 是共同所有，两个都加是各自所有。"
+      },
+      {
+        "key": "B",
+        "text": "意思完全一样，只是写法不同",
+        "feedback": "不对——一个是两间房，一个是两间房，数量都不一样。"
+      },
+      {
+        "key": "C",
+        "text": "第二句更正式",
+        "feedback": "不对——差别在意思（共同 vs 各自），不在正式程度。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "有生命的东西用 's；无生命用 of；两人共同拥有只在最后一个词加 's，各自拥有则每个词都加 's",
+    "signals": ["'s", "of", "两个名词用 and 连接表示所属"],
+    "formula": "① 单数：Tom's book　② 复数已带 s：the students' classroom　③ 共同所有：Tom and Jim's room（一间）　④ 各自所有：Tom's and Jim's rooms（两间）　⑤ 无生命：the door of the room",
+    "anchors": [
+      {
+        "en": "This is Tom and Jim's father.",
+        "zh": "这是汤姆和吉姆的爸爸。",
+        "note": "共有一个爸爸"
+      },
+      {
+        "en": "They are Tom's and Jim's fathers.",
+        "zh": "他们分别是汤姆的爸爸和吉姆的爸爸。",
+        "note": "各自的爸爸"
+      }
+    ],
+    "trap": {
+      "wrong": "These are Tom and Jim's rooms.（想表达两人各自的房间）",
+      "right": "These are Tom's and Jim's rooms.",
+      "why": "想说“各自”时，两个名词都要加 's，而且中心词要变复数。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——共同还是各自，就看 's 加了几个：一个 = 共有，两个 = 各有一份。",
+  "check": [
+    {
+      "id": "G-N04-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "This is ____ (Lucy) new bike.",
+      "options": [
+        { "key": "A", "text": "Lucy", "distractor": "表示所属要加 's" },
+        { "key": "B", "text": "Lucys", "distractor": "结构错误" },
+        { "key": "C", "text": "Lucy's", "answer": true },
+        { "key": "D", "text": "Lucys'", "distractor": "这是复数的所有格，Lucy 是单数" }
+      ],
+      "explanation": "单数名词所有格加 's：Lucy's new bike。",
+      "error_tag": "G-N04"
+    },
+    {
+      "id": "G-N04-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "June 1st is ____ Day.",
+      "options": [
+        { "key": "A", "text": "Children", "distractor": "要用所有格表示“孩子们的”" },
+        { "key": "B", "text": "Children's", "answer": true },
+        { "key": "C", "text": "Childrens'", "distractor": "children 本身已是复数但不带 s" },
+        { "key": "D", "text": "Child's", "distractor": "儿童节是全体孩子的节日，用复数" }
+      ],
+      "explanation": "children 是不规则复数，所有格加 's：Children's Day。",
+      "error_tag": "G-N04"
+    },
+    {
+      "id": "G-N04-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Whose room is this? — It's ____. They live together.",
+      "options": [
+        { "key": "A", "text": "Tom and Jim's", "answer": true },
+        { "key": "B", "text": "Tom's and Jim's", "distractor": "“各自所有”意味着两间房，与 They live together 矛盾" },
+        { "key": "C", "text": "Tom's and Jim", "distractor": "结构不完整" },
+        { "key": "D", "text": "Tom and Jim", "distractor": "缺少所有格" }
+      ],
+      "explanation": "两人共住一间 → 共同所有，只在最后加 's。",
+      "error_tag": "G-N04"
+    }
+  ]
+}

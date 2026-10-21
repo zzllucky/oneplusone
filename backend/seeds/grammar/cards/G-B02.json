@@ -1,0 +1,100 @@
+{
+  "id": "G-B02",
+  "type": "rule",
+  "module": "B",
+  "module_name": "动词",
+  "title": "情态动词基本用法",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "— Must I finish it now? — No, you needn't.", "zh": "——我必须现在做完吗？——不，你不必。" },
+      { "en": "You mustn't play with fire.", "zh": "你不准玩火。" }
+    ],
+    "question": "— Must I come tomorrow? — No, you ____. 这里该怎么回答？",
+    "options": [
+      {
+        "key": "A",
+        "text": "needn't——“不必”，也可以用 don't have to",
+        "feedback": "对！Must I…? 的否定回答是“不必”，不是“不准”。"
+      },
+      {
+        "key": "B",
+        "text": "mustn't——“不准”",
+        "feedback": "不对——mustn't 是禁止，意思是“你不准来”，不是“你不必来”。"
+      },
+      {
+        "key": "C",
+        "text": "can't——“不能”",
+        "feedback": "不对——can't 是“不可能 / 不能够”，不是“不必”。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "can 表示能力或许可；may 表示请求许可；must 表示必须。Must I…? 的否定回答用 needn't / don't have to（不必）；mustn't 表示“禁止、不许”",
+    "signals": ["can", "may", "must", "needn't", "mustn't", "can't", "have to"],
+    "formula": "① Can you…? — Yes, I can. / No, I can't.　② May I…? — Yes, you may. / Sure.　③ Must I…? — Yes, you must. / No, you needn't（= don't have to）　④ mustn't = 不许、禁止",
+    "anchors": [
+      {
+        "en": "— Must I hand in my homework now? — No, you needn't.",
+        "zh": "——我必须现在交作业吗？——不，你不必。",
+        "note": "否定回答用 needn't"
+      },
+      {
+        "en": "You mustn't play football in the street.",
+        "zh": "你不许在街上踢足球。",
+        "note": "mustn't = 禁止"
+      }
+    ],
+    "trap": {
+      "wrong": "— Must I go now? — No, you mustn't.",
+      "right": "— Must I go now? — No, you needn't.",
+      "why": "“不必”是 needn't；mustn't 是“禁止”，意思完全相反。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——Must 问句的否定回答是 needn't；mustn't 是“禁止”，两者别混。",
+  "check": [
+    {
+      "id": "G-B02-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Must I clean the room now? — No, you ____. You can do it after lunch.",
+      "options": [
+        { "key": "A", "text": "mustn't", "distractor": "mustn't 是“禁止”，这里要说“不必”" },
+        { "key": "B", "text": "needn't", "answer": true },
+        { "key": "C", "text": "can't", "distractor": "can't 是“不能”，答语说可以午后再做" },
+        { "key": "D", "text": "shouldn't", "distractor": "答语是“不必”，不是“不应该”" }
+      ],
+      "explanation": "不必现在做 → needn't。",
+      "error_tag": "G-B02"
+    },
+    {
+      "id": "G-B02-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "You ____ play with fire. It's very dangerous.",
+      "options": [
+        { "key": "A", "text": "mustn't", "answer": true },
+        { "key": "B", "text": "needn't", "distractor": "这里是“禁止玩火”，不是“不必”" },
+        { "key": "C", "text": "wouldn't", "distractor": "不表示禁止" },
+        { "key": "D", "text": "don't", "distractor": "语气不够，这里是明令禁止" }
+      ],
+      "explanation": "危险 → 禁止：mustn't。",
+      "error_tag": "G-B02"
+    },
+    {
+      "id": "G-B02-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— ____ I use your pen for a minute? — Sure, here you are.",
+      "options": [
+        { "key": "A", "text": "Must", "distractor": "must 是“必须”，不是请求许可" },
+        { "key": "B", "text": "May", "answer": true },
+        { "key": "C", "text": "Need", "distractor": "need 是“需要”，不合语境" },
+        { "key": "D", "text": "Will", "distractor": "will I 不用于请求许可" }
+      ],
+      "explanation": "请求许可用 May I…?",
+      "error_tag": "G-B02"
+    }
+  ]
+}

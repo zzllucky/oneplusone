@@ -1,0 +1,100 @@
+{
+  "id": "G-T15",
+  "type": "rule",
+  "module": "T",
+  "module_name": "过去将来时",
+  "title": "宾语从句的时态呼应",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "He says he is busy.", "zh": "他说他很忙。" },
+      { "en": "He said he was busy.", "zh": "他（当时）说他很忙。" }
+    ],
+    "question": "意思几乎一样，为什么第二句的 is 变成了 was？",
+    "options": [
+      {
+        "key": "A",
+        "text": "因为主句变成过去时，从句的时态要跟着后退一格",
+        "feedback": "对！这条规矩叫“时态呼应”：主过从过。"
+      },
+      {
+        "key": "B",
+        "text": "因为他现在不忙了",
+        "feedback": "不对——句子只说他当时说了什么，没交代现在忙不忙。"
+      },
+      {
+        "key": "C",
+        "text": "因为 said 后面必须接过去式",
+        "feedback": "不对——如果从句是客观真理，就永远用现在时（见下面的“坑”）。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "主句是过去时，宾语从句的时态要相应后退一格（现在→过去，将来→过去将来）",
+    "signals": ["said", "told", "asked", "thought", "knew"],
+    "formula": "一般现在 → 一般过去　一般将来 → 过去将来（would）　现在完成 → 过去完成　**客观真理不退格**",
+    "anchors": [
+      {
+        "en": "He said he was very busy at that time.",
+        "zh": "他说他那时很忙。",
+        "note": "is → was"
+      },
+      {
+        "en": "She said she would come the next day.",
+        "zh": "她说她第二天会来。",
+        "note": "will → would"
+      }
+    ],
+    "trap": {
+      "wrong": "The teacher said the earth moved around the sun.",
+      "right": "The teacher said the earth moves around the sun.",
+      "why": "客观真理永远用一般现在时，不管主句是什么时态。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住“主过从过，真理不倒退”这八个字。",
+  "check": [
+    {
+      "id": "G-T15-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He told me he ____ very busy at that time.",
+      "options": [
+        { "key": "A", "text": "is", "distractor": "主句是过去时，从句要退一格" },
+        { "key": "B", "text": "was", "answer": true },
+        { "key": "C", "text": "will be", "distractor": "at that time 说的是当时，不是将来" },
+        { "key": "D", "text": "has been", "distractor": "现在完成时要退成过去完成时" }
+      ],
+      "explanation": "主句 told 是过去时，从句的一般现在时 is 退成一般过去 was。",
+      "error_tag": "G-T15"
+    },
+    {
+      "id": "G-T15-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He said he is very tired.", "distractor": "主句过去时，is 要退成 was" },
+        { "key": "B", "text": "He said he was very tired.", "answer": true },
+        { "key": "C", "text": "He said he has been very tired.", "distractor": "现在完成时要退成 had been" },
+        { "key": "D", "text": "He said he will be very tired.", "distractor": "will 要退成 would" }
+      ],
+      "explanation": "主句 said 是过去时，从句用 was。",
+      "error_tag": "G-T15"
+    },
+    {
+      "id": "G-T15-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The teacher told us the moon ____ around the earth.",
+      "options": [
+        { "key": "A", "text": "moved", "distractor": "客观真理不退格" },
+        { "key": "B", "text": "moves", "answer": true },
+        { "key": "C", "text": "will move", "distractor": "客观真理不用将来时" },
+        { "key": "D", "text": "is moving", "distractor": "客观真理不用进行时" }
+      ],
+      "explanation": "月亮绕地球转是客观真理，不管主句什么时态，都用一般现在时 moves。",
+      "error_tag": "G-T15"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "G-V04",
+  "type": "rule",
+  "module": "V",
+  "module_name": "被动语态",
+  "title": "完成时的被动",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "The work has been finished.", "zh": "工作已经完成了。" },
+      { "en": "The room had been cleaned before we came.", "zh": "我们来之前房间已经打扫好了。" }
+    ],
+    "question": "“已经被完成”为什么写成 has been finished，中间那个 been 是哪来的？",
+    "options": [
+      {
+        "key": "A",
+        "text": "been 是 be 的过去分词：完成时 + 被动，两个都要体现",
+        "feedback": "对！have/has 管完成时，been 管被动，最后再接真正的过去分词。"
+      },
+      {
+        "key": "B",
+        "text": "因为是被动，所以要加 been",
+        "feedback": "不对——一般时的被动只用 be（is/was），只有完成时才有 been。"
+      },
+      {
+        "key": "C",
+        "text": "因为句子里有两个动词",
+        "feedback": "不对——动词多少不是判据，关键是有没有“到现在为止已经……”的意思。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "完成时的被动 = have / has / had + been + 过去分词",
+    "signals": ["already", "yet", "just", "so far", "by the time"],
+    "formula": "现在完成被动：have / has + been + done　过去完成被动：had + been + done",
+    "anchors": [
+      {
+        "en": "The work has been finished.",
+        "zh": "工作已经完成了。",
+        "note": "has（完成时）+ been（被动）+ finished"
+      },
+      {
+        "en": "The room had been cleaned before we came.",
+        "zh": "我们来之前房间已经打扫好了。",
+        "note": "参照点是过去，用 had been"
+      }
+    ],
+    "trap": {
+      "wrong": "The work has be finished.",
+      "right": "The work has been finished.",
+      "why": "has 后面要接 be 的过去分词 been，不是原形 be。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住：完成时被动 = have/has/had + been + 过去分词，been 一个字都不能少。",
+  "check": [
+    {
+      "id": "G-V04-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The problem ____ (solve) already.",
+      "options": [
+        { "key": "A", "text": "has solved", "distractor": "问题是被解决的" },
+        { "key": "B", "text": "has been solved", "answer": true },
+        { "key": "C", "text": "is solved", "distractor": "already 提示用完成时" },
+        { "key": "D", "text": "was solved", "distractor": "already 提示用完成时" }
+      ],
+      "explanation": "已经被解决，用 has been solved。",
+      "error_tag": "G-V04"
+    },
+    {
+      "id": "G-V04-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "All the tickets ____ (sell) out by the time we got there.",
+      "options": [
+        { "key": "A", "text": "sold", "distractor": "票是被卖的" },
+        { "key": "B", "text": "had been sold", "answer": true },
+        { "key": "C", "text": "have been sold", "distractor": "参照点是过去（got there）" },
+        { "key": "D", "text": "were sold", "distractor": "by the time 提示用完成时" }
+      ],
+      "explanation": "到我们到达时票已经售完，用 had been sold out。",
+      "error_tag": "G-V04"
+    },
+    {
+      "id": "G-V04-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The house has been built.", "answer": true },
+        { "key": "B", "text": "The house has be built.", "distractor": "has 后要接 been" },
+        { "key": "C", "text": "The house has been build.", "distractor": "been 后要接过去分词 built" },
+        { "key": "D", "text": "The house has being built.", "distractor": "完成时被动不用 being" }
+      ],
+      "explanation": "现在完成时被动：has been built。",
+      "error_tag": "G-V04"
+    }
+  ]
+}

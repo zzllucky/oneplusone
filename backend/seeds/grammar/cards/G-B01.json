@@ -1,0 +1,101 @@
+{
+  "id": "G-B01",
+  "type": "rule",
+  "module": "B",
+  "module_name": "动词",
+  "title": "动词分类",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "She looks happy today.", "zh": "她今天看起来很高兴。" },
+      { "en": "The soup tastes good.", "zh": "这汤尝起来不错。" },
+      { "en": "You must go now.", "zh": "你现在必须走了。" }
+    ],
+    "question": "“She looks happy.” 为什么用形容词 happy，而不是副词 happily？",
+    "options": [
+      {
+        "key": "A",
+        "text": "look 在这里是系动词，后面用形容词作表语，说明主语的状态",
+        "feedback": "对！look / sound / smell / taste / feel 都是系动词，后面跟形容词。"
+      },
+      {
+        "key": "B",
+        "text": "因为主语是 she",
+        "feedback": "不对——跟主语是谁无关，跟 look 是系动词有关。"
+      },
+      {
+        "key": "C",
+        "text": "两种说法都对",
+        "feedback": "不对——looks happily 是错的，副词不能说明主语的状态。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "动词分四类：实义动词（及物/不及物）、系动词（后面接形容词作表语）、助动词（be / do / have，帮助构成时态和疑问否定）、情态动词（后面接动词原形）",
+    "signals": ["look", "sound", "smell", "taste", "feel", "become", "get", "turn", "keep", "can", "may", "must", "be", "do", "have"],
+    "formula": "① 系动词 + 形容词：The food tastes delicious.　② 情态动词 + 动词原形：He can swim.　③ 助动词 do / does / did + 动词原形（构成疑问、否定）",
+    "anchors": [
+      {
+        "en": "The soup smells good.",
+        "zh": "这汤闻起来很香。",
+        "note": "smell 是系动词 + 形容词 good"
+      },
+      {
+        "en": "The leaves turn yellow in autumn.",
+        "zh": "秋天树叶变黄。",
+        "note": "turn 是系动词 + 形容词 yellow"
+      }
+    ],
+    "trap": {
+      "wrong": "The food tastes deliciously.",
+      "right": "The food tastes delicious.",
+      "why": "taste 是系动词，后面用形容词 delicious，不用副词。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——系动词后面跟形容词；情态动词后面跟动词原形。",
+  "check": [
+    {
+      "id": "G-B01-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The soup ____ good. I'd like some more.",
+      "options": [
+        { "key": "A", "text": "tastes", "answer": true },
+        { "key": "B", "text": "is tasting", "distractor": "taste 是系动词，一般不用进行时" },
+        { "key": "C", "text": "tasting", "distractor": "句子缺少谓语" },
+        { "key": "D", "text": "taste", "distractor": "主语 the soup 是第三人称单数" }
+      ],
+      "explanation": "taste 作系动词，第三人称单数加 s：tastes good。",
+      "error_tag": "G-B01"
+    },
+    {
+      "id": "G-B01-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "This kind of cloth ____ very soft.",
+      "options": [
+        { "key": "A", "text": "feels", "answer": true },
+        { "key": "B", "text": "is feeling", "distractor": "feel 作系动词一般不用进行时" },
+        { "key": "C", "text": "feeling", "distractor": "句子缺少谓语" },
+        { "key": "D", "text": "feel", "distractor": "主语是第三人称单数" }
+      ],
+      "explanation": "feel 作系动词 + 形容词 soft。",
+      "error_tag": "G-B01"
+    },
+    {
+      "id": "G-B01-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "She looks happy today.", "answer": true },
+        { "key": "B", "text": "She looks happily today.", "distractor": "系动词后面用形容词，不用副词" },
+        { "key": "C", "text": "She is looking happily today.", "distractor": "look 作系动词不用进行时，也不用副词" },
+        { "key": "D", "text": "She look happy today.", "distractor": "主语是第三人称单数，look 要加 s" }
+      ],
+      "explanation": "look 是系动词，后接形容词 happy。",
+      "error_tag": "G-B01"
+    }
+  ]
+}

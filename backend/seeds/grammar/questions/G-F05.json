@@ -1,0 +1,84 @@
+{
+  "point_id": "G-F05",
+  "title": "疑问词 + to do / too…to / enough to",
+  "questions": [
+    {
+      "id": "G-F05-L1-01",
+      "level": "L1",
+      "stem": "Can you tell me ____ to use this machine?",
+      "options": [
+        { "key": "A", "text": "what", "distractor": "问的是使用方法，不是“什么”" },
+        { "key": "B", "text": "how", "answer": true },
+        { "key": "C", "text": "which", "distractor": "这里没有选择范围" },
+        { "key": "D", "text": "why", "distractor": "不是问原因" }
+      ],
+      "explanation": "怎么用这台机器 → how to use。",
+      "error_tag": "G-F05"
+    },
+    {
+      "id": "G-F05-L1-02",
+      "level": "L1",
+      "stem": "The room is ____ small ____ hold so many people.",
+      "options": [
+        { "key": "A", "text": "too; to", "answer": true },
+        { "key": "B", "text": "so; that", "distractor": "so…that 后面要接从句" },
+        { "key": "C", "text": "enough; to", "distractor": "enough 要放在形容词后面" },
+        { "key": "D", "text": "very; to", "distractor": "very 不构成此结构" }
+      ],
+      "explanation": "太小装不下这么多人 → too small to hold。",
+      "error_tag": "G-F05"
+    },
+    {
+      "id": "G-F05-L2-01",
+      "level": "L2",
+      "stem": "He is strong ____ to carry the heavy box by himself.",
+      "options": [
+        { "key": "A", "text": "enough", "answer": true },
+        { "key": "B", "text": "too", "distractor": "too…to 表示“太……而不能”，意思相反" },
+        { "key": "C", "text": "very", "distractor": "very 不与 to do 构成此结构" },
+        { "key": "D", "text": "so", "distractor": "so 要搭配 that 从句" }
+      ],
+      "explanation": "足够强壮能搬动 → strong enough to carry。",
+      "error_tag": "G-F05"
+    },
+    {
+      "id": "G-F05-L2-02",
+      "level": "L2",
+      "stem": "— ____ to start the meeting? — Let's start at eight.",
+      "options": [
+        { "key": "A", "text": "What", "distractor": "答语是时间" },
+        { "key": "B", "text": "When", "answer": true },
+        { "key": "C", "text": "Where", "distractor": "答语是时间，不是地点" },
+        { "key": "D", "text": "How", "distractor": "问的不是方式" }
+      ],
+      "explanation": "答语是八点，问的是什么时候 → when to start。",
+      "error_tag": "G-F05"
+    },
+    {
+      "id": "G-F05-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "The tea is too hot to drink.", "distractor": "正确" },
+        { "key": "B", "text": "She is careful enough to do the job.", "distractor": "正确" },
+        { "key": "C", "text": "I don't know where to go.", "distractor": "正确" },
+        { "key": "D", "text": "The desk is too heavy for him to carry it.", "answer": true }
+      ],
+      "explanation": "the desk 已经是 carry 的逻辑宾语，末尾不能再加 it。",
+      "error_tag": "G-F05"
+    },
+    {
+      "id": "G-F05-L3-02",
+      "level": "L3",
+      "stem": "— Could you tell me ____ to do next? — Sure. Let's clean the classroom.",
+      "options": [
+        { "key": "A", "text": "what", "answer": true },
+        { "key": "B", "text": "how", "distractor": "how to do 后面要接宾语，这里没有" },
+        { "key": "C", "text": "when", "distractor": "答语是做什么，不是时间" },
+        { "key": "D", "text": "where", "distractor": "答语是做什么，不是地点" }
+      ],
+      "explanation": "问“下一步做什么” → what to do。",
+      "error_tag": "G-F05"
+    }
+  ]
+}

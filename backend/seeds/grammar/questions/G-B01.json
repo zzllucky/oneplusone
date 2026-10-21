@@ -1,0 +1,84 @@
+{
+  "point_id": "G-B01",
+  "title": "动词分类",
+  "questions": [
+    {
+      "id": "G-B01-L1-01",
+      "level": "L1",
+      "stem": "The music ____ beautiful. Who is playing it?",
+      "options": [
+        { "key": "A", "text": "sounds", "answer": true },
+        { "key": "B", "text": "is sounding", "distractor": "sound 作系动词不用进行时" },
+        { "key": "C", "text": "sound", "distractor": "主语是第三人称单数" },
+        { "key": "D", "text": "sounding", "distractor": "句子缺少谓语" }
+      ],
+      "explanation": "sound 是系动词，后接形容词 beautiful。",
+      "error_tag": "G-B01"
+    },
+    {
+      "id": "G-B01-L1-02",
+      "level": "L1",
+      "stem": "The days are ____ longer in spring.",
+      "options": [
+        { "key": "A", "text": "getting", "answer": true },
+        { "key": "B", "text": "get", "distractor": "are 后面要接 -ing 构成进行时" },
+        { "key": "C", "text": "gets", "distractor": "are 后面不接第三人称单数" },
+        { "key": "D", "text": "got", "distractor": "结构错误" }
+      ],
+      "explanation": "get 作系动词“变得”，are getting longer = 正在变长。",
+      "error_tag": "G-B01"
+    },
+    {
+      "id": "G-B01-L2-01",
+      "level": "L2",
+      "stem": "He ____ swim when he was five years old.",
+      "options": [
+        { "key": "A", "text": "can", "distractor": "过去时间要用 could" },
+        { "key": "B", "text": "could", "answer": true },
+        { "key": "C", "text": "may", "distractor": "这里讲能力，不是许可" },
+        { "key": "D", "text": "must", "distractor": "意思不对" }
+      ],
+      "explanation": "过去的能力用 could（can 的过去式）。",
+      "error_tag": "G-B01"
+    },
+    {
+      "id": "G-B01-L2-02",
+      "level": "L2",
+      "stem": "The milk ____ sour. Don't drink it.",
+      "options": [
+        { "key": "A", "text": "smells", "answer": true },
+        { "key": "B", "text": "is smelling", "distractor": "smell 作系动词不用进行时" },
+        { "key": "C", "text": "smell", "distractor": "主语是第三人称单数" },
+        { "key": "D", "text": "smelling", "distractor": "句子缺少谓语" }
+      ],
+      "explanation": "smell 是系动词 + 形容词 sour。",
+      "error_tag": "G-B01"
+    },
+    {
+      "id": "G-B01-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "The story sounds interesting.", "distractor": "正确" },
+        { "key": "B", "text": "He became a famous doctor at last.", "distractor": "正确" },
+        { "key": "C", "text": "The food is tasted delicious.", "answer": true },
+        { "key": "D", "text": "Her face turned red.", "distractor": "正确" }
+      ],
+      "explanation": "taste 作系动词不用被动，应改为 The food tastes delicious。",
+      "error_tag": "G-B01"
+    },
+    {
+      "id": "G-B01-L3-02",
+      "level": "L3",
+      "stem": "— What does your sister ____? — She is tall and pretty.",
+      "options": [
+        { "key": "A", "text": "look", "distractor": "问长相要说 look like" },
+        { "key": "B", "text": "look like", "answer": true },
+        { "key": "C", "text": "look at", "distractor": "look at 是“看……”" },
+        { "key": "D", "text": "is like", "distractor": "前面已有 does，动词要用原形" }
+      ],
+      "explanation": "问长相：What does sb look like?",
+      "error_tag": "G-B01"
+    }
+  ]
+}

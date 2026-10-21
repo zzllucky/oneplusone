@@ -1,0 +1,100 @@
+{
+  "id": "G-F01",
+  "type": "rule",
+  "module": "F",
+  "module_name": "不定式",
+  "title": "不定式作宾语",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I want to buy a new bike.", "zh": "我想买一辆新自行车。" },
+      { "en": "She decided to study harder.", "zh": "她决定更努力地学习。" }
+    ],
+    "question": "want、decide 后面的动词为什么要加 to？",
+    "options": [
+      {
+        "key": "A",
+        "text": "因为这两个动词后面只接 to do，不接 doing",
+        "feedback": "对！want / decide / hope 这类词后面固定接 to do，这是搭配，没有为什么。"
+      },
+      {
+        "key": "B",
+        "text": "因为句子说的是将来的事",
+        "feedback": "不对——to 在这里不是“将来”的标志，而是动词要求的搭配。"
+      },
+      {
+        "key": "C",
+        "text": "因为 to 表示方向",
+        "feedback": "不对——这里 to 是不定式的标志，不表示方向。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "want / hope / decide / plan / refuse / agree / promise 等动词后面接 to do",
+    "signals": ["want", "hope", "decide", "plan", "refuse", "agree", "promise", "choose", "learn"],
+    "formula": "动词 + to do　否定：动词 + not to do（如 decide not to go）",
+    "anchors": [
+      {
+        "en": "I want to buy a new bike.",
+        "zh": "我想买一辆新自行车。",
+        "note": "want + to do"
+      },
+      {
+        "en": "He decided to join the music club.",
+        "zh": "他决定加入音乐俱乐部。",
+        "note": "decide + to do"
+      }
+    ],
+    "trap": {
+      "wrong": "I want buy a new bike.",
+      "right": "I want to buy a new bike.",
+      "why": "want 后面必须接 to do，漏掉 to 是最常见的错。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——这批词（want/hope/decide/plan）后面一律 to do，记住别漏 to。",
+  "check": [
+    {
+      "id": "G-F01-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "She wants ____ (be) a doctor when she grows up.",
+      "options": [
+        { "key": "A", "text": "be", "distractor": "want 后面要加 to" },
+        { "key": "B", "text": "to be", "answer": true },
+        { "key": "C", "text": "being", "distractor": "want 后面不接 doing" },
+        { "key": "D", "text": "is", "distractor": "这不是谓语位置，不能用 is" }
+      ],
+      "explanation": "want + to be。",
+      "error_tag": "G-F01"
+    },
+    {
+      "id": "G-F01-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "They decided ____ (go) there by bus.",
+      "options": [
+        { "key": "A", "text": "go", "distractor": "decide 后面要加 to" },
+        { "key": "B", "text": "going", "distractor": "decide 后面不接 doing" },
+        { "key": "C", "text": "to go", "answer": true },
+        { "key": "D", "text": "went", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "decide + to go。",
+      "error_tag": "G-F01"
+    },
+    {
+      "id": "G-F01-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He hopes to visit Beijing.", "answer": true },
+        { "key": "B", "text": "He hopes visit Beijing.", "distractor": "hope 后面要加 to" },
+        { "key": "C", "text": "He hopes visiting Beijing.", "distractor": "hope 后面不接 doing" },
+        { "key": "D", "text": "He hopes visited Beijing.", "distractor": "hope 后面接 to do" }
+      ],
+      "explanation": "hope + to visit。",
+      "error_tag": "G-F01"
+    }
+  ]
+}

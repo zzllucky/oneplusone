@@ -1,0 +1,100 @@
+{
+  "id": "G-D03",
+  "type": "rule",
+  "module": "D",
+  "module_name": "副词",
+  "title": "形容词与副词辨析",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "He is a good student.", "zh": "他是个好学生。" },
+      { "en": "He speaks English well.", "zh": "他英语说得很好。" }
+    ],
+    "question": "“他英语说得很好”，这里用 good 还是 well？",
+    "options": [
+      {
+        "key": "A",
+        "text": "well——修饰动词 speak 要用副词",
+        "feedback": "对！形修名、副修动，说得“好”是修饰动作，用 well。"
+      },
+      {
+        "key": "B",
+        "text": "good——因为“好”就是 good",
+        "feedback": "不对——good 是形容词，只能修饰名词或跟在系动词后，不能修饰动词。"
+      },
+      {
+        "key": "C",
+        "text": "两个都可以",
+        "feedback": "不对——修饰动词只能用 well，用 good 是错的。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "形容词修饰名词，或位于系动词之后作表语；副词修饰动词、形容词、其他副词或整个句子。well 作形容词时只表示“身体好”",
+    "signals": ["good / well", "careful / carefully", "quick / quickly", "real / really", "系动词 + 形容词"],
+    "formula": "① 形修名：a good student　② 系动词 + 形：The food tastes good.　③ 副修动：He studies well.　④ 副修形：very good　⑤ I am well.（身体好，well 作形容词）",
+    "anchors": [
+      {
+        "en": "She is a careful girl and does everything carefully.",
+        "zh": "她是个细心的女孩，做什么都很认真。",
+        "note": "形修名、副修动"
+      },
+      {
+        "en": "I didn't feel well yesterday.",
+        "zh": "我昨天身体不舒服。",
+        "note": "well 表身体好"
+      }
+    ],
+    "trap": {
+      "wrong": "He speaks English very good.",
+      "right": "He speaks English very well.",
+      "why": "修饰动词 speak 要用副词 well。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——形修名、副修动；系动词后面还是形容词，只有说身体好时才用 well。",
+  "check": [
+    {
+      "id": "G-D03-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— How are you today? — I'm very ____, thank you.",
+      "options": [
+        { "key": "A", "text": "good", "distractor": "说身体状况通常用 well" },
+        { "key": "B", "text": "well", "answer": true },
+        { "key": "C", "text": "better", "distractor": "这里没有比较对象" },
+        { "key": "D", "text": "nicely", "distractor": "nicely 不用于描述身体" }
+      ],
+      "explanation": "描述身体好用 well（作形容词）。",
+      "error_tag": "G-D03"
+    },
+    {
+      "id": "G-D03-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The soup smells ____. I want to try some.",
+      "options": [
+        { "key": "A", "text": "good", "answer": true },
+        { "key": "B", "text": "well", "distractor": "smell 是系动词，后面用形容词" },
+        { "key": "C", "text": "nicely", "distractor": "系动词后用形容词" },
+        { "key": "D", "text": "badly", "distractor": "与“我想尝尝”矛盾，且要用形容词" }
+      ],
+      "explanation": "系动词 smell + 形容词 good。",
+      "error_tag": "G-D03"
+    },
+    {
+      "id": "G-D03-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He is a careful worker and works carefully.", "answer": true },
+        { "key": "B", "text": "He is a carefully worker and works carefully.", "distractor": "修饰名词 worker 要用形容词" },
+        { "key": "C", "text": "He is a careful worker and works careful.", "distractor": "修饰动词要用副词" },
+        { "key": "D", "text": "He is a carefully worker and works careful.", "distractor": "两处都错" }
+      ],
+      "explanation": "形修名（careful worker）、副修动（works carefully）。",
+      "error_tag": "G-D03"
+    }
+  ]
+}

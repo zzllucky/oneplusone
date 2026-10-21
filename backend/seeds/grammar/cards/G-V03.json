@@ -1,0 +1,100 @@
+{
+  "id": "G-V03",
+  "type": "rule",
+  "module": "V",
+  "module_name": "被动语态",
+  "title": "含情态动词的被动",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "The work must be finished today.", "zh": "这项工作今天必须完成。" },
+      { "en": "The bike can be repaired here.", "zh": "这辆自行车可以在这里修。" }
+    ],
+    "question": "must、can 后面跟的被动结构长什么样？",
+    "options": [
+      {
+        "key": "A",
+        "text": "情态动词 + be + 过去分词，be 永远用原形",
+        "feedback": "对！must / can / should 后面一律接 be，不随人称或时态变化。"
+      },
+      {
+        "key": "B",
+        "text": "情态动词 + is/are + 过去分词",
+        "feedback": "不对——情态动词后面只能用动词原形，is / are 不行。"
+      },
+      {
+        "key": "C",
+        "text": "情态动词 + been + 过去分词",
+        "feedback": "不对——been 不能接在情态动词后面。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "含情态动词的被动 = 情态动词 + be + 过去分词，be 永远是原形",
+    "signals": ["must", "can", "should", "may", "have to"],
+    "formula": "must / can / should / may + be + done　否定：mustn't / can't / shouldn't + be + done",
+    "anchors": [
+      {
+        "en": "Homework must be finished before nine.",
+        "zh": "作业必须在九点前完成。",
+        "note": "must + be + finished"
+      },
+      {
+        "en": "The problem can be solved in this way.",
+        "zh": "这个问题可以用这种方法解决。",
+        "note": "can + be + solved"
+      }
+    ],
+    "trap": {
+      "wrong": "The work must is finished today.",
+      "right": "The work must be finished today.",
+      "why": "情态动词后面只能用原形 be，不能接 is / are / was。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住：情态动词后面永远是一个原形 be，别的都不行。",
+  "check": [
+    {
+      "id": "G-V03-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Trees should ____ (plant) in spring.",
+      "options": [
+        { "key": "A", "text": "plant", "distractor": "树是被种的" },
+        { "key": "B", "text": "be planted", "answer": true },
+        { "key": "C", "text": "being planted", "distractor": "情态动词后要接 be 原形" },
+        { "key": "D", "text": "planted", "distractor": "缺少 be" }
+      ],
+      "explanation": "should + be + planted。",
+      "error_tag": "G-V03"
+    },
+    {
+      "id": "G-V03-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Rubbish must ____ into the bin.",
+      "options": [
+        { "key": "A", "text": "throw", "distractor": "垃圾是被扔的" },
+        { "key": "B", "text": "be thrown", "answer": true },
+        { "key": "C", "text": "be throw", "distractor": "be 后要接过去分词 thrown" },
+        { "key": "D", "text": "thrown", "distractor": "缺少 be" }
+      ],
+      "explanation": "must + be + thrown。",
+      "error_tag": "G-V03"
+    },
+    {
+      "id": "G-V03-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The bike can be repaired here.", "answer": true },
+        { "key": "B", "text": "The bike can is repaired here.", "distractor": "情态动词后不能接 is" },
+        { "key": "C", "text": "The bike can been repaired here.", "distractor": "情态动词后不能接 been" },
+        { "key": "D", "text": "The bike can repaired here.", "distractor": "缺少 be" }
+      ],
+      "explanation": "can + be + repaired。",
+      "error_tag": "G-V03"
+    }
+  ]
+}

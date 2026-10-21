@@ -1,0 +1,100 @@
+{
+  "id": "G-A02",
+  "type": "rule",
+  "module": "A",
+  "module_name": "形容词",
+  "title": "比较句型",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "He is as tall as his father.", "zh": "他和他爸爸一样高。" },
+      { "en": "Tom is the tallest boy in his class.", "zh": "汤姆是班里最高的男孩。" }
+    ],
+    "question": "想说“他不如我高”，下面哪一句是对的？",
+    "options": [
+      {
+        "key": "A",
+        "text": "He is not as tall as me. / He is not so tall as me.",
+        "feedback": "对！同级比较的否定是 not as（so）… as，中间用原级。"
+      },
+      {
+        "key": "B",
+        "text": "He is not taller as me.",
+        "feedback": "不对——as…as 中间必须用原级 tall，不能用比较级。"
+      },
+      {
+        "key": "C",
+        "text": "He is not as tall so me.",
+        "feedback": "不对——后面的 as 不能换成 so，只能是 not as…as 或 not so…as。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "同级比较用 as + 原级 + as（否定为 not as / so … as）；两者比较用比较级 + than；三者及以上用 the + 最高级 + 范围；比较级前可加 much / a lot / even / a little 表示程度",
+    "signals": ["as…as", "not as / so … as", "than", "the + 最高级", "much + 比较级"],
+    "formula": "① as + 原级 + as：He is as tall as me.　② not as / so + 原级 + as　③ 比较级 + than　④ the + 最高级 + in / of + 范围　⑤ much / a lot / even / a little + 比较级",
+    "anchors": [
+      {
+        "en": "This book is much more interesting than that one.",
+        "zh": "这本书比那本有趣得多。",
+        "note": "much 修饰比较级"
+      },
+      {
+        "en": "Shanghai is the biggest city in China.",
+        "zh": "上海是中国最大的城市。",
+        "note": "最高级 + in + 范围"
+      }
+    ],
+    "trap": {
+      "wrong": "Tom is taller than any boy in his class.",
+      "right": "Tom is taller than any other boy in his class.",
+      "why": "Tom 自己也是班里的男孩，要把自己排除掉，加 other。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——同级 as…as、差级 than、最高级 the…in/of，比较级前还能加 much 强调。",
+  "check": [
+    {
+      "id": "G-A02-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "This book is ____ than that one. I like it much better.",
+      "options": [
+        { "key": "A", "text": "much interesting", "distractor": "有 than 要用比较级" },
+        { "key": "B", "text": "much more interesting", "answer": true },
+        { "key": "C", "text": "more much interesting", "distractor": "much 要放在 more 前面" },
+        { "key": "D", "text": "most interesting", "distractor": "两者比较用比较级" }
+      ],
+      "explanation": "much + more interesting（much 强调程度）。",
+      "error_tag": "G-A02"
+    },
+    {
+      "id": "G-A02-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Shanghai is ____ city in China.",
+      "options": [
+        { "key": "A", "text": "big", "distractor": "in China 是范围，要用最高级" },
+        { "key": "B", "text": "bigger", "distractor": "这里是全国范围比较，用最高级" },
+        { "key": "C", "text": "the biggest", "answer": true },
+        { "key": "D", "text": "biggest", "distractor": "最高级前要加 the" }
+      ],
+      "explanation": "the + 最高级 + in + 范围。",
+      "error_tag": "G-A02"
+    },
+    {
+      "id": "G-A02-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "Tom is taller than any other boy in his class.", "answer": true },
+        { "key": "B", "text": "Tom is taller than any boy in his class.", "distractor": "Tom 也是男孩，等于跟自己比" },
+        { "key": "C", "text": "Tom is taller than all the boys in his class.", "distractor": "同样把自己算进去了" },
+        { "key": "D", "text": "Tom is taller than any boys in his class.", "distractor": "any 后接单数，且缺少 other" }
+      ],
+      "explanation": "同一范围内比较要加 other 排除自己。",
+      "error_tag": "G-A02"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "G-T23",
+  "type": "rule",
+  "module": "T",
+  "module_name": "现在完成时",
+  "title": "现在完成时·基本用法",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      {
+        "en": "I have finished my homework, so I can watch TV now.",
+        "zh": "我已经写完作业了，所以现在能看电视。"
+      },
+      {
+        "en": "She has lived in Beijing for three years.",
+        "zh": "她在北京住了三年了。"
+      }
+    ],
+    "question": "这两句话讲的是什么时候的事？",
+    "options": [
+      {
+        "key": "A",
+        "text": "过去某个具体时间点发生的事（像 yesterday 那样）",
+        "feedback": "不对——这两句都没给具体时间点，而且第一句的重点是“现在能看电视了”。"
+      },
+      {
+        "key": "B",
+        "text": "发生在过去、但和现在有联系的事",
+        "feedback": "对！finish 发生在过去，重点是现在写完了；live 从三年前一直持续到现在。"
+      },
+      {
+        "key": "C",
+        "text": "将来才要发生的事",
+        "feedback": "不对——将来的事用 will 或 be going to，这两句的动作都已经发生了。"
+      }
+    ],
+    "answer": "B"
+  },
+  "rule": {
+    "rule": "过去发生的事，对现在造成了影响，或从过去一直持续到现在",
+    "signals": ["already", "yet", "just", "ever", "never", "since", "for", "so far"],
+    "formula": "have / has + 过去分词（第三人称单数用 has）",
+    "anchors": [
+      {
+        "en": "I have finished my homework, so I can watch TV now.",
+        "zh": "我已经写完作业了，所以现在能看电视。",
+        "note": "影响：作业写完了 → 现在能看电视"
+      },
+      {
+        "en": "She has lived in Beijing for three years.",
+        "zh": "她在北京住了三年了。",
+        "note": "持续：三年前开始住，现在还住着"
+      }
+    ],
+    "trap": {
+      "wrong": "I have finished it yesterday.",
+      "right": "I finished it yesterday.",
+      "why": "yesterday 是具体的过去时间点。只要出现具体过去时间，就必须换成一般过去时。"
+    }
+  },
+  "guess_callback": "你刚才选的是 B——记住这条主线：现在完成时“说的是过去的事，关心的是现在的结果”。",
+  "check": [
+    {
+      "id": "G-T23-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "She ____ in this school since 2020.",
+      "options": [
+        { "key": "A", "text": "teaches", "distractor": "忽略了 since，误用一般现在时" },
+        { "key": "B", "text": "taught", "distractor": "since 2020 表示持续到现在，一般过去时不能与 since 连用" },
+        { "key": "C", "text": "has taught", "answer": true },
+        { "key": "D", "text": "is teaching", "distractor": "现在进行时不与 since 引导的时间段搭配" }
+      ],
+      "explanation": "since 2020 表示“从 2020 年持续到现在”，用现在完成时 has taught。",
+      "error_tag": "G-T23"
+    },
+    {
+      "id": "G-T23-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Would you like to go out with me? — Sorry, I can't. I ____ my homework yet.",
+      "options": [
+        { "key": "A", "text": "don't finish", "distractor": "一般现在时不与 yet 搭配" },
+        { "key": "B", "text": "didn't finish", "distractor": "yet 是现在完成时的标志词，且这里强调“现在还不能出去”" },
+        { "key": "C", "text": "haven't finished", "answer": true },
+        { "key": "D", "text": "won't finish", "distractor": "将来时与“现在不能出去”的语境矛盾" }
+      ],
+      "explanation": "yet 是现在完成时的标志词；“还没写完”直接导致现在不能出去，用 haven't finished。",
+      "error_tag": "G-T23"
+    },
+    {
+      "id": "G-T23-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He has gone to the library.", "answer": true },
+        { "key": "B", "text": "He has go to the library.", "distractor": "has 后面要接过去分词，不能接动词原形 go" },
+        { "key": "C", "text": "He have gone to the library.", "distractor": "he 是第三人称单数，助动词要用 has 而不是 have" },
+        { "key": "D", "text": "He has went to the library.", "distractor": "went 是过去式，完成时要接过去分词 gone" }
+      ],
+      "explanation": "现在完成时 = have/has + 过去分词。he 用 has，go 的过去分词是 gone，不是 went。",
+      "error_tag": "G-T23"
+    }
+  ]
+}

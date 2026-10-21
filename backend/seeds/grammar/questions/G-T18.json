@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T18",
+  "title": "不用进行时的动词",
+  "questions": [
+    {
+      "id": "G-T18-L1-01",
+      "level": "L1",
+      "stem": "I ____ (know) his telephone number.",
+      "options": [
+        { "key": "A", "text": "am knowing", "distractor": "know 是状态动词，不用进行时" },
+        { "key": "B", "text": "know", "answer": true },
+        { "key": "C", "text": "knows", "distractor": "I 不是三单" },
+        { "key": "D", "text": "knowing", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "know 表示“知道”的状态，用一般现在时 know。",
+      "error_tag": "G-T18"
+    },
+    {
+      "id": "G-T18-L1-02",
+      "level": "L1",
+      "stem": "She ____ (have) a lot of friends at school.",
+      "options": [
+        { "key": "A", "text": "is having", "distractor": "have 表示“有”时不用进行时" },
+        { "key": "B", "text": "has", "answer": true },
+        { "key": "C", "text": "have", "distractor": "she 是三单，要用 has" },
+        { "key": "D", "text": "having", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "have 表示“拥有”时用一般现在时 has。",
+      "error_tag": "G-T18"
+    },
+    {
+      "id": "G-T18-L2-01",
+      "level": "L2",
+      "stem": "— Do you want to go with us? — Yes, I ____.",
+      "options": [
+        { "key": "A", "text": "want", "answer": true },
+        { "key": "B", "text": "am wanting", "distractor": "want 是状态动词，不用进行时" },
+        { "key": "C", "text": "wants", "distractor": "I 不是三单" },
+        { "key": "D", "text": "wanting", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "want 表示“想要”的心理状态，用一般现在时 want。",
+      "error_tag": "G-T18"
+    },
+    {
+      "id": "G-T18-L2-02",
+      "level": "L2",
+      "stem": "They ____ (not understand) this question.",
+      "options": [
+        { "key": "A", "text": "aren't understanding", "distractor": "understand 是状态动词，不用进行时" },
+        { "key": "B", "text": "don't understand", "answer": true },
+        { "key": "C", "text": "doesn't understand", "distractor": "they 是复数，助动词用 don't" },
+        { "key": "D", "text": "not understand", "distractor": "缺少助动词" }
+      ],
+      "explanation": "understand 不用进行时，否定用 don't understand。",
+      "error_tag": "G-T18"
+    },
+    {
+      "id": "G-T18-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I know the answer.", "distractor": "正确" },
+        { "key": "B", "text": "She likes music very much.", "distractor": "正确" },
+        { "key": "C", "text": "He is knowing her name now.", "answer": true },
+        { "key": "D", "text": "They have a big house.", "distractor": "正确" }
+      ],
+      "explanation": "know 是状态动词，即使有 now 也要用 He knows her name。",
+      "error_tag": "G-T18"
+    },
+    {
+      "id": "G-T18-L3-02",
+      "level": "L3",
+      "stem": "— ____ you ____ (like) this song? — Yes, very much.",
+      "options": [
+        { "key": "A", "text": "Are; liking", "distractor": "like 是状态动词，不用进行时" },
+        { "key": "B", "text": "Do; like", "answer": true },
+        { "key": "C", "text": "Do; liking", "distractor": "Do 之后要用原形 like" },
+        { "key": "D", "text": "Are; like", "distractor": "like 是实义动词，提问用 Do" }
+      ],
+      "explanation": "like 不用进行时，提问用 Do you like。",
+      "error_tag": "G-T18"
+    }
+  ]
+}

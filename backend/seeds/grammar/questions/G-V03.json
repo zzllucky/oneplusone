@@ -1,0 +1,84 @@
+{
+  "point_id": "G-V03",
+  "title": "含情态动词的被动",
+  "questions": [
+    {
+      "id": "G-V03-L1-01",
+      "level": "L1",
+      "stem": "The lights must ____ (turn) off before you leave.",
+      "options": [
+        { "key": "A", "text": "turn", "distractor": "灯是被关的" },
+        { "key": "B", "text": "be turned", "answer": true },
+        { "key": "C", "text": "turned", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "turning", "distractor": "被动不用 -ing" }
+      ],
+      "explanation": "must + be + turned off。",
+      "error_tag": "G-V03"
+    },
+    {
+      "id": "G-V03-L1-02",
+      "level": "L1",
+      "stem": "Water can ____ (use) again and again.",
+      "options": [
+        { "key": "A", "text": "use", "distractor": "水是被利用的" },
+        { "key": "B", "text": "be used", "answer": true },
+        { "key": "C", "text": "be use", "distractor": "be 后要接过去分词 used" },
+        { "key": "D", "text": "used", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "can + be + used。",
+      "error_tag": "G-V03"
+    },
+    {
+      "id": "G-V03-L2-01",
+      "level": "L2",
+      "stem": "The work ____ (finish) by five o'clock. We must hurry.",
+      "options": [
+        { "key": "A", "text": "must finish", "distractor": "工作是被完成的" },
+        { "key": "B", "text": "must be finished", "answer": true },
+        { "key": "C", "text": "must is finished", "distractor": "情态动词后不能接 is" },
+        { "key": "D", "text": "must been finished", "distractor": "情态动词后不能接 been" }
+      ],
+      "explanation": "must + be + finished。",
+      "error_tag": "G-V03"
+    },
+    {
+      "id": "G-V03-L2-02",
+      "level": "L2",
+      "stem": "— Must the homework ____ today? — Yes, it must.",
+      "options": [
+        { "key": "A", "text": "hand in", "distractor": "作业是被交的，要用被动" },
+        { "key": "B", "text": "be handed in", "answer": true },
+        { "key": "C", "text": "handed in", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "being handed in", "distractor": "情态动词后要接 be 原形" }
+      ],
+      "explanation": "被动疑问：Must the homework be handed in today?",
+      "error_tag": "G-V03"
+    },
+    {
+      "id": "G-V03-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "The trees should be watered often.", "distractor": "正确" },
+        { "key": "B", "text": "The bike can be repaired here.", "distractor": "正确" },
+        { "key": "C", "text": "The room must is cleaned at once.", "answer": true },
+        { "key": "D", "text": "The question may be answered later.", "distractor": "正确" }
+      ],
+      "explanation": "情态动词后只能用原形 be：must be cleaned。",
+      "error_tag": "G-V03"
+    },
+    {
+      "id": "G-V03-L3-02",
+      "level": "L3",
+      "stem": "Young trees ____ (look after) well, or they will die.",
+      "options": [
+        { "key": "A", "text": "must look after", "distractor": "小树是被照料的" },
+        { "key": "B", "text": "must be looked after", "answer": true },
+        { "key": "C", "text": "must be look after", "distractor": "be 后要接过去分词 looked" },
+        { "key": "D", "text": "must looked after", "distractor": "缺少 be 动词" }
+      ],
+      "explanation": "短语动词变被动要保留介词：must be looked after。",
+      "error_tag": "G-V03"
+    }
+  ]
+}

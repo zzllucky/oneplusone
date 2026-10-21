@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T13",
+  "title": "过去将来时 would",
+  "questions": [
+    {
+      "id": "G-T13-L1-01",
+      "level": "L1",
+      "stem": "They said they ____ (come) to see us the next day.",
+      "options": [
+        { "key": "A", "text": "will come", "distractor": "主句是过去时，will 要变 would" },
+        { "key": "B", "text": "would come", "answer": true },
+        { "key": "C", "text": "come", "distractor": "缺少表示将来的助动词" },
+        { "key": "D", "text": "came", "distractor": "“来看我们”在当时还没发生" }
+      ],
+      "explanation": "主句 said 是过去，the next day 指当时的“第二天”，用 would come。",
+      "error_tag": "G-T13"
+    },
+    {
+      "id": "G-T13-L1-02",
+      "level": "L1",
+      "stem": "I didn't know whether it ____ rain the next morning.",
+      "options": [
+        { "key": "A", "text": "will", "distractor": "主句是过去时，will 要变 would" },
+        { "key": "B", "text": "would", "answer": true },
+        { "key": "C", "text": "rains", "distractor": "主句过去，这里说的是当时还没发生的事" },
+        { "key": "D", "text": "rained", "distractor": "下雨在当时还没发生" }
+      ],
+      "explanation": "主句 didn't know 是过去，whether 从句表示之后的可能，用 would rain。",
+      "error_tag": "G-T13"
+    },
+    {
+      "id": "G-T13-L2-01",
+      "level": "L2",
+      "stem": "He promised he ____ (help) me with my English.",
+      "options": [
+        { "key": "A", "text": "helps", "distractor": "“帮忙”是承诺之后的事" },
+        { "key": "B", "text": "will help", "distractor": "主句 promised 是过去时" },
+        { "key": "C", "text": "would help", "answer": true },
+        { "key": "D", "text": "helped", "distractor": "承诺时帮忙还没发生" }
+      ],
+      "explanation": "promised 是过去，“会帮忙”在当时属于将来，用 would help。",
+      "error_tag": "G-T13"
+    },
+    {
+      "id": "G-T13-L2-02",
+      "level": "L2",
+      "stem": "We thought the film ____ (be) very interesting.",
+      "options": [
+        { "key": "A", "text": "is", "distractor": "主句 thought 是过去时" },
+        { "key": "B", "text": "was", "distractor": "“会很有意思”是看之前的判断，不是已看完的结论" },
+        { "key": "C", "text": "will be", "distractor": "主句过去，will 要变 would" },
+        { "key": "D", "text": "would be", "answer": true }
+      ],
+      "explanation": "thought 是过去时，当时对“之后观影”的判断用 would be。",
+      "error_tag": "G-T13"
+    },
+    {
+      "id": "G-T13-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "She said she would come to the party.", "distractor": "正确" },
+        { "key": "B", "text": "He told me he would wait for me.", "distractor": "正确" },
+        { "key": "C", "text": "I knew he will be angry.", "answer": true },
+        { "key": "D", "text": "They said they would try their best.", "distractor": "正确" }
+      ],
+      "explanation": "主句 knew 是过去时，从句的 will 要改成 would。",
+      "error_tag": "G-T13"
+    },
+    {
+      "id": "G-T13-L3-02",
+      "level": "L3",
+      "stem": "— What did he say? — He said he ____ busy the next day.",
+      "options": [
+        { "key": "A", "text": "is", "distractor": "主句是过去时" },
+        { "key": "B", "text": "was", "distractor": "the next day 指当时之后的第二天，不是“当时”" },
+        { "key": "C", "text": "will be", "distractor": "主句过去，will 要变 would" },
+        { "key": "D", "text": "would be", "answer": true }
+      ],
+      "explanation": "the next day 是“他说话时的第二天”，要用 would be（was 表示他说话那天就忙，意思不同）。",
+      "error_tag": "G-T13"
+    }
+  ]
+}

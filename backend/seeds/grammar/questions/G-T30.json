@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T30",
+  "title": "现在完成时 vs 过去完成时",
+  "questions": [
+    {
+      "id": "G-T30-L1-01",
+      "level": "L1",
+      "stem": "— Do you know this city well? — Yes, I ____ (live) here for ten years.",
+      "options": [
+        { "key": "A", "text": "have lived", "answer": true },
+        { "key": "B", "text": "had lived", "distractor": "没有过去参照点，参照点是“现在”" },
+        { "key": "C", "text": "lived", "distractor": "for ten years 表示持续到现在" },
+        { "key": "D", "text": "live", "distractor": "时态不对" }
+      ],
+      "explanation": "“住到现在十年了”，参照点是现在，用 have lived。",
+      "error_tag": "G-T30"
+    },
+    {
+      "id": "G-T30-L1-02",
+      "level": "L1",
+      "stem": "He ____ (work) in that factory for five years before he moved here.",
+      "options": [
+        { "key": "A", "text": "has worked", "distractor": "moved here 是过去参照点" },
+        { "key": "B", "text": "had worked", "answer": true },
+        { "key": "C", "text": "worked", "distractor": "“到搬来之前为止”要用过去完成时" },
+        { "key": "D", "text": "works", "distractor": "这是现在时" }
+      ],
+      "explanation": "before he moved here 是过去参照点，用 had worked。",
+      "error_tag": "G-T30"
+    },
+    {
+      "id": "G-T30-L2-01",
+      "level": "L2",
+      "stem": "— You look happy. — Yes, I ____ (get) a gift from my friend.",
+      "options": [
+        { "key": "A", "text": "have got", "answer": true },
+        { "key": "B", "text": "had got", "distractor": "这里没有过去参照点，说的是现在的状态" },
+        { "key": "C", "text": "got", "distractor": "强调对现在的影响（所以开心）" },
+        { "key": "D", "text": "get", "distractor": "这是现在时" }
+      ],
+      "explanation": "解释“现在看起来高兴”，参照点是现在，用 have got。",
+      "error_tag": "G-T30"
+    },
+    {
+      "id": "G-T30-L2-02",
+      "level": "L2",
+      "stem": "The old man ____ (be) dead for two years when we heard the news.",
+      "options": [
+        { "key": "A", "text": "has been", "distractor": "heard 是过去参照点" },
+        { "key": "B", "text": "had been", "answer": true },
+        { "key": "C", "text": "was", "distractor": "“到听到消息时为止已去世两年”要用过去完成时" },
+        { "key": "D", "text": "is", "distractor": "这是现在时" }
+      ],
+      "explanation": "听到消息（过去参照点）时已去世两年，用 had been dead。",
+      "error_tag": "G-T30"
+    },
+    {
+      "id": "G-T30-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I have never seen such a big apple.", "distractor": "正确：到现在为止" },
+        { "key": "B", "text": "She had left before I arrived.", "distractor": "正确：过去参照点" },
+        { "key": "C", "text": "He has finished the work when the boss came back.", "answer": true },
+        { "key": "D", "text": "We have known each other since 2018.", "distractor": "正确：持续到现在" }
+      ],
+      "explanation": "came back 是过去参照点，应改为 He had finished the work when the boss came back。",
+      "error_tag": "G-T30"
+    },
+    {
+      "id": "G-T30-L3-02",
+      "level": "L3",
+      "stem": "— Why was Tom so sad yesterday? — Because he ____ (lose) his new bike the day before.",
+      "options": [
+        { "key": "A", "text": "has lost", "distractor": "“前天丢车、昨天难过”，参照点在过去" },
+        { "key": "B", "text": "had lost", "answer": true },
+        { "key": "C", "text": "lost", "distractor": "丢车在难过之前，是更早的动作" },
+        { "key": "D", "text": "loses", "distractor": "这是现在时" }
+      ],
+      "explanation": "解释昨天为什么难过：前天（更早）丢了车，用 had lost。",
+      "error_tag": "G-T30"
+    }
+  ]
+}

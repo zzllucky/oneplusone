@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T27",
+  "title": "短暂动词不接时间段",
+  "questions": [
+    {
+      "id": "G-T27-L1-01",
+      "level": "L1",
+      "stem": "The film ____ for ten minutes.",
+      "options": [
+        { "key": "A", "text": "has begun", "distractor": "begin 是短暂动词，不能接 for ten minutes" },
+        { "key": "B", "text": "has been on", "answer": true },
+        { "key": "C", "text": "began", "distractor": "for ten minutes 要用完成时" },
+        { "key": "D", "text": "is beginning", "distractor": "时态与意思都不对" }
+      ],
+      "explanation": "begin 换成 be on（上映中），用 has been on。",
+      "error_tag": "G-T27"
+    },
+    {
+      "id": "G-T27-L1-02",
+      "level": "L1",
+      "stem": "He ____ the Party for five years.",
+      "options": [
+        { "key": "A", "text": "has joined", "distractor": "join 是短暂动词，不能接 for five years" },
+        { "key": "B", "text": "has been in", "answer": true },
+        { "key": "C", "text": "joined", "distractor": "for five years 要用完成时" },
+        { "key": "D", "text": "joins", "distractor": "时态不对" }
+      ],
+      "explanation": "join 换成 be in（在……里），用 has been in。",
+      "error_tag": "G-T27"
+    },
+    {
+      "id": "G-T27-L2-01",
+      "level": "L2",
+      "stem": "The old man ____ (die) for three years.",
+      "options": [
+        { "key": "A", "text": "has died", "distractor": "die 是短暂动词，不能接 for three years" },
+        { "key": "B", "text": "has been dead", "answer": true },
+        { "key": "C", "text": "died", "distractor": "for three years 要用完成时" },
+        { "key": "D", "text": "dies", "distractor": "时态不对" }
+      ],
+      "explanation": "die 换成状态 be dead，用 has been dead。",
+      "error_tag": "G-T27"
+    },
+    {
+      "id": "G-T27-L2-02",
+      "level": "L2",
+      "stem": "They ____ (leave) their hometown since 2010.",
+      "options": [
+        { "key": "A", "text": "have left", "distractor": "leave 是短暂动词，不能接 since 2010" },
+        { "key": "B", "text": "have been away from", "answer": true },
+        { "key": "C", "text": "left", "distractor": "since 2010 要用完成时" },
+        { "key": "D", "text": "leave", "distractor": "时态不对" }
+      ],
+      "explanation": "leave 换成 be away from（离开的状态），用 have been away from。",
+      "error_tag": "G-T27"
+    },
+    {
+      "id": "G-T27-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I have had this pen for two years.", "distractor": "正确：buy 换成 had" },
+        { "key": "B", "text": "The meeting has been on for an hour.", "distractor": "正确：begin 换成 been on" },
+        { "key": "C", "text": "He has bought the car for five years.", "answer": true },
+        { "key": "D", "text": "She has kept the book for a week.", "distractor": "正确：borrow 换成 kept" }
+      ],
+      "explanation": "buy 不能接时间段，应改为 He has had the car for five years。",
+      "error_tag": "G-T27"
+    },
+    {
+      "id": "G-T27-L3-02",
+      "level": "L3",
+      "stem": "— How long ____ you ____ this bike? — For three years.",
+      "options": [
+        { "key": "A", "text": "have; bought", "distractor": "buy 是短暂动词，不能接 how long / for" },
+        { "key": "B", "text": "have; had", "answer": true },
+        { "key": "C", "text": "did; buy", "distractor": "答语是 for three years，要用完成时" },
+        { "key": "D", "text": "do; have", "distractor": "不是习惯性动作" }
+      ],
+      "explanation": "问“拥有多久”用 How long have you had…（不用 bought）。",
+      "error_tag": "G-T27"
+    }
+  ]
+}

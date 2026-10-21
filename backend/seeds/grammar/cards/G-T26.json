@@ -1,0 +1,111 @@
+{
+  "id": "G-T26",
+  "type": "contrast",
+  "module": "T",
+  "module_name": "现在完成时",
+  "title": "现在完成时 vs 一般过去时",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      {
+        "en": "I lost my key yesterday.",
+        "zh": "我昨天把钥匙弄丢了。"
+      },
+      {
+        "en": "I have lost my key, so I can't get in.",
+        "zh": "我把钥匙弄丢了，所以进不去。"
+      }
+    ],
+    "question": "同样是“丢钥匙”，为什么两句用的时态不一样？",
+    "options": [
+      {
+        "key": "A",
+        "text": "第一句有具体过去时间（yesterday），第二句没有",
+        "feedback": "对！判据就是“句子里有没有具体的过去时间点”。"
+      },
+      {
+        "key": "B",
+        "text": "第二句的事发生得更早",
+        "feedback": "不对，时间早晚不是判据，第一句的事完全可能更早发生。"
+      },
+      {
+        "key": "C",
+        "text": "其实两句可以随便换",
+        "feedback": "不对，有具体过去时间点时不能换：I have lost my key yesterday 是错句。"
+      }
+    ],
+    "answer": "A"
+  },
+  "contrast": {
+    "left": {
+      "label": "一般过去时",
+      "formula": "动词过去式",
+      "anchor": { "en": "I lost my key yesterday.", "zh": "我昨天把钥匙弄丢了。" },
+      "focus": "只陈述过去那个点，跟现在没关系"
+    },
+    "right": {
+      "label": "现在完成时",
+      "formula": "have / has + 过去分词",
+      "anchor": { "en": "I have lost my key, so I can't get in.", "zh": "我把钥匙弄丢了，所以进不去。" },
+      "focus": "说话人关心的是现在的结果"
+    },
+    "diff": "句子里出现具体过去时间点（yesterday / last week / …ago / in 2019）→ 只能用一般过去时；强调对现在的影响或持续到现在 → 用现在完成时。两者不能互换。",
+    "traps": [
+      {
+        "wrong": "I have seen the film yesterday.",
+        "right": "I saw the film yesterday.",
+        "why": "yesterday 是具体过去时间点，现在完成时不能和它连用。"
+      },
+      {
+        "wrong": "Did you ever go to Beijing?",
+        "right": "Have you ever been to Beijing?",
+        "why": "ever（曾经）是现在完成时的标志词，要配 Have…been。"
+      }
+    ]
+  },
+  "guess_callback": "你刚才选的是 A——把这条记死：看到 yesterday / last… / …ago，直接排除现在完成时。",
+  "check": [
+    {
+      "id": "G-T26-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— ____ you ____ the film yesterday? — Yes, I did.",
+      "options": [
+        { "key": "A", "text": "Have; seen", "distractor": "现在完成时不能与 yesterday 连用" },
+        { "key": "B", "text": "Did; see", "answer": true },
+        { "key": "C", "text": "Do; see", "distractor": "yesterday 是过去时间，不能用一般现在时" },
+        { "key": "D", "text": "Has; seen", "distractor": "you 要配 have，主谓不一致" }
+      ],
+      "explanation": "yesterday 是具体过去时间点，用一般过去时 Did…see；答语 Yes, I did 也印证了这一点。",
+      "error_tag": "G-T26"
+    },
+    {
+      "id": "G-T26-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He ____ in this city in 2019.",
+      "options": [
+        { "key": "A", "text": "has lived", "distractor": "in 2019 是具体过去时间点；若改成 since 2019 才用现在完成时" },
+        { "key": "B", "text": "lived", "answer": true },
+        { "key": "C", "text": "lives", "distractor": "2019 年是过去，不能用一般现在时" },
+        { "key": "D", "text": "is living", "distractor": "in 2019 表示过去某段时间，不能用现在进行时" }
+      ],
+      "explanation": "in 2019 是具体过去时间点，用一般过去时 lived。想表达“从 2019 年住到现在”要说 since 2019 + has lived。",
+      "error_tag": "G-T26"
+    },
+    {
+      "id": "G-T26-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— I can't find my pen. ____ you ____ it anywhere? — Sorry, I haven't.",
+      "options": [
+        { "key": "A", "text": "Did; see", "distractor": "答语是 I haven't，说明问句也应用完成时" },
+        { "key": "B", "text": "Have; seen", "answer": true },
+        { "key": "C", "text": "Do; see", "distractor": "这里问的是“到现在为止有没有看到”，不是习惯动作" },
+        { "key": "D", "text": "Will; see", "distractor": "问的是过去到现在，不是将来" }
+      ],
+      "explanation": "“我现在找不到笔”说明关心的是到目前为止的结果，用现在完成时 Have…seen；答语 I haven't 也与之对应。",
+      "error_tag": "G-T26"
+    }
+  ]
+}

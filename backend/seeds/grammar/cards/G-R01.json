@@ -1,0 +1,100 @@
+{
+  "id": "G-R01",
+  "type": "rule",
+  "module": "R",
+  "module_name": "代词",
+  "title": "人称·物主·反身",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "This book is mine, not yours.", "zh": "这本书是我的，不是你的。" },
+      { "en": "She teaches herself English.", "zh": "她自学英语。" }
+    ],
+    "question": "“This book is my.” 这一句哪里不对？",
+    "options": [
+      {
+        "key": "A",
+        "text": "句子末尾没有名词，要用名词性物主代词 mine",
+        "feedback": "对！my 后面必须跟名词；后面没名词时用 mine。"
+      },
+      {
+        "key": "B",
+        "text": "my 拼错了",
+        "feedback": "不对——拼写没问题，是用错了形式。"
+      },
+      {
+        "key": "C",
+        "text": "应该改成 me",
+        "feedback": "不对——me 是“我（宾格）”，不表示“我的东西”。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "形容词性物主代词（my / your / his / her / its / our / their）后面必须跟名词；名词性物主代词（mine / yours / his / hers / ours / theirs）后面不跟名词，可单独作主语、宾语、表语；反身代词表示“……自己”",
+    "signals": ["my / mine", "your / yours", "her / hers", "our / ours", "their / theirs", "myself", "yourself", "himself", "herself", "itself", "ourselves", "themselves"],
+    "formula": "① 形物代 + 名词：This is my book.　② 名物代单独用：This book is mine.　③ 反身代词：He hurt himself.　固定搭配：by myself / help oneself to / teach oneself / look after oneself",
+    "anchors": [
+      {
+        "en": "This pen is hers, not mine.",
+        "zh": "这支笔是她的，不是我的。",
+        "note": "后面没名词，用名物代"
+      },
+      {
+        "en": "The boy is old enough to look after himself.",
+        "zh": "这男孩够大了，能照顾自己了。",
+        "note": "主语是 the boy → himself"
+      }
+    ],
+    "trap": {
+      "wrong": "This book is my.",
+      "right": "This book is mine.",
+      "why": "句末没有名词，my 要换成名词性物主代词 mine。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——看后面有没有名词：有名词用 my / your，没名词用 mine / yours。",
+  "check": [
+    {
+      "id": "G-R01-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Whose bag is this? — It's ____.",
+      "options": [
+        { "key": "A", "text": "my", "distractor": "后面没有名词，要用名物代" },
+        { "key": "B", "text": "mine", "answer": true },
+        { "key": "C", "text": "me", "distractor": "me 不表示所属" },
+        { "key": "D", "text": "myself", "distractor": "这里不是反身用法" }
+      ],
+      "explanation": "It's mine.（= It's my bag.）",
+      "error_tag": "G-R01"
+    },
+    {
+      "id": "G-R01-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "The little girl can dress ____ now.",
+      "options": [
+        { "key": "A", "text": "her", "distractor": "her 是“她的”，这里要“她自己”" },
+        { "key": "B", "text": "she", "distractor": "主格不能作宾语" },
+        { "key": "C", "text": "herself", "answer": true },
+        { "key": "D", "text": "hers", "distractor": "hers 是“她的东西”，不表示自己" }
+      ],
+      "explanation": "主语是 the little girl，反身代词用 herself。",
+      "error_tag": "G-R01"
+    },
+    {
+      "id": "G-R01-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Is this ____ ruler? — No, ____ is in my desk.",
+      "options": [
+        { "key": "A", "text": "your; mine", "answer": true },
+        { "key": "B", "text": "yours; mine", "distractor": "第一空后面有 ruler，要用形物代 your" },
+        { "key": "C", "text": "your; my", "distractor": "第二空后面没有名词，要用名物代 mine" },
+        { "key": "D", "text": "yours; my", "distractor": "两空都错" }
+      ],
+      "explanation": "有名词用 your，无名词用 mine。",
+      "error_tag": "G-R01"
+    }
+  ]
+}

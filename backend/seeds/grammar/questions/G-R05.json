@@ -1,0 +1,84 @@
+{
+  "point_id": "G-R05",
+  "title": "疑问代词",
+  "questions": [
+    {
+      "id": "G-R05-L1-01",
+      "level": "L1",
+      "stem": "— ____ is the man over there? — He is Mr. Wang, our new teacher.",
+      "options": [
+        { "key": "A", "text": "What", "distractor": "问职业才用 what" },
+        { "key": "B", "text": "Who", "answer": true },
+        { "key": "C", "text": "Whose", "distractor": "whose 后面要接名词" },
+        { "key": "D", "text": "Which", "distractor": "这里没有选择范围" }
+      ],
+      "explanation": "答语给出姓名身份 → Who。",
+      "error_tag": "G-R05"
+    },
+    {
+      "id": "G-R05-L1-02",
+      "level": "L1",
+      "stem": "— ____ is on the desk? — There is a book and two pens.",
+      "options": [
+        { "key": "A", "text": "Who", "distractor": "问的是物品，不是人" },
+        { "key": "B", "text": "What", "answer": true },
+        { "key": "C", "text": "Whose", "distractor": "whose 后面要接名词" },
+        { "key": "D", "text": "Which", "distractor": "没有给出选择范围" }
+      ],
+      "explanation": "问桌上有什么 → What。",
+      "error_tag": "G-R05"
+    },
+    {
+      "id": "G-R05-L2-01",
+      "level": "L2",
+      "stem": "— ____ dictionary is on the teacher's desk? — It's Lily's.",
+      "options": [
+        { "key": "A", "text": "Who", "distractor": "who 后面不能接名词" },
+        { "key": "B", "text": "Whom", "distractor": "whom 是宾格，不作定语" },
+        { "key": "C", "text": "Whose", "answer": true },
+        { "key": "D", "text": "What", "distractor": "问所属要用 whose" }
+      ],
+      "explanation": "问“谁的词典” → Whose dictionary。",
+      "error_tag": "G-R05"
+    },
+    {
+      "id": "G-R05-L2-02",
+      "level": "L2",
+      "stem": "— ____ would you like to go with, Tom or Jim? — Tom.",
+      "options": [
+        { "key": "A", "text": "What", "distractor": "问的不是事物" },
+        { "key": "B", "text": "Which", "answer": true },
+        { "key": "C", "text": "Who", "distractor": "给出了两个人可选择，用 which 更准确" },
+        { "key": "D", "text": "Whose", "distractor": "问的不是所属" }
+      ],
+      "explanation": "在 Tom 和 Jim 之间选择 → Which。",
+      "error_tag": "G-R05"
+    },
+    {
+      "id": "G-R05-L3-01",
+      "level": "L3",
+      "stem": "— ____ does your father do? — He is a worker in a factory.",
+      "options": [
+        { "key": "A", "text": "Who", "distractor": "who 不能搭配 do 问职业" },
+        { "key": "B", "text": "What", "answer": true },
+        { "key": "C", "text": "Which", "distractor": "没有选择范围" },
+        { "key": "D", "text": "Whose", "distractor": "问的不是所属" }
+      ],
+      "explanation": "问职业：What does your father do?",
+      "error_tag": "G-R05"
+    },
+    {
+      "id": "G-R05-L3-02",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "Whose shoes are these?", "distractor": "正确" },
+        { "key": "B", "text": "What is your favourite subject?", "distractor": "正确" },
+        { "key": "C", "text": "With who did you go to the cinema?", "answer": true },
+        { "key": "D", "text": "Which is bigger, the sun or the moon?", "distractor": "正确" }
+      ],
+      "explanation": "介词后面要用宾格 whom：With whom did you go…?",
+      "error_tag": "G-R05"
+    }
+  ]
+}

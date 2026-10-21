@@ -1,0 +1,84 @@
+{
+  "point_id": "G-N02",
+  "title": "复数变化规则",
+  "questions": [
+    {
+      "id": "G-N02-L1-01",
+      "level": "L1",
+      "stem": "I can see two ____ (watch) on the desk.",
+      "options": [
+        { "key": "A", "text": "watch", "distractor": "two 后面要用复数" },
+        { "key": "B", "text": "watchs", "distractor": "ch 结尾要加 -es" },
+        { "key": "C", "text": "watches", "answer": true },
+        { "key": "D", "text": "watchies", "distractor": "拼写错误" }
+      ],
+      "explanation": "watch 以 ch 结尾，加 -es：watches。",
+      "error_tag": "G-N02"
+    },
+    {
+      "id": "G-N02-L1-02",
+      "level": "L1",
+      "stem": "There are many ____ (bus) in the street.",
+      "options": [
+        { "key": "A", "text": "bus", "distractor": "many 后面要用复数" },
+        { "key": "B", "text": "buss", "distractor": "s 结尾要加 -es" },
+        { "key": "C", "text": "buses", "answer": true },
+        { "key": "D", "text": "busies", "distractor": "拼写错误" }
+      ],
+      "explanation": "bus 以 s 结尾，加 -es：buses。",
+      "error_tag": "G-N02"
+    },
+    {
+      "id": "G-N02-L2-01",
+      "level": "L2",
+      "stem": "The ____ (baby) are sleeping in the room.",
+      "options": [
+        { "key": "A", "text": "babys", "distractor": "辅音+y 要变 i 再加 es" },
+        { "key": "B", "text": "babies", "answer": true },
+        { "key": "C", "text": "baby", "distractor": "谓语是 are，主语要用复数" },
+        { "key": "D", "text": "babyes", "distractor": "拼写错误" }
+      ],
+      "explanation": "baby 是辅音 + y，变 y 为 i 加 es：babies。",
+      "error_tag": "G-N02"
+    },
+    {
+      "id": "G-N02-L2-02",
+      "level": "L2",
+      "stem": "There are three ____ (boy) playing football over there.",
+      "options": [
+        { "key": "A", "text": "boyes", "distractor": "元音 + y 直接加 s，不用变 y" },
+        { "key": "B", "text": "boies", "distractor": "元音 + y 不变 y" },
+        { "key": "C", "text": "boys", "answer": true },
+        { "key": "D", "text": "boy", "distractor": "three 后面要用复数" }
+      ],
+      "explanation": "boy 是元音 o + y，直接加 s：boys。",
+      "error_tag": "G-N02"
+    },
+    {
+      "id": "G-N02-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "The girls are dancing in the hall.", "distractor": "正确" },
+        { "key": "B", "text": "We have ten watches in the shop.", "distractor": "正确" },
+        { "key": "C", "text": "The thiefs ran away quickly.", "answer": true },
+        { "key": "D", "text": "There are some boxes under the bed.", "distractor": "正确" }
+      ],
+      "explanation": "thief 以 f 结尾，要变 v 加 es：thieves。",
+      "error_tag": "G-N02"
+    },
+    {
+      "id": "G-N02-L3-02",
+      "level": "L3",
+      "stem": "— What are those in the sky? — They're ____ (leaf) blown by the wind.",
+      "options": [
+        { "key": "A", "text": "leafs", "distractor": "f 结尾要变 v 加 es" },
+        { "key": "B", "text": "leaves", "answer": true },
+        { "key": "C", "text": "leaf", "distractor": "They're 后面要用复数" },
+        { "key": "D", "text": "leafes", "distractor": "拼写错误" }
+      ],
+      "explanation": "leaf 以 f 结尾，变 f 为 v 加 es：leaves。",
+      "error_tag": "G-N02"
+    }
+  ]
+}

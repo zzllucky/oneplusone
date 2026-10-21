@@ -1,0 +1,84 @@
+{
+  "point_id": "G-F03",
+  "title": "宾补：带 to 与省略 to",
+  "questions": [
+    {
+      "id": "G-F03-L1-01",
+      "level": "L1",
+      "stem": "The teacher told us ____ (keep) quiet in the library.",
+      "options": [
+        { "key": "A", "text": "keep", "distractor": "tell 后面要带 to" },
+        { "key": "B", "text": "to keep", "answer": true },
+        { "key": "C", "text": "keeping", "distractor": "tell sb 后面接 to do" },
+        { "key": "D", "text": "kept", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "tell sb to do sth。",
+      "error_tag": "G-F03"
+    },
+    {
+      "id": "G-F03-L1-02",
+      "level": "L1",
+      "stem": "I saw him ____ (go) out just now.",
+      "options": [
+        { "key": "A", "text": "go", "answer": true },
+        { "key": "B", "text": "to go", "distractor": "see 后面要省略 to" },
+        { "key": "C", "text": "went", "distractor": "这不是谓语位置" },
+        { "key": "D", "text": "goes", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "感官动词 see + sb + do，省略 to。",
+      "error_tag": "G-F03"
+    },
+    {
+      "id": "G-F03-L2-01",
+      "level": "L2",
+      "stem": "His parents want him ____ (be) a doctor.",
+      "options": [
+        { "key": "A", "text": "be", "distractor": "want 后面要带 to" },
+        { "key": "B", "text": "to be", "answer": true },
+        { "key": "C", "text": "being", "distractor": "want sb 后面接 to do" },
+        { "key": "D", "text": "is", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "want sb to do sth。",
+      "error_tag": "G-F03"
+    },
+    {
+      "id": "G-F03-L2-02",
+      "level": "L2",
+      "stem": "We watched the children ____ (play) football on the playground.",
+      "options": [
+        { "key": "A", "text": "play", "answer": true },
+        { "key": "B", "text": "to play", "distractor": "watch 后面要省略 to" },
+        { "key": "C", "text": "played", "distractor": "这不是谓语位置" },
+        { "key": "D", "text": "plays", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "感官动词 watch + sb + do，省略 to。",
+      "error_tag": "G-F03"
+    },
+    {
+      "id": "G-F03-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "The boss made the workers work long hours.", "distractor": "正确：make + do" },
+        { "key": "B", "text": "I heard her sing in the next room.", "distractor": "正确：hear + do" },
+        { "key": "C", "text": "My mother asked me to clean my room.", "distractor": "正确：ask + to do" },
+        { "key": "D", "text": "The teacher let the students to go home early.", "answer": true }
+      ],
+      "explanation": "let 后面要省略 to：let the students go home。",
+      "error_tag": "G-F03"
+    },
+    {
+      "id": "G-F03-L3-02",
+      "level": "L3",
+      "stem": "The policeman told the boys ____ (not play) football in the street.",
+      "options": [
+        { "key": "A", "text": "not play", "distractor": "tell 后面要带 to" },
+        { "key": "B", "text": "don't play", "distractor": "这不是谓语位置，不能用助动词" },
+        { "key": "C", "text": "not to play", "answer": true },
+        { "key": "D", "text": "to not play", "distractor": "not 要放在 to 前面" }
+      ],
+      "explanation": "tell sb not to do sth（否定在 to 前）。",
+      "error_tag": "G-F03"
+    }
+  ]
+}

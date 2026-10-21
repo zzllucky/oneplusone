@@ -1,0 +1,100 @@
+{
+  "id": "G-T03",
+  "type": "rule",
+  "module": "T",
+  "module_name": "一般现在时",
+  "title": "否定与疑问",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "He likes English. → He doesn't like English.", "zh": "他喜欢英语。→ 他不喜欢英语。" },
+      { "en": "Does he like English? → Yes, he does.", "zh": "他喜欢英语吗？→ 是的，他喜欢。" }
+    ],
+    "question": "变成否定句和疑问句之后，原来的 likes 发生了什么？",
+    "options": [
+      {
+        "key": "A",
+        "text": "变回了原形 like（丢掉 s）",
+        "feedback": "对！人称和时态已经由 do/does 体现了，主要动词要退回原形。"
+      },
+      {
+        "key": "B",
+        "text": "保持原样，该加 s 还加 s",
+        "feedback": "不对——Does he likes 是错句，s 必须去掉。"
+      },
+      {
+        "key": "C",
+        "text": "变成了过去式",
+        "feedback": "不对——变否定疑问不会改变时态，时态由助动词体现。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "变否定、疑问句要借助助动词 do/does，助动词之后的主要动词一律用原形",
+    "signals": ["don't", "doesn't", "Do", "Does"],
+    "formula": "否定：主语 + don't/doesn't + 动词原形　疑问：Do/Does + 主语 + 动词原形（三单用 does，主要动词去掉 s）",
+    "anchors": [
+      {
+        "en": "He doesn't like coffee.",
+        "zh": "他不喜欢咖啡。",
+        "note": "doesn't 已经体现三单，like 不再加 s"
+      },
+      {
+        "en": "Does she go to school by bike?",
+        "zh": "她骑自行车上学吗？",
+        "note": "Does 之后 go 用原形"
+      }
+    ],
+    "trap": {
+      "wrong": "Does he likes apples?",
+      "right": "Does he like apples?",
+      "why": "Does 已经承担了第三人称单数，后面的动词必须退回原形 like。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——一句话记住：does/doesn't 出现后，后面的动词“打回原形”。",
+  "check": [
+    {
+      "id": "G-T03-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "She ____ bananas.",
+      "options": [
+        { "key": "A", "text": "don't like", "distractor": "she 是三单，助动词要用 doesn't" },
+        { "key": "B", "text": "doesn't like", "answer": true },
+        { "key": "C", "text": "isn't like", "distractor": "like 是实义动词，否定要用 doesn't，不用 be 动词" },
+        { "key": "D", "text": "doesn't likes", "distractor": "doesn't 之后动词要用原形 like" }
+      ],
+      "explanation": "主语 she 是三单，否定用 doesn't + 动词原形 like。",
+      "error_tag": "G-T03"
+    },
+    {
+      "id": "G-T03-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "____ your brother ____ football every day?",
+      "options": [
+        { "key": "A", "text": "Do; play", "distractor": "your brother 是三单，助动词要用 Does" },
+        { "key": "B", "text": "Does; plays", "distractor": "Does 之后动词要退回原形 play" },
+        { "key": "C", "text": "Does; play", "answer": true },
+        { "key": "D", "text": "Is; play", "distractor": "play 是实义动词，疑问要用 Does，不用 be 动词" }
+      ],
+      "explanation": "三单主语用 Does 提问，主要动词退回原形 play。",
+      "error_tag": "G-T03"
+    },
+    {
+      "id": "G-T03-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "They ____ go to school on Sundays.",
+      "options": [
+        { "key": "A", "text": "don't", "answer": true },
+        { "key": "B", "text": "doesn't", "distractor": "they 是复数，助动词要用 don't" },
+        { "key": "C", "text": "aren't", "distractor": "go 是实义动词，否定要用 don't" },
+        { "key": "D", "text": "not", "distractor": "缺少助动词，不能直接加 not" }
+      ],
+      "explanation": "they 是复数，否定时用 don't + 动词原形。",
+      "error_tag": "G-T03"
+    }
+  ]
+}

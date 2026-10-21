@@ -1,0 +1,84 @@
+{
+  "point_id": "G-S04",
+  "title": "目的与结果状语从句",
+  "questions": [
+    {
+      "id": "G-S04-L1-01",
+      "level": "L1",
+      "stem": "Please speak louder ____ everyone can hear you.",
+      "options": [
+        { "key": "A", "text": "so that", "answer": true },
+        { "key": "B", "text": "so", "distractor": "so 单独不引导从句" },
+        { "key": "C", "text": "such that", "distractor": "such 后接名词" },
+        { "key": "D", "text": "in order to", "distractor": "in order to 后接动词原形" }
+      ],
+      "explanation": "“为了让大家听见” → so that。",
+      "error_tag": "G-S04"
+    },
+    {
+      "id": "G-S04-L1-02",
+      "level": "L1",
+      "stem": "He was ____ angry ____ he couldn't say a word.",
+      "options": [
+        { "key": "A", "text": "so; that", "answer": true },
+        { "key": "B", "text": "such; that", "distractor": "such 后接名词" },
+        { "key": "C", "text": "too; that", "distractor": "too 搭配 to" },
+        { "key": "D", "text": "very; that", "distractor": "very 不接 that 从句" }
+      ],
+      "explanation": "so + 形容词 angry + that。",
+      "error_tag": "G-S04"
+    },
+    {
+      "id": "G-S04-L2-01",
+      "level": "L2",
+      "stem": "It was ____ bad weather ____ we had to stay at home.",
+      "options": [
+        { "key": "A", "text": "so; that", "distractor": "weather 是名词，要用 such（且 such 后不加 a，因为不可数）" },
+        { "key": "B", "text": "such; that", "answer": true },
+        { "key": "C", "text": "such a; that", "distractor": "weather 不可数，不能加 a" },
+        { "key": "D", "text": "so a; that", "distractor": "结构错误" }
+      ],
+      "explanation": "such + 不可数名词 weather + that。",
+      "error_tag": "G-S04"
+    },
+    {
+      "id": "G-S04-L2-02",
+      "level": "L2",
+      "stem": "He ran ____ quickly ____ nobody could catch him.",
+      "options": [
+        { "key": "A", "text": "so; that", "answer": true },
+        { "key": "B", "text": "such; that", "distractor": "quickly 是副词，用 so" },
+        { "key": "C", "text": "so; as", "distractor": "so…as 用于比较，不表结果" },
+        { "key": "D", "text": "too; that", "distractor": "too 搭配 to" }
+      ],
+      "explanation": "so + 副词 quickly + that。",
+      "error_tag": "G-S04"
+    },
+    {
+      "id": "G-S04-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He got up early so that he could catch the train.", "distractor": "正确" },
+        { "key": "B", "text": "The question was so difficult that nobody answered it.", "distractor": "正确" },
+        { "key": "C", "text": "She is so a kind girl that everyone likes her.", "answer": true },
+        { "key": "D", "text": "He spoke so fast that I couldn't follow him.", "distractor": "正确" }
+      ],
+      "explanation": "后面是名词 a kind girl，应改为 such a kind girl。",
+      "error_tag": "G-S04"
+    },
+    {
+      "id": "G-S04-L3-02",
+      "level": "L3",
+      "stem": "— Why did you take a taxi? — ____ I could get there on time.",
+      "options": [
+        { "key": "A", "text": "So that", "answer": true },
+        { "key": "B", "text": "Because", "distractor": "答语讲的是目的，不是原因" },
+        { "key": "C", "text": "Such that", "distractor": "such 后接名词" },
+        { "key": "D", "text": "In order to", "distractor": "in order to 后接动词原形，不接句子" }
+      ],
+      "explanation": "“为了能准时到” → So that。",
+      "error_tag": "G-S04"
+    }
+  ]
+}

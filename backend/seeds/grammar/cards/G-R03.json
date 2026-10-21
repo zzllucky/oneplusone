@@ -1,0 +1,105 @@
+{
+  "id": "G-R03",
+  "type": "contrast",
+  "module": "R",
+  "module_name": "代词",
+  "title": "it / one / that 的替代",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I can't find my pen. Have you seen it?", "zh": "我找不到我的笔了，你看见它了吗？" },
+      { "en": "I lost my pen, so I bought a new one.", "zh": "我把笔丢了，所以买了一支新的。" }
+    ],
+    "question": "两句里说的“笔”有什么不同？",
+    "options": [
+      {
+        "key": "A",
+        "text": "it 指的就是原来那一支；one 指的是同类的另一支",
+        "feedback": "对！it 是“就是它本人”，one 是“同款的另一个”。"
+      },
+      {
+        "key": "B",
+        "text": "两句意思完全一样",
+        "feedback": "不对——一支是找不着的那支，一支是新买的，不是同一支笔。"
+      },
+      {
+        "key": "C",
+        "text": "it 只能用来指人",
+        "feedback": "不对——it 不指人，指前面提到的那个事物本身。"
+      }
+    ],
+    "answer": "A"
+  },
+  "contrast": {
+    "left": {
+      "label": "it：同名同物",
+      "formula": "it = 前面提到的那一个（就是它）",
+      "anchor": { "en": "I can't find my pen. Have you seen it?", "zh": "我找不到我的笔，你看见它了吗？" },
+      "focus": "找的就是原来那支笔"
+    },
+    "right": {
+      "label": "one：同类异物",
+      "formula": "one = 同一类的另一个（a / an + 名词）",
+      "anchor": { "en": "I lost my pen, so I bought a new one.", "zh": "我把笔丢了，所以买了支新的。" },
+      "focus": "新买的是另一支笔，只是同类"
+    },
+    "diff": "it 是“同一个”，one 是“同款的另一个”。另外 that 常用于比较句中，替代前面提到的不可数名词或单数名词（The weather here is warmer than that in Beijing），避免重复。",
+    "traps": [
+      {
+        "wrong": "Your coat is nice. I want to buy it.",
+        "right": "Your coat is nice. I want to buy one.",
+        "why": "想买的是同款的一件，不是你身上那件，用 one。"
+      },
+      {
+        "wrong": "The weather in Kunming is warmer than it in Beijing.",
+        "right": "The weather in Kunming is warmer than that in Beijing.",
+        "why": "比较句中替代前面的不可数名词 weather 要用 that。"
+      }
+    ]
+  },
+  "guess_callback": "你刚才选的是 A——it 指同一个，one 指同款另一个，比较句里替代用 that。",
+  "check": [
+    {
+      "id": "G-R03-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Did you see my dictionary? — Yes, I saw ____ on your desk.",
+      "options": [
+        { "key": "A", "text": "it", "answer": true },
+        { "key": "B", "text": "one", "distractor": "one 是“另一本词典”，与语境不符" },
+        { "key": "C", "text": "that", "distractor": "这里不是比较句" },
+        { "key": "D", "text": "this", "distractor": "this 不用于替代前面提到的事物" }
+      ],
+      "explanation": "看见的就是“你那本词典” → it。",
+      "error_tag": "G-R03"
+    },
+    {
+      "id": "G-R03-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Your bag is beautiful. I want to buy ____, too.",
+      "options": [
+        { "key": "A", "text": "it", "distractor": "不能买你那个包，是买同款的一个" },
+        { "key": "B", "text": "one", "answer": true },
+        { "key": "C", "text": "that", "distractor": "这里不是比较句" },
+        { "key": "D", "text": "this", "distractor": "this 不用于替代" }
+      ],
+      "explanation": "买同款的另一个 → one。",
+      "error_tag": "G-R03"
+    },
+    {
+      "id": "G-R03-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "The weather in Kunming is warmer than that in Beijing.", "answer": true },
+        { "key": "B", "text": "The weather in Kunming is warmer than it in Beijing.", "distractor": "比较句里替代 weather 要用 that" },
+        { "key": "C", "text": "The weather in Kunming is warmer than one in Beijing.", "distractor": "one 不能替代不可数名词" },
+        { "key": "D", "text": "The weather in Kunming is warmer than this in Beijing.", "distractor": "this 不用于这种替代" }
+      ],
+      "explanation": "比较句中用 that 替代前面的 weather。",
+      "error_tag": "G-R03"
+    }
+  ]
+}

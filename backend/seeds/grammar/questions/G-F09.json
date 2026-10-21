@@ -1,0 +1,84 @@
+{
+  "point_id": "G-F09",
+  "title": "to do 与 doing 义变",
+  "questions": [
+    {
+      "id": "G-F09-L1-01",
+      "level": "L1",
+      "stem": "Please remember ____ (lock) the door when you leave.",
+      "options": [
+        { "key": "A", "text": "locking", "distractor": "门还没锁，是“记得去锁”" },
+        { "key": "B", "text": "to lock", "answer": true },
+        { "key": "C", "text": "lock", "distractor": "缺少 to" },
+        { "key": "D", "text": "locked", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "记得去做（还没做）→ remember to lock。",
+      "error_tag": "G-F09"
+    },
+    {
+      "id": "G-F09-L1-02",
+      "level": "L1",
+      "stem": "I forgot ____ (bring) my homework this morning, so the teacher was angry.",
+      "options": [
+        { "key": "A", "text": "bringing", "distractor": "作业没带来，是“忘了带”，用 to do" },
+        { "key": "B", "text": "to bring", "answer": true },
+        { "key": "C", "text": "bring", "distractor": "缺少 to" },
+        { "key": "D", "text": "brought", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "忘了去做（没做）→ forgot to bring。",
+      "error_tag": "G-F09"
+    },
+    {
+      "id": "G-F09-L2-01",
+      "level": "L2",
+      "stem": "He felt very tired, so he stopped ____ (have) a rest.",
+      "options": [
+        { "key": "A", "text": "having", "distractor": "这是“停止休息”，与“累了”矛盾" },
+        { "key": "B", "text": "to have", "answer": true },
+        { "key": "C", "text": "have", "distractor": "缺少 to" },
+        { "key": "D", "text": "had", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "停下来去休息 → stopped to have a rest。",
+      "error_tag": "G-F09"
+    },
+    {
+      "id": "G-F09-L2-02",
+      "level": "L2",
+      "stem": "When the teacher came in, the students stopped ____ (talk).",
+      "options": [
+        { "key": "A", "text": "talking", "answer": true },
+        { "key": "B", "text": "to talk", "distractor": "这里要“停止说话”，不是“停下来去说”" },
+        { "key": "C", "text": "talk", "distractor": "缺少 -ing" },
+        { "key": "D", "text": "talked", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "停止正在做的事 → stopped talking。",
+      "error_tag": "G-F09"
+    },
+    {
+      "id": "G-F09-L3-01",
+      "level": "L3",
+      "stem": "— Did you remember ____ the letter? — Yes, I remember ____ it on my way home.",
+      "options": [
+        { "key": "A", "text": "to post; posting", "answer": true },
+        { "key": "B", "text": "posting; to post", "distractor": "前后反了：先问“有没有记得去寄”，再答“记得寄过了”" },
+        { "key": "C", "text": "to post; to post", "distractor": "第二空是“记得做过的事”" },
+        { "key": "D", "text": "posting; posting", "distractor": "第一空是“记得去做”" }
+      ],
+      "explanation": "第一空还没寄（to post），第二空已寄过（posting）。",
+      "error_tag": "G-F09"
+    },
+    {
+      "id": "G-F09-L3-02",
+      "level": "L3",
+      "stem": "— The light in the classroom is still on. — Oh, I forgot ____ it off.",
+      "options": [
+        { "key": "A", "text": "turning", "distractor": "灯还亮着说明没关，是“忘了去关”" },
+        { "key": "B", "text": "to turn", "answer": true },
+        { "key": "C", "text": "turn", "distractor": "缺少 to" },
+        { "key": "D", "text": "turned", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "忘了去做（没做）→ forgot to turn it off。",
+      "error_tag": "G-F09"
+    }
+  ]
+}

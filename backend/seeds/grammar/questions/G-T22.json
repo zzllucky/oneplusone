@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T22",
+  "title": "长动作被打断",
+  "questions": [
+    {
+      "id": "G-T22-L1-01",
+      "level": "L1",
+      "stem": "I ____ (read) a book when my friend called me.",
+      "options": [
+        { "key": "A", "text": "read", "distractor": "看书是长动作，要用进行时" },
+        { "key": "B", "text": "was reading", "answer": true },
+        { "key": "C", "text": "am reading", "distractor": "called 说明是过去" },
+        { "key": "D", "text": "reads", "distractor": "时态不对" }
+      ],
+      "explanation": "看书是长动作用 was reading，打电话是短动作用 called。",
+      "error_tag": "G-T22"
+    },
+    {
+      "id": "G-T22-L1-02",
+      "level": "L1",
+      "stem": "They ____ (play) basketball when it started to rain.",
+      "options": [
+        { "key": "A", "text": "played", "distractor": "打球是长动作，要用进行时" },
+        { "key": "B", "text": "were playing", "answer": true },
+        { "key": "C", "text": "play", "distractor": "时态不对" },
+        { "key": "D", "text": "are playing", "distractor": "started 说明是过去" }
+      ],
+      "explanation": "打球是长动作用 were playing，开始下雨是短动作用 started。",
+      "error_tag": "G-T22"
+    },
+    {
+      "id": "G-T22-L2-01",
+      "level": "L2",
+      "stem": "The baby ____ (sleep) when the door bell rang.",
+      "options": [
+        { "key": "A", "text": "slept", "distractor": "睡觉是长动作，要用进行时" },
+        { "key": "B", "text": "was sleeping", "answer": true },
+        { "key": "C", "text": "sleeps", "distractor": "时态不对" },
+        { "key": "D", "text": "is sleeping", "distractor": "rang 说明是过去" }
+      ],
+      "explanation": "睡觉是持续动作用 was sleeping，门铃响是瞬间动作用 rang。",
+      "error_tag": "G-T22"
+    },
+    {
+      "id": "G-T22-L2-02",
+      "level": "L2",
+      "stem": "We ____ (watch) the match when someone ____ at the door.",
+      "options": [
+        { "key": "A", "text": "were watching; knocked", "answer": true },
+        { "key": "B", "text": "watched; was knocking", "distractor": "两个时态放反了" },
+        { "key": "C", "text": "were watching; was knocking", "distractor": "敲门是瞬间动作，用一般过去时" },
+        { "key": "D", "text": "watched; knocked", "distractor": "看比赛是长动作，要用进行时" }
+      ],
+      "explanation": "长动作看比赛用 were watching，短动作敲门用 knocked。",
+      "error_tag": "G-T22"
+    },
+    {
+      "id": "G-T22-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I was having breakfast when the postman came.", "distractor": "正确" },
+        { "key": "B", "text": "She was walking home when it began to snow.", "distractor": "正确" },
+        { "key": "C", "text": "He wrote a letter when the lights were going out.", "answer": true },
+        { "key": "D", "text": "They were talking when the teacher came in.", "distractor": "正确" }
+      ],
+      "explanation": "写信是长动作、停电是短动作，应改为 He was writing a letter when the lights went out。",
+      "error_tag": "G-T22"
+    },
+    {
+      "id": "G-T22-L3-02",
+      "level": "L3",
+      "stem": "— I called you at nine, but nobody answered. — Sorry, I ____ (take) a bath then.",
+      "options": [
+        { "key": "A", "text": "took", "distractor": "“九点那一刻正在洗澡”，要用进行时" },
+        { "key": "B", "text": "was taking", "answer": true },
+        { "key": "C", "text": "take", "distractor": "时态不对" },
+        { "key": "D", "text": "am taking", "distractor": "这是过去的时间" }
+      ],
+      "explanation": "“那时正在洗澡”是长动作，用 was taking，这也解释了为什么没人接电话。",
+      "error_tag": "G-T22"
+    }
+  ]
+}

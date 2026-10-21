@@ -1,0 +1,84 @@
+{
+  "point_id": "G-F07",
+  "title": "介词后接 doing",
+  "questions": [
+    {
+      "id": "G-F07-L1-01",
+      "level": "L1",
+      "stem": "Are you interested in ____ (collect) stamps?",
+      "options": [
+        { "key": "A", "text": "collect", "distractor": "介词 in 后面要接 doing" },
+        { "key": "B", "text": "collecting", "answer": true },
+        { "key": "C", "text": "to collect", "distractor": "介词后面不接 to do" },
+        { "key": "D", "text": "collected", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "be interested in + collecting。",
+      "error_tag": "G-F07"
+    },
+    {
+      "id": "G-F07-L1-02",
+      "level": "L1",
+      "stem": "The little girl is afraid of ____ (go) out at night.",
+      "options": [
+        { "key": "A", "text": "go", "distractor": "介词 of 后面要接 doing" },
+        { "key": "B", "text": "going", "answer": true },
+        { "key": "C", "text": "to go", "distractor": "介词后面不接 to do" },
+        { "key": "D", "text": "goes", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "be afraid of + going out。",
+      "error_tag": "G-F07"
+    },
+    {
+      "id": "G-F07-L2-01",
+      "level": "L2",
+      "stem": "What about ____ (have) a picnic this Sunday?",
+      "options": [
+        { "key": "A", "text": "have", "distractor": "about 是介词，后面要接 doing" },
+        { "key": "B", "text": "having", "answer": true },
+        { "key": "C", "text": "to have", "distractor": "介词后面不接 to do" },
+        { "key": "D", "text": "had", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "What about + having…?",
+      "error_tag": "G-F07"
+    },
+    {
+      "id": "G-F07-L2-02",
+      "level": "L2",
+      "stem": "Thank you for ____ (send) me such a nice gift.",
+      "options": [
+        { "key": "A", "text": "send", "distractor": "介词 for 后面要接 doing" },
+        { "key": "B", "text": "sending", "answer": true },
+        { "key": "C", "text": "to send", "distractor": "介词后面不接 to do" },
+        { "key": "D", "text": "sent", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "Thank you for + sending。",
+      "error_tag": "G-F07"
+    },
+    {
+      "id": "G-F07-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "She is good at drawing pictures.", "distractor": "正确" },
+        { "key": "B", "text": "He is interested in reading history books.", "distractor": "正确" },
+        { "key": "C", "text": "They are fond of play football after school.", "answer": true },
+        { "key": "D", "text": "We are tired of waiting for the bus.", "distractor": "正确" }
+      ],
+      "explanation": "of 是介词，应改为 fond of playing football。",
+      "error_tag": "G-F07"
+    },
+    {
+      "id": "G-F07-L3-02",
+      "level": "L3",
+      "stem": "After ____ (finish) his homework, he went to bed.",
+      "options": [
+        { "key": "A", "text": "finish", "distractor": "after 在这里是介词，后面要接 doing" },
+        { "key": "B", "text": "finishing", "answer": true },
+        { "key": "C", "text": "to finish", "distractor": "介词后面不接 to do" },
+        { "key": "D", "text": "finished", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "After + finishing his homework（介词短语作时间状语）。",
+      "error_tag": "G-F07"
+    }
+  ]
+}

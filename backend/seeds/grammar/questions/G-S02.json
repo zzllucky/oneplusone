@@ -1,0 +1,84 @@
+{
+  "point_id": "G-S02",
+  "title": "条件状语从句",
+  "questions": [
+    {
+      "id": "G-S02-L1-01",
+      "level": "L1",
+      "stem": "If you ____ harder, you ____ better grades.",
+      "options": [
+        { "key": "A", "text": "study; will get", "answer": true },
+        { "key": "B", "text": "will study; will get", "distractor": "if 从句不能用将来时" },
+        { "key": "C", "text": "study; get", "distractor": "主句要说将来的结果" },
+        { "key": "D", "text": "will study; get", "distractor": "两处都不对" }
+      ],
+      "explanation": "主将从现：If you study, you will get。",
+      "error_tag": "G-S02"
+    },
+    {
+      "id": "G-S02-L1-02",
+      "level": "L1",
+      "stem": "You can go out to play ____ you finish your homework.",
+      "options": [
+        { "key": "A", "text": "as long as", "answer": true },
+        { "key": "B", "text": "as soon as", "distractor": "这里强调条件，不是时间" },
+        { "key": "C", "text": "unless", "distractor": "unless 是“除非”，逻辑相反" },
+        { "key": "D", "text": "until", "distractor": "意思不符" }
+      ],
+      "explanation": "只要完成作业（条件）→ as long as。",
+      "error_tag": "G-S02"
+    },
+    {
+      "id": "G-S02-L2-01",
+      "level": "L2",
+      "stem": "We ____ go swimming tomorrow ____ it rains.",
+      "options": [
+        { "key": "A", "text": "will; unless", "distractor": "“除非下雨就去”逻辑矛盾" },
+        { "key": "B", "text": "won't; if", "answer": true },
+        { "key": "C", "text": "won't; unless", "distractor": "“除非下雨就不去”逻辑不对" },
+        { "key": "D", "text": "will; if", "distractor": "“如果下雨就去”不合常理" }
+      ],
+      "explanation": "如果下雨就不去 → won't … if it rains。",
+      "error_tag": "G-S02"
+    },
+    {
+      "id": "G-S02-L2-02",
+      "level": "L2",
+      "stem": "— I'm not sure if it ____ tomorrow. — If it ____, we'll stay at home.",
+      "options": [
+        { "key": "A", "text": "will rain; rains", "answer": true },
+        { "key": "B", "text": "rains; rains", "distractor": "第一个 if 是“是否”，引导宾语从句，要用将来时" },
+        { "key": "C", "text": "will rain; will rain", "distractor": "第二个 if 是条件从句，不能用将来时" },
+        { "key": "D", "text": "rains; will rain", "distractor": "两处弄反了" }
+      ],
+      "explanation": "第一个 if 是“是否”（用将来时），第二个是“如果”（用现在时）。",
+      "error_tag": "G-S02"
+    },
+    {
+      "id": "G-S02-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "If you don't hurry, you'll miss the bus.", "distractor": "正确" },
+        { "key": "B", "text": "Unless you hurry, you'll miss the bus.", "distractor": "正确：unless = if … not" },
+        { "key": "C", "text": "If it will be sunny tomorrow, we'll go hiking.", "answer": true },
+        { "key": "D", "text": "You may go as long as you come back early.", "distractor": "正确" }
+      ],
+      "explanation": "条件从句用一般现在时：If it is sunny tomorrow。",
+      "error_tag": "G-S02"
+    },
+    {
+      "id": "G-S02-L3-02",
+      "level": "L3",
+      "stem": "— Will you come to the party? — Yes, ____ I'm free that day.",
+      "options": [
+        { "key": "A", "text": "if", "answer": true },
+        { "key": "B", "text": "unless", "distractor": "“除非我有空”逻辑相反" },
+        { "key": "C", "text": "until", "distractor": "意思不符" },
+        { "key": "D", "text": "as soon as", "distractor": "这里表条件，不是时间" }
+      ],
+      "explanation": "“如果那天有空就去” → if。",
+      "error_tag": "G-S02"
+    }
+  ]
+}

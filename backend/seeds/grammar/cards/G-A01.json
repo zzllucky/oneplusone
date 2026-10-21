@@ -1,0 +1,100 @@
+{
+  "id": "G-A01",
+  "type": "rule",
+  "module": "A",
+  "module_name": "形容词",
+  "title": "比较级最高级构成",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "Tom is taller than Jim.", "zh": "汤姆比吉姆高。" },
+      { "en": "This is the most interesting book of the three.", "zh": "这是三本书中最有趣的一本。" }
+    ],
+    "question": "interesting 的比较级为什么是 more interesting，而不是 interestinger？",
+    "options": [
+      {
+        "key": "A",
+        "text": "因为它是多音节词，比较级要在前面加 more，不能加 -er",
+        "feedback": "对！三个音节以上的词一律用 more / most，不能加 -er。"
+      },
+      {
+        "key": "B",
+        "text": "因为它以 -ing 结尾",
+        "feedback": "不对——判断依据是音节多少，不是结尾字母。"
+      },
+      {
+        "key": "C",
+        "text": "两种写法都可以",
+        "feedback": "不对——interestinger 是错的，只能用 more interesting。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "单音节和少数双音节词加 -er / -est；多音节词前面加 more / most；还有一批不规则变化需要单独记",
+    "signals": ["-er", "-est", "more", "most", "better", "best", "worse", "worst"],
+    "formula": "① 单音节：tall → taller → tallest　② 辅音 + y：heavy → heavier → heaviest　③ 重读闭音节双写末辅音：big → bigger → biggest　④ 多音节：interesting → more interesting → most interesting　⑤ 不规则：good / well → better → best；bad → worse → worst；many / much → more → most",
+    "anchors": [
+      {
+        "en": "Tom is taller than Jim.",
+        "zh": "汤姆比吉姆高。",
+        "note": "单音节加 -er"
+      },
+      {
+        "en": "This is the most interesting book I have read.",
+        "zh": "这是我读过的最有趣的书。",
+        "note": "多音节用 most"
+      }
+    ],
+    "trap": {
+      "wrong": "This book is interestinger than that one.",
+      "right": "This book is more interesting than that one.",
+      "why": "多音节词比较级用 more，不能加 -er。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——短词加 -er/-est，长词加 more/most，good-better-best 这类单独记。",
+  "check": [
+    {
+      "id": "G-A01-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Which is ____, the sun or the moon?",
+      "options": [
+        { "key": "A", "text": "big", "distractor": "两者比较要用比较级" },
+        { "key": "B", "text": "bigger", "answer": true },
+        { "key": "C", "text": "biggest", "distractor": "两者比较不用最高级" },
+        { "key": "D", "text": "the biggest", "distractor": "两者比较不用最高级" }
+      ],
+      "explanation": "两者比较 → bigger（重读闭音节双写 g）。",
+      "error_tag": "G-A01"
+    },
+    {
+      "id": "G-A01-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "I think English is ____ than maths.",
+      "options": [
+        { "key": "A", "text": "interesting", "distractor": "有 than 要用比较级" },
+        { "key": "B", "text": "more interesting", "answer": true },
+        { "key": "C", "text": "interestinger", "distractor": "多音节词不能加 -er" },
+        { "key": "D", "text": "most interesting", "distractor": "两者比较用比较级" }
+      ],
+      "explanation": "多音节词比较级 → more interesting。",
+      "error_tag": "G-A01"
+    },
+    {
+      "id": "G-A01-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "This book is better than that one.", "answer": true },
+        { "key": "B", "text": "This book is gooder than that one.", "distractor": "good 的比较级是 better" },
+        { "key": "C", "text": "This book is more good than that one.", "distractor": "good 不用 more" },
+        { "key": "D", "text": "This book is best than that one.", "distractor": "best 是最高级，不接 than" }
+      ],
+      "explanation": "good → better（不规则变化）。",
+      "error_tag": "G-A01"
+    }
+  ]
+}

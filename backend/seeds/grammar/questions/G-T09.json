@@ -1,0 +1,241 @@
+{
+  "point_id": "G-T09",
+  "title": "will 与 be going to",
+  "covers": ["G-T09", "G-T10", "G-T11"],
+  "questions": [
+    {
+      "id": "G-T09-L1-01",
+      "level": "L1",
+      "stem": "We ____ (have) a maths test next Monday.",
+      "options": [
+        { "key": "A", "text": "have", "distractor": "next Monday 是将来，不能直接用现在时" },
+        { "key": "B", "text": "will have", "answer": true },
+        { "key": "C", "text": "had", "distractor": "这是过去式" },
+        { "key": "D", "text": "has", "distractor": "这是三单形式" }
+      ],
+      "explanation": "next Monday 表示将来，用 will have。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L1-02",
+      "level": "L1",
+      "stem": "She ____ (be) thirteen years old next year.",
+      "options": [
+        { "key": "A", "text": "is", "distractor": "next year 表示将来" },
+        { "key": "B", "text": "will be", "answer": true },
+        { "key": "C", "text": "was", "distractor": "这是过去式" },
+        { "key": "D", "text": "being", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "be 动词的将来时是 will be，不管主语是谁。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L1-03",
+      "level": "L1",
+      "stem": "____ you ____ (come) to my birthday party tomorrow?",
+      "options": [
+        { "key": "A", "text": "Do; come", "distractor": "tomorrow 表示将来，不能用一般现在时" },
+        { "key": "B", "text": "Will; come", "answer": true },
+        { "key": "C", "text": "Are; come", "distractor": "come 是实义动词，不能与 are 连用" },
+        { "key": "D", "text": "Will; coming", "distractor": "will 后面要用原形 come" }
+      ],
+      "explanation": "将来时的疑问句：Will + 主语 + 动词原形。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L1-04",
+      "level": "L1",
+      "stem": "They ____ (not go) to school tomorrow because it's Saturday.",
+      "options": [
+        { "key": "A", "text": "don't go", "distractor": "tomorrow 表示将来" },
+        { "key": "B", "text": "won't go", "answer": true },
+        { "key": "C", "text": "not go", "distractor": "缺少助动词" },
+        { "key": "D", "text": "willn't go", "distractor": "will not 的缩写是 won't，不是 willn't" }
+      ],
+      "explanation": "将来时否定用 won't（= will not）+ 动词原形。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L2-01",
+      "level": "L2",
+      "stem": "I think it ____ (rain) tomorrow.",
+      "options": [
+        { "key": "A", "text": "rains", "distractor": "tomorrow 表示将来" },
+        { "key": "B", "text": "will rain", "answer": true },
+        { "key": "C", "text": "rained", "distractor": "这是过去式" },
+        { "key": "D", "text": "is raining", "distractor": "tomorrow 不是“正在”" }
+      ],
+      "explanation": "I think 之后是对将来的预测，用 will rain。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L2-02",
+      "level": "L2",
+      "stem": "He ____ (be) a doctor when he grows up.",
+      "options": [
+        { "key": "A", "text": "is", "distractor": "“长大后”是将来的事" },
+        { "key": "B", "text": "will be", "answer": true },
+        { "key": "C", "text": "was", "distractor": "时态不对" },
+        { "key": "D", "text": "be", "distractor": "不能单独作谓语" }
+      ],
+      "explanation": "when he grows up 指的是将来，主句用 will be。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L2-03",
+      "level": "L2",
+      "stem": "There ____ (be) a class meeting this afternoon.",
+      "options": [
+        { "key": "A", "text": "is", "distractor": "this afternoon 还没到，表示将来" },
+        { "key": "B", "text": "will be", "answer": true },
+        { "key": "C", "text": "was", "distractor": "这是过去式" },
+        { "key": "D", "text": "are", "distractor": "there be 句型将来时应为 there will be" }
+      ],
+      "explanation": "there be 句型的将来时是 there will be（不用 there will have）。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L2-04",
+      "level": "L2",
+      "stem": "— What ____ you ____ (do) this weekend? — I ____ my grandparents.",
+      "options": [
+        { "key": "A", "text": "will; do; will visit", "answer": true },
+        { "key": "B", "text": "do; do; visit", "distractor": "this weekend 表示将来，不是习惯" },
+        { "key": "C", "text": "will; do; visit", "distractor": "第二空也要用将来时" },
+        { "key": "D", "text": "are; do; will visit", "distractor": "do 是实义动词，疑问要用 will" }
+      ],
+      "explanation": "问句和答语说的都是这个周末的计划，两处都用将来时。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "It's going to rain soon.", "distractor": "正确：有迹象" },
+        { "key": "B", "text": "I'll help you with your bag.", "distractor": "正确：临时决定" },
+        { "key": "C", "text": "Look at the sky! It will snow.", "answer": true },
+        { "key": "D", "text": "We are going to have a party.", "distractor": "正确：事先计划" }
+      ],
+      "explanation": "“看天色”说明眼前有迹象，必须用 is going to snow，不能用 will。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L3-02",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He will goes to Beijing next week.", "answer": true },
+        { "key": "B", "text": "She is going to study hard.", "distractor": "正确" },
+        { "key": "C", "text": "They will come here tomorrow.", "distractor": "正确" },
+        { "key": "D", "text": "I'm going to visit my aunt.", "distractor": "正确" }
+      ],
+      "explanation": "will 后面必须接动词原形 go，不能接 goes。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L3-03",
+      "level": "L3",
+      "stem": "— Why are you taking an umbrella? — Because it ____ rain.",
+      "options": [
+        { "key": "A", "text": "will", "distractor": "带伞说明已经有了判断依据" },
+        { "key": "B", "text": "is going to", "answer": true },
+        { "key": "C", "text": "going to", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "is going", "distractor": "结构不完整，going 后要有 to" }
+      ],
+      "explanation": "已经带伞说明有迹象/早有判断，用 is going to rain 更贴切。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L3-04",
+      "level": "L3",
+      "stem": "If it ____ (rain) tomorrow, we ____ (stay) at home.",
+      "options": [
+        { "key": "A", "text": "rains; will stay", "answer": true },
+        { "key": "B", "text": "will rain; stay", "distractor": "if 引导的条件从句不能用将来时" },
+        { "key": "C", "text": "rains; stay", "distractor": "主句表示将来的结果，要用 will stay" },
+        { "key": "D", "text": "will rain; will stay", "distractor": "从句不能用将来时（主将从现）" }
+      ],
+      "explanation": "主将从现：if 从句用一般现在时 rains，主句用 will stay。",
+      "error_tag": "G-T12"
+    },
+    {
+      "id": "G-T09-L1-05",
+      "level": "L1",
+      "stem": "— What are you going to do this Sunday? — I ____ visit my grandma.",
+      "options": [
+        { "key": "A", "text": "am going to", "answer": true },
+        { "key": "B", "text": "will", "distractor": "问句用了 be going to，答语保持一致更自然" },
+        { "key": "C", "text": "going to", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "am going", "distractor": "going 后面要有 to" }
+      ],
+      "explanation": "be going to 的完整结构是 am/is/are going to + 动词原形。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L1-06",
+      "level": "L1",
+      "stem": "They ____ (have) a picnic tomorrow. Everything is ready.",
+      "options": [
+        { "key": "A", "text": "are going to have", "answer": true },
+        { "key": "B", "text": "have", "distractor": "tomorrow 表示将来，不能直接用现在时" },
+        { "key": "C", "text": "had", "distractor": "这是过去式" },
+        { "key": "D", "text": "is going to have", "distractor": "主语 They 是复数，be 动词用 are" }
+      ],
+      "explanation": "东西都准备好了，是事先打算好的事，用 are going to have。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L2-05",
+      "level": "L2",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "They are going to have a meeting tomorrow.", "answer": true },
+        { "key": "B", "text": "They going to have a meeting tomorrow.", "distractor": "缺少 be 动词" },
+        { "key": "C", "text": "They are going have a meeting tomorrow.", "distractor": "going 后面要有 to" },
+        { "key": "D", "text": "They is going to have a meeting tomorrow.", "distractor": "They 是复数，be 动词用 are" }
+      ],
+      "explanation": "be going to 三要素缺一不可：be 动词 + going to + 动词原形。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L2-06",
+      "level": "L2",
+      "stem": "— ____ you ____ (watch) the match tonight? — Yes, I've got the ticket.",
+      "options": [
+        { "key": "A", "text": "Are; going to watch", "answer": true },
+        { "key": "B", "text": "Do; watch", "distractor": "tonight 表示将来，不是习惯动作" },
+        { "key": "C", "text": "Will; watching", "distractor": "will 后面要用动词原形" },
+        { "key": "D", "text": "Are; watch", "distractor": "缺少 going to" }
+      ],
+      "explanation": "票都拿到了，是事先计划好的事，用 Are you going to watch。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L3-05",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "Look at those clouds! It's going to rain.", "distractor": "正确：有迹象" },
+        { "key": "B", "text": "We're going to visit the museum next week.", "distractor": "正确：事先计划" },
+        { "key": "C", "text": "He is going to goes home now.", "answer": true },
+        { "key": "D", "text": "I'm going to be a teacher when I grow up.", "distractor": "正确" }
+      ],
+      "explanation": "be going to 后面必须接动词原形 go，不能接 goes。",
+      "error_tag": "G-T09"
+    },
+    {
+      "id": "G-T09-L3-06",
+      "level": "L3",
+      "stem": "— The box is too heavy. — I ____ help you.　— Look at that big black cloud. — It ____ rain.",
+      "options": [
+        { "key": "A", "text": "will; is going to", "answer": true },
+        { "key": "B", "text": "am going to; will", "distractor": "第一空是听到后才做的决定，用 will" },
+        { "key": "C", "text": "will; will", "distractor": "第二空眼前有乌云这个迹象，要用 is going to" },
+        { "key": "D", "text": "am going to; is going to", "distractor": "第一空是临时决定，用 will" }
+      ],
+      "explanation": "临时决定用 will；眼前有迹象（乌云）用 be going to。",
+      "error_tag": "G-T09"
+    }
+  ]
+}

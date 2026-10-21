@@ -1,0 +1,84 @@
+{
+  "point_id": "G-T01",
+  "title": "一般现在时·基本用法",
+  "questions": [
+    {
+      "id": "G-T01-L1-01",
+      "level": "L1",
+      "stem": "My father ____ up early every morning.",
+      "options": [
+        { "key": "A", "text": "get", "distractor": "my father 是三单，要加 -s" },
+        { "key": "B", "text": "gets", "answer": true },
+        { "key": "C", "text": "getting", "distractor": "不能单独作谓语" },
+        { "key": "D", "text": "got", "distractor": "every morning 表示习惯，不用过去时" }
+      ],
+      "explanation": "every morning 是一般现在时的标志，主语 my father 是三单，用 gets。",
+      "error_tag": "G-T01"
+    },
+    {
+      "id": "G-T01-L1-02",
+      "level": "L1",
+      "stem": "We ____ four classes in the morning.",
+      "options": [
+        { "key": "A", "text": "have", "answer": true },
+        { "key": "B", "text": "has", "distractor": "we 是复数，不用三单形式" },
+        { "key": "C", "text": "having", "distractor": "不能单独作谓语" },
+        { "key": "D", "text": "had", "distractor": "说的是每天的安排，不是过去的事" }
+      ],
+      "explanation": "we 是复数主语，表示每天的固定安排，用 have。",
+      "error_tag": "G-T01"
+    },
+    {
+      "id": "G-T01-L2-01",
+      "level": "L2",
+      "stem": "The first class ____ (begin) at eight o'clock.",
+      "options": [
+        { "key": "A", "text": "begin", "distractor": "the first class 是三单，要加 -s" },
+        { "key": "B", "text": "begins", "answer": true },
+        { "key": "C", "text": "is beginning", "distractor": "课程表上的固定安排用一般现在时，不用进行时" },
+        { "key": "D", "text": "began", "distractor": "每天八点上课，不是过去一次" }
+      ],
+      "explanation": "课程表、时刻表上的固定安排，用一般现在时 begins。",
+      "error_tag": "G-T01"
+    },
+    {
+      "id": "G-T01-L2-02",
+      "level": "L2",
+      "stem": "Light ____ (travel) much faster than sound.",
+      "options": [
+        { "key": "A", "text": "travel", "distractor": "light 是三单，要加 -s" },
+        { "key": "B", "text": "travels", "answer": true },
+        { "key": "C", "text": "traveling", "distractor": "不能单独作谓语" },
+        { "key": "D", "text": "traveled", "distractor": "客观真理不用过去时" }
+      ],
+      "explanation": "光的传播速度是客观真理，一律用一般现在时 travels。",
+      "error_tag": "G-T01"
+    },
+    {
+      "id": "G-T01-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I usually walk to school.", "distractor": "正确：usually 表习惯" },
+        { "key": "B", "text": "The earth moves around the sun.", "distractor": "正确：客观真理" },
+        { "key": "C", "text": "He is going to bed at nine every day.", "answer": true },
+        { "key": "D", "text": "We have four classes in the morning.", "distractor": "正确：固定安排" }
+      ],
+      "explanation": "every day 表示习惯，要用一般现在时 goes to bed；现在进行时表示“正在”，不能表示“每天如此”。",
+      "error_tag": "G-T01"
+    },
+    {
+      "id": "G-T01-L3-02",
+      "level": "L3",
+      "stem": "The children ____ (play) in the park every Sunday.",
+      "options": [
+        { "key": "A", "text": "play", "answer": true },
+        { "key": "B", "text": "plays", "distractor": "the children 是复数，不能加 -s" },
+        { "key": "C", "text": "are playing", "distractor": "every Sunday 是习惯，不是“此刻正在”" },
+        { "key": "D", "text": "played", "distractor": "每个星期天都如此，不用过去时" }
+      ],
+      "explanation": "every Sunday 说明是反复发生的习惯，用一般现在时 play（复数不加 s）。",
+      "error_tag": "G-T01"
+    }
+  ]
+}

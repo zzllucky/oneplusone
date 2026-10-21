@@ -1,0 +1,100 @@
+{
+  "id": "G-S05",
+  "type": "rule",
+  "module": "S",
+  "module_name": "状语从句",
+  "title": "让步与比较状语从句",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "Though he is young, he knows a lot.", "zh": "虽然他年纪小，但懂得很多。" },
+      { "en": "He runs faster than I do.", "zh": "他跑得比我快。" }
+    ],
+    "question": "“虽然他很累，但他继续工作”能说 Though he was tired, but he kept working. 吗？",
+    "options": [
+      {
+        "key": "A",
+        "text": "不行——though 和 but 不能同时用，跟 because 和 so 一个道理",
+        "feedback": "对！英语里“虽然”和“但是”也只能留一个。"
+      },
+      {
+        "key": "B",
+        "text": "可以，两个一起用更清楚",
+        "feedback": "不对——同时用是错的，属于典型的中式英语。"
+      },
+      {
+        "key": "C",
+        "text": "两个都不能用，要用 however",
+        "feedback": "不对——though 或 but 单独用哪个都对，只是不能同时出现。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "though / although 引导让步状语从句，不能与 but 连用（可与 yet / still 连用）；比较状语从句用 than 或 as … as，as…as 中间用原级",
+    "signals": ["though", "although", "even though", "but", "than", "as … as", "not so … as"],
+    "formula": "① Though / Although + 从句，主句（不加 but）　② 比较级 + than：He runs faster than I do.　③ as + 原级 + as：He is as tall as me.　④ 否定：not as / so + 原级 + as",
+    "anchors": [
+      {
+        "en": "Although it rained hard, they went on working.",
+        "zh": "虽然雨下得很大，他们还是继续工作。",
+        "note": "although 不与 but 连用"
+      },
+      {
+        "en": "He didn't run so fast as his brother.",
+        "zh": "他跑得没有他哥哥快。",
+        "note": "not so … as"
+      }
+    ],
+    "trap": {
+      "wrong": "Though he is young, but he knows a lot.",
+      "right": "Though he is young, he knows a lot. / He is young, but he knows a lot.",
+      "why": "“虽然”和“但是”只能留一个。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——though / although 不配 but；比较用 than，同级用 as…as（中间放原级）。",
+  "check": [
+    {
+      "id": "G-S05-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "____ he is only ten years old, he can speak three languages.",
+      "options": [
+        { "key": "A", "text": "Though", "answer": true },
+        { "key": "B", "text": "But", "distractor": "but 不能引导从句放在句首这样用" },
+        { "key": "C", "text": "Because", "distractor": "前后不是因果关系" },
+        { "key": "D", "text": "So", "distractor": "前后不是因果结果关系" }
+      ],
+      "explanation": "让步关系 → Though。",
+      "error_tag": "G-S05"
+    },
+    {
+      "id": "G-S05-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He didn't run ____ fast ____ his brother.",
+      "options": [
+        { "key": "A", "text": "so; as", "answer": true },
+        { "key": "B", "text": "so; than", "distractor": "so 不与 than 搭配" },
+        { "key": "C", "text": "more; as", "distractor": "结构错误" },
+        { "key": "D", "text": "as; than", "distractor": "两个空搭配不一致" }
+      ],
+      "explanation": "not so + 原级 + as（不如……）。",
+      "error_tag": "G-S05"
+    },
+    {
+      "id": "G-S05-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "Although it was cold, they went swimming.", "answer": true },
+        { "key": "B", "text": "Although it was cold, but they went swimming.", "distractor": "although 和 but 不能连用" },
+        { "key": "C", "text": "Though it was cold, but they went swimming.", "distractor": "though 和 but 不能连用" },
+        { "key": "D", "text": "But although it was cold, they went swimming.", "distractor": "结构混乱" }
+      ],
+      "explanation": "让步从句单独用，主句不加 but。",
+      "error_tag": "G-S05"
+    }
+  ]
+}

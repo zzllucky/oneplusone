@@ -1,0 +1,100 @@
+{
+  "id": "G-C03",
+  "type": "rule",
+  "module": "C",
+  "module_name": "定语从句",
+  "title": "关系副词",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I still remember the day when we first met.", "zh": "我还记得我们初次见面的那一天。" },
+      { "en": "This is the house where I was born.", "zh": "这就是我出生的那座房子。" }
+    ],
+    "question": "先行词是表示时间的词时，该用哪个关系词？",
+    "options": [
+      {
+        "key": "A",
+        "text": "用关系副词 when（相当于 on / in which）",
+        "feedback": "对！时间用 when、地点用 where、原因用 why。"
+      },
+      {
+        "key": "B",
+        "text": "用 which",
+        "feedback": "不对——从句里不缺主语宾语时要用关系副词，which 是关系代词。"
+      },
+      {
+        "key": "C",
+        "text": "用 what",
+        "feedback": "不对——定语从句里没有 what 这个关系词。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "先行词表示时间用 when，地点用 where，原因用 why；关系副词等于“介词 + which”；判断方法：从句成分完整（不缺主语宾语）就用关系副词",
+    "signals": ["when", "where", "why", "the day", "the place", "the reason", "介词 + which"],
+    "formula": "① 时间：the day when… = on which　② 地点：the place where… = in which　③ 原因：the reason why… = for which　④ 判断：从句缺主宾 → 关系代词；不缺 → 关系副词",
+    "anchors": [
+      {
+        "en": "I'll never forget the day when I joined the club.",
+        "zh": "我永远不会忘记我加入俱乐部的那一天。",
+        "note": "从句完整，用 when"
+      },
+      {
+        "en": "This is the school where I studied ten years ago.",
+        "zh": "这就是我十年前读书的学校。",
+        "note": "studied 后不缺宾语"
+      }
+    ],
+    "trap": {
+      "wrong": "This is the house which I was born.",
+      "right": "This is the house where I was born. / in which I was born.",
+      "why": "born 后面不缺宾语，缺的是地点状语，要用关系副词。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——when 接时间、where 接地点、why 接 reason；从句不缺主宾就用关系副词。",
+  "check": [
+    {
+      "id": "G-C03-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "I still remember the day ____ we first met.",
+      "options": [
+        { "key": "A", "text": "when", "answer": true },
+        { "key": "B", "text": "which", "distractor": "从句不缺主宾，要用关系副词" },
+        { "key": "C", "text": "where", "distractor": "先行词是时间" },
+        { "key": "D", "text": "what", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "先行词 the day 表时间 → when。",
+      "error_tag": "G-C03"
+    },
+    {
+      "id": "G-C03-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "This is the factory ____ my father works.",
+      "options": [
+        { "key": "A", "text": "which", "distractor": "works 后面不缺宾语，缺地点状语" },
+        { "key": "B", "text": "where", "answer": true },
+        { "key": "C", "text": "that", "distractor": "关系代词不能作地点状语" },
+        { "key": "D", "text": "what", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "先行词表地点，从句缺状语 → where。",
+      "error_tag": "G-C03"
+    },
+    {
+      "id": "G-C03-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "That's the reason why he was late.", "answer": true },
+        { "key": "B", "text": "That's the reason which he was late.", "distractor": "从句不缺主宾，要用 why" },
+        { "key": "C", "text": "That's the reason what he was late.", "distractor": "定语从句不用 what" },
+        { "key": "D", "text": "That's the reason when he was late.", "distractor": "reason 不表时间" }
+      ],
+      "explanation": "先行词是 the reason → why。",
+      "error_tag": "G-C03"
+    }
+  ]
+}

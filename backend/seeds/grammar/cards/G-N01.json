@@ -1,0 +1,100 @@
+{
+  "id": "G-N01",
+  "type": "rule",
+  "module": "N",
+  "module_name": "名词",
+  "title": "可数与不可数",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I need a piece of paper.", "zh": "我需要一张纸。" },
+      { "en": "She bought two bottles of milk.", "zh": "她买了两瓶牛奶。" }
+    ],
+    "question": "为什么不说 two papers、two milks？",
+    "options": [
+      {
+        "key": "A",
+        "text": "paper、milk 是不可数名词，没有复数，要借“张、瓶”这样的单位来表达数量",
+        "feedback": "对！不可数名词不能加 -s，也不能直接加数词，数量靠单位词来说。"
+      },
+      {
+        "key": "B",
+        "text": "因为东西太少",
+        "feedback": "不对——多少跟能不能加 s 无关，牛奶再多也不能说 milks。"
+      },
+      {
+        "key": "C",
+        "text": "因为句子是单数",
+        "feedback": "不对——这里说的是“两张、两瓶”，数量并不止一个。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "不可数名词没有复数，也不能直接加 a/an 或数字；要表示数量用“单位词 + of”",
+    "signals": ["water", "milk", "paper", "news", "advice", "information", "bread", "rice", "money", "homework"],
+    "formula": "a piece of paper / two bottles of milk / a cup of tea / three pieces of news",
+    "anchors": [
+      {
+        "en": "I need a piece of paper.",
+        "zh": "我需要一张纸。",
+        "note": "paper 不可数，用 piece 计量"
+      },
+      {
+        "en": "She bought two bottles of milk.",
+        "zh": "她买了两瓶牛奶。",
+        "note": "两瓶 → bottles 变复数，milk 不变"
+      }
+    ],
+    "trap": {
+      "wrong": "I have two good news to tell you.",
+      "right": "I have two pieces of good news to tell you.",
+      "why": "news 是不可数名词，计量要说 two pieces of。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——不可数名词要借“张、瓶、杯、条”来数：a piece of / a bottle of / a cup of。",
+  "check": [
+    {
+      "id": "G-N01-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "— Can I help you? — Yes, I'd like two ____ of bread.",
+      "options": [
+        { "key": "A", "text": "piece", "distractor": "two 后面单位词要变复数" },
+        { "key": "B", "text": "pieces", "answer": true },
+        { "key": "C", "text": "piece's", "distractor": "这里不是所有格" },
+        { "key": "D", "text": "piecies", "distractor": "拼写错误" }
+      ],
+      "explanation": "两片面包：two pieces of bread（pieces 变复数，bread 不变）。",
+      "error_tag": "G-N01"
+    },
+    {
+      "id": "G-N01-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "My mother bought three ____ of milk yesterday.",
+      "options": [
+        { "key": "A", "text": "bottle", "distractor": "three 后面单位词要变复数" },
+        { "key": "B", "text": "bottles", "answer": true },
+        { "key": "C", "text": "bottle's", "distractor": "这里不是所有格" },
+        { "key": "D", "text": "bottlies", "distractor": "拼写错误" }
+      ],
+      "explanation": "三瓶牛奶：three bottles of milk。",
+      "error_tag": "G-N01"
+    },
+    {
+      "id": "G-N01-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "Here is a piece of good news.", "answer": true },
+        { "key": "B", "text": "Here is a good news.", "distractor": "news 不可数，不能加 a" },
+        { "key": "C", "text": "Here are two good news.", "distractor": "要说 two pieces of good news" },
+        { "key": "D", "text": "Here is a good newses.", "distractor": "news 没有复数形式" }
+      ],
+      "explanation": "news 不可数：一条消息 = a piece of news。",
+      "error_tag": "G-N01"
+    }
+  ]
+}

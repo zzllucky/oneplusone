@@ -1,0 +1,100 @@
+{
+  "id": "G-F07",
+  "type": "rule",
+  "module": "F",
+  "module_name": "动名词",
+  "title": "介词后接 doing",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "He is good at playing basketball.", "zh": "他擅长打篮球。" },
+      { "en": "Thanks for helping me.", "zh": "谢谢你帮我。" }
+    ],
+    "question": "at、for 后面的动词为什么要加 -ing？",
+    "options": [
+      {
+        "key": "A",
+        "text": "因为 at、for 是介词，介词后面的动词一律用 doing",
+        "feedback": "对！介词后面如果要跟动词，只能用动名词，这是一条硬规则。"
+      },
+      {
+        "key": "B",
+        "text": "因为它们是动词",
+        "feedback": "不对——at、for 在这里是介词，不是动词。"
+      },
+      {
+        "key": "C",
+        "text": "因为句子是进行时",
+        "feedback": "不对——这里没有 be 动词，不是进行时，是介词宾语。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "介词后面的动词一律用 doing（动名词作介词宾语）",
+    "signals": ["at", "in", "for", "about", "of", "from", "with", "without", "after", "before"],
+    "formula": "介词 + doing：be good at doing / be interested in doing / thanks for doing / what about doing / be afraid of doing",
+    "anchors": [
+      {
+        "en": "She is interested in collecting stamps.",
+        "zh": "她对集邮感兴趣。",
+        "note": "in + doing"
+      },
+      {
+        "en": "Thanks for inviting me to your party.",
+        "zh": "谢谢你邀请我参加你的聚会。",
+        "note": "for + doing"
+      }
+    ],
+    "trap": {
+      "wrong": "He is good at play basketball.",
+      "right": "He is good at playing basketball.",
+      "why": "at 是介词，后面要接 playing，不能接原形。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——看见介词，后面的动词一律变 doing，没有例外。",
+  "check": [
+    {
+      "id": "G-F07-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "My brother is good at ____ (swim).",
+      "options": [
+        { "key": "A", "text": "swim", "distractor": "介词 at 后面要接 doing" },
+        { "key": "B", "text": "to swim", "distractor": "介词后面不接 to do" },
+        { "key": "C", "text": "swimming", "answer": true },
+        { "key": "D", "text": "swam", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "be good at + swimming。",
+      "error_tag": "G-F07"
+    },
+    {
+      "id": "G-F07-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Thanks for ____ (help) me with my English.",
+      "options": [
+        { "key": "A", "text": "help", "distractor": "介词 for 后面要接 doing" },
+        { "key": "B", "text": "helping", "answer": true },
+        { "key": "C", "text": "to help", "distractor": "介词后面不接 to do" },
+        { "key": "D", "text": "helped", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "thanks for + helping。",
+      "error_tag": "G-F07"
+    },
+    {
+      "id": "G-F07-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "What about going for a walk?", "answer": true },
+        { "key": "B", "text": "What about go for a walk?", "distractor": "about 是介词，后面要接 doing" },
+        { "key": "C", "text": "What about to go for a walk?", "distractor": "介词后面不接 to do" },
+        { "key": "D", "text": "What about went for a walk?", "distractor": "结构错误" }
+      ],
+      "explanation": "what about + going。",
+      "error_tag": "G-F07"
+    }
+  ]
+}

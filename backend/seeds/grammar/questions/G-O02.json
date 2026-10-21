@@ -1,0 +1,84 @@
+{
+  "point_id": "G-O02",
+  "title": "连接词的选择",
+  "questions": [
+    {
+      "id": "G-O02-L1-01",
+      "level": "L1",
+      "stem": "I'm sure ____ he will pass the exam. He works very hard.",
+      "options": [
+        { "key": "A", "text": "that", "answer": true },
+        { "key": "B", "text": "if", "distractor": "这里是肯定陈述，不是“是否”" },
+        { "key": "C", "text": "whether", "distractor": "这里不是“是否”" },
+        { "key": "D", "text": "what", "distractor": "从句不缺成分" }
+      ],
+      "explanation": "陈述句作从句用 that（也可省略）。",
+      "error_tag": "G-O02"
+    },
+    {
+      "id": "G-O02-L1-02",
+      "level": "L1",
+      "stem": "— Could you tell me ____ you are late? — My bike was broken.",
+      "options": [
+        { "key": "A", "text": "that", "distractor": "答语是原因，不是陈述内容" },
+        { "key": "B", "text": "why", "answer": true },
+        { "key": "C", "text": "if", "distractor": "答语不是“是否”" },
+        { "key": "D", "text": "which", "distractor": "没有选择范围" }
+      ],
+      "explanation": "答语是原因 → why。",
+      "error_tag": "G-O02"
+    },
+    {
+      "id": "G-O02-L2-01",
+      "level": "L2",
+      "stem": "I haven't decided ____ to stay at home or go out.",
+      "options": [
+        { "key": "A", "text": "if", "distractor": "if 后面不能接 to do" },
+        { "key": "B", "text": "whether", "answer": true },
+        { "key": "C", "text": "that", "distractor": "that 不能接 to do" },
+        { "key": "D", "text": "what", "distractor": "结构错误" }
+      ],
+      "explanation": "whether to do（if 不能这么用）。",
+      "error_tag": "G-O02"
+    },
+    {
+      "id": "G-O02-L2-02",
+      "level": "L2",
+      "stem": "— I want to know ____ he is talking with. — His English teacher.",
+      "options": [
+        { "key": "A", "text": "who", "answer": true },
+        { "key": "B", "text": "which", "distractor": "答语是人，不是选择" },
+        { "key": "C", "text": "whose", "distractor": "whose 后面要接名词" },
+        { "key": "D", "text": "that", "distractor": "从句缺少宾语" }
+      ],
+      "explanation": "talk with 缺宾语，指人 → who。",
+      "error_tag": "G-O02"
+    },
+    {
+      "id": "G-O02-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I don't know whether he can come.", "distractor": "正确" },
+        { "key": "B", "text": "Let me know whether or not you agree.", "distractor": "正确" },
+        { "key": "C", "text": "I wonder if or not it will rain.", "answer": true },
+        { "key": "D", "text": "Tell me what you want.", "distractor": "正确" }
+      ],
+      "explanation": "or not 只能紧接 whether，不能配 if。",
+      "error_tag": "G-O02"
+    },
+    {
+      "id": "G-O02-L3-02",
+      "level": "L3",
+      "stem": "— Do you know ____? — Yes, he came by bus.",
+      "options": [
+        { "key": "A", "text": "how did he come", "distractor": "语序错误" },
+        { "key": "B", "text": "how he came", "answer": true },
+        { "key": "C", "text": "how he comes", "distractor": "答语是过去时" },
+        { "key": "D", "text": "if he came", "distractor": "答语讲的是方式，不是“是否”" }
+      ],
+      "explanation": "答语是交通方式 → how he came。",
+      "error_tag": "G-O02"
+    }
+  ]
+}

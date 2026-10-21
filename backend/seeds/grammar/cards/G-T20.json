@@ -1,0 +1,100 @@
+{
+  "id": "G-T20",
+  "type": "rule",
+  "module": "T",
+  "module_name": "过去进行时",
+  "title": "过去进行时·基本用法",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I was doing my homework at eight last night.", "zh": "昨晚八点我正在做作业。" },
+      { "en": "They were watching TV when I came in.", "zh": "我进来的时候他们正在看电视。" }
+    ],
+    "question": "两句话说的都是过去的事，为什么这里不用过去式，而用 was/were + doing？",
+    "options": [
+      {
+        "key": "A",
+        "text": "因为说的是过去某个时刻“正在”进行的动作",
+        "feedback": "对！“昨晚八点”“我进来的那一刻”都是正在进行的时间点。"
+      },
+      {
+        "key": "B",
+        "text": "因为这些事情早就做完了",
+        "feedback": "不对——做完了要用一般过去时，这里强调的是“正在进行中”。"
+      },
+      {
+        "key": "C",
+        "text": "因为句子里有两个动作",
+        "feedback": "不对——动作多少不是判据，关键是有没有“正在”这个意思。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "过去某一时刻或某段时间正在进行的动作",
+    "signals": ["at eight last night", "at that time", "this time yesterday", "when / while 引导的时间"],
+    "formula": "was / were + 动词-ing（I / he / she / it 用 was，we / you / they 用 were）",
+    "anchors": [
+      {
+        "en": "I was doing my homework at eight last night.",
+        "zh": "昨晚八点我正在做作业。",
+        "note": "at eight last night 点明那一刻"
+      },
+      {
+        "en": "They were watching TV when I came in.",
+        "zh": "我进来的时候他们正在看电视。",
+        "note": "“我进来”那一刻他们正在看"
+      }
+    ],
+    "trap": {
+      "wrong": "He was watch TV at that time.",
+      "right": "He was watching TV at that time.",
+      "why": "be 动词后面必须接动词的 -ing 形式，不能接原形。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住：过去进行时 = 过去的某个瞬间“正在做”，看到 at eight last night、at that time 就往它身上想。",
+  "check": [
+    {
+      "id": "G-T20-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "I ____ (read) a book at nine last night.",
+      "options": [
+        { "key": "A", "text": "read", "distractor": "at nine last night 强调那一刻正在进行" },
+        { "key": "B", "text": "was reading", "answer": true },
+        { "key": "C", "text": "am reading", "distractor": "last night 是过去" },
+        { "key": "D", "text": "reads", "distractor": "时态不对" }
+      ],
+      "explanation": "昨晚九点那一刻正在看书，用 was reading。",
+      "error_tag": "G-T20"
+    },
+    {
+      "id": "G-T20-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "They ____ (play) football at four yesterday afternoon.",
+      "options": [
+        { "key": "A", "text": "played", "distractor": "played 只说明“踢了”，不强调四点那一刻正在进行" },
+        { "key": "B", "text": "were playing", "answer": true },
+        { "key": "C", "text": "are playing", "distractor": "yesterday afternoon 是过去" },
+        { "key": "D", "text": "play", "distractor": "时态不对" }
+      ],
+      "explanation": "昨天下午四点那一刻正在踢球，用 were playing。",
+      "error_tag": "G-T20"
+    },
+    {
+      "id": "G-T20-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He was watching TV at that time.", "answer": true },
+        { "key": "B", "text": "He was watch TV at that time.", "distractor": "be 动词后要接 -ing 形式" },
+        { "key": "C", "text": "He watching TV at that time.", "distractor": "缺少 be 动词" },
+        { "key": "D", "text": "He were watching TV at that time.", "distractor": "he 要搭配 was" }
+      ],
+      "explanation": "he 用 was，动词用 -ing：He was watching TV at that time。",
+      "error_tag": "G-T20"
+    }
+  ]
+}

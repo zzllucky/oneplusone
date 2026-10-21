@@ -1,0 +1,100 @@
+{
+  "id": "G-T08",
+  "type": "rule",
+  "module": "T",
+  "module_name": "一般过去时",
+  "title": "否定与疑问 didn't / Did",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I liked the film. → I didn't like the film.", "zh": "我喜欢那部电影。→ 我不喜欢那部电影。" },
+      { "en": "Did you like the film? → Yes, I did.", "zh": "你喜欢那部电影吗？→ 是的，我喜欢。" }
+    ],
+    "question": "变成否定句和疑问句之后，liked 变成了什么？",
+    "options": [
+      {
+        "key": "A",
+        "text": "变回了原形 like",
+        "feedback": "对！过去时已经由 did 承担了，主要动词要退回原形。"
+      },
+      {
+        "key": "B",
+        "text": "保持过去式 liked 不变",
+        "feedback": "不对——Did you liked 是错句，动词必须退回原形。"
+      },
+      {
+        "key": "C",
+        "text": "变成了现在时",
+        "feedback": "不对——时态没变，仍然是过去时，只是由 did 来体现。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "变否定、疑问句要借助 did，did 之后的主要动词一律用原形（所有人称都用 didn't / Did）",
+    "signals": ["didn't", "Did"],
+    "formula": "否定：主语 + didn't + 动词原形　疑问：Did + 主语 + 动词原形（did 不分人称，三单也不变）",
+    "anchors": [
+      {
+        "en": "I didn't like the film.",
+        "zh": "我不喜欢那部电影。",
+        "note": "didn't 之后用原形 like"
+      },
+      {
+        "en": "Did you see the film last night?",
+        "zh": "你昨晚看那部电影了吗？",
+        "note": "Did 之后 see 用原形"
+      }
+    ],
+    "trap": {
+      "wrong": "Did he went to school yesterday?",
+      "right": "Did he go to school yesterday?",
+      "why": "Did 已经表示过去了，后面的 went 必须退回原形 go。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——记住：did / didn't 一出现，后面的动词“打回原形”；而且 did 不分人称，三单也不用变。",
+  "check": [
+    {
+      "id": "G-T08-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "She ____ go to school yesterday because she was ill.",
+      "options": [
+        { "key": "A", "text": "don't", "distractor": "yesterday 是过去，要用 didn't" },
+        { "key": "B", "text": "doesn't", "distractor": "这是一般现在时的否定" },
+        { "key": "C", "text": "didn't", "answer": true },
+        { "key": "D", "text": "wasn't", "distractor": "go 是实义动词，否定要用 didn't" }
+      ],
+      "explanation": "过去时的否定一律用 didn't + 动词原形，不分人称。",
+      "error_tag": "G-T08"
+    },
+    {
+      "id": "G-T08-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "____ you ____ the film last night?",
+      "options": [
+        { "key": "A", "text": "Do; see", "distractor": "last night 是过去，助动词要用 Did" },
+        { "key": "B", "text": "Did; see", "answer": true },
+        { "key": "C", "text": "Did; saw", "distractor": "Did 之后动词要用原形 see" },
+        { "key": "D", "text": "Were; see", "distractor": "see 是实义动词，疑问要用 Did" }
+      ],
+      "explanation": "过去时提问用 Did，主要动词退回原形 see。",
+      "error_tag": "G-T08"
+    },
+    {
+      "id": "G-T08-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "He didn't went there.", "distractor": "didn't 之后要用原形 go" },
+        { "key": "B", "text": "He didn't go there.", "answer": true },
+        { "key": "C", "text": "He didn't goes there.", "distractor": "didn't 之后要用原形 go" },
+        { "key": "D", "text": "He doesn't went there.", "distractor": "doesn't 是现在时，且后面还用了过去式" }
+      ],
+      "explanation": "didn't 之后必须接动词原形 go，不管主语是谁。",
+      "error_tag": "G-T08"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "G-S01",
+  "type": "rule",
+  "module": "S",
+  "module_name": "状语从句",
+  "title": "时间状语从句",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I was reading when he came in.", "zh": "他进来的时候我正在看书。" },
+      { "en": "I'll call you as soon as I get home.", "zh": "我一到家就给你打电话。" }
+    ],
+    "question": "“我一到家就给你打电话”，as soon as 后面该用什么时态？",
+    "options": [
+      {
+        "key": "A",
+        "text": "一般现在时：as soon as I get home（主将从现）",
+        "feedback": "对！时间状语从句里用现在时表示将来的动作。"
+      },
+      {
+        "key": "B",
+        "text": "将来时：as soon as I will get home",
+        "feedback": "不对——时间状语从句里不能用 will 表示将来。"
+      },
+      {
+        "key": "C",
+        "text": "过去时：as soon as I got home",
+        "feedback": "不对——这里说的是还没发生的将来动作。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "when / while / as 引导时间状语从句（while 只接持续性动作）；not … until 表示“直到……才”；as soon as 表示“一……就”；主句将来时，从句用一般现在时",
+    "signals": ["when", "while", "as", "until", "not … until", "as soon as", "before", "after"],
+    "formula": "① when 可接短暂或持续动作；while 只接持续性动作（常用进行时）　② not … until：He didn't leave until I came.　③ as soon as：主将从现　④ 主将从现：I'll tell him when he comes.",
+    "anchors": [
+      {
+        "en": "I was doing my homework when the phone rang.",
+        "zh": "电话响的时候我正在写作业。",
+        "note": "when 接短暂动作"
+      },
+      {
+        "en": "I'll write to you as soon as I arrive there.",
+        "zh": "我一到那儿就给你写信。",
+        "note": "主将从现"
+      }
+    ],
+    "trap": {
+      "wrong": "I'll tell him when he will come.",
+      "right": "I'll tell him when he comes.",
+      "why": "时间状语从句里用一般现在时表将来，不用 will。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——when / as soon as / until 引导的从句一律“主将从现”。",
+  "check": [
+    {
+      "id": "G-S01-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "I ____ you as soon as I ____ there.",
+      "options": [
+        { "key": "A", "text": "will call; get", "answer": true },
+        { "key": "B", "text": "call; will get", "distractor": "主句要用将来时，从句不能用" },
+        { "key": "C", "text": "will call; will get", "distractor": "从句不能用将来时" },
+        { "key": "D", "text": "call; get", "distractor": "主句要说将来的动作" }
+      ],
+      "explanation": "主将从现：will call / get。",
+      "error_tag": "G-S01"
+    },
+    {
+      "id": "G-S01-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "He ____ go to bed ____ his mother came back.",
+      "options": [
+        { "key": "A", "text": "didn't; until", "answer": true },
+        { "key": "B", "text": "doesn't; until", "distractor": "came 是过去时，主句也要用过去时" },
+        { "key": "C", "text": "didn't; when", "distractor": "not…until 是“直到……才”" },
+        { "key": "D", "text": "doesn't; when", "distractor": "时态和连词都不对" }
+      ],
+      "explanation": "直到妈妈回来才睡：didn't … until。",
+      "error_tag": "G-S01"
+    },
+    {
+      "id": "G-S01-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I'll call you when I get home.", "distractor": "正确" },
+        { "key": "B", "text": "He didn't leave until I came back.", "distractor": "正确" },
+        { "key": "C", "text": "I'll tell him as soon as he will come.", "answer": true },
+        { "key": "D", "text": "While I was sleeping, the phone rang.", "distractor": "正确" }
+      ],
+      "explanation": "as soon as 从句要用一般现在时：as soon as he comes。",
+      "error_tag": "G-S01"
+    }
+  ]
+}

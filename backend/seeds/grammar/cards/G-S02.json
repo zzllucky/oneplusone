@@ -1,0 +1,100 @@
+{
+  "id": "G-S02",
+  "type": "rule",
+  "module": "S",
+  "module_name": "状语从句",
+  "title": "条件状语从句",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "If it rains tomorrow, we will stay at home.", "zh": "如果明天下雨，我们就待在家里。" },
+      { "en": "You will be late unless you hurry up.", "zh": "除非你快点，否则你会迟到。" }
+    ],
+    "question": "If it ____ tomorrow, we'll stay at home. 空里该填什么？",
+    "options": [
+      {
+        "key": "A",
+        "text": "rains——条件从句用一般现在时表将来",
+        "feedback": "对！跟时间从句一样，if 后面也不能用 will 表将来。"
+      },
+      {
+        "key": "B",
+        "text": "will rain",
+        "feedback": "不对——if 引导的条件从句里不能用 will，要用 rains。"
+      },
+      {
+        "key": "C",
+        "text": "rained",
+        "feedback": "不对——这是真实条件句，不是虚拟语气，用现在时。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "if 如果 / unless 除非（= if … not）/ as long as 只要；主句用将来时，条件从句用一般现在时（主将从现）",
+    "signals": ["if", "unless", "as long as", "主将从现"],
+    "formula": "① If + 一般现在时，主句 + will / can / may + 动词原形　② unless = if … not：You'll be late unless you hurry.　③ as long as 只要：You can go as long as you finish your work.",
+    "anchors": [
+      {
+        "en": "If it doesn't rain tomorrow, we will go for a picnic.",
+        "zh": "如果明天不下雨，我们就去野餐。",
+        "note": "主将从现"
+      },
+      {
+        "en": "You won't pass the exam unless you study hard.",
+        "zh": "除非你努力学习，否则你通不过考试。",
+        "note": "unless = if … not"
+      }
+    ],
+    "trap": {
+      "wrong": "If it will rain tomorrow, I will stay at home.",
+      "right": "If it rains tomorrow, I will stay at home.",
+      "why": "条件从句用一般现在时表示将来，不用 will。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——if / unless / as long as 都遵守“主将从现”；unless 就等于 if … not。",
+  "check": [
+    {
+      "id": "G-S02-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "If it ____ tomorrow, we ____ stay at home.",
+      "options": [
+        { "key": "A", "text": "rains; will", "answer": true },
+        { "key": "B", "text": "will rain; will", "distractor": "if 从句不能用将来时" },
+        { "key": "C", "text": "rains; /", "distractor": "主句要说将来的动作，用 will" },
+        { "key": "D", "text": "will rain; /", "distractor": "两处都不对" }
+      ],
+      "explanation": "主将从现：If it rains, we will stay。",
+      "error_tag": "G-S02"
+    },
+    {
+      "id": "G-S02-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "You ____ pass the exam ____ you study hard.",
+      "options": [
+        { "key": "A", "text": "will; unless", "distractor": "“除非努力，否则会通过”逻辑矛盾" },
+        { "key": "B", "text": "won't; unless", "answer": true },
+        { "key": "C", "text": "won't; if", "distractor": "“如果努力就通不过”逻辑矛盾" },
+        { "key": "D", "text": "will; if not", "distractor": "结构不完整" }
+      ],
+      "explanation": "除非你努力学习，否则通不过 → won't … unless。",
+      "error_tag": "G-S02"
+    },
+    {
+      "id": "G-S02-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "If he comes, I'll tell him the news.", "answer": true },
+        { "key": "B", "text": "If he will come, I'll tell him the news.", "distractor": "if 从句不能用将来时" },
+        { "key": "C", "text": "If he come, I'll tell him the news.", "distractor": "主语第三人称单数要加 s" },
+        { "key": "D", "text": "If he came, I'll tell him the news.", "distractor": "时态不一致" }
+      ],
+      "explanation": "主将从现：If he comes, I'll tell him。",
+      "error_tag": "G-S02"
+    }
+  ]
+}

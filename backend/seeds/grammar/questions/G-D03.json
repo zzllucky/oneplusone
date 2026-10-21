@@ -1,0 +1,84 @@
+{
+  "point_id": "G-D03",
+  "title": "形容词与副词辨析",
+  "questions": [
+    {
+      "id": "G-D03-L1-01",
+      "level": "L1",
+      "stem": "Look! The children are playing ____ in the garden.",
+      "options": [
+        { "key": "A", "text": "happy", "distractor": "修饰动词 play 要用副词" },
+        { "key": "B", "text": "happily", "answer": true },
+        { "key": "C", "text": "happier", "distractor": "这里没有比较对象" },
+        { "key": "D", "text": "happiness", "distractor": "happiness 是名词" }
+      ],
+      "explanation": "修饰动词用 happily。",
+      "error_tag": "G-D03"
+    },
+    {
+      "id": "G-D03-L1-02",
+      "level": "L1",
+      "stem": "The flowers in the garden look ____ in spring.",
+      "options": [
+        { "key": "A", "text": "beautifully", "distractor": "look 是系动词，后面用形容词" },
+        { "key": "B", "text": "beautiful", "answer": true },
+        { "key": "C", "text": "beauty", "distractor": "beauty 是名词" },
+        { "key": "D", "text": "more beautifully", "distractor": "系动词后用形容词" }
+      ],
+      "explanation": "系动词 look + 形容词 beautiful。",
+      "error_tag": "G-D03"
+    },
+    {
+      "id": "G-D03-L2-01",
+      "level": "L2",
+      "stem": "He didn't do his homework ____, so the teacher was angry.",
+      "options": [
+        { "key": "A", "text": "careful", "distractor": "修饰动词 do 要用副词" },
+        { "key": "B", "text": "carefully", "distractor": "与“老师生气”矛盾" },
+        { "key": "C", "text": "carelessly", "answer": true },
+        { "key": "D", "text": "careless", "distractor": "修饰动词要用副词" }
+      ],
+      "explanation": "做得粗心 → carelessly。",
+      "error_tag": "G-D03"
+    },
+    {
+      "id": "G-D03-L2-02",
+      "level": "L2",
+      "stem": "— The music sounds ____. Who is playing it? — My sister.",
+      "options": [
+        { "key": "A", "text": "wonderful", "answer": true },
+        { "key": "B", "text": "wonderfully", "distractor": "sound 是系动词，后面用形容词" },
+        { "key": "C", "text": "wonder", "distractor": "wonder 是名词或动词" },
+        { "key": "D", "text": "wondering", "distractor": "结构错误" }
+      ],
+      "explanation": "系动词 sound + 形容词 wonderful。",
+      "error_tag": "G-D03"
+    },
+    {
+      "id": "G-D03-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "He is a quick runner and runs very quickly.", "distractor": "正确" },
+        { "key": "B", "text": "The cake tastes delicious.", "distractor": "正确" },
+        { "key": "C", "text": "She sings beautiful in the school band.", "answer": true },
+        { "key": "D", "text": "He felt unhappy about the news.", "distractor": "正确" }
+      ],
+      "explanation": "修饰动词 sing 要用副词 beautifully。",
+      "error_tag": "G-D03"
+    },
+    {
+      "id": "G-D03-L3-02",
+      "level": "L3",
+      "stem": "— Your English is very ____. — Thank you. I study ____ every day.",
+      "options": [
+        { "key": "A", "text": "good; hard", "answer": true },
+        { "key": "B", "text": "well; hard", "distractor": "说“英语好”用 good" },
+        { "key": "C", "text": "good; hardly", "distractor": "hardly 是“几乎不”，与语境矛盾" },
+        { "key": "D", "text": "well; hardly", "distractor": "两处都不合适" }
+      ],
+      "explanation": "English is good（形修名/作表语）；study hard（副词）。",
+      "error_tag": "G-D03"
+    }
+  ]
+}

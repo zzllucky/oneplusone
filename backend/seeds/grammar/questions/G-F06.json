@@ -1,0 +1,84 @@
+{
+  "point_id": "G-F06",
+  "title": "动名词作宾语",
+  "questions": [
+    {
+      "id": "G-F06-L1-01",
+      "level": "L1",
+      "stem": "Do you mind ____ (open) the window?",
+      "options": [
+        { "key": "A", "text": "open", "distractor": "mind 后面要接 doing" },
+        { "key": "B", "text": "opening", "answer": true },
+        { "key": "C", "text": "to open", "distractor": "mind 后面不接 to do" },
+        { "key": "D", "text": "opened", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "mind + opening（“你介意开窗吗”）。",
+      "error_tag": "G-F06"
+    },
+    {
+      "id": "G-F06-L1-02",
+      "level": "L1",
+      "stem": "They kept ____ (work) until midnight.",
+      "options": [
+        { "key": "A", "text": "work", "distractor": "keep 后面要接 doing" },
+        { "key": "B", "text": "to work", "distractor": "keep 后面不接 to do" },
+        { "key": "C", "text": "working", "answer": true },
+        { "key": "D", "text": "worked", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "keep + working（一直工作）。",
+      "error_tag": "G-F06"
+    },
+    {
+      "id": "G-F06-L2-01",
+      "level": "L2",
+      "stem": "He gave up ____ (smoke) last year.",
+      "options": [
+        { "key": "A", "text": "smoke", "distractor": "give up 后面要接 doing" },
+        { "key": "B", "text": "smoking", "answer": true },
+        { "key": "C", "text": "to smoke", "distractor": "give up 后面不接 to do" },
+        { "key": "D", "text": "smoked", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "give up + smoking（戒烟）。",
+      "error_tag": "G-F06"
+    },
+    {
+      "id": "G-F06-L2-02",
+      "level": "L2",
+      "stem": "We enjoy ____ (play) basketball after class.",
+      "options": [
+        { "key": "A", "text": "play", "distractor": "enjoy 后面要接 doing" },
+        { "key": "B", "text": "to play", "distractor": "enjoy 后面不接 to do" },
+        { "key": "C", "text": "playing", "answer": true },
+        { "key": "D", "text": "played", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "enjoy + playing。",
+      "error_tag": "G-F06"
+    },
+    {
+      "id": "G-F06-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "I finished reading the book yesterday.", "distractor": "正确" },
+        { "key": "B", "text": "She enjoys listening to music.", "distractor": "正确" },
+        { "key": "C", "text": "He finished to do his homework.", "answer": true },
+        { "key": "D", "text": "They practice speaking English every day.", "distractor": "正确" }
+      ],
+      "explanation": "finish 后面接 doing：He finished doing his homework。",
+      "error_tag": "G-F06"
+    },
+    {
+      "id": "G-F06-L3-02",
+      "level": "L3",
+      "stem": "— Would you mind ____ the door? It's cold outside. — Of course not.",
+      "options": [
+        { "key": "A", "text": "close", "distractor": "mind 后面要接 doing" },
+        { "key": "B", "text": "closing", "answer": true },
+        { "key": "C", "text": "to close", "distractor": "mind 后面不接 to do" },
+        { "key": "D", "text": "closed", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "Would you mind + closing…?",
+      "error_tag": "G-F06"
+    }
+  ]
+}

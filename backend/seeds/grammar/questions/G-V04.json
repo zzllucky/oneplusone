@@ -1,0 +1,84 @@
+{
+  "point_id": "G-V04",
+  "title": "完成时的被动",
+  "questions": [
+    {
+      "id": "G-V04-L1-01",
+      "level": "L1",
+      "stem": "The new bridge ____ (build) already.",
+      "options": [
+        { "key": "A", "text": "has built", "distractor": "桥是被建的" },
+        { "key": "B", "text": "has been built", "answer": true },
+        { "key": "C", "text": "is built", "distractor": "already 提示用完成时" },
+        { "key": "D", "text": "was built", "distractor": "already 提示用完成时" }
+      ],
+      "explanation": "已经被建成，用 has been built。",
+      "error_tag": "G-V04"
+    },
+    {
+      "id": "G-V04-L1-02",
+      "level": "L1",
+      "stem": "— ____ the work ____ yet? — Yes, it has.",
+      "options": [
+        { "key": "A", "text": "Has; been finished", "answer": true },
+        { "key": "B", "text": "Has; finished", "distractor": "工作是被动的，要加 been" },
+        { "key": "C", "text": "Is; finished", "distractor": "答语是 it has，说明问句用完成时" },
+        { "key": "D", "text": "Was; finished", "distractor": "答语是 it has，说明问句用完成时" }
+      ],
+      "explanation": "完成时被动疑问：Has the work been finished yet?",
+      "error_tag": "G-V04"
+    },
+    {
+      "id": "G-V04-L2-01",
+      "level": "L2",
+      "stem": "All the food ____ (eat) up when we arrived.",
+      "options": [
+        { "key": "A", "text": "ate", "distractor": "食物是被吃的" },
+        { "key": "B", "text": "had been eaten", "answer": true },
+        { "key": "C", "text": "has been eaten", "distractor": "参照点是过去（arrived）" },
+        { "key": "D", "text": "was eaten", "distractor": "“到我们到达时为止”要用完成时" }
+      ],
+      "explanation": "到达时食物已被吃光，用 had been eaten up。",
+      "error_tag": "G-V04"
+    },
+    {
+      "id": "G-V04-L2-02",
+      "level": "L2",
+      "stem": "Many trees ____ (plant) in our city so far.",
+      "options": [
+        { "key": "A", "text": "have planted", "distractor": "树是被种的" },
+        { "key": "B", "text": "have been planted", "answer": true },
+        { "key": "C", "text": "are planted", "distractor": "so far 提示用完成时" },
+        { "key": "D", "text": "were planted", "distractor": "so far 提示用完成时" }
+      ],
+      "explanation": "so far + 完成时被动：have been planted。",
+      "error_tag": "G-V04"
+    },
+    {
+      "id": "G-V04-L3-01",
+      "level": "L3",
+      "stem": "下面哪一句是错误的？",
+      "options": [
+        { "key": "A", "text": "The letter has been sent.", "distractor": "正确" },
+        { "key": "B", "text": "The room had been cleaned before he came.", "distractor": "正确" },
+        { "key": "C", "text": "The problem has be solved.", "answer": true },
+        { "key": "D", "text": "The tickets have been sold out.", "distractor": "正确" }
+      ],
+      "explanation": "has 后要接 been：The problem has been solved。",
+      "error_tag": "G-V04"
+    },
+    {
+      "id": "G-V04-L3-02",
+      "level": "L3",
+      "stem": "— Why is the classroom so clean? — Because it ____ (clean) already.",
+      "options": [
+        { "key": "A", "text": "has cleaned", "distractor": "教室是被打扫的" },
+        { "key": "B", "text": "has been cleaned", "answer": true },
+        { "key": "C", "text": "is cleaned", "distractor": "already 提示用完成时" },
+        { "key": "D", "text": "was cleaned", "distractor": "这里强调“到现在已经”，用完成时" }
+      ],
+      "explanation": "解释现在为什么干净：已经被打扫了，用 has been cleaned。",
+      "error_tag": "G-V04"
+    }
+  ]
+}

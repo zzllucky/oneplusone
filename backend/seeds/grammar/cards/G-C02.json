@@ -1,0 +1,100 @@
+{
+  "id": "G-C02",
+  "type": "rule",
+  "module": "C",
+  "module_name": "定语从句",
+  "title": "只用 that 的情况",
+  "depth": "了解",
+  "guess": {
+    "examples": [
+      { "en": "This is the best film that I have ever seen.", "zh": "这是我看过的最好的电影。" },
+      { "en": "Everything that he said is true.", "zh": "他说的一切都是真的。" }
+    ],
+    "question": "什么情况下只能用 that，不能用 which？",
+    "options": [
+      {
+        "key": "A",
+        "text": "先行词是不定代词、被最高级或序数词修饰、或人与物同时出现时",
+        "feedback": "对！这几种情况 that 是唯一选择，用 which 就扣分。"
+      },
+      {
+        "key": "B",
+        "text": "先行词是人名的时候",
+        "feedback": "不对——人名指人，通常用 who。"
+      },
+      {
+        "key": "C",
+        "text": "任何时候 which 都能代替 that",
+        "feedback": "不对——这几种特殊情况下 which 是不能用的。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "四种情况只用 that：① 先行词是不定代词（all / everything / nothing / something / anything / little / much）；② 先行词被最高级、序数词或 the only / the very 修饰；③ 先行词同时包含人和物；④ 主句是以 who / which 开头的特殊疑问句",
+    "signals": ["all", "everything", "nothing", "something", "anything", "最高级", "序数词", "the only", "the very", "人与物同现"],
+    "formula": "① All that he said is true.　② This is the best book that I have read.　③ He talked about the teachers and schools that he visited.　④ Who is the girl that is standing there?",
+    "anchors": [
+      {
+        "en": "This is the first book that I bought with my own money.",
+        "zh": "这是我用自己钱买的第一本书。",
+        "note": "序数词后用 that"
+      },
+      {
+        "en": "Everything that he told me is important.",
+        "zh": "他告诉我的一切都很重要。",
+        "note": "不定代词后用 that"
+      }
+    ],
+    "trap": {
+      "wrong": "This is the best film which I have ever seen.",
+      "right": "This is the best film that I have ever seen.",
+      "why": "先行词被最高级 best 修饰，只能用 that。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——不定代词、最高级、序数词、人与物同现，这四种只用 that。",
+  "check": [
+    {
+      "id": "G-C02-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "This is the most interesting story ____ I have ever heard.",
+      "options": [
+        { "key": "A", "text": "which", "distractor": "最高级修饰时只用 that" },
+        { "key": "B", "text": "that", "answer": true },
+        { "key": "C", "text": "who", "distractor": "story 是物，且最高级要用 that" },
+        { "key": "D", "text": "what", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "最高级修饰先行词 → 只用 that。",
+      "error_tag": "G-C02"
+    },
+    {
+      "id": "G-C02-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Everything ____ he said at the meeting was true.",
+      "options": [
+        { "key": "A", "text": "which", "distractor": "先行词是不定代词，只用 that" },
+        { "key": "B", "text": "that", "answer": true },
+        { "key": "C", "text": "what", "distractor": "定语从句不用 what" },
+        { "key": "D", "text": "who", "distractor": "everything 是物" }
+      ],
+      "explanation": "先行词是不定代词 everything → 只用 that。",
+      "error_tag": "G-C02"
+    },
+    {
+      "id": "G-C02-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "They talked about the people and places that they visited.", "answer": true },
+        { "key": "B", "text": "They talked about the people and places which they visited.", "distractor": "人与物同时出现时只用 that" },
+        { "key": "C", "text": "They talked about the people and places who they visited.", "distractor": "places 是物，不能只用 who" },
+        { "key": "D", "text": "They talked about the people and places what they visited.", "distractor": "定语从句不用 what" }
+      ],
+      "explanation": "先行词同时含人和物 → 只用 that。",
+      "error_tag": "G-C02"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "G-F06",
+  "type": "rule",
+  "module": "F",
+  "module_name": "动名词",
+  "title": "动名词作宾语",
+  "depth": "核心",
+  "guess": {
+    "examples": [
+      { "en": "I enjoy reading English stories.", "zh": "我喜欢读英语故事。" },
+      { "en": "Have you finished doing your homework?", "zh": "你做完作业了吗？" }
+    ],
+    "question": "enjoy、finish 后面的动词为什么要加 -ing？",
+    "options": [
+      {
+        "key": "A",
+        "text": "这两个词后面只接 doing，不接 to do",
+        "feedback": "对！这是固定搭配，没有为什么，只能记住哪些动词“只跟 doing”。"
+      },
+      {
+        "key": "B",
+        "text": "因为动作正在进行",
+        "feedback": "不对——finished doing 说的是已经做完，并不是正在进行。"
+      },
+      {
+        "key": "C",
+        "text": "因为句子是现在时",
+        "feedback": "不对——时态和它无关，过去时也一样说 He enjoyed reading。"
+      }
+    ],
+    "answer": "A"
+  },
+  "rule": {
+    "rule": "enjoy / finish / practice / mind / keep / suggest / miss / give up 等后面接 doing",
+    "signals": ["enjoy", "finish", "practice", "mind", "keep", "suggest", "miss", "give up", "can't help"],
+    "formula": "动词 + doing　（这些词后面不能接 to do）",
+    "anchors": [
+      {
+        "en": "I enjoy reading English stories.",
+        "zh": "我喜欢读英语故事。",
+        "note": "enjoy + doing"
+      },
+      {
+        "en": "He finished doing his homework at nine.",
+        "zh": "他九点做完了作业。",
+        "note": "finish + doing"
+      }
+    ],
+    "trap": {
+      "wrong": "I enjoy to read English stories.",
+      "right": "I enjoy reading English stories.",
+      "why": "enjoy 后面只能接 doing，接 to do 是错的。"
+    }
+  },
+  "guess_callback": "你刚才选的是 A——这批词（enjoy/finish/practice/mind/keep）后面一律 doing，看见它们就别想 to do。",
+  "check": [
+    {
+      "id": "G-F06-Q01",
+      "level": "L1",
+      "type": "choice",
+      "stem": "She enjoys ____ (listen) to music after school.",
+      "options": [
+        { "key": "A", "text": "listen", "distractor": "enjoy 后面要接 doing" },
+        { "key": "B", "text": "to listen", "distractor": "enjoy 后面不接 to do" },
+        { "key": "C", "text": "listening", "answer": true },
+        { "key": "D", "text": "listened", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "enjoy + listening。",
+      "error_tag": "G-F06"
+    },
+    {
+      "id": "G-F06-Q02",
+      "level": "L1",
+      "type": "choice",
+      "stem": "Have you finished ____ (clean) the classroom?",
+      "options": [
+        { "key": "A", "text": "clean", "distractor": "finish 后面要接 doing" },
+        { "key": "B", "text": "cleaning", "answer": true },
+        { "key": "C", "text": "to clean", "distractor": "finish 后面不接 to do" },
+        { "key": "D", "text": "cleaned", "distractor": "这不是谓语位置" }
+      ],
+      "explanation": "finish + cleaning。",
+      "error_tag": "G-F06"
+    },
+    {
+      "id": "G-F06-Q03",
+      "level": "L1",
+      "type": "choice",
+      "stem": "下面哪一句是正确的？",
+      "options": [
+        { "key": "A", "text": "We practice speaking English every morning.", "answer": true },
+        { "key": "B", "text": "We practice to speak English every morning.", "distractor": "practice 后面不接 to do" },
+        { "key": "C", "text": "We practice speak English every morning.", "distractor": "practice 后面要接 doing" },
+        { "key": "D", "text": "We practice spoke English every morning.", "distractor": "结构错误" }
+      ],
+      "explanation": "practice + speaking。",
+      "error_tag": "G-F06"
+    }
+  ]
+}
