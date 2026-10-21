@@ -32,6 +32,10 @@ echo "==> 2/6 解压新版本"
 tar -xzf "$PKG" -C "$APP_DIR"
 
 echo "==> 3/6 重装后端（非 editable 安装，必须重装才生效）"
+# Python 3.12 的 venv 默认不含 setuptools，--no-build-isolation 会报
+# "Cannot import 'setuptools.build_meta'"，先确保构建工具在 venv 内
+"$APP_DIR/venv/bin/python" -c "import setuptools" 2>/dev/null \
+  || "$APP_DIR/venv/bin/pip" install --quiet setuptools wheel
 "$APP_DIR/venv/bin/pip" install --quiet --no-deps --no-build-isolation \
   --force-reinstall "$APP_DIR/backend"
 
