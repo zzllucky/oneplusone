@@ -15,11 +15,13 @@ from pathlib import Path
 
 import pytest
 
+from app import seed_grammar
 from app.seed_grammar import (
     SOURCE_BANK,
     SOURCE_CARD,
     SeedOption,
     SeedPoint,
+    default_seed_dir,
     load_seed_grammar,
     parse_card,
     parse_question_bank,
@@ -296,3 +298,35 @@ def test_load_seed_grammar_skips_non_point_files(tmp_path: Path):
 def test_seed_point_is_dataclass_instance(tmp_path: Path):
     points, _, _ = load_seed_grammar(_write_seed_dir(tmp_path))
     assert isinstance(points[0], SeedPoint)
+
+
+# --- 种子目录探测（部署形态） ---
+
+
+def test_default_seed_dir_honours_env_override(monkeypatch, tmp_path: Path):
+    target = tmp_path / "custom-seed"
+    target.mkdir()
+    monkeypatch.setenv("GRAMMAR_SEED_DIR", str(target))
+    assert default_seed_dir() == target
+
+
+def test_default_seed_dir_falls_back_to_cwd_when_installed(monkeypatch, tmp_path: Path):
+    """非 editable 安装：``__file__`` 在 site-packages，须回退到工作目录。
+
+    现场症状：迁移 006 报 "未找到语法卡片目录 .../site-packages/../seeds"，
+    建表成功但种子为空，线上大纲页空白。
+    """
+    monkeypatch.delenv("GRAMMAR_SEED_DIR", raising=False)
+    installed_app = (
+        tmp_path / "venv" / "lib" / "python3.12" / "site-packages" / "app"
+    )
+    installed_app.mkdir(parents=True)
+    monkeypatch.setattr(
+        seed_grammar, "__file__", str(installed_app / "seed_grammar.py")
+    )
+
+    workdir = tmp_path / "backend"
+    (workdir / "seeds" / "grammar").mkdir(parents=True)
+    monkeypatch.chdir(workdir)
+
+    assert default_seed_dir() == workdir / "seeds" / "grammar"

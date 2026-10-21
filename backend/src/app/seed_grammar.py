@@ -17,6 +17,7 @@
 from __future__ import annotations
 
 import json
+import os
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
@@ -39,8 +40,19 @@ PAYLOAD_KEYS = ("guess", "rule", "contrast", "guess_callback")
 
 
 def default_seed_dir() -> Path:
-    """``backend/seeds/grammar`` 的默认位置。"""
-    return Path(__file__).resolve().parents[2] / "seeds" / "grammar"
+    """``seeds/grammar`` 的位置：环境变量 → 源码树 → 当前工作目录。
+
+    后端以非 editable 方式安装时 ``__file__`` 落在 ``site-packages/app``，
+    ``parents[2]`` 指向 venv 内部而不是 ``backend/``；此时回退到进程工作目录
+    （systemd 的 ``WorkingDirectory`` 即 ``backend/``），部署形态下同样能命中。
+    """
+    override = os.environ.get("GRAMMAR_SEED_DIR")
+    if override:
+        return Path(override)
+    source_tree = Path(__file__).resolve().parents[2] / "seeds" / "grammar"
+    if source_tree.is_dir():
+        return source_tree
+    return Path.cwd() / "seeds" / "grammar"
 
 
 @dataclass(frozen=True)
